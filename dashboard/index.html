@@ -5,42 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bot Trading Demo — PAPER / DEMO (bukan live trading)</title>
 <style>
-  body { background:#0b0e14; color:#d7dce6; font-family: ui-monospace, Menlo, Consolas, monospace; margin:0; padding:24px; }
-  h1 { font-size:20px; margin:0 0 4px; }
-  .sub { color:#8b93a7; font-size:13px; margin-bottom:20px; }
+  :root { --bg:#0b0e14; --panel:#121826; --line:#232c44; --txt:#d7dce6; --dim:#8b93a7; --cyan:#7dd3fc; --green:#34d399; --red:#f87171; --amber:#fbbf24; }
+  * { box-sizing:border-box; }
+  body { background:var(--bg); color:var(--txt); font-family: ui-monospace, Menlo, Consolas, monospace; margin:0; padding:24px; }
+  .wrap { max-width:1180px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 4px; letter-spacing:0.5px; }
+  .sub { color:var(--dim); font-size:13px; margin-bottom:16px; }
   .badge { display:inline-block; background:#f59e0b; color:#111; font-weight:bold; padding:2px 8px; border-radius:4px; font-size:12px; }
-  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px; }
-  .card { background:#121826; border:1px solid #232c44; border-radius:10px; padding:16px; }
-  .card h2 { font-size:14px; margin:0 0 10px; color:#7dd3fc; }
-  .row { display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dashed #232c44; font-size:13px; }
+  .statusbar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+  .pill { border:1px solid var(--line); border-radius:20px; padding:4px 10px; font-size:12px; color:var(--dim); }
+  .pill b { color:var(--txt); }
+  .pill.ok b { color:var(--green); } .pill.lock b { color:var(--amber); }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px; box-shadow: 0 0 0 1px rgba(125,211,252,0.05), 0 8px 24px rgba(0,0,0,0.35); }
+  .card h2 { font-size:14px; margin:0 0 10px; color:var(--cyan); }
+  .card h2 span { color:var(--dim); }
+  .row { display:flex; justify-content:space-between; gap:12px; padding:4px 0; border-bottom:1px dashed var(--line); font-size:13px; }
   .row:last-child { border-bottom:0; }
-  .up { color:#34d399; } .down { color:#f87171; } .warn { color:#fbbf24; }
-  .decision { font-size:18px; font-weight:bold; }
-  footer { color:#8b93a7; font-size:12px; margin-top:24px; line-height:1.6; }
+  .up { color:var(--green); } .down { color:var(--red); } .warn { color:var(--amber); }
+  .decision { font-size:20px; font-weight:bold; }
+  .formula { background:#0b0e14; border:1px solid var(--line); border-radius:8px; padding:10px; font-size:13px; line-height:1.7; }
+  .caption { color:var(--dim); font-size:12px; margin-top:8px; line-height:1.6; }
+  .venue { display:flex; flex-wrap:wrap; gap:8px; }
+  .venue span { border:1px solid var(--line); border-radius:20px; padding:4px 10px; font-size:12px; }
+  footer { color:var(--dim); font-size:12px; margin-top:24px; line-height:1.6; }
+  svg { width:100%; height:auto; display:block; }
 </style>
 </head>
 <body>
+<div class="wrap">
 <h1>Bot Trading Demo <span class="badge">PAPER / DEMO</span></h1>
-<p class="sub">Snapshot hasil run unified engine (data publik live saat run) — 1 Nov 2026, 03:20 WIB. Bukan live trading, nol order nyata.</p>
+<p class="sub">Mesin paper trading multi-venue (Indodax, Polymarket, Forex, Moomoo, Pump.fun) — nol order nyata, nol uang asli. Snapshot run unified engine 1 Nov 2026, 03:20 WIB.</p>
+
+<div class="statusbar">
+  <span class="pill">Mode: <b>PAPER</b></span>
+  <span class="pill lock">Live gate: <b>TERKUNCI</b></span>
+  <span class="pill ok">Engine run: <b>6/6 modul ok</b></span>
+  <span class="pill">Total modal demo: <b>Rp250.000</b></span>
+  <span class="pill">Kill-switch: <b>15% / venue</b></span>
+</div>
 
 <div class="grid">
-  <div class="card"><h2>Keputusan engine</h2>
+  <div class="card"><h2>01 // Keputusan engine</h2>
     <p class="decision warn">NO_TRADE</p>
     <p>Alasan: sentimen berita sangat negatif, jadi jeda trading; BTC trending bersamaan dengan berita negatif, hindari FOMO. Tren BTC 24 jam naik, tapi filter risiko mengalahkan tren.</p>
     <p>Manajemen risiko: SL 5% / TP 10–15% / kill-switch 15% per venue (Rp7.500 dari Rp50.000).</p>
   </div>
 
-  <div class="card"><h2>Indodax (CCXT + API publik)</h2>
+  <div class="card"><h2>02 // Model Bayesian</h2>
+    <p>Prior (tren + histori) digabung dengan likelihood (harga live + sentimen berita) menjadi posterior — lalu posterior itu yang memutuskan beli atau jeda.</p>
+    <div class="row"><span>Prior: tren BTC 24 jam</span><span class="up">Naik</span></div>
+    <div class="row"><span>Likelihood: sentimen berita</span><span class="warn">−3 (negatif)</span></div>
+    <div class="row"><span>Posterior: keputusan</span><span class="warn">Jeda (NO_TRADE)</span></div>
+    <p class="caption">Berita di sini berfungsi sebagai filter risiko, bukan sinyal beli.</p>
+  </div>
+
+  <div class="card"><h2>03 // Edge + Spread</h2>
+    <div class="formula">Edge = 1 − (p_yes + p_no) − fee<br>Ambang trade: edge ≥ 0,01</div>
+    <div class="row"><span>Contoh: YES 0,019 / NO 0,981</span><span>Edge ≈ 0 − fee</span></div>
+    <div class="row"><span>Keputusan contoh itu</span><span class="warn">NO_TRADE</span></div>
+    <div class="row"><span>BTC/IDR spread</span><span>0,0301%</span></div>
+    <div class="row"><span>ETH/IDR spread</span><span>0,2866%</span></div>
+  </div>
+
+  <div class="card"><h2>04 // Eksekusi Stoikov</h2>
+    <p>Lapisan eksekusi menaruh order di sekitar reservation price dan menangkap spread, bukan mengejar harga pasar.</p>
+    <div class="row"><span>Mode aktif</span><span>Paper (fill di ask)</span></div>
+    <div class="row"><span>Order live</span><span class="warn">Terkunci ganda</span></div>
+    <p class="caption">Live butuh environment LIVE_TRADING=1 DAN file LIVE_APPROVED.txt bersamaan — keduanya tidak ada di repo ini.</p>
+  </div>
+
+  <div class="card"><h2>05 // Kurva P&amp;L demo</h2>
+    <svg viewBox="0 0 320 120" role="img" aria-label="Ilustrasi kurva P dan L">
+      <line x1="0" y1="30" x2="320" y2="30" stroke="#232c44" stroke-dasharray="3 3"/>
+      <line x1="0" y1="60" x2="320" y2="60" stroke="#232c44" stroke-dasharray="3 3"/>
+      <line x1="0" y1="90" x2="320" y2="90" stroke="#232c44" stroke-dasharray="3 3"/>
+      <path d="M0,90 C40,85 70,95 100,70 S160,60 200,45 S280,30 320,20" fill="none" stroke="#34d399" stroke-width="2"/>
+    </svg>
+    <p class="caption">Ilustrasi bentuk kurva (simulasi demo) — bukan hasil nyata. Angka demo terverifikasi ada di panel Metrik.</p>
+  </div>
+
+  <div class="card"><h2>06 // Kipas Monte Carlo</h2>
+    <svg viewBox="0 0 320 120" role="img" aria-label="Ilustrasi kipas Monte Carlo">
+      <path d="M0,60 Q160,10 320,15" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.9"/>
+      <path d="M0,60 Q160,35 320,40" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.6"/>
+      <path d="M0,60 Q160,60 320,60" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.45"/>
+      <path d="M0,60 Q160,85 320,85" fill="none" stroke="#f87171" stroke-width="1.5" opacity="0.6"/>
+      <path d="M0,60 Q160,110 320,105" fill="none" stroke="#f87171" stroke-width="1.5" opacity="0.9"/>
+    </svg>
+    <p class="caption">Ilustrasi sebaran skenario (simulasi demo) — jalur hijau naik, jalur merah turun, garis tengah datar.</p>
+  </div>
+
+  <div class="card"><h2>07 // Metrik demo terverifikasi</h2>
+    <div class="row"><span>Indodax paper (virtual)</span><span>Rp50.000</span></div>
+    <div class="row"><span>Paper beli BTC</span><span>Rp10.000 @ ask</span></div>
+    <div class="row"><span>Sisa virtual Indodax</span><span>Rp40.000</span></div>
+    <div class="row"><span>Polymarket paper (virtual)</span><span>1000 USDC</span></div>
+    <div class="row"><span>Posisi paper</span><span>10 YES @ 0,009</span></div>
+    <p class="caption">Bukan klaim profit. ROI, win rate, dan Sharpe baru bermakna setelah riwayat demo terkumpul.</p>
+  </div>
+
+  <div class="card"><h2>08 // Indodax (CCXT + API publik)</h2>
     <div class="row"><span>BTC/IDR ask</span><span>Rp1.406.029.000</span></div>
     <div class="row"><span>BTC/IDR bid</span><span>Rp1.405.606.000</span></div>
-    <div class="row"><span>BTC spread</span><span>0,0301%</span></div>
     <div class="row"><span>ETH/IDR ask</span><span>Rp40.819.000</span></div>
-    <div class="row"><span>ETH spread</span><span>0,2866%</span></div>
     <div class="row"><span>Gate BTC/USDT</span><span>$77.549,3</span></div>
     <div class="row"><span>Keranjang receh (&lt;Rp500)</span><span>169 pair</span></div>
   </div>
 
-  <div class="card"><h2>Market cap (CoinGecko)</h2>
+  <div class="card"><h2>09 // Market cap (CoinGecko)</h2>
     <div class="row"><span>BTC</span><span>$77.525 &nbsp;<span class="up">+0,90% naik</span></span></div>
     <div class="row"><span>ETH</span><span>$2.253 &nbsp;<span class="up">+0,64% naik</span></span></div>
     <div class="row"><span>SOL</span><span>$95,80 &nbsp;<span class="up">+0,92% naik</span></span></div>
@@ -48,31 +121,36 @@
     <div class="row"><span>BTC mcap</span><span>$1,56 triliun</span></div>
   </div>
 
-  <div class="card"><h2>Polymarket (read-only, market aktif)</h2>
+  <div class="card"><h2>10 // Polymarket + sinyal</h2>
     <p>5 market BTC aktif terpantau, contoh: “BTC $150k sebelum 31 Des 2026” YES 0,019 / NO 0,981.</p>
-    <p>DexScreener: 30 pair SOL ditemukan.</p>
-  </div>
-
-  <div class="card"><h2>Agen berita + social pulse</h2>
+    <div class="row"><span>DexScreener</span><span>30 pair SOL</span></div>
     <div class="row"><span>Skor sentimen berita</span><span class="warn">−3 (negatif)</span></div>
     <div class="row"><span>Social trending</span><span>ALGO, NEXT, PEPE, AUDUSD, AKAM</span></div>
-    <div class="row"><span>BTC ikut trending</span><span>Ya</span></div>
-    <p>Berita = filter risiko, bukan sinyal beli. Trending = sering jadi sinyal kontra (hype memuncak dekat puncak lokal).</p>
+    <p class="caption">Trending = sering jadi sinyal kontra (hype memuncak dekat puncak lokal).</p>
   </div>
 
-  <div class="card"><h2>Modal per venue (diputuskan user)</h2>
-    <div class="row"><span>Indodax</span><span>Rp50.000</span></div>
-    <div class="row"><span>Polymarket</span><span>~$3 USDC</span></div>
-    <div class="row"><span>Forex MT4/5</span><span>~$3 (akun cent)</span></div>
-    <div class="row"><span>Moomoo</span><span>~$3 (fractional)</span></div>
-    <div class="row"><span>Pump.fun</span><span>~0,03 SOL</span></div>
-    <div class="row"><span>Total</span><span><b>Rp250.000</b></span></div>
+  <div class="card"><h2>11 // Status 5 venue</h2>
+    <div class="venue">
+      <span>Indodax: demo jalan</span>
+      <span>Polymarket: demo jalan</span>
+      <span>Forex: akun demo dulu</span>
+      <span>Moomoo: paper dulu</span>
+      <span>Pump.fun: demo data</span>
+    </div>
+    <div class="row"><span>Total modal (bila live nanti)</span><span><b>Rp250.000</b></span></div>
+    <p class="caption">Payout: Indodax tetap di akun; Polymarket + Pump.fun ke Bitget Wallet; Forex + Moomoo ke SeaBank. Penarikan awal selalu manual.</p>
+  </div>
+
+  <div class="card"><h2>12 // Aturan gratis + keamanan</h2>
+    <p>Semua alat gratis (tanpa langganan): engine sendiri + CCXT + API publik. Tanpa Binance, tanpa platform berbayar.</p>
+    <p>Tidak ada API key, seed phrase, atau alamat wallet di halaman ini maupun di repo.</p>
+    <p class="caption">Demo dulu sampai berhasil; live hanya setelah parameter disetujui pemilik.</p>
   </div>
 </div>
 
 <footer>
-  Semua alat gratis (tanpa langganan): engine sendiri + CCXT + API publik. Space gratis ini hanya pajangan snapshot — mesin bot tidak jalan 24 jam dari sini, dan Space gratis bisa tidur saat tidak dipakai.<br>
-  Demo dulu sampai berhasil; live hanya setelah parameter disetujui. Tidak ada API key, seed phrase, atau alamat wallet di halaman ini.
+  Halaman ini tayang lewat GitHub Pages dari repo nusantaraaji40-arch/trading-bot (branch main). Ini pajangan demo — mesin bot tidak jalan 24 jam dari halaman ini.
 </footer>
+</div>
 </body>
 </html>
