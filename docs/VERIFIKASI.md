@@ -37,6 +37,14 @@ pemeriksaan di bawah — bukan janji "nol bug selamanya".
   Iterasi 1 Nov 2026 ~05:36 WIB: setiap pindaian dicatat ke riwayat
   append-only `btc_edge_history.jsonl`; run terbaru: 2 market, edge
   terbaik -0,001, NO_TRADE beruntun 1, saldo Rp50.000.
+- `dashboard/index.html` v3 (1 Nov 2026): 13 panel (tanpa JavaScript).
+  Panel metrik diperbarui ke hasil terverifikasi terbaru: posisi paper
+  Polymarket CLOSED via SL, P&L paper -Rp544, saldo paper efektif
+  Rp47.099 (panel lama sempat menulis posisi 10 YES @ 0,009 USDC —
+  sudah dikoreksi). Panel baru 13 memperkenalkan track Forex MT4/5
+  (demo dulu; broker demo belum dipilih: OANDA demo via REST API atau
+  MT5 via terminal + jembatan data). Parse HTML lolos, pindai secret
+  bersih.
 - `bot-engine/ccxt_adapter.py`: Indodax dan Gate teruji live pada data
   publik. Tokocrypto diblokir 451 dari egress VM. Binance dihapus dari
   rencana atas permintaan pemilik.

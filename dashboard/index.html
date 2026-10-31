@@ -35,7 +35,7 @@
 <body>
 <div class="wrap">
 <h1>Bot Trading Demo <span class="badge">PAPER / DEMO</span></h1>
-<p class="sub">Mesin paper trading multi-venue (Indodax, Polymarket, Forex, Moomoo, Pump.fun) — nol order nyata, nol uang asli. Snapshot run unified engine 1 Nov 2026, 03:20 WIB.</p>
+<p class="sub">Mesin paper trading multi-venue (Indodax, Polymarket, Forex, Moomoo, Pump.fun) — nol order nyata, nol uang asli. Snapshot run unified engine 1 Nov 2026, 03:20 WIB; panel metrik Polymarket dan panel Forex diperbarui 1 Nov 2026 (v3).</p>
 
 <div class="statusbar">
   <span class="pill">Mode: <b>PAPER</b></span>
@@ -43,6 +43,7 @@
   <span class="pill ok">Engine run: <b>6/6 modul ok</b></span>
   <span class="pill">Total modal demo: <b>Rp250.000</b></span>
   <span class="pill">Kill-switch: <b>15% / venue</b></span>
+  <span class="pill">Repo: <b>6 push / 21 file</b></span>
 </div>
 
 <div class="grid">
@@ -101,7 +102,10 @@
     <div class="row"><span>Paper beli BTC</span><span>Rp10.000 @ ask</span></div>
     <div class="row"><span>Sisa virtual Indodax</span><span>Rp40.000</span></div>
     <div class="row"><span>Polymarket paper (virtual)</span><span>Rp50.000</span></div>
-    <div class="row"><span>Posisi paper</span><span>10 YES @ 0,009 USDC</span></div>
+    <div class="row"><span>Posisi paper Polymarket</span><span class="warn">CLOSED via SL</span></div>
+    <div class="row"><span>Detail tutup</span><span>10 YES @ 0,013 → jual @ bid 0,010</span></div>
+    <div class="row"><span>P&amp;L paper Polymarket terealisasi</span><span class="down">−Rp544</span></div>
+    <div class="row"><span>Saldo paper efektif</span><span>Rp47.099</span></div>
     <p class="caption">Bukan klaim profit. ROI, win rate, dan Sharpe baru bermakna setelah riwayat demo terkumpul.</p>
   </div>
 
@@ -122,7 +126,7 @@
   </div>
 
   <div class="card"><h2>10 // Polymarket + sinyal</h2>
-    <p>5 market BTC aktif terpantau, contoh: “BTC $150k sebelum 31 Des 2026” YES 0,019 / NO 0,981.</p>
+    <p>Posisi paper Polymarket ditutup SL 05:44 WIB: bid 0,010 / ask 0,011 menyentuh SL 0,0123 → SELL_ALL 10 YES @ bid 0,010. Edge engine: NO_TRADE (edge terbaik −0,001).</p>
     <div class="row"><span>DexScreener</span><span>30 pair SOL</span></div>
     <div class="row"><span>Skor sentimen berita</span><span class="warn">−3 (negatif)</span></div>
     <div class="row"><span>Social trending</span><span>ALGO, NEXT, PEPE, AUDUSD, AKAM</span></div>
@@ -132,8 +136,8 @@
   <div class="card"><h2>11 // Status 5 venue</h2>
     <div class="venue">
       <span>Indodax: demo jalan</span>
-      <span>Polymarket: demo jalan</span>
-      <span>Forex: akun demo dulu</span>
+      <span>Polymarket: 1 posisi CLOSED (−Rp544)</span>
+      <span>Forex: persiapan demo (track berikutnya)</span>
       <span>Moomoo: paper dulu</span>
       <span>Pump.fun: demo data</span>
     </div>
@@ -143,13 +147,24 @@
 
   <div class="card"><h2>12 // Aturan gratis + keamanan</h2>
     <p>Semua alat gratis (tanpa langganan): engine sendiri + CCXT + API publik. Tanpa Binance, tanpa platform berbayar.</p>
+    <p>Konektor analis: NVIDIA + Bytez terhubung (kerja analis saja, bukan trading).</p>
     <p>Tidak ada API key, seed phrase, atau alamat wallet di halaman ini maupun di repo.</p>
     <p class="caption">Demo dulu sampai berhasil; live hanya setelah parameter disetujui pemilik.</p>
+  </div>
+
+  <div class="card"><h2>13 // Forex MT4/5 (track berikutnya)</h2>
+    <p>Demo dulu, tanpa uang asli. Broker demo belum dipilih — ini penentu jalur teknisnya.</p>
+    <div class="row"><span>Modal demo</span><span>Rp50.000</span></div>
+    <div class="row"><span>Kill-switch</span><span>15% (Rp7.500)</span></div>
+    <div class="row"><span>Jalur A: OANDA demo</span><span>REST API (paling mudah)</span></div>
+    <div class="row"><span>Jalur B: MT5</span><span>Terminal jalan + jembatan data</span></div>
+    <div class="row"><span>Payout (live nanti)</span><span>SeaBank, manual</span></div>
+    <p class="caption">Live nanti butuh akun cent/micro dengan min deposit rendah; demo tidak butuh deposit.</p>
   </div>
 </div>
 
 <footer>
-  Halaman ini tayang lewat GitHub Pages dari repo nusantaraaji40-arch/trading-bot (branch main). Ini pajangan demo — mesin bot tidak jalan 24 jam dari halaman ini.
+  Halaman ini tayang lewat GitHub Pages dari repo nusantaraaji40-arch/trading-bot (branch main, v3 — 1 Nov 2026). Ini pajangan demo — mesin bot tidak jalan 24 jam dari halaman ini.
 </footer>
 </div>
 </body>

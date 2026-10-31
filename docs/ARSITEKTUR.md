@@ -26,7 +26,7 @@ Stocktwits trending ─────────┘
 | `polymarket-bot/btc_edge_engine.py` | Mesin edge BTC | CLOB live | Edge = 1 - (YES ask + NO ask), ambang 0,01 |
 | `indodax-bot/indodax_paper.py` | Paper trading Indodax | API publik live | Demo jalan, saldo virtual Rp50.000 |
 | `indodax-live/live_run.py` | Live-run Indodax (check + live 4 gerbang) | CCXT privat (key dari environment) | Persiapan saja, nol order tanpa persetujuan |
-| `dashboard/index.html` | Snapshot dashboard statis | Simulasi internal (berlabel demo, bukan harga live) | Statis, buka di browser |
+| `dashboard/index.html` | Snapshot dashboard statis (v3, 13 panel) | Simulasi internal (berlabel demo, bukan harga live) | Statis, buka di browser |
 
 Catatan: `session.trust_env=True` wajib untuk CCXT di VM dengan egress
 proxy, kalau tidak koneksi gagal (SSL WRONG_VERSION_NUMBER).
