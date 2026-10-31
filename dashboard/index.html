@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bot Trading Demo — PAPER / DEMO (bukan live trading)</title>
+<style>
+  body { background:#0b0e14; color:#d7dce6; font-family: ui-monospace, Menlo, Consolas, monospace; margin:0; padding:24px; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  .sub { color:#8b93a7; font-size:13px; margin-bottom:20px; }
+  .badge { display:inline-block; background:#f59e0b; color:#111; font-weight:bold; padding:2px 8px; border-radius:4px; font-size:12px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px; }
+  .card { background:#121826; border:1px solid #232c44; border-radius:10px; padding:16px; }
+  .card h2 { font-size:14px; margin:0 0 10px; color:#7dd3fc; }
+  .row { display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dashed #232c44; font-size:13px; }
+  .row:last-child { border-bottom:0; }
+  .up { color:#34d399; } .down { color:#f87171; } .warn { color:#fbbf24; }
+  .decision { font-size:18px; font-weight:bold; }
+  footer { color:#8b93a7; font-size:12px; margin-top:24px; line-height:1.6; }
+</style>
+</head>
+<body>
+<h1>Bot Trading Demo <span class="badge">PAPER / DEMO</span></h1>
+<p class="sub">Snapshot hasil run unified engine (data publik live saat run) — 1 Nov 2026, 03:20 WIB. Bukan live trading, nol order nyata.</p>
+
+<div class="grid">
+  <div class="card"><h2>Keputusan engine</h2>
+    <p class="decision warn">NO_TRADE</p>
+    <p>Alasan: sentimen berita sangat negatif, jadi jeda trading; BTC trending bersamaan dengan berita negatif, hindari FOMO. Tren BTC 24 jam naik, tapi filter risiko mengalahkan tren.</p>
+    <p>Manajemen risiko: SL 5% / TP 10–15% / kill-switch 15% per venue (Rp7.500 dari Rp50.000).</p>
+  </div>
+
+  <div class="card"><h2>Indodax (CCXT + API publik)</h2>
+    <div class="row"><span>BTC/IDR ask</span><span>Rp1.406.029.000</span></div>
+    <div class="row"><span>BTC/IDR bid</span><span>Rp1.405.606.000</span></div>
+    <div class="row"><span>BTC spread</span><span>0,0301%</span></div>
+    <div class="row"><span>ETH/IDR ask</span><span>Rp40.819.000</span></div>
+    <div class="row"><span>ETH spread</span><span>0,2866%</span></div>
+    <div class="row"><span>Gate BTC/USDT</span><span>$77.549,3</span></div>
+    <div class="row"><span>Keranjang receh (&lt;Rp500)</span><span>169 pair</span></div>
+  </div>
+
+  <div class="card"><h2>Market cap (CoinGecko)</h2>
+    <div class="row"><span>BTC</span><span>$77.525 &nbsp;<span class="up">+0,90% naik</span></span></div>
+    <div class="row"><span>ETH</span><span>$2.253 &nbsp;<span class="up">+0,64% naik</span></span></div>
+    <div class="row"><span>SOL</span><span>$95,80 &nbsp;<span class="up">+0,92% naik</span></span></div>
+    <div class="row"><span>SHIB</span><span>$0,00000469 &nbsp;<span class="down">−0,84% turun</span></span></div>
+    <div class="row"><span>BTC mcap</span><span>$1,56 triliun</span></div>
+  </div>
+
+  <div class="card"><h2>Polymarket (read-only, market aktif)</h2>
+    <p>5 market BTC aktif terpantau, contoh: “BTC $150k sebelum 31 Des 2026” YES 0,019 / NO 0,981.</p>
+    <p>DexScreener: 30 pair SOL ditemukan.</p>
+  </div>
+
+  <div class="card"><h2>Agen berita + social pulse</h2>
+    <div class="row"><span>Skor sentimen berita</span><span class="warn">−3 (negatif)</span></div>
+    <div class="row"><span>Social trending</span><span>ALGO, NEXT, PEPE, AUDUSD, AKAM</span></div>
+    <div class="row"><span>BTC ikut trending</span><span>Ya</span></div>
+    <p>Berita = filter risiko, bukan sinyal beli. Trending = sering jadi sinyal kontra (hype memuncak dekat puncak lokal).</p>
+  </div>
+
+  <div class="card"><h2>Modal per venue (diputuskan user)</h2>
+    <div class="row"><span>Indodax</span><span>Rp50.000</span></div>
+    <div class="row"><span>Polymarket</span><span>~$3 USDC</span></div>
+    <div class="row"><span>Forex MT4/5</span><span>~$3 (akun cent)</span></div>
+    <div class="row"><span>Moomoo</span><span>~$3 (fractional)</span></div>
+    <div class="row"><span>Pump.fun</span><span>~0,03 SOL</span></div>
+    <div class="row"><span>Total</span><span><b>Rp250.000</b></span></div>
+  </div>
+</div>
+
+<footer>
+  Semua alat gratis (tanpa langganan): engine sendiri + CCXT + API publik. Space gratis ini hanya pajangan snapshot — mesin bot tidak jalan 24 jam dari sini, dan Space gratis bisa tidur saat tidak dipakai.<br>
+  Demo dulu sampai berhasil; live hanya setelah parameter disetujui. Tidak ada API key, seed phrase, atau alamat wallet di halaman ini.
+</footer>
+</body>
+</html>
