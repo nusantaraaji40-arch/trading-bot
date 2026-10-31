@@ -45,6 +45,17 @@ pemeriksaan di bawah — bukan janji "nol bug selamanya".
   (demo dulu; broker demo belum dipilih: OANDA demo via REST API atau
   MT5 via terminal + jembatan data). Parse HTML lolos, pindai secret
   bersih.
+- `forex-mt5/mt5_paper.py` (1 Nov 2026): modul paper Forex MT5 — jalur
+  MT5 dipilih pemilik. Data acuan harian gratis Frankfurter (ECB, tanpa
+  key): EURUSD + USD/IDR untuk konversi rupiah; BUKAN tick real-time
+  MT5, harga mid (spread/slippage belum dimodelkan). Run pertama:
+  kurs ECB 2026-10-30 (EURUSD 1,11721, USD/IDR 18.148) → OPEN paper
+  0,49 EUR senilai Rp10.000, sisa kas Rp40.000; SL 5% / TP 10%/15% /
+  kill-switch 15% seperti venue lain; riwayat append-only
+  `mt5_paper_history.jsonl`. `forex-mt5/MT5_BRIDGE.md` mendokumentasi
+  jembatan terminal nanti (ekspor CSV → paket Python MetaTrader5 →
+  HTTP lokal) dan syaratnya: terminal desktop yang tetap jalan
+  (MT5 mobile tidak bisa dijembatani).
 - `bot-engine/ccxt_adapter.py`: Indodax dan Gate teruji live pada data
   publik. Tokocrypto diblokir 451 dari egress VM. Binance dihapus dari
   rencana atas permintaan pemilik.
