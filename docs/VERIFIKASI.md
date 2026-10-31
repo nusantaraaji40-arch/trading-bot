@@ -20,6 +20,18 @@ pemeriksaan di bawah — bukan janji "nol bug selamanya".
   append-only `paper_history.jsonl` (ledger utama tetap berisi trade
   terbaru); run terbaru mencatat trade yang sama (10 YES @ 0,013 USDC,
   Rp2.357, sisa Rp47.643) sebagai entri riwayat pertama.
+- `polymarket-bot/paper_exit.py`: exit manager paper (TP bertangga:
+  TP1 +10% jual separuh, TP2 +15% jual seluruh sisa; SL -5% dan
+  kill-switch 15% jual seluruh sisa; prioritas kill-switch > SL >
+  TP2 > TP1; trigger ask-ke-ask agar spread ~7,7% tidak memicu SL
+  palsu, hasil jual dihitung di bid; book kosong = CANNOT_EXIT tanpa
+  harga tebakan; posisi CLOSED tidak dibangkitkan ledger lama; trade
+  baru menginisialisasi posisi baru otomatis). Run 1 Nov 2026 ~05:44
+  WIB di book live: bid 0,010 / ask 0,011 menyentuh SL 0,0123 →
+  SELL_ALL 10 lembar @ bid 0,010 = Rp1.813, P&L paper -Rp544, status
+  CLOSED; run ulang memastikan posisi tetap CLOSED. Tes
+  `tests/test_exit.py`: 13 tes lolos (10 decide_exit + 3 load_position);
+  `tests/test_risk_edge.py` tetap lolos (regresi).
 - `polymarket-bot/btc_edge_engine.py`: run 1 Nov 2026 ~05:07 WIB memindai
   2 market BTC, edge -0,001 keduanya → NO TRADE, saldo tetap Rp50.000.
   Iterasi 1 Nov 2026 ~05:36 WIB: setiap pindaian dicatat ke riwayat

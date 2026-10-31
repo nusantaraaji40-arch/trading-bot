@@ -70,6 +70,9 @@ python3 bot-engine/unified_engine.py
 - `polymarket-bot/paper_trade.py` dan `btc_edge_engine.py`: paper trading
   Polymarket di data Gamma + CLOB live, dan mesin edge
   (edge = 1 - (YES ask + NO ask), ambang 0,01).
+- `polymarket-bot/paper_exit.py`: exit manager paper — TP bertangga
+  (+10% jual separuh, +15% jual sisa), SL -5%, kill-switch 15%,
+  di harga CLOB live; tanpa order nyata.
 - `indodax-bot/indodax_paper.py`: paper trading Indodax di data publik
   live dengan saldo virtual Rp50.000.
 - `indodax-live/`: paket persiapan live-run Indodax (`live_run.py` mode

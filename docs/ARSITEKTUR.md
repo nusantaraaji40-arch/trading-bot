@@ -22,6 +22,7 @@ Stocktwits trending ─────────┘
 | `bot-engine/unified_engine.py` | 9 modul: Indodax, Polymarket, CoinGecko, DexScreener, berita, sosial, filter tren, risiko, eksekusi | API publik + CCXT | Run terakhir exit 0, 6/6 modul data ok |
 | `bot-engine/ccxt_adapter.py` | Adapter CCXT (Indodax + Gate) | CCXT, data publik | Teruji live pada data publik |
 | `polymarket-bot/paper_trade.py` | Paper trading Polymarket | Gamma + CLOB live | Demo jalan, saldo virtual Rp50.000 |
+| `polymarket-bot/paper_exit.py` | Exit manager paper: TP bertangga, SL, kill-switch | CLOB live + CoinGecko | 13 tes lolos; SL tereksekusi 1 Nov 2026 (paper -Rp544, CLOSED) |
 | `polymarket-bot/btc_edge_engine.py` | Mesin edge BTC | CLOB live | Edge = 1 - (YES ask + NO ask), ambang 0,01 |
 | `indodax-bot/indodax_paper.py` | Paper trading Indodax | API publik live | Demo jalan, saldo virtual Rp50.000 |
 | `indodax-live/live_run.py` | Live-run Indodax (check + live 4 gerbang) | CCXT privat (key dari environment) | Persiapan saja, nol order tanpa persetujuan |
