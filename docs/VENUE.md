@@ -27,6 +27,9 @@ Saldo demo semua venue memakai rupiah (Rp50.000 per venue); angka $/SOL di tabel
 - CCXT teruji live pada data publik (Indodax + Gate).
 - Sebelum live: cek minimum order per pair. Live memakai Trade API key
   dari website (bukan password di chat), trade-only.
+- Paket persiapan live ada di `indodax-live/` (runner + panduan). API
+  Indodax tidak bisa disambungkan langsung ke Muse (signed request),
+  jadi live-run dijalankan dari mesin pemegang key.
 - Binance TIDAK dipakai atas permintaan pemilik, dihapus dari rencana.
 
 ## 2. Polymarket

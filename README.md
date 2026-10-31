@@ -72,6 +72,10 @@ python3 bot-engine/unified_engine.py
   (edge = 1 - (YES ask + NO ask), ambang 0,01).
 - `indodax-bot/indodax_paper.py`: paper trading Indodax di data publik
   live dengan saldo virtual Rp50.000.
+- `indodax-live/`: paket persiapan live-run Indodax (`live_run.py` mode
+  check tanpa order + mode `--live` terkunci 4 gerbang, `params.example.json`,
+  `README_LIVE_RUN.md`). Tanpa key di dalam file; key dibaca dari environment
+  mesin pemegang key.
 - `dashboard/`: snapshot dashboard statis (gaya panel terminal: model
   Bayesian, Edge + Spread, eksekusi Stoikov, metrik bot, kurva P&L).
   Buka `dashboard/index.html` di browser, atau deploy sebagai Hugging
