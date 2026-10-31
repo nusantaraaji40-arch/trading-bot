@@ -21,7 +21,7 @@ Stocktwits trending ─────────┘
 | --- | --- | --- | --- |
 | `bot-engine/unified_engine.py` | 9 modul: Indodax, Polymarket, CoinGecko, DexScreener, berita, sosial, filter tren, risiko, eksekusi | API publik + CCXT | Run terakhir exit 0, 6/6 modul data ok |
 | `bot-engine/ccxt_adapter.py` | Adapter CCXT (Indodax + Gate) | CCXT, data publik | Teruji live pada data publik |
-| `polymarket-bot/paper_trade.py` | Paper trading Polymarket | Gamma + CLOB live | Demo jalan, saldo virtual 1000 USDC |
+| `polymarket-bot/paper_trade.py` | Paper trading Polymarket | Gamma + CLOB live | Demo jalan, saldo virtual Rp50.000 |
 | `polymarket-bot/btc_edge_engine.py` | Mesin edge BTC | CLOB live | Edge = 1 - (YES ask + NO ask), ambang 0,01 |
 | `indodax-bot/indodax_paper.py` | Paper trading Indodax | API publik live | Demo jalan, saldo virtual Rp50.000 |
 | `dashboard/index.html` | Snapshot dashboard statis | Simulasi internal (berlabel demo, bukan harga live) | Statis, buka di browser |

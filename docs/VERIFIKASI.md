@@ -13,7 +13,11 @@ pemeriksaan di bawah — bukan janji "nol bug selamanya".
 - `indodax-bot/indodax_paper.py`: demo jalan di data publik live, saldo
   virtual Rp50.000 (beli 0,00000711 BTC Rp10.000 di ask, sisa Rp40.000).
 - `polymarket-bot/paper_trade.py`: demo jalan di data Gamma + CLOB live,
-  saldo virtual 1000 USDC.
+  saldo virtual Rp50.000. Run 1 Nov 2026 ~05:07 WIB: beli 10 YES @ 0,013
+  USDC (market "Will Bitcoin dip to $75,000 in October?"), biaya
+  Rp2.357 pada kurs CoinGecko Rp18.129/USDC, sisa Rp47.643.
+- `polymarket-bot/btc_edge_engine.py`: run 1 Nov 2026 ~05:07 WIB memindai
+  2 market BTC, edge -0,001 keduanya → NO TRADE, saldo tetap Rp50.000.
 - `bot-engine/ccxt_adapter.py`: Indodax dan Gate teruji live pada data
   publik. Tokocrypto diblokir 451 dari egress VM. Binance dihapus dari
   rencana atas permintaan pemilik.

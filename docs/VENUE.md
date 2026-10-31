@@ -18,6 +18,8 @@ venue (= Rp7.500): hentikan venue saat rugi mencapai batas itu. Stop loss
 
 Penarikan awal selalu manual dan disetujui pemilik, bukan otomatis oleh bot.
 
+Saldo demo semua venue memakai rupiah (Rp50.000 per venue); angka $/SOL di tabel hanya konteks biaya live, bukan saldo demo.
+
 ## 1. Indodax (spot)
 
 - Demo sudah jalan di data publik live dengan saldo virtual Rp50.000
@@ -29,7 +31,7 @@ Penarikan awal selalu manual dan disetujui pemilik, bukan otomatis oleh bot.
 
 ## 2. Polymarket
 
-- Demo paper di harga live (Gamma + CLOB), saldo virtual 1000 USDC.
+- Demo paper di harga live (Gamma + CLOB), saldo virtual Rp50.000 (harga market USDC dikonversi kurs CoinGecko live).
 - Edge = 1 - (YES ask + NO ask), ambang 0,01. Hanya market aktif yang
   dipakai; market kedaluwarsa disaring.
 - Catatan kelayakan: biaya beli USDC + bridge bisa menggerus porsi besar

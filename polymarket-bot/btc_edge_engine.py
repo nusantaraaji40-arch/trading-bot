@@ -18,8 +18,10 @@ from datetime import datetime, timezone
 
 GAMMA = "https://gamma-api.polymarket.com/markets"
 CLOB_BOOK = "https://clob.polymarket.com/book"
+COINGECKO_USDC_IDR = ("https://api.coingecko.com/api/v3/simple/price"
+                       "?ids=usd-coin&vs_currencies=idr")
 OUT = "/home/hatch/workspace/polymarket-bot/btc_engine_state.json"
-VIRTUAL_START = 1000.0
+VIRTUAL_START_IDR = 50000.0
 EDGE_THRESHOLD = 0.01
 
 
@@ -41,6 +43,16 @@ def best_bid(book):
     if not bids:
         return None
     return max(float(b["price"]) for b in bids)
+
+
+def fetch_usdc_idr_rate():
+    """Kurs live USDC/IDR dari CoinGecko; None kalau gagal (tanpa tebakan)."""
+    try:
+        data = get_json(COINGECKO_USDC_IDR, timeout=20)
+        return float(data["usd-coin"]["idr"])
+    except Exception as e:
+        print(f"Kurs USDC/IDR gagal diambil ({e}); simulasi trade dilewati.")
+        return None
 
 
 def fetch_active_markets():
@@ -98,28 +110,39 @@ def main():
                          else "NO TRADE (no edge)"),
         })
     rows.sort(key=lambda r: r["edge"], reverse=True)
+    # Simulasi saldo dalam rupiah; harga market tetap USDC, konversi
+    # memakai kurs live CoinGecko saat run. Tanpa kurs, trade dilewati.
+    rate = fetch_usdc_idr_rate()
     trades = []
-    balance = VIRTUAL_START
+    balance = VIRTUAL_START_IDR
     for r in rows[:5]:
         if r["decision"] != "PAPER BUY BOTH":
             continue
-        # Simulasi: beli 10 YES + 10 NO di harga ask; nilai resolusi = 10.00
-        cost = 10 * r["yes_ask"] + 10 * r["no_ask"]
-        profit = round(10.0 - cost, 2)
-        trades.append({"market": r["question"], "cost": round(cost, 2),
-                       "expected_value_at_resolution": 10.0,
-                       "paper_profit_before_fees": profit})
-        balance = round(balance + profit, 2)
+        if rate is None:
+            continue
+        # Simulasi: beli 10 YES + 10 NO di harga ask; nilai resolusi = 10 USDC
+        cost_usdc = 10 * r["yes_ask"] + 10 * r["no_ask"]
+        cost_idr = cost_usdc * rate
+        expected_idr = 10.0 * rate
+        profit_idr = round(expected_idr - cost_idr, 2)
+        trades.append({"market": r["question"],
+                       "cost_usdc": round(cost_usdc, 4),
+                       "cost_idr": round(cost_idr, 2),
+                       "expected_value_at_resolution_idr": round(expected_idr, 2),
+                       "paper_profit_before_fees_idr": profit_idr})
+        balance = round(balance + profit_idr, 2)
     state = {
         "mode": "paper",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "virtual_balance_start": VIRTUAL_START,
-        "virtual_balance_now": balance,
+        "virtual_balance_start_idr": VIRTUAL_START_IDR,
+        "virtual_balance_now_idr": balance,
+        "usdc_idr_rate": rate,
         "edge_threshold": EDGE_THRESHOLD,
         "markets_scanned": len(rows),
         "markets": rows[:10],
         "paper_trades": trades,
-        "note": ("Bukan order nyata. Tidak ada USDC asli yang bergerak. "
+        "note": ("Bukan order nyata. Tidak ada USDC asli yang bergerak; "
+                 "saldo demo dalam rupiah. "
                  "Edge = 1 - (ask YES + ask NO); fee live tidak dihitung "
                  "di sini, jadi threshold 0.01 dipakai sebagai penyangga."),
     }
@@ -129,7 +152,7 @@ def main():
     for r in rows[:10]:
         print(f"- {r['question'][:70]} | YES ask {r['yes_ask']} | "
               f"NO ask {r['no_ask']} | edge {r['edge']} | {r['decision']}")
-    print(f"Paper trades: {len(trades)} | Saldo virtual: {balance} | {OUT}")
+    print(f"Paper trades: {len(trades)} | Saldo virtual: Rp{balance:,.0f} | {OUT}")
     return 0
 
 

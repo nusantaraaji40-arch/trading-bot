@@ -2,7 +2,11 @@
 
 Membaca data PUBLIK saja (Gamma + CLOB). Tidak ada wallet, tidak ada
 private key, tidak ada order nyata yang dikirim. Semua trade dicatat
-di ledger virtual bersaldo awal 1000 USDC (uang mainan).
+di ledger virtual bersaldo awal Rp50.000 (uang mainan, rupiah — sesuai
+aturan demo user). Harga market Polymarket tetap dalam USDC; konversi
+ke rupiah memakai kurs live CoinGecko (USDC/IDR) saat run, bukan kurs
+tebakan. Kalau kurs tidak bisa diambil, paper trade dilewati dan saldo
+tetap Rp50.000.
 """
 import json
 import sys
@@ -12,7 +16,9 @@ from datetime import datetime, timezone
 
 GAMMA = "https://gamma-api.polymarket.com/markets"
 CLOB_BOOK = "https://clob.polymarket.com/book"
-VIRTUAL_START = 1000.0
+COINGECKO_USDC_IDR = ("https://api.coingecko.com/api/v3/simple/price"
+                       "?ids=usd-coin&vs_currencies=idr")
+VIRTUAL_START_IDR = 50000.0
 LEDGER_PATH = "/home/hatch/workspace/polymarket-bot/paper_ledger.json"
 
 CRYPTO_WORDS = ("bitcoin", "btc", "ethereum", "eth", "solana", "sol",
@@ -49,6 +55,16 @@ def pick_daily_crypto_market():
     return candidates[0][1]
 
 
+def fetch_usdc_idr_rate():
+    """Kurs live USDC/IDR dari CoinGecko; None kalau gagal (tanpa tebakan)."""
+    try:
+        data = get_json(COINGECKO_USDC_IDR, timeout=20)
+        return float(data["usd-coin"]["idr"])
+    except Exception as e:
+        print(f"Kurs USDC/IDR gagal diambil ({e}); paper trade dilewati.")
+        return None
+
+
 def main():
     market = pick_daily_crypto_market()
     if not market:
@@ -77,29 +93,54 @@ def main():
     print(f"Best bid: {best_bid:.3f} | Best ask: {best_ask:.3f} "
           f"| Mid: {mid:.3f} | Spread: {best_ask - best_bid:.3f}")
 
-    # Simulasi paper trade: beli 10 shares YES di harga ask
+    # Simulasi paper trade: beli 10 shares YES di harga ask (USDC),
+    # dicatat dalam rupiah memakai kurs live CoinGecko saat run.
     shares = 10
-    cost = shares * best_ask
+    cost_usdc = shares * best_ask
+    rate = fetch_usdc_idr_rate()
+    if rate is None:
+        ledger = {
+            "mode": "paper",
+            "market": market.get("question"),
+            "token_id": token_id,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "virtual_balance_start_idr": VIRTUAL_START_IDR,
+            "paper_trade": None,
+            "trade_skipped_reason": "kurs USDC/IDR tidak tersedia",
+            "virtual_balance_after_idr": VIRTUAL_START_IDR,
+            "note": ("Bukan order nyata. Tidak ada USDC asli yang bergerak; "
+                     "saldo demo dalam rupiah."),
+        }
+        with open(LEDGER_PATH, "w") as f:
+            json.dump(ledger, f, indent=2)
+        print(f"Paper trade dilewati (tanpa kurs). Saldo virtual tetap: "
+              f"Rp{VIRTUAL_START_IDR:,.0f}. Ledger: {LEDGER_PATH}")
+        return 0
+    cost_idr = cost_usdc * rate
     ledger = {
         "mode": "paper",
         "market": market.get("question"),
         "token_id": token_id,
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "virtual_balance_start": VIRTUAL_START,
+        "virtual_balance_start_idr": VIRTUAL_START_IDR,
+        "usdc_idr_rate": rate,
         "paper_trade": {
             "side": "BUY YES",
             "shares": shares,
-            "price": best_ask,
-            "cost": round(cost, 2),
+            "price_usdc": best_ask,
+            "cost_usdc": round(cost_usdc, 4),
+            "cost_idr": round(cost_idr, 2),
         },
-        "virtual_balance_after": round(VIRTUAL_START - cost, 2),
-        "note": "Bukan order nyata. Tidak ada USDC asli yang bergerak.",
+        "virtual_balance_after_idr": round(VIRTUAL_START_IDR - cost_idr, 2),
+        "note": ("Bukan order nyata. Tidak ada USDC asli yang bergerak; "
+                 "saldo demo dalam rupiah."),
     }
     with open(LEDGER_PATH, "w") as f:
         json.dump(ledger, f, indent=2)
-    print(f"Paper trade tercatat: beli {shares} YES @ {best_ask:.3f} "
-          f"(biaya virtual {cost:.2f}). Saldo virtual tersisa: "
-          f"{VIRTUAL_START - cost:.2f}. Ledger: {LEDGER_PATH}")
+    print(f"Paper trade tercatat: beli {shares} YES @ {best_ask:.3f} USDC "
+          f"(biaya virtual Rp{cost_idr:,.0f}, kurs Rp{rate:,.0f}/USDC). "
+          f"Saldo virtual tersisa: Rp{VIRTUAL_START_IDR - cost_idr:,.0f}. "
+          f"Ledger: {LEDGER_PATH}")
     return 0
 
 
