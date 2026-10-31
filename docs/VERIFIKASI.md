@@ -16,8 +16,15 @@ pemeriksaan di bawah — bukan janji "nol bug selamanya".
   saldo virtual Rp50.000. Run 1 Nov 2026 ~05:07 WIB: beli 10 YES @ 0,013
   USDC (market "Will Bitcoin dip to $75,000 in October?"), biaya
   Rp2.357 pada kurs CoinGecko Rp18.129/USDC, sisa Rp47.643.
+  Iterasi 1 Nov 2026 ~05:36 WIB: setiap trade kini ditambah ke riwayat
+  append-only `paper_history.jsonl` (ledger utama tetap berisi trade
+  terbaru); run terbaru mencatat trade yang sama (10 YES @ 0,013 USDC,
+  Rp2.357, sisa Rp47.643) sebagai entri riwayat pertama.
 - `polymarket-bot/btc_edge_engine.py`: run 1 Nov 2026 ~05:07 WIB memindai
   2 market BTC, edge -0,001 keduanya → NO TRADE, saldo tetap Rp50.000.
+  Iterasi 1 Nov 2026 ~05:36 WIB: setiap pindaian dicatat ke riwayat
+  append-only `btc_edge_history.jsonl`; run terbaru: 2 market, edge
+  terbaik -0,001, NO_TRADE beruntun 1, saldo Rp50.000.
 - `bot-engine/ccxt_adapter.py`: Indodax dan Gate teruji live pada data
   publik. Tokocrypto diblokir 451 dari egress VM. Binance dihapus dari
   rencana atas permintaan pemilik.

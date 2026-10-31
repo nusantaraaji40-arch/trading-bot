@@ -6,7 +6,8 @@ di ledger virtual bersaldo awal Rp50.000 (uang mainan, rupiah — sesuai
 aturan demo user). Harga market Polymarket tetap dalam USDC; konversi
 ke rupiah memakai kurs live CoinGecko (USDC/IDR) saat run, bukan kurs
 tebakan. Kalau kurs tidak bisa diambil, paper trade dilewati dan saldo
-tetap Rp50.000.
+tetap Rp50.000. Setiap trade juga ditambah ke paper_history.jsonl
+(riwayat append-only; ledger utama tetap berisi trade terbaru saja).
 """
 import json
 import sys
@@ -20,6 +21,7 @@ COINGECKO_USDC_IDR = ("https://api.coingecko.com/api/v3/simple/price"
                        "?ids=usd-coin&vs_currencies=idr")
 VIRTUAL_START_IDR = 50000.0
 LEDGER_PATH = "/home/hatch/workspace/polymarket-bot/paper_ledger.json"
+HISTORY_PATH = "/home/hatch/workspace/polymarket-bot/paper_history.jsonl"
 
 CRYPTO_WORDS = ("bitcoin", "btc", "ethereum", "eth", "solana", "sol",
                 "crypto", "xrp", "dogecoin", "doge")
@@ -63,6 +65,16 @@ def fetch_usdc_idr_rate():
     except Exception as e:
         print(f"Kurs USDC/IDR gagal diambil ({e}); paper trade dilewati.")
         return None
+
+
+def append_history(record):
+    """Tambah satu baris riwayat (JSONL). Gagal tulis = peringatan saja,
+    tidak menggagalkan run."""
+    try:
+        with open(HISTORY_PATH, "a") as f:
+            f.write(json.dumps(record) + "\n")
+    except OSError as e:
+        print(f"Riwayat gagal ditambah ({e}); ledger terbaru tetap tersimpan.")
 
 
 def main():
@@ -137,10 +149,21 @@ def main():
     }
     with open(LEDGER_PATH, "w") as f:
         json.dump(ledger, f, indent=2)
+    append_history({
+        "timestamp": ledger["timestamp"],
+        "market": ledger["market"],
+        "side": "BUY YES",
+        "shares": shares,
+        "price_usdc": best_ask,
+        "cost_usdc": round(cost_usdc, 4),
+        "cost_idr": round(cost_idr, 2),
+        "usdc_idr_rate": rate,
+        "virtual_balance_after_idr": ledger["virtual_balance_after_idr"],
+    })
     print(f"Paper trade tercatat: beli {shares} YES @ {best_ask:.3f} USDC "
           f"(biaya virtual Rp{cost_idr:,.0f}, kurs Rp{rate:,.0f}/USDC). "
           f"Saldo virtual tersisa: Rp{VIRTUAL_START_IDR - cost_idr:,.0f}. "
-          f"Ledger: {LEDGER_PATH}")
+          f"Ledger: {LEDGER_PATH}. Riwayat ditambah ke {HISTORY_PATH}.")
     return 0
 
 

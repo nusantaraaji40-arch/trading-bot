@@ -9,6 +9,9 @@ itu perilaku yang benar, bukan bug.
 
 Threshold edge 0.01 dipakai sebagai asumsi kasar untuk menutup taker
 fee (besaran fee per-market di CLOB V2 tidak kami asumsikan nol).
+Setiap pindaian dicatat ke btc_edge_history.jsonl (riwayat append-only:
+jumlah market, edge terbaik, jumlah paper trade, saldo) sehingga tren
+edge dan rentetan NO_TRADE bisa dibaca dari run ke run.
 """
 import json
 import sys
@@ -21,6 +24,7 @@ CLOB_BOOK = "https://clob.polymarket.com/book"
 COINGECKO_USDC_IDR = ("https://api.coingecko.com/api/v3/simple/price"
                        "?ids=usd-coin&vs_currencies=idr")
 OUT = "/home/hatch/workspace/polymarket-bot/btc_engine_state.json"
+HISTORY_PATH = "/home/hatch/workspace/polymarket-bot/btc_edge_history.jsonl"
 VIRTUAL_START_IDR = 50000.0
 EDGE_THRESHOLD = 0.01
 
@@ -53,6 +57,35 @@ def fetch_usdc_idr_rate():
     except Exception as e:
         print(f"Kurs USDC/IDR gagal diambil ({e}); simulasi trade dilewati.")
         return None
+
+
+def append_history(record):
+    """Tambah satu baris riwayat (JSONL). Gagal tulis = peringatan saja."""
+    try:
+        with open(HISTORY_PATH, "a") as f:
+            f.write(json.dumps(record) + "\n")
+    except OSError as e:
+        print(f"Riwayat pindaian gagal ditambah ({e}).")
+
+
+def history_stats():
+    """(jumlah_pindaian, edge_terbaik, no_trade_beruntun) dari riwayat."""
+    try:
+        with open(HISTORY_PATH) as f:
+            rows = [json.loads(line) for line in f if line.strip()]
+    except (OSError, ValueError):
+        return 0, None, 0
+    if not rows:
+        return 0, None, 0
+    edges = [r["best_edge"] for r in rows if r.get("best_edge") is not None]
+    best = max(edges) if edges else None
+    streak = 0
+    for r in reversed(rows):
+        if r.get("paper_trades", 0) == 0:
+            streak += 1
+        else:
+            break
+    return len(rows), best, streak
 
 
 def fetch_active_markets():
@@ -148,11 +181,22 @@ def main():
     }
     with open(OUT, "w") as f:
         json.dump(state, f, indent=2)
+    best_edge = max((r["edge"] for r in rows), default=None)
+    append_history({
+        "timestamp": state["generated_at"],
+        "markets_scanned": len(rows),
+        "best_edge": best_edge,
+        "paper_trades": len(trades),
+        "virtual_balance_now_idr": balance,
+    })
     print(f"Market BTC jangka pendek terpindai: {len(rows)}")
     for r in rows[:10]:
         print(f"- {r['question'][:70]} | YES ask {r['yes_ask']} | "
               f"NO ask {r['no_ask']} | edge {r['edge']} | {r['decision']}")
     print(f"Paper trades: {len(trades)} | Saldo virtual: Rp{balance:,.0f} | {OUT}")
+    n, best_ever, streak = history_stats()
+    print(f"Riwayat pindaian: {n} entri | edge terbaik {best_ever} | "
+          f"NO_TRADE beruntun: {streak}")
     return 0
 
 
