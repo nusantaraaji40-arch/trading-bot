@@ -314,3 +314,35 @@ Sumber: https://github.com/bitquery/polymarket-api
 **Syarat pakai:** butuh Bitquery OAuth token (daftar akun Bitquery gratis + ambil access token). Jadi ini menambah dependensi pihak ketiga + token + rate limit Bitquery sendiri — berbeda dari API publik resmi Polymarket (Gamma/CLOB baca publik) yang tanpa key. Akun gratis ada, tapi limitnya wajib dicek sebelum dipakai di loop (README sendiri mengingatkan rate limiting + retry logic).
 
 **Verdict: PERTIMBANGKAN sebagai pelengkap data saja, bukan fondasi.** Alasan: (1) read-only — tidak menggantikan CLOB untuk eksekusi live; (2) pihak ketiga — datanya lewat GraphQL Bitquery, bukan sumber resmi; (3) komunitas kecil (9 bintang, 5 commit) — risiko maintenance; (4) stack kita Python stdlib — SDK ini Node.js, jadi pemakaiannya sebagai service terpisah atau referensi query GraphQL, bukan plug-in langsung. Yang paling berguna buat kita: streamResolvedQuestions (deteksi resolusi market lebih cepat daripada polling Gamma) dan getTradesByUser (pantau whale). Token Bitquery pun sama aturannya: hanya di environment mesin sendiri, tidak pernah di chat/repo.
+
+---
+
+## Tambahan: panduan Dwellir (sekunder, dibaca 1 Nov 2026)
+
+Sumber: https://www.dwellir.com/guides/polymarket-api-guide
+
+**Nilai:** panduan sekunder yang bagus dan konsisten dengan docs resmi (penulis mengklaim public reads dicek langsung ke live API). Poin-poin yang menambah dokumen ini:
+
+- Tabel key yang jelas: tanpa key (Gamma, Data API, harga/book CLOB, market WebSocket); kredensial CLOB turunan wallet (order, user WebSocket); Relayer API key (Settings → API Keys → Relayer, untuk operasi gasless); Builder API key (Settings → Builders, untuk membuat Deposit Wallet bagi user sendiri — BUKAN untuk trading akun sendiri); Polymarket US Key ID + Secret (portal polymarket.us/developer setelah KYC, exchange terpisah).
+- Geoblock: endpoint GET polymarket.com/api/geoblock mengembalikan blocked/country/region/ip; dicek dari server yang akan mengirim order (bukan laptop); bila blocked, pindahkan proses ke server di region yang diizinkan — ini pilihan deployment, BUKAN VPN untuk mengakali blokir.
+- Praktik order: butuh tick_size + neg_risk dari market; contoh client memakai PRIVATE_KEY dari environment + create_or_derive_api_key(); funder + signature_type (0 bare, 1 Proxy, 2 Safe; akun Deposit Wallet per 4 Mei 2026 memakai SecureClient SDK terpadu).
+- CLOB V2 (28 Apr 2026): kolateral pUSD, order signing berubah, legacy py-clob-client pensiun; panduan memakai py-clob-client-v2 tapi mencatat SDK terpadu polymarket-client yang direkomendasikan untuk proyek baru.
+- Catatan produk: panduan ini dari penyedia RPC Dwellir dan mempromosikan dashboard-nya (free Polygon key via DWELLIR_POLYGON_URL) untuk baca on-chain (saldo, settlement). RPC key itu terpisah dari kredensial Polymarket; API resmi (Gamma/CLOB/Data) tidak butuh RPC. Bila butuh baca on-chain, RPC publik lain juga bisa — tidak wajib Dwellir.
+- Pesan keamanan yang sejalan: "Keep the secret and passphrase on your server."
+
+**Verdict: PAKAI sebagai referensi sekunder** (di bawah docs resmi). Tidak ada yang bertentangan dengan dokumen ini; ia justru memperjelas bedanya Builder key vs kredensial CLOB — beda yang dikacaukan panduan Traderbotz di bawah.
+
+---
+
+## Tambahan: panduan Traderbotz (DITOLAK — jangan diikuti)
+
+Sumber: https://www.traderbotz.com/how-to/api-keys/polymarket/
+
+**Apa ini:** halaman how-to dari platform bot pihak ketiga (TraderBotz), bukan docs resmi. Isinya bermasalah dan bertentangan dengan docs resmi + aturan keamanan kita:
+
+1. **Mengacaukan Builder key dengan kredensial trading.** Halaman ini menyuruh ambil "Builder API key" dari portal developer lalu ditempel ke TraderBotz untuk trading. Padahal Builder key gunanya membuat Deposit Wallet bagi user sendiri, BUKAN trading akun sendiri di CLOB. Kredensial trading CLOB adalah triple turunan wallet (L1→L2), hal yang berbeda.
+2. **Klaim "satu key untuk US dan World" itu salah.** Polymarket US adalah exchange terpisah (CFTC) dengan Key ID + Secret sendiri (signature Ed25519) yang TIDAK berlaku di CLOB polymarket.com — ditegaskan panduan Dwellir dan docs resmi.
+3. **Menyuruh VPN untuk live world-scope.** Halaman ini menyatakan bot live world-scope butuh VPN (cloud VPN engine / WireGuard self-hosted). Itu persis pengakalan blokir geografis yang TIDAK kita lakukan. Jalur yang benar: cek geoblock dari server, dan bila blocked, jangan trading dari sana — bukan VPN.
+4. **Penitipan kredensial ke pihak ketiga.** Halaman ini menyuruh menempel key + secret ke TraderBotz ("stored encrypted"). Aturan kita: kredensial hanya di environment mesin/server sendiri, tidak pernah dititipkan ke platform pihak ketiga, chat, email, atau repo.
+
+**Verdict: LEWATI.** Jangan pakai TraderBotz, jangan tempel kredensial ke sana, jangan pakai VPN untuk trading world-scope. Halaman ini dicantumkan di sini sebagai contoh panduan pihak ketiga yang menyesatkan, supaya tidak ada yang mengikutinya diam-diam.
