@@ -110,6 +110,30 @@ pemeriksaan di bawah — bukan janji "nol bug selamanya".
   Polymarket saat ini berakhir 11:00 WIB 1 Nov 2026; setelah resolve,
   hasilnya dicek dari sumber resmi dan posisinya diselesaikan dengan
   bukti — perbaikan berikutnya, sebelum langkah live apa pun.
+- Modul paper Moomoo (1 Nov 2026): data Yahoo Finance harian AAPL
+  (Stooq diblokir dari VM — halaman JS-check — diperbaiki langsung
+  ke Yahoo); run pertama tutup 2026-10-30 $344,63 → OPEN 0,0016 AAPL
+  Rp10.000, kas Rp40.000; SL/TP/KS sama. Jembatan live: gateway OpenD
+  + akun (domisili dicek), payout SeaBank SWIFT saja, wire SGD 30.
+- Sweep backtest multi-venue (1 Nov 2026): 44.506 percobaan (Forex
+  26.950, saham 17.248, kripto-proxy 308) — Forex 92 param lolos
+  kriteria (cluster SL 2%/TP1 12-15%, DD 4,4%); saham 0 lolos (DD
+  19,5%); kripto-proxy 0 lolos (4 trade, noise; CoinGecko gratis
+  dibatasi 365 hari). Polymarket/Pump.fun tidak bisa backtest (tidak
+  ada deret historis gratis).
+- Validasi split-half Forex (1 Nov 2026): 92/92 param seleksi tetap
+  lolos di paruh validasi (100%) — sinyal lebih kuat dari sekadar
+  lolos sweep, TAPI bias data harian tetap: SL 2% intraday tidak
+  tertangkap (live bisa lebih buruk), spread/fee/swap belum
+  dimodelkan, P&L jumlah jendela (rata-rata ~Rp157/jendela validasi).
+  Belum "berhasil mutlak": butuh data intraday + biaya.
+- Status Polymarket pra-resolusi (1 Nov 2026 ~10:00 WIB): book CLOB
+  token YES kosong → CANNOT_EXIT (posisi dipertahankan, tanpa harga
+  tebakan). Market belum closed resmi (endDate 11:00 WIB), tapi harga
+  sampel BTC Oktober 2026 min $76.360 (tidak ada sampel di bawahnya)
+  dan pasar menghargai YES 0,05% — hasil faktual sangat condong NO
+  (YES = $0 saat resolusi resmi). Posisi TIDAK diselesaikan prematur;
+  diselesaikan setelah resolusi resmi dengan bukti.
 - `bot-engine/ccxt_adapter.py`: Indodax dan Gate teruji live pada data
   publik. Tokocrypto diblokir 451 dari egress VM. Binance dihapus dari
   rencana atas permintaan pemilik.
