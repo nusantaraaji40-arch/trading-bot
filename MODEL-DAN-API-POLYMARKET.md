@@ -269,3 +269,48 @@ Modul venue Polymarket di stack evaluasi (`EVALUASI-TOOLS-TRADING-AGENT.md`) mem
 4. **Harga dan ketersediaan GPT-6 di Google Cloud:** saat pengecekan sekunder 27 Oktober 2026, belum ada harga publik dan akses masih private preview (formulir minat tidak menjamin akses).
 5. **Detail lisensi per checkpoint:** tabel bagian 4 memakai rangkuman sekunder — selalu baca file lisensi checkpoint yang diunduh sebelum dipakai komersial.
 6. **Session keys Polymarket:** hanya disebut sebagai opsi lanjutan dari quickstart resmi; detail implementasinya belum didalami di dokumen ini.
+
+---
+
+## Tambahan: API Polymarket dari docs resmi (dibaca 1 Nov 2026)
+
+Sumber: https://docs.polymarket.com/getting-started/api dan https://docs.polymarket.com/api-reference/predictions/overview
+
+### Daftar API (host)
+
+| API | Host | Fungsi | Butuh key? |
+|---|---|---|---|
+| Gamma | gamma-api.polymarket.com | Cari event/market + metadata | Tidak (publik) |
+| CLOB | clob.polymarket.com | State market live, pasang/kelola order | Ya, untuk order privat |
+| Data API | data-api.polymarket.com | Aktivitas akun & market setelah trading (v2: cursor pagination + envelope respons bersama) | Tidak untuk baca publik |
+| Relayer | relayer-v2.polymarket.com | Kirim transaksi wallet yang didukung TANPA harus memegang POL untuk gas | — |
+| WebSocket | — | Stream realtime: market, account, sports, RFQ events | Channel market publik tanpa key; channel akun butuh kredensial L2 |
+| Bridge | bridge.polymarket.com | Isi dana & tarik dana pakai aset yang didukung | — |
+
+### Yang dikonfirmasi ulang dari docs resmi
+
+- Auth tetap dua lapis: L1 (wallet tanda tangan EIP-712 → buat/turunkan kredensial) + L2 (HMAC-SHA256, header POLY_ADDRESS, POLY_SIGNATURE, POLY_TIMESTAMP, POLY_API_KEY, POLY_PASSPHRASE). Order memakai L2 + tanda tangan wallet terpisah.
+- Docs menyarankan pakai SDK resmi bila runtime didukung; integrasi langsung (REST/WebSocket mentah) dipakai bila runtime tidak didukung SDK, butuh kontrol penuh atas signing/header/retry, atau endpoint belum ada di SDK.
+- Sebelum integrasi, docs mengingatkan dua hal: (1) rate limit per service/endpoint — wajib dicek, (2) geographic restrictions — cek di mana order placement tersedia (pengguna Indonesia memakai jalur internasional; tanpa VPN untuk mengakali blokir).
+
+### Kaitannya dengan persiapan bot kita
+
+- Demo/paper saat ini sudah benar jalurnya: Gamma + baca CLOB publik (tanpa key).
+- Live nanti: kredensial L2 dari wallet khusus bot sendiri (bukan key temuan), funding lewat Bridge (cek kolateral saat itu: USDC vs pUSD), Relayer sebagai opsi bila tidak mau pegang POL untuk gas, WebSocket sebagai pengganti polling untuk harga/book realtime (keputusan lebih cepat), Data API v2 untuk posisi/riwayat.
+- Detail nama channel WebSocket tidak tampil di teks kedua halaman ini — hanya kategorinya (market, account, sports, RFQ). Bila modul WebSocket dibangun, baca halaman CLOB WebSocket docs secara khusus.
+
+---
+
+## Tambahan: repo pihak ketiga bitquery/polymarket-api (dibaca 1 Nov 2026)
+
+Sumber: https://github.com/bitquery/polymarket-api
+
+**Apa ini (dan apa bukan):** SDK Node.js (npm `polymarket-api`) dari Bitquery untuk menarik DATA Polymarket lewat GraphQL Bitquery — BUKAN API resmi Polymarket dan BUKAN SDK resmi (yang resmi: `polymarket-client` Python / `@polymarket/client` TypeScript). Judulnya "polymarket-api" sehingga mudah dikira resmi — ini contoh persis soal judul vs isi.
+
+**Fakta repo (terverifikasi dari halaman GitHub):** publik, tidak diarsipkan, bukan fork; 9 bintang, 6 fork, 5 commit, dibuat 20 Nov 2025; lisensi ISC; JavaScript/Node.js (TypeScript-ready).
+
+**Fungsi (hanya baca data, TIDAK bisa order):** query + stream (WebSocket) untuk: market/question baru, prediksi yang sudah resolved, position splits, payout per alamat, semua trade, trade per token, trade per user. Cocok untuk: discovery market baru, tracking resolusi, monitoring trade user tertentu (whale), payout tracking.
+
+**Syarat pakai:** butuh Bitquery OAuth token (daftar akun Bitquery gratis + ambil access token). Jadi ini menambah dependensi pihak ketiga + token + rate limit Bitquery sendiri — berbeda dari API publik resmi Polymarket (Gamma/CLOB baca publik) yang tanpa key. Akun gratis ada, tapi limitnya wajib dicek sebelum dipakai di loop (README sendiri mengingatkan rate limiting + retry logic).
+
+**Verdict: PERTIMBANGKAN sebagai pelengkap data saja, bukan fondasi.** Alasan: (1) read-only — tidak menggantikan CLOB untuk eksekusi live; (2) pihak ketiga — datanya lewat GraphQL Bitquery, bukan sumber resmi; (3) komunitas kecil (9 bintang, 5 commit) — risiko maintenance; (4) stack kita Python stdlib — SDK ini Node.js, jadi pemakaiannya sebagai service terpisah atau referensi query GraphQL, bukan plug-in langsung. Yang paling berguna buat kita: streamResolvedQuestions (deteksi resolusi market lebih cepat daripada polling Gamma) dan getTradesByUser (pantau whale). Token Bitquery pun sama aturannya: hanya di environment mesin sendiri, tidak pernah di chat/repo.
