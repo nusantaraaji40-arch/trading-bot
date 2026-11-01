@@ -9,8 +9,8 @@ Track saham AS/global ke-4. Demo dulu, tanpa uang asli, tanpa akun.
   dicoba dulu tapi diblokir dari VM ini: mengembalikan halaman
   JS-check, bukan CSV.) Bukan data real-time Moomoo; komisi/fee live
   belum dimodelkan.
-- Aturan demo sama seperti venue lain: modal virtual Rp50.000, trade
-  pertama Rp10.000, SL 5%, TP 10%/15%, kill-switch 15%.
+- Aturan demo sama seperti venue lain: modal virtual Rp25.000, trade
+  pertama Rp5.000, SL 5%, TP 10%/15%, kill-switch 15%.
 - Kalau data gagal diambil, trade dilewati dan saldo tetap (tidak ada
   harga tebakan).
 
@@ -24,7 +24,7 @@ Track saham AS/global ke-4. Demo dulu, tanpa uang asli, tanpa akun.
   Singapura — dicek saat daftar, jangan diasumsikan lolos.
 - Penarikan profit ke SeaBank SAJA via SWIFT (keputusan pemilik).
   Biaya wire Moomoo sekitar SGD 30 (biaya admin, bukan pajak) — jauh
-  lebih besar dari modal Rp50.000, jadi JANGAN tarik sebelum profit
+  lebih besar dari modal Rp25.000, jadi JANGAN tarik sebelum profit
   jauh lebih besar. SeaBank menerima SWIFT (kode SSPIIDJAXXX, 1–3 hari
   kerja); biaya masuk SeaBank yang persis belum terverifikasi —
   konfirmasi ke SeaBank sebelum penarikan pertama.

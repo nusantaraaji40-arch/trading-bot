@@ -1,10 +1,10 @@
 """Engine demo v1 — Indodax spot (PAPER ONLY).
 
 Membaca data PUBLIK saja (indodax.com/api). Tidak ada login, tidak ada
-API key, tidak ada order nyata. Saldo virtual Rp50.000 dipakai supaya
-demo mencerminkan modal live yang direncanakan user (Rp50.000).
+API key, tidak ada order nyata. Saldo virtual Rp25.000 dipakai supaya
+demo mencerminkan modal live yang direncanakan user (Rp25.000).
 
-Strategi v0 di sini murni mekanik demo: beli BTC senilai Rp10.000 di
+Strategi v0 di sini murni mekanik demo: beli BTC senilai Rp5.000 di
 harga ask terbaik, catat di ledger virtual. Bukan rekomendasi strategi.
 Minimum order per pair di live wajib dicek ke dokumentasi/market
 sebelum live — demo ini tidak mengasumsikannya.
@@ -15,8 +15,8 @@ import urllib.request
 from datetime import datetime, timezone
 
 API = "https://indodax.com/api"
-VIRTUAL_START = 50000.0
-BUY_IDR = 10000.0
+VIRTUAL_START = 25000.0
+BUY_IDR = 5000.0
 LEDGER_PATH = "/home/hatch/workspace/indodax-bot/paper_ledger.json"
 HISTORY_PATH = "/home/hatch/workspace/indodax-bot/indodax_history.jsonl"
 POSITION_PATH = "/home/hatch/workspace/indodax-bot/indodax_position.json"
@@ -93,7 +93,7 @@ def main():
               f"indodax_exit.py dulu supaya posisi lama tercatat.")
         return 0
 
-    # Paper trade: beli BTC Rp10.000 di harga ask
+    # Paper trade: beli BTC Rp5.000 di harga ask
     btc = btc_row
     btc_bought = BUY_IDR / btc["ask"]
     ledger = {

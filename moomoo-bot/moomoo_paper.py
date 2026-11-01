@@ -8,8 +8,8 @@ diblokir dari VM ini: mengembalikan halaman JS-check, bukan CSV.)
 Bukan data real-time Moomoo, dan komisi/fee live belum dimodelkan.
 
 Aturan demo (sama seperti venue lain, dalam rupiah):
-  modal virtual Rp50.000, trade pertama Rp10.000, SL 5%, TP 10%/15%,
-  kill-switch 15% (lantai Rp42.500).
+  modal virtual Rp25.000, trade pertama Rp5.000, SL 5%, TP 10%/15%,
+  kill-switch 15% (lantai Rp21.250).
 Kurs: USD/IDR live Frankfurter saat run; kalau data gagal diambil,
 trade dilewati dan saldo tetap (tidak ada harga tebakan).
 Nol order nyata; tidak ada akun/gateway di modul ini.
@@ -24,8 +24,8 @@ LEDGER_PATH = os.path.join(BASE_DIR, "moomoo_ledger.json")
 POSITION_PATH = os.path.join(BASE_DIR, "moomoo_position.json")
 HISTORY_PATH = os.path.join(BASE_DIR, "moomoo_paper_history.jsonl")
 
-VIRTUAL_START_IDR = 50000.0
-FIRST_TRADE_IDR = 10000.0
+VIRTUAL_START_IDR = 25000.0
+FIRST_TRADE_IDR = 5000.0
 SYMBOL = "AAPL"
 SL_PCT = 0.05
 TP1_PCT = 0.10

@@ -25,7 +25,7 @@ COINGECKO_USDC_IDR = ("https://api.coingecko.com/api/v3/simple/price"
                        "?ids=usd-coin&vs_currencies=idr")
 OUT = "/home/hatch/workspace/polymarket-bot/btc_engine_state.json"
 HISTORY_PATH = "/home/hatch/workspace/polymarket-bot/btc_edge_history.jsonl"
-VIRTUAL_START_IDR = 50000.0
+VIRTUAL_START_IDR = 25000.0
 EDGE_THRESHOLD = 0.01
 
 

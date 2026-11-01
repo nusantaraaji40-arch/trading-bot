@@ -9,8 +9,8 @@ gratis untuk keduanya; demonya adalah modul paper live (harga live,
 bukan backtest).
 
 Mekanik strategi SAMA PERSIS dengan forex-mt5/mt5_backtest.py
-(simulate): trade berurutan, modal virtual Rp50.000 per jendela,
-trade Rp10.000, TP1 jual separuh, TP2/SL/Kill-switch jual sisa,
+(simulate): trade berurutan, modal virtual Rp25.000 per jendela,
+trade Rp5.000, TP1 jual separuh, TP2/SL/Kill-switch jual sisa,
 TIME_EXIT menutup posisi terbuka di akhir jendela.
 Jendela walk-forward: latih 250 hari bursa, uji 60 hari, geser 60 hari.
 Grid: SL {2,3,4,5,6,7,8}% x TP1 {3,5,7,10,12,15}% x TP2 {6,10,15,20,25}%
@@ -31,8 +31,8 @@ from datetime import datetime, timezone
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RESULT_PATH = os.path.join(BASE_DIR, "sweep_backtest_result.json")
 
-CASH_START = 50000.0
-TRADE_IDR = 10000.0
+CASH_START = 25000.0
+TRADE_IDR = 5000.0
 KS_FLOOR = CASH_START * 0.85
 TRAIN_DAYS = 250
 TEST_DAYS = 60

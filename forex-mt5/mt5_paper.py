@@ -7,8 +7,8 @@ sampai jembatan terminal MT5 hidup — lihat MT5_BRIDGE.md. Bukan tick
 real-time MT5, dan spread/slippage live belum dimodelkan (harga mid).
 
 Aturan demo (sama seperti venue lain, dalam rupiah):
-  modal virtual Rp50.000, trade pertama Rp10.000, SL 5%, TP 10%/15%,
-  kill-switch 15% dari total modal (lantai Rp42.500).
+  modal virtual Rp25.000, trade pertama Rp5.000, SL 5%, TP 10%/15%,
+  kill-switch 15% dari total modal (lantai Rp21.250).
 Aturan kurs: harga non-IDR dikonversi ke rupiah memakai kurs live saat
 run (Frankfurter USD/IDR); kalau kurs gagal diambil, paper trade
 dilewati dan saldo tetap (tidak ada kurs tebakan).
@@ -24,8 +24,8 @@ LEDGER_PATH = os.path.join(BASE_DIR, "mt5_ledger.json")
 POSITION_PATH = os.path.join(BASE_DIR, "mt5_position.json")
 HISTORY_PATH = os.path.join(BASE_DIR, "mt5_paper_history.jsonl")
 
-VIRTUAL_START_IDR = 50000.0
-FIRST_TRADE_IDR = 10000.0
+VIRTUAL_START_IDR = 25000.0
+FIRST_TRADE_IDR = 5000.0
 PAIR = "EURUSD"
 SL_PCT = 0.05
 TP1_PCT = 0.10

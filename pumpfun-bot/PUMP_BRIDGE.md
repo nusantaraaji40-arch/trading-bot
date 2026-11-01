@@ -9,10 +9,10 @@ Track ke-5. Demo dulu, tanpa uang asli, tanpa wallet.
   apa-apa: yang dipakai hanya harga, likuiditas, dan volume publik.
 - Filter kejujuran: hanya pair Pump.fun (dexId pumpfun/pumpswap) dengan
   likuiditas >= $10.000 dan volume 24 jam >= $5.000 yang boleh dibeli
-  paper. Token meme tipis = slippage mematikan di ukuran Rp10.000
+  paper. Token meme tipis = slippage mematikan di ukuran Rp5.000
   (~$0,55); kalau tidak ada yang lolos, keputusannya NO_TRADE.
-- Aturan demo sama seperti venue lain: modal virtual Rp50.000, trade
-  pertama Rp10.000, SL 5%, TP 10%/15%, kill-switch 15%.
+- Aturan demo sama seperti venue lain: modal virtual Rp25.000, trade
+  pertama Rp5.000, SL 5%, TP 10%/15%, kill-switch 15%.
 - Peringatan khas meme: token bisa rug / jatuh ke nol dalam menit.
   Paper tidak memodelkan rug, pajak jual-beli, dan prioritas fee Solana.
 

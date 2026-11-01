@@ -9,7 +9,7 @@ def edge(yes_ask, no_ask):
     return 1 - (yes_ask + no_ask)
 
 
-def kill_switch_terpicu(rugi, modal=50000):
+def kill_switch_terpicu(rugi, modal=25000):
     return rugi >= 0.15 * modal
 
 
@@ -26,9 +26,9 @@ def main():
     assert abs(edge(0.501, 0.500) - (-0.001)) < 1e-9
     assert edge(0.490, 0.490) > 0.01  # 0,02 -> kandidat
     assert not edge(0.501, 0.500) >= 0.01
-    # Kill-switch 15% dari Rp50.000 = Rp7.500.
-    assert kill_switch_terpicu(7500) is True
-    assert kill_switch_terpicu(7499) is False
+    # Kill-switch 15% dari Rp25.000 = Rp3.750.
+    assert kill_switch_terpicu(3750) is True
+    assert kill_switch_terpicu(3749) is False
     # SL 5% dan TP 10%.
     assert cek_sl(950000, 1000000) is True
     assert cek_sl(950001, 1000000) is False

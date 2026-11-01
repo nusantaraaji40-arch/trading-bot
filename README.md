@@ -16,7 +16,7 @@ kecil setelah parameter disetujui pemiliknya.
 
 ## Urutan venue
 
-1. Indodax (spot; demo dulu, lalu live Rp50.000)
+1. Indodax (spot; demo dulu, lalu live Rp25.000)
 2. Polymarket (demo di harga live; live kecil setelah Indodax)
 3. Forex MT4/5 (akun demo dulu, lalu live micro/cent)
 4. Moomoo (saham AS/global via OpenAPI; paper trading dulu)
@@ -24,8 +24,8 @@ kecil setelah parameter disetujui pemiliknya.
 
 ## Modal dan risiko
 
-- Modal per venue: Rp50.000. Total 5 venue: Rp250.000.
-- Kill-switch 15% per venue (= Rp7.500): hentikan venue saat rugi mencapai
+- Modal per venue: Rp25.000. Total 5 venue: Rp125.000.
+- Kill-switch 15% per venue (= Rp3.750): hentikan venue saat rugi mencapai
   batas itu.
 - Filter bawaan engine: stop loss 5%, take profit 10-15%, hanya beli saat
   tren 24 jam naik, dan blokir trading saat skor berita negatif.
@@ -74,7 +74,7 @@ python3 bot-engine/unified_engine.py
   (+10% jual separuh, +15% jual sisa), SL -5%, kill-switch 15%,
   di harga CLOB live; tanpa order nyata.
 - `indodax-bot/indodax_paper.py`: paper trading Indodax di data publik
-  live dengan saldo virtual Rp50.000.
+  live dengan saldo virtual Rp25.000.
 - `indodax-live/`: paket persiapan live-run Indodax (`live_run.py` mode
   check tanpa order + mode `--live` terkunci 4 gerbang, `params.example.json`,
   `README_LIVE_RUN.md`). Tanpa key di dalam file; key dibaca dari environment

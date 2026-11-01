@@ -37,8 +37,8 @@ SL = 0.05            # stop loss per trade
 TP_LOW = 0.10        # take profit bawah
 TP_HIGH = 0.15       # take profit atas
 KILL_SWITCH = 0.15   # berhenti bila modal turun 15%
-VIRTUAL_BALANCE = 50000.0
-PAPER_TRADE_IDR = 10000.0
+VIRTUAL_BALANCE = 25000.0
+PAPER_TRADE_IDR = 5000.0
 
 UA = {"User-Agent": "muse-unified-engine/1.0"}
 

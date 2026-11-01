@@ -51,7 +51,7 @@ LEDGER_PATH = os.path.join(WORKSPACE, "paper_ledger.json")
 POSITION_PATH = os.path.join(WORKSPACE, "paper_position.json")
 HISTORY_PATH = os.path.join(WORKSPACE, "paper_history.jsonl")
 
-START_IDR = 50000.0
+START_IDR = 25000.0
 SL_PCT = 5.0
 TP1_PCT = 10.0
 TP2_PCT = 15.0

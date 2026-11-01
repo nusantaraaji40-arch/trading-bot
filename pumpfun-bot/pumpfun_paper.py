@@ -6,15 +6,15 @@ Demo track Pump.fun (ke-5) memakai data publik gratis DexScreener
 menghalangi apa-apa). Live Pump.fun nanti memang di Solana, tapi modul
 paper ini tidak terhubung ke chain mana pun.
 
-Filter kejujuran untuk ukuran demo Rp50.000 (~$3): hanya pair Pump.fun
+Filter kejujuran untuk ukuran demo Rp25.000 (~$1,38): hanya pair Pump.fun
 (dexId pumpfun/pumpswap) dengan likuiditas >= $10.000 dan volume 24 jam
 >= $5.000 yang boleh dibeli paper. Token meme tipis = slippage mematikan
 di ukuran sekecil ini; kalau tidak ada yang lolos, keputusannya NO_TRADE
 (bukan beli asal-asalan).
 
 Aturan demo (sama seperti venue lain, dalam rupiah):
-  modal virtual Rp50.000, trade pertama Rp10.000, SL 5%, TP 10%/15%,
-  kill-switch 15% (lantai Rp42.500).
+  modal virtual Rp25.000, trade pertama Rp5.000, SL 5%, TP 10%/15%,
+  kill-switch 15% (lantai Rp21.250).
 Kurs: USD/IDR live Frankfurter saat run; kalau kurs/data gagal
 diambil, trade dilewati dan saldo tetap (tidak ada harga tebakan).
 Nol order nyata; tidak ada wallet/keypair di modul ini.
@@ -29,8 +29,8 @@ LEDGER_PATH = os.path.join(BASE_DIR, "pumpfun_ledger.json")
 POSITION_PATH = os.path.join(BASE_DIR, "pumpfun_position.json")
 HISTORY_PATH = os.path.join(BASE_DIR, "pumpfun_paper_history.jsonl")
 
-VIRTUAL_START_IDR = 50000.0
-FIRST_TRADE_IDR = 10000.0
+VIRTUAL_START_IDR = 25000.0
+FIRST_TRADE_IDR = 5000.0
 SL_PCT = 0.05
 TP1_PCT = 0.10
 TP2_PCT = 0.15

@@ -26,8 +26,8 @@ START = "2025-01-01"
 END = "2026-10-30"
 URL = (f"https://api.frankfurter.app/{START}..{END}"
        "?from=USD&to=EUR,IDR")
-CASH_START = 50000.0
-TRADE_IDR = 10000.0
+CASH_START = 25000.0
+TRADE_IDR = 5000.0
 KS_FLOOR = CASH_START * 0.85
 FIXED = (0.05, 0.10, 0.15)
 GRID_SL = (0.03, 0.05, 0.07)

@@ -3,7 +3,7 @@
 
 Pasangan dari paper_trade.py: TP bertangga (TP1 +10% jual separuh,
 TP2 +15% jual sisa), SL -5%, kill-switch 15% dari total modal virtual
-(lantai Rp42.500), prioritas kill-switch > SL > TP2 > TP1.
+(lantai Rp21.250), prioritas kill-switch > SL > TP2 > TP1.
 Trigger diukur dari harga bid terhadap harga ask entry (spread BTC/IDR
 sangat kecil, ~0,007%, jadi tidak ada risiko pemicu SL palsu seperti di
 Polymarket); hasil jual dihitung di bid. Ticker gagal dibaca =
@@ -23,7 +23,7 @@ LEDGER_PATH = os.path.join(WORKSPACE, "paper_ledger.json")
 POSITION_PATH = os.path.join(WORKSPACE, "indodax_position.json")
 HISTORY_PATH = os.path.join(WORKSPACE, "indodax_history.jsonl")
 
-VIRTUAL_START_IDR = 50000.0
+VIRTUAL_START_IDR = 25000.0
 SL_PCT = 0.05
 TP1_PCT = 0.10
 TP2_PCT = 0.15

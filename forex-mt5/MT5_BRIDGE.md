@@ -10,8 +10,8 @@ bagaimana terminal MT5 yang asli disambungkan nanti.
   (referensi ECB, tanpa key): EURUSD + USD/IDR untuk konversi rupiah.
 - Ini BUKAN tick real-time MT5. Harga yang dipakai harga mid harian;
   spread, slippage, dan swap live belum dimodelkan.
-- Aturan demo sama seperti venue lain: modal virtual Rp50.000, trade
-  pertama Rp10.000, SL 5%, TP 10%/15%, kill-switch 15% (lantai Rp42.500).
+- Aturan demo sama seperti venue lain: modal virtual Rp25.000, trade
+  pertama Rp5.000, SL 5%, TP 10%/15%, kill-switch 15% (lantai Rp21.250).
 - Nol order nyata. Modul ini tidak terhubung ke terminal atau broker.
 
 ## Yang disiapkan pemilik (terminal MT5)
@@ -43,7 +43,7 @@ kalau butuh tick real-time penuh.
 
 ## Live nanti (belum mulai, terkunci seperti venue lain)
 
-- Akun live wajib cent/micro dengan min deposit rendah (modal Rp50.000
+- Akun live wajib cent/micro dengan min deposit rendah (modal Rp25.000
   ≈ $3) — broker yang min depositnya di atas itu tidak layak.
 - Kriteria broker (keputusan pemilik): mendukung penarikan ke SeaBank,
   dan kalau bisa penarikan USDT (TRC20/ERC20) ke Bitget Wallet.

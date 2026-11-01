@@ -2,7 +2,7 @@
 
 Membaca data PUBLIK saja (Gamma + CLOB). Tidak ada wallet, tidak ada
 private key, tidak ada order nyata yang dikirim. Semua trade dicatat
-di ledger virtual bersaldo awal Rp50.000 (uang mainan, rupiah — sesuai
+di ledger virtual bersaldo awal Rp25.000 (uang mainan, rupiah — sesuai
 aturan demo user). Harga market Polymarket tetap dalam USDC; konversi
 ke rupiah memakai kurs live CoinGecko (USDC/IDR) saat run, bukan kurs
 tebakan. Kalau kurs tidak bisa diambil, paper trade dilewati dan saldo
@@ -19,7 +19,7 @@ GAMMA = "https://gamma-api.polymarket.com/markets"
 CLOB_BOOK = "https://clob.polymarket.com/book"
 COINGECKO_USDC_IDR = ("https://api.coingecko.com/api/v3/simple/price"
                        "?ids=usd-coin&vs_currencies=idr")
-VIRTUAL_START_IDR = 50000.0
+VIRTUAL_START_IDR = 25000.0
 LEDGER_PATH = "/home/hatch/workspace/polymarket-bot/paper_ledger.json"
 HISTORY_PATH = "/home/hatch/workspace/polymarket-bot/paper_history.jsonl"
 POSITION_PATH = "/home/hatch/workspace/polymarket-bot/paper_position.json"
@@ -95,8 +95,11 @@ def main():
     except (OSError, ValueError):
         pos = None
     # Perbaikan kas kumulatif 2026-11-01: trade baru mulai dari kas
-    # terakhir posisi CLOSED (bukan reset ke Rp50.000 — reset dulu
-    # menghapus kerugian terealisasi -Rp544 dari pembukuan).
+    # terakhir posisi CLOSED (bukan reset — reset dulu menghapus
+    # kerugian terealisasi -Rp544 dari pembukuan).
+    # Perubahan modal 2026-11-01 (Rp50.000 -> Rp25.000 per venue):
+    # kas siklus baru dibatasi ke modal berjalan; kelebihan dianggap
+    # penarikan paper (dicatat di log, bukan dihapus diam-diam).
     start_cash = VIRTUAL_START_IDR
     if pos and pos.get("status") == "CLOSED":
         if "cash_idr" in pos:
@@ -107,6 +110,11 @@ def main():
                 float(pos.get("cash_after_buy_idr", VIRTUAL_START_IDR))
                 + float(pos.get("realized_idr", 0.0))
                 + sold * float(pos.get("cost_per_share_idr", 0.0)), 2)
+        if start_cash > VIRTUAL_START_IDR:
+            print(f"Kas siklus baru dibatasi ke modal Rp{VIRTUAL_START_IDR:,.0f} "
+                  f"(kelebihan Rp{start_cash - VIRTUAL_START_IDR:,.0f} "
+                  f"dianggap penarikan paper).")
+            start_cash = VIRTUAL_START_IDR
     market = pick_daily_crypto_market()
     if not market:
         print("Tidak ada market kripto harian aktif yang ditemukan saat ini.")

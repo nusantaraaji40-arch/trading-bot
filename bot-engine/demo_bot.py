@@ -17,8 +17,8 @@ Siklus per venue:
 - Moomoo: moomoo_paper.py (data Yahoo Finance harian).
 - Pump.fun: pumpfun_paper.py (data DexScreener).
 
-Aturan demo (sama di semua venue): modal virtual Rp50.000,
-trade pertama Rp10.000, SL 5%, TP 10%/15%, kill-switch 15%.
+Aturan demo (sama di semua venue): modal virtual Rp25.000,
+trade pertama Rp5.000, SL 5%, TP 10%/15%, kill-switch 15%.
 Jalankan: python3 bot-engine/demo_bot.py
 """
 
