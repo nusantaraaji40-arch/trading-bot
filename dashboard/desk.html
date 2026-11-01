@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DESK BRO — Snapshot Paper</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0b0f14; color: #e6edf3; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  header { padding: 20px 16px 12px; border-bottom: 3px solid #f0b90b; }
+  header h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: 1px; }
+  header h1 span { color: #f0b90b; }
+  .warning { background: #3a2a00; border: 1px solid #f0b90b; padding: 10px 12px; border-radius: 8px; font-weight: bold; }
+  .meta { color: #9aa7b4; margin-top: 10px; font-size: 14px; line-height: 1.5; }
+  .summary { margin: 16px; padding: 14px; background: #121a24; border: 1px solid #22303e; border-radius: 10px; line-height: 1.6; }
+  .summary .neg { color: #ff6b6b; font-weight: bold; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; padding: 0 16px 16px; }
+  .panel { background: #121a24; border: 1px solid #22303e; border-radius: 10px; padding: 14px; }
+  .panel h2 { margin: 0 0 4px; font-size: 18px; }
+  .panel h2 span { color: #58a6ff; }
+  .job { color: #9aa7b4; font-size: 14px; margin: 0 0 10px; }
+  .verdict { font-size: 16px; font-weight: bold; margin: 0 0 8px; }
+  .verdict.hold { color: #f0b90b; }
+  .verdict.open { color: #58a6ff; }
+  .verdict.nodata { color: #9aa7b4; }
+  .verdict.risk { color: #ff6b6b; }
+  .detail { font-size: 14px; line-height: 1.6; color: #d5dde5; margin: 0; }
+  footer { margin: 0 16px 24px; padding: 14px; background: #121a24; border: 1px solid #22303e; border-radius: 10px; color: #9aa7b4; font-size: 14px; line-height: 1.6; }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>DESK <span>BRO</span> — Meja Paper 8 Agen</h1>
+  <p class="warning">Tampilan snapshot paper &mdash; bukan data live, bukan bukti profit.</p>
+  <p class="meta">Snapshot dibuat: Minggu, 1 November 2026, 18:00 WIB.<br>
+  Angka di bawah ini disalin dari file state paper proyek, bukan dari harga live saat halaman dibuka.
+  Halaman ini statis dan tidak memperbarui diri.</p>
+</header>
+
+<section class="summary">
+  <strong>Ringkasan paper (dari file state):</strong><br>
+  Posisi paper masih OPEN: 5 (1 trek lama Polymarket, 3 kategori Polymarket, 1 demo Indodax).<br>
+  Terealisasi paper kategori: <span class="neg">&minus;Rp5.701,36</span> &middot;
+  Terealisasi paper trek lama Polymarket: <span class="neg">&minus;Rp1.450,43</span> &middot;
+  Terealisasi demo Indodax: Rp0.<br>
+  File state terakhir diperbarui: kategori 17:21 WIB, trek lama 10:35 WIB, demo Indodax 17:57 WIB (tanpa stempel harga di dalam file).
+</section>
+
+<main class="grid">
+  <section class="panel">
+    <h2><span>Bro 1</span> &mdash; CHIEF</h2>
+    <p class="job">Keputusan akhir: beli, jual, tahan, atau tidak trade.</p>
+    <p class="verdict hold">TAHAN</p>
+    <p class="detail">Semua posisi paper masih OPEN, jadi tidak ada beli baru selagi posisi OPEN (guard). Tidak ada keputusan beli baru yang tercatat setelah 17:21 WIB.</p>
+  </section>
+
+  <section class="panel">
+    <h2><span>Bro 2</span> &mdash; SCAN</h2>
+    <p class="job">Menyaring market aktif dari data publik Gamma.</p>
+    <p class="verdict open">Kandidat terakhir tercatat</p>
+    <p class="detail">Pembelian kategori terakhir dari hasil scan: Bitcoin Up or Down, suhu tertinggi Chongqing 17&deg;C, dan Real Madrid menang (riwayat 17:20&ndash;17:21 WIB). Tidak ada hasil scan baru yang tercatat di file state setelah itu.</p>
+  </section>
+
+  <section class="panel">
+    <h2><span>Bro 3</span> &mdash; VET</h2>
+    <p class="job">Menyaring scam/rug: likuiditas &ge; $500, spread &le; 20%.</p>
+    <p class="verdict open">LOLOS (3 pembelian kategori terakhir)</p>
+    <p class="detail">Tiga market kategori yang dibeli pada 17:20 WIB lolos saringan. Satu catatan: market cuaca dibeli di harga 0,001 &mdash; itu longshot ekstrem, bukan rekomendasi.</p>
+  </section>
+
+  <section class="panel">
+    <h2><span>Bro 4</span> &mdash; SOCIAL</h2>
+    <p class="job">Skor kata kunci sentimen/berita (bukan model AI).</p>
+    <p class="verdict nodata">Belum ada data</p>
+    <p class="detail">Tidak ada skor sentimen yang tercatat di file state paper. Panel ini akan terisi setelah ada headline/berita yang diumpankan ke Bro 4.</p>
+  </section>
+
+  <section class="panel">
+    <h2><span>Bro 5</span> &mdash; SIZE</h2>
+    <p class="job">Mengatur besar posisi: anggaran min Rp5.000, min 5 lembar.</p>
+    <p class="verdict open">Ukuran terakhir tercatat</p>
+    <p class="detail">Kategori: 7 lembar (Bitcoin Up/Down), 10 lembar (cuaca Chongqing), 6 lembar (bola Real Madrid). Trek lama: 10 lembar. Demo Indodax: Rp10.000 (0,00000711 BTC).</p>
+  </section>
+
+  <section class="panel">
+    <h2><span>Bro 6</span> &mdash; FILLS</h2>
+    <p class="job">Eksekusi PAPER ONLY &mdash; tidak pernah order nyata.</p>
+    <p class="verdict open">Paper fill terakhir: BUY</p>
+    <p class="detail">BUY paper terakhir: 7 lembar Down &ldquo;Bitcoin Up or Down on November 1&rdquo; @ 0,13, 17:21 WIB, kas kategori tersisa Rp1.798,18. Total terealisasi paper: kategori &minus;Rp5.701,36; trek lama &minus;Rp1.450,43.</p>
+  </section>
+
+  <section class="panel">
+    <h2><span>Bro 7</span> &mdash; RISK</h2>
+    <p class="job">Menjaga TP/SL/kill-switch (prioritas: kill-switch &gt; SL &gt; TP).</p>
+    <p class="verdict risk">Event terakhir: KILL-SWITCH</p>
+    <p class="detail">KILL-SWITCH pada &ldquo;Ethereum Up or Down&rdquo; 17:21 WIB, rugi paper &minus;Rp5.701,36. TP +20% Up/Down belum pernah terpicu. Posisi OPEN saat ini masih dimonitor.</p>
+  </section>
+
+  <section class="panel">
+    <h2><span>Bro 8</span> &mdash; CRAWLER</h2>
+    <p class="job">Mengumpulkan data publik gratis (Gamma + CoinGecko).</p>
+    <p class="verdict open">Fetch terakhir tercatat 17:21 WIB</p>
+    <p class="detail">Pengambilan data kategori terakhir 17:21 WIB dengan kurs Rp18.127/USDC. Pengambilan trek lama terakhir 10:35 WIB. Tidak ada run Actor berbayar yang dipakai.</p>
+  </section>
+</main>
+
+<footer>
+  <strong>Catatan:</strong> Ini halaman paper saja &mdash; tidak ada order nyata, tidak ada wallet, tidak ada kunci apa pun di halaman ini.
+  Angka-angka di atas adalah snapshot dari file state dan sudah bisa basi saat dibaca; halaman ini tidak mengambil data live.
+  Versi tampilan live/animasi yang keren menyusul belakangan, setelah trade paper berhasil, sesuai rencana user.
+  Posisi OPEN yang tercantum: trek lama &ldquo;Will Bitcoin dip to $75,000 in October?&rdquo; (10 lembar YES @ 0,004, bid terakhir 0,003);
+  kategori Up/Down &ldquo;Bitcoin Up or Down on November 1&rdquo; (7 lembar Down @ 0,13, bid terakhir 0,12);
+  cuaca &ldquo;Chongqing 17&deg;C&rdquo; (10 lembar Yes @ 0,001, tanpa bid &mdash; CANNOT_EXIT);
+  bola &ldquo;Real Madrid menang&rdquo; (6 lembar No @ 0,19, bid terakhir 0,18);
+  demo Indodax BTC/IDR (entry ask Rp1.407.129.000, kas Rp40.000).
+</footer>
+</body>
+</html>
