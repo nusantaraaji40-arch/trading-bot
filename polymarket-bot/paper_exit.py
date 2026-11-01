@@ -20,8 +20,14 @@ Keputusan desain (penting, dibaca dulu):
 - Prioritas bila beberapa trigger bersamaan: kill-switch > SL > TP2
   > TP1 (yang paling protektif menang).
 - Book kosong / tidak tersedia: TIDAK BISA EXIT — posisi dipertahankan
-  dan dilaporkan, tanpa harga tebakan. Market yang sudah resolusi
-  tidak diselesaikan dari tebakan; penyelesaiannya dicek terpisah.
+  dan dilaporkan, tanpa harga tebakan. Pengecualian: market yang
+  SUDAH resolusi resmi diselesaikan oleh resolution handler di bawah
+  (bukan dari tebakan, bukan dari book): YES menang = $1/lembar,
+  YES kalah = $0/lembar, dikonversi kurs CoinGecko live.
+- Resolution handler (2026-11-01): dicek SEBELUM book, setiap kali
+  exit manager jalan. Settle HANYA bila Gamma closed=True DAN
+  outcomePrices decisif (>= 0,999 untuk satu sisi). Selain itu posisi
+  dibiarkan (lanjut cek exit biasa) — tidak ada settle prematur.
 
 State posisi: paper_position.json (workspace). Riwayat exit ditambah
 ke paper_history.jsonl (hanya aksi jual; cek HOLD tidak mengotori
@@ -44,6 +50,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 CLOB_BOOK = "https://clob.polymarket.com/book"
+GAMMA = "https://gamma-api.polymarket.com/markets"
 COINGECKO_USDC_IDR = ("https://api.coingecko.com/api/v3/simple/price"
                        "?ids=usd-coin&vs_currencies=idr")
 WORKSPACE = "/home/hatch/workspace/polymarket-bot"
@@ -85,6 +92,47 @@ def decide_exit(entry_ask, bid, ask, remaining, tp1_done, total_value_idr,
         action = "SELL_PARTIAL" if qty < remaining else "SELL_ALL"
         return action, qty, "TP1"
     return "HOLD", 0, "HOLD"
+
+
+def decide_resolution(market):
+    """Fungsi murni: ('YES'/'NO'/None, bukti).
+
+    Settle HANYA bila market closed=True DAN outcomePrices decisif
+    (>= 0,999 untuk satu sisi). Bukti dicatat ke riwayat supaya
+    setiap settle bisa diaudit. Selain itu: None (belum resolusi
+    resmi — jangan settle, jangan tebak).
+    """
+    evidence = {
+        "closed": market.get("closed"),
+        "outcomePrices": market.get("outcomePrices"),
+        "umaResolutionStatus": market.get("umaResolutionStatus"),
+    }
+    if market.get("closed") is not True:
+        return None, evidence
+    prices = market.get("outcomePrices") or []
+    if len(prices) < 2:
+        return None, evidence
+    try:
+        yes = float(prices[0])
+        no = float(prices[1])
+    except (TypeError, ValueError):
+        return None, evidence
+    if yes >= 0.999:
+        return "YES", evidence
+    if no >= 0.999:
+        return "NO", evidence
+    return None, evidence
+
+
+def settle_value(remaining, outcome, usd_idr_rate):
+    """Fungsi murni: nilai settle posisi YES di harga resolusi.
+
+    YES menang = $1/lembar; YES kalah = $0/lembar. Dikonversi kurs
+    CoinGecko live (bukan tebakan).
+    """
+    if outcome == "YES":
+        return round(remaining * 1.0 * usd_idr_rate, 2)
+    return 0.0
 
 
 def load_position(ledger, position_path=POSITION_PATH):
@@ -158,6 +206,53 @@ def main():
         pos["cash_idr"] = round(
             pos["cash_after_buy_idr"] + pos["realized_idr"]
             + sold * pos["cost_per_share_idr"], 2)
+
+    # Resolution handler: dicek SEBELUM book, supaya posisi yang
+    # marketnya sudah resolusi resmi tidak mentok CANNOT_EXIT dan
+    # tidak memblokir beli berikutnya lewat guard. Gagal cek resolusi
+    # TIDAK memblokir cek exit biasa (lanjut ke book).
+    try:
+        markets = get_json(
+            f"{GAMMA}?limit=1&clob_token_ids={pos['token_id']}", timeout=20)
+        market = markets[0] if isinstance(markets, list) and markets else {}
+        outcome, evidence = decide_resolution(market)
+    except Exception as e:
+        print(f"Resolusi gagal dicek ({e}); lanjut ke cek exit biasa.")
+        outcome, evidence = None, {}
+    if outcome:
+        try:
+            rate = float(
+                get_json(COINGECKO_USDC_IDR, timeout=20)["usd-coin"]["idr"])
+        except Exception as e:
+            print(f"Kurs USDC/IDR gagal diambil ({e}); settle resolusi "
+                  f"ditunda.")
+            return 2
+        now = datetime.now(timezone.utc).isoformat()
+        qty = pos["remaining"]
+        proceeds_idr = settle_value(qty, outcome, rate)
+        pnl_idr = round(proceeds_idr - qty * pos["cost_per_share_idr"], 2)
+        pos["remaining"] = 0
+        pos["realized_idr"] = round(pos["realized_idr"] + pnl_idr, 2)
+        pos["cash_idr"] = round(pos["cash_idr"] + proceeds_idr, 2)
+        pos["status"] = "CLOSED"
+        pos["last_check"] = now
+        save_position(pos)
+        append_history({
+            "type": "RESOLVE",
+            "timestamp": now,
+            "market": pos["market"],
+            "outcome": outcome,
+            "qty": qty,
+            "proceeds_usdc": round(qty * 1.0, 4) if outcome == "YES" else 0.0,
+            "proceeds_idr": proceeds_idr,
+            "pnl_idr": pnl_idr,
+            "evidence": evidence,
+        })
+        print(f"RESOLVED: market resmi {outcome} — settle {qty} lembar = "
+              f"Rp{proceeds_idr:,.0f} (kurs Rp{rate:,.0f}/USDC) | "
+              f"P&L aksi: Rp{pnl_idr:,.0f} | Status: CLOSED.")
+        return 0
+    print("Belum resolusi resmi — lanjut cek exit biasa.")
 
     try:
         rate = float(get_json(COINGECKO_USDC_IDR, timeout=20)["usd-coin"]["idr"])
