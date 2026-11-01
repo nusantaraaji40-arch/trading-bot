@@ -39,7 +39,7 @@ python3 live_run.py
 
 Yang dilakukan: baca saldo privat (membuktikan key jalan), baca harga
 BTC/IDR, baca limit min order, dan menilai apakah rencana (modal
-Rp25.000, beli pertama Rp5.000, kill-switch 15% = Rp3.750) memenuhi
+Rp30.000, beli pertama Rp30.000 (all-in), kill-switch 15% = Rp4.500) memenuhi
 batas exchange. Nol order dibuat.
 
 ## Mode live (terkunci 4 gerbang)
@@ -51,7 +51,7 @@ Semua wajib lolos, kalau tidak skrip berhenti tanpa order:
 3. File `LIVE_APPROVED.txt` di folder ini, berisi persetujuan pemilik
    (tanggal + pair + nominal yang disetujui).
 4. File `params.json` (dari contoh) yang lolos validasi: pair BTC/IDR
-   atau ETH/IDR, modal Rp25.000, beli pertama <= modal, SL 1–20%,
+   atau ETH/IDR, modal Rp30.000, beli pertama <= modal, SL 1–20%,
    TP bawah >= SL, TP atas >= TP bawah, kill-switch 5–30%.
 
 ```bash
@@ -67,7 +67,7 @@ Pemantauan dan penjualan berikutnya adalah langkah terpisah.
 - Skrip ini **tidak mengandung pemanggilan withdraw** dalam bentuk apa
   pun, dan key yang dipakai harus trade-only.
 - Nilai key/secret **tidak pernah dicetak** ke output.
-- Modal yang disepakati: Rp25.000 per venue; kill-switch 15%
-  (= Rp3.750) berlaku per venue.
-- Deposit Rp25.000 ke Indodax hanya dilakukan saat live sudah disetujui,
+- Modal yang disepakati: Rp30.000 all-in untuk 1 koin; kill-switch 15%
+  (= Rp4.500) berlaku.
+- Deposit Rp30.000 ke Indodax hanya dilakukan saat live sudah disetujui,
   bukan sekarang (saldo akun saat persiapan: 0 IDR).

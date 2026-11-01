@@ -17,7 +17,7 @@ Gerbang live (semua wajib):
   3. File LIVE_APPROVED.txt ada di folder skrip ini, berisi persetujuan
      pemilik (tanggal + pair + nominal yang disetujui).
   4. File params.json ada (salin dari params.example.json) dan lolos
-     validasi: pair BTC/IDR atau ETH/IDR, modal Rp25.000,
+     validasi: pair BTC/IDR atau ETH/IDR, modal Rp30.000 (all-in),
      first_trade <= modal, SL 1-20%, TP bawah >= SL, TP atas >= TP bawah,
      kill-switch 5-30%.
 
@@ -72,10 +72,10 @@ def validate_params(path):
     errors = []
     if p.get("pair") not in PAIR_ALLOWLIST:
         errors.append(f"pair harus salah satu dari {PAIR_ALLOWLIST}")
-    if p.get("modal_idr") != 25000:
-        errors.append("modal_idr harus 25000 (modal yang disepakati)")
+    if p.get("modal_idr") != 30000:
+        errors.append("modal_idr harus 30000 (modal yang disepakati)")
     first = p.get("first_trade_idr", 0)
-    if not (0 < first <= 25000):
+    if not (0 < first <= 30000):
         errors.append("first_trade_idr harus > 0 dan <= modal")
     sl = p.get("sl_pct", 0)
     if not (1 <= sl <= 20):
@@ -136,8 +136,8 @@ def mode_check(ex):
     amount_min = (limits.get("amount") or {}).get("min")
     cost_min = (limits.get("cost") or {}).get("min")
     print(f"Min order BTC/IDR: amount min {amount_min} | cost min {cost_min}")
-    modal = 25000
-    first = 5000
+    modal = 30000
+    first = 30000
     print(f"Rencana: modal {rp(modal)}, beli pertama {rp(first)}, "
           f"kill-switch 15% ({rp(modal * 0.85)}).")
     if cost_min and first < cost_min:
@@ -164,7 +164,7 @@ def mode_live(ex, params):
     sl_price = ask * (1 - params["sl_pct"] / 100)
     tp_low_price = ask * (1 + params["tp_low_pct"] / 100)
     tp_high_price = ask * (1 + params["tp_high_pct"] / 100)
-    ks_level = 25000 * (1 - params["kill_switch_pct"] / 100)
+    ks_level = 30000 * (1 - params["kill_switch_pct"] / 100)
     print(f"Level pantau: SL {rp(sl_price)} | TP {rp(tp_low_price)}-"
           f"{rp(tp_high_price)} | kill-switch di saldo {rp(ks_level)}.")
     print("Satu order pertama selesai. Pemantauan SL/TP/kill-switch adalah "
