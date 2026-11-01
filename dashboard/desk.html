@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DESK BRO — Snapshot Paper</title>
+<title>DESK BRO — Paper + Harga Live Publik</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; background: #0b0f14; color: #e6edf3; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
@@ -11,7 +11,39 @@
   header h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: 1px; }
   header h1 span { color: #f0b90b; }
   .warning { background: #3a2a00; border: 1px solid #f0b90b; padding: 10px 12px; border-radius: 8px; font-weight: bold; }
+  .badge { display: inline-block; background: #f0b90b; color: #111; font-weight: bold; font-size: 13px; padding: 2px 8px; border-radius: 20px; margin-left: 8px; animation: blink 1.6s ease-in-out infinite; }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
   .meta { color: #9aa7b4; margin-top: 10px; font-size: 14px; line-height: 1.5; }
+  .ticker-wrap { overflow: hidden; background: #121a24; border-top: 1px solid #22303e; border-bottom: 1px solid #22303e; white-space: nowrap; }
+  .ticker { display: inline-block; padding: 8px 0; font-size: 14px; animation: scroll 30s linear infinite; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .ticker span { margin-right: 32px; }
+  .live { margin: 16px; padding: 14px; background: #0f1a12; border: 1px solid #2a4a2e; border-radius: 10px; line-height: 1.6; }
+  .live h2 { margin: 0 0 8px; font-size: 18px; }
+  .live .status { font-size: 13px; color: #9aa7b4; }
+  .live .status.ok { color: #7ee787; }
+  .live .status.fail { color: #ff6b6b; }
+  .live-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 10px; }
+  .live-card { background: #121a24; border: 1px solid #22303e; border-radius: 8px; padding: 10px; font-size: 14px; line-height: 1.6; }
+  .live-card b { display: block; font-size: 15px; margin-bottom: 4px; }
+  .steps { margin: 16px; padding: 14px; background: #121a24; border: 1px solid #22303e; border-radius: 10px; line-height: 1.6; }
+  .steps h2 { margin: 0 0 4px; font-size: 18px; }
+  .steps ol { margin: 8px 0; padding-left: 22px; }
+  .steps li { margin: 6px 0; font-size: 14px; }
+  .steps li.done { color: #7ee787; }
+  .steps li.active { color: #f0b90b; font-weight: bold; animation: blink 1.6s ease-in-out infinite; }
+  .steps li.wait { color: #9aa7b4; }
+  .proc { margin: 16px; padding: 14px; background: #121a24; border: 1px solid #22303e; border-radius: 10px; line-height: 1.6; }
+  .proc h2 { margin: 0 0 4px; font-size: 18px; }
+  .pos { margin-top: 14px; padding-top: 10px; border-top: 1px solid #22303e; }
+  .pos b { display: block; font-size: 15px; }
+  .pos .nums { font-size: 14px; color: #d5dde5; }
+  .pos .pnl-neg { color: #ff6b6b; font-weight: bold; }
+  .pos .pnl-pos { color: #7ee787; font-weight: bold; }
+  .bar-track { position: relative; height: 18px; background: #22303e; border-radius: 9px; margin: 10px 0 4px; }
+  .bar-fill { height: 100%; border-radius: 9px; background: linear-gradient(90deg, #ff6b6b, #f0b90b, #7ee787); transition: width 0.8s ease; }
+  .bar-marker { position: absolute; top: -4px; width: 3px; height: 26px; background: #f0b90b; }
+  .bar-labels { display: flex; justify-content: space-between; font-size: 12px; color: #9aa7b4; }
   .summary { margin: 16px; padding: 14px; background: #121a24; border: 1px solid #22303e; border-radius: 10px; line-height: 1.6; }
   .summary .neg { color: #ff6b6b; font-weight: bold; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; padding: 0 16px 16px; }
@@ -34,15 +66,84 @@
 </head>
 <body>
 <header>
-  <h1>DESK <span>BRO</span> — Meja Paper 8 Agen</h1>
-  <p class="warning">Tampilan snapshot paper &mdash; bukan data live, bukan bukti profit.</p>
+  <h1>DESK <span>BRO</span> — Meja Paper 8 Agen<span class="badge">PAPER</span></h1>
+  <p class="warning">Tampilan snapshot paper + harga live publik &mdash; bukan data eksekusi, bukan bukti profit.</p>
   <p class="meta">Snapshot dibuat: Minggu, 1 November 2026, 18:00 WIB.<br>
-  Angka di bawah ini disalin dari file state paper proyek, bukan dari harga live saat halaman dibuka.
-  Halaman ini statis dan tidak memperbarui diri.</p>
+  Angka snapshot di bawah ini disalin dari file state paper proyek. Bagian &ldquo;Harga live&rdquo; dan &ldquo;Proses Beli/Jual&rdquo; diperbarui otomatis tiap 60 detik dari API publik (CoinGecko + Gamma) selama halaman terbuka; bila refresh gagal, bagian itu kembali ke posisi snapshot dan menulis &ldquo;refresh gagal, tampil snapshot&rdquo;.</p>
 </header>
 
+<div class="ticker-wrap" aria-hidden="true"><div class="ticker" id="ticker"><span>BTC/USDT: memuat&hellip;</span><span>ETH/USDT: memuat&hellip;</span><span>Kurs: memuat&hellip;</span></div></div>
+
+<section class="live">
+  <h2>Harga live (API publik, refresh 60 detik)</h2>
+  <p class="status" id="cg-status">CoinGecko: memuat&hellip;</p>
+  <p id="cg-prices">BTC: memuat&hellip; &middot; ETH: memuat&hellip;</p>
+  <p class="status" id="gamma-status">Gamma: memuat&hellip;</p>
+  <div class="live-grid">
+    <div class="live-card"><b>Bitcoin Up or Down on November 1 (paper: 7 Down @ 0,13)</b><span id="live-updown">Snapshot: bid terakhir 0,12 / ask 0,13. Menunggu refresh Gamma&hellip;</span></div>
+    <div class="live-card"><b>Chongqing 17&deg;C (paper: 10 Yes @ 0,001)</b><span id="live-weather">Snapshot: ask 0,001, tanpa bid (CANNOT_EXIT). Menunggu refresh Gamma&hellip;</span></div>
+    <div class="live-card"><b>Real Madrid menang (paper: 6 No @ 0,19)</b><span id="live-soccer">Snapshot: bid terakhir 0,18 / ask 0,19. Menunggu refresh Gamma&hellip;</span></div>
+    <div class="live-card"><b>Trek lama: Bitcoin dip to $75,000 in October (paper: 10 YES @ 0,004)</b><span id="live-oldtrack">Snapshot: bid terakhir 0,003. Menunggu refresh Gamma&hellip;</span></div>
+  </div>
+  <p class="status">Terakhir diperbarui (WIB): <span id="live-stamp">belum ada refresh berhasil</span>. Harga di sini hanya data pasar publik, bukan eksekusi dan bukan sinyal beli/jual.</p>
+</section>
+
+<section class="steps">
+  <h2>Proses Beli/Jual (PAPER) — alur, bukan eksekusi live</h2>
+  <p class="detail">Urutan paper untuk posisi yang sudah OPEN di bawah ini. Tahap yang selesai ditandai selesai, tahap yang sedang berjalan ditandai menyala (RISK sedang memonitor). Halaman ini TIDAK mengeksekusi order apa pun; keputusan exit tetap dipegang modul paper proyek, bukan halaman ini.</p>
+  <ol>
+    <li class="done">&#10003; SCAN (Bro 2) — selesai: kandidat ditemukan dari Gamma.</li>
+    <li class="done">&#10003; VET (Bro 3) — selesai: lolos likuiditas &ge; $500, spread &le; 20%.</li>
+    <li class="done">&#10003; SIZE (Bro 5) — selesai: ukuran paper ditetapkan.</li>
+    <li class="done">&#10003; CHIEF (Bro 1) — selesai: keputusan beli paper dibuat.</li>
+    <li class="done">&#10003; FILLS (Bro 6) — selesai: fill PAPER tercatat di ledger (bukan order nyata).</li>
+    <li class="active">&#9679; RISK (Bro 7) — SEDANG MONITOR: posisi OPEN dimonitor terhadap SL/TP/kill-switch di bar bawah.</li>
+  </ol>
+  <p class="detail">Untuk siklus paper baru, urutan mengulang dari SCAN; panel ini menggambarkan status posisi OPEN yang sedang berjalan.</p>
+</section>
+
+<section class="proc">
+  <h2>Progress harga posisi OPEN (PAPER) — SL di kiri, TP di kanan, garis kuning = entry</h2>
+  <p class="detail">Bar bergeser tiap refresh 60 detik mengikuti harga live. Mendekati TP = progress ke untung; mendekati SL = progress ke rugi. P&amp;L paper dihitung dari harga live vs entry dan ditulis apa adanya (bisa minus). Jika harga menyentuh/melampaui TP atau SL, label hanya menandai &ldquo;tersentuh (tampilan saja)&rdquo; — halaman ini TIDAK menjual, TIDAK membeli, dan TIDAK mengubah posisi apa pun.</p>
+
+  <div class="pos">
+    <b>Up/Down: 7 Down Bitcoin @ 0,13 — SL 0,1235 (&minus;5%) · TP 0,156 (+20%)</b>
+    <div class="bar-track"><div class="bar-fill" id="bar-updown-fill" style="width:0%"></div><div class="bar-marker" id="bar-updown-mark" style="left:20%"></div></div>
+    <div class="bar-labels"><span>SL 0,1235</span><span>entry 0,13</span><span>TP 0,156</span></div>
+    <p class="nums" id="bar-updown-text">Snapshot: harga 0,12 (bid terakhir) · P&amp;L &minus;7,69% · mendekati SL.</p>
+  </div>
+
+  <div class="pos">
+    <b>Cuaca: 10 Yes Chongqing 17&deg;C @ 0,001 — SL 0,00095 (&minus;5%) · TP 0,00115 (+15%)</b>
+    <div class="bar-track"><div class="bar-fill" id="bar-weather-fill" style="width:25%"></div><div class="bar-marker" id="bar-weather-mark" style="left:25%"></div></div>
+    <div class="bar-labels"><span>SL 0,00095</span><span>entry 0,001</span><span>TP 0,00115</span></div>
+    <p class="nums" id="bar-weather-text">Snapshot: harga 0,001 (ask, tanpa bid — CANNOT_EXIT) · P&amp;L 0,00% · di entry.</p>
+  </div>
+
+  <div class="pos">
+    <b>Bola: 6 No Real Madrid @ 0,19 — SL 0,1805 (&minus;5%) · TP 0,2185 (+15%)</b>
+    <div class="bar-track"><div class="bar-fill" id="bar-soccer-fill" style="width:0%"></div><div class="bar-marker" id="bar-soccer-mark" style="left:25%"></div></div>
+    <div class="bar-labels"><span>SL 0,1805</span><span>entry 0,19</span><span>TP 0,2185</span></div>
+    <p class="nums" id="bar-soccer-text">Snapshot: harga 0,18 (bid terakhir) · P&amp;L &minus;5,26% · di bawah entry, mendekati SL.</p>
+  </div>
+
+  <div class="pos">
+    <b>Trek lama: 10 YES Bitcoin dip $75.000 @ 0,004 — SL 0,0038 (&minus;5%) · TP 0,0046 (+15%)</b>
+    <div class="bar-track"><div class="bar-fill" id="bar-oldtrack-fill" style="width:0%"></div><div class="bar-marker" id="bar-oldtrack-mark" style="left:25%"></div></div>
+    <div class="bar-labels"><span>SL 0,0038</span><span>entry 0,004</span><span>TP 0,0046</span></div>
+    <p class="nums" id="bar-oldtrack-text">Snapshot: harga 0,003 (bid terakhir) · P&amp;L &minus;25,00% · sudah di bawah SL (tampilan saja; exit diputuskan modul paper_exit, bukan halaman ini).</p>
+  </div>
+
+  <div class="pos">
+    <b>Demo Indodax: 0,00000711 BTC @ Rp1.407.129.000 — SL Rp1.336.772.550 (&minus;5%) · TP Rp1.449.342.870 (+3%)</b>
+    <div class="bar-track"><div class="bar-fill" id="bar-indodax-fill" style="width:63%"></div><div class="bar-marker" id="bar-indodax-mark" style="left:63%"></div></div>
+    <div class="bar-labels"><span>SL Rp1.336.772.550</span><span>entry Rp1.407.129.000</span><span>TP Rp1.449.342.870</span></div>
+    <p class="nums" id="bar-indodax-text">Snapshot: harga terakhir tidak tercatat di file posisi — bar di posisi entry. Menunggu refresh CoinGecko (BTC/IDR).</p>
+  </div>
+</section>
+
 <section class="summary">
-  <strong>Ringkasan paper (dari file state):</strong><br>
+  <strong>Ringkasan paper (dari file state, snapshot 18:00 WIB):</strong><br>
   Posisi paper masih OPEN: 5 (1 trek lama Polymarket, 3 kategori Polymarket, 1 demo Indodax).<br>
   Terealisasi paper kategori: <span class="neg">&minus;Rp5.701,36</span> &middot;
   Terealisasi paper trek lama Polymarket: <span class="neg">&minus;Rp1.450,43</span> &middot;
@@ -104,19 +205,148 @@
     <h2><span>Bro 8</span> &mdash; CRAWLER</h2>
     <p class="job">Mengumpulkan data publik gratis (Gamma + CoinGecko).</p>
     <p class="verdict open">Fetch terakhir tercatat 17:21 WIB</p>
-    <p class="detail">Pengambilan data kategori terakhir 17:21 WIB dengan kurs Rp18.127/USDC. Pengambilan trek lama terakhir 10:35 WIB. Tidak ada run Actor berbayar yang dipakai.</p>
+    <p class="detail">Pengambilan data kategori terakhir 17:21 WIB dengan kurs Rp18.127/USDC. Pengambilan trek lama terakhir 10:35 WIB. Tidak ada run Actor berbayar yang dipakai. <span id="live-bro8">Refresh live: belum berjalan.</span></p>
   </section>
 </main>
 
 <footer>
   <strong>Catatan:</strong> Ini halaman paper saja &mdash; tidak ada order nyata, tidak ada wallet, tidak ada kunci apa pun di halaman ini.
-  Angka-angka di atas adalah snapshot dari file state dan sudah bisa basi saat dibaca; halaman ini tidak mengambil data live.
-  Versi tampilan live/animasi yang keren menyusul belakangan, setelah trade paper berhasil, sesuai rencana user.
+  Angka snapshot adalah salinan file state 18:00 WIB dan sudah bisa basi saat dibaca; hanya bagian &ldquo;Harga live&rdquo; dan &ldquo;Proses Beli/Jual&rdquo; yang diperbarui otomatis dari API publik, dan bagian itu pun hanya data pasar, bukan eksekusi.
+  Versi tampilan live/animasi penuh menyusul belakangan, setelah trade paper berhasil, sesuai rencana user.
   Posisi OPEN yang tercantum: trek lama &ldquo;Will Bitcoin dip to $75,000 in October?&rdquo; (10 lembar YES @ 0,004, bid terakhir 0,003);
   kategori Up/Down &ldquo;Bitcoin Up or Down on November 1&rdquo; (7 lembar Down @ 0,13, bid terakhir 0,12);
   cuaca &ldquo;Chongqing 17&deg;C&rdquo; (10 lembar Yes @ 0,001, tanpa bid &mdash; CANNOT_EXIT);
   bola &ldquo;Real Madrid menang&rdquo; (6 lembar No @ 0,19, bid terakhir 0,18);
   demo Indodax BTC/IDR (entry ask Rp1.407.129.000, kas Rp40.000).
 </footer>
+
+<script>
+(function () {
+  "use strict";
+  function wibStamp() {
+    try {
+      return new Date().toLocaleTimeString("id-ID", { timeZone: "Asia/Jakarta", hour: "2-digit", minute: "2-digit", second: "2-digit" }) + " WIB";
+    } catch (e) { return new Date().toLocaleTimeString(); }
+  }
+  function fmtUSD(x) {
+    return "$" + Number(x).toLocaleString("en-US", { maximumFractionDigits: 2 });
+  }
+  function fmtIDR(x) {
+    return "Rp" + Math.round(Number(x)).toLocaleString("id-ID");
+  }
+  function fmtPrice(x) {
+    return Number(x).toFixed(x < 0.01 ? 4 : 3);
+  }
+  function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+  function setText(id, text) {
+    var el = document.getElementById(id);
+    if (el) { el.textContent = text; }
+  }
+  function setStatus(id, text, ok) {
+    var el = document.getElementById(id);
+    if (el) { el.textContent = text; el.className = "status " + (ok ? "ok" : "fail"); }
+  }
+  // Rumus bar: posisi% = (harga - SL) / (TP - SL) * 100, dijepit 0-100.
+  // Penanda entry% = (entry - SL) / (TP - SL) * 100, dijepit 0-100.
+  // P&L% = (harga - entry) / entry * 100. Hanya tampilan — tidak mengeksekusi.
+  function renderBar(prefix, price, entry, sl, tp, shares, unit, failNote) {
+    var pct = clamp((price - sl) / (tp - sl) * 100, 0, 100);
+    var entryPct = clamp((entry - sl) / (tp - sl) * 100, 0, 100);
+    var pnlPct = (price - entry) / entry * 100;
+    var pnlAbs = shares * (price - entry);
+    var fill = document.getElementById(prefix + "-fill");
+    var mark = document.getElementById(prefix + "-mark");
+    if (fill) { fill.style.width = pct.toFixed(1) + "%"; }
+    if (mark) { mark.style.left = "calc(" + entryPct.toFixed(1) + "% - 1px)"; }
+    var zone = "";
+    if (price >= tp) { zone = " · TP TERSENTUH (tampilan saja — halaman ini tidak menjual)."; }
+    else if (price <= sl) { zone = " · SL TERSENTUH (tampilan saja — halaman ini tidak menjual)."; }
+    else if (pct >= 75) { zone = " · mendekati TP (ke untung)."; }
+    else if (pct <= 25) { zone = " · mendekati SL (ke rugi)."; }
+    else { zone = " · di tengah rentang."; }
+    var pnlClass = pnlPct < 0 ? "pnl-neg" : "pnl-pos";
+    var el = document.getElementById(prefix + "-text");
+    if (el) {
+      el.innerHTML = "Harga: " + fmtPrice(price) + " " + unit + " · P&amp;L <span class=\"" + pnlClass + "\">" +
+        (pnlPct < 0 ? "" : "+") + pnlPct.toFixed(2) + "% (" + (pnlAbs < 0 ? "" : "+") + pnlAbs.toFixed(4) + " " + unit + ")" +
+        "</span>" + zone + (failNote ? " [refresh gagal, tampil snapshot]" : "");
+    }
+  }
+  function refreshCoinGecko() {
+    return fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd,idr")
+      .then(function (r) { if (!r.ok) { throw new Error("HTTP " + r.status); } return r.json(); })
+      .then(function (d) {
+        var btc = d.bitcoin, eth = d.ethereum;
+        if (!btc || !eth || btc.usd === undefined || eth.usd === undefined) { throw new Error("format tak dikenal"); }
+        var line = "BTC: " + fmtUSD(btc.usd) + (btc.idr ? " (" + fmtIDR(btc.idr) + ")" : "") +
+          "  ·  ETH: " + fmtUSD(eth.usd) + (eth.idr ? " (" + fmtIDR(eth.idr) + ")" : "");
+        setText("cg-prices", line);
+        var tick = document.getElementById("ticker");
+        if (tick) {
+          var chunk = "<span>BTC: " + fmtUSD(btc.usd) + "</span><span>ETH: " + fmtUSD(eth.usd) + "</span>";
+          tick.innerHTML = chunk + chunk;
+        }
+        setStatus("cg-status", "CoinGecko: live, diperbarui " + wibStamp(), true);
+        if (btc.idr) {
+          renderBar("bar-indodax", btc.idr, 1407129000, 1336772550, 1449342870, 0.00000711, "IDR", false);
+        }
+        return true;
+      })
+      .catch(function () {
+        setStatus("cg-status", "CoinGecko: refresh gagal, tampil snapshot", false);
+        renderBar("bar-indodax", 1407129000, 1407129000, 1336772550, 1449342870, 0.00000711, "IDR", true);
+        return false;
+      });
+  }
+  function gammaMarket(query, cfg) {
+    var url = "https://gamma-api.polymarket.com/markets?search=" + encodeURIComponent(query) + "&limit=5";
+    return fetch(url)
+      .then(function (r) { if (!r.ok) { throw new Error("HTTP " + r.status); } return r.json(); })
+      .then(function (list) {
+        var arr = Array.isArray(list) ? list : [];
+        var m = null;
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i].question && arr[i].question.toLowerCase().indexOf(query.toLowerCase().slice(0, 20)) !== -1) { m = arr[i]; break; }
+        }
+        if (!m) { m = arr[0] || null; }
+        if (!m) { throw new Error("market tidak ditemukan"); }
+        var prices = m.outcomePrices;
+        try { if (typeof prices === "string") { prices = JSON.parse(prices); } } catch (e) {}
+        if (!Array.isArray(prices) || prices.length < 2) { throw new Error("format harga tak dikenal"); }
+        var p0 = Number(prices[0]), p1 = Number(prices[1]);
+        var mine = cfg.outcomeIndex === 0 ? p0 : p1;
+        var closedNote = m.closed ? " (market sudah tutup — harga final, bukan harga live)" : "";
+        setText(cfg.elId, cfg.labelYes + " " + p0.toFixed(3) + " · " + cfg.labelNo + " " + p1.toFixed(3) + " · posisi paper: " + cfg.paperNote + " @ " + mine.toFixed(3) + closedNote);
+        renderBar(cfg.bar, mine, cfg.entry, cfg.sl, cfg.tp, cfg.shares, "USDC", false);
+        return true;
+      })
+      .catch(function () {
+        setText(cfg.elId, cfg.snapshotText + " [refresh gagal, tampil snapshot]");
+        renderBar(cfg.bar, cfg.snapshotPrice, cfg.entry, cfg.sl, cfg.tp, cfg.shares, "USDC", true);
+        return false;
+      });
+  }
+  function refreshGamma() {
+    return Promise.all([
+      gammaMarket("Bitcoin Up or Down on November 1", { elId: "live-updown", labelYes: "Up", labelNo: "Down", paperNote: "7 Down", outcomeIndex: 1, bar: "bar-updown", entry: 0.13, sl: 0.1235, tp: 0.156, shares: 7, snapshotPrice: 0.12, snapshotText: "Snapshot: bid terakhir 0,12 / ask 0,13." }),
+      gammaMarket("Chongqing be 17", { elId: "live-weather", labelYes: "Yes", labelNo: "No", paperNote: "10 Yes", outcomeIndex: 0, bar: "bar-weather", entry: 0.001, sl: 0.00095, tp: 0.00115, shares: 10, snapshotPrice: 0.001, snapshotText: "Snapshot: ask 0,001, tanpa bid (CANNOT_EXIT)." }),
+      gammaMarket("Real Madrid CF win on 2026-11-01", { elId: "live-soccer", labelYes: "Yes", labelNo: "No", paperNote: "6 No", outcomeIndex: 1, bar: "bar-soccer", entry: 0.19, sl: 0.1805, tp: 0.2185, shares: 6, snapshotPrice: 0.18, snapshotText: "Snapshot: bid terakhir 0,18 / ask 0,19." }),
+      gammaMarket("Will Bitcoin dip to $75,000 in October", { elId: "live-oldtrack", labelYes: "Yes", labelNo: "No", paperNote: "10 YES", outcomeIndex: 0, bar: "bar-oldtrack", entry: 0.004, sl: 0.0038, tp: 0.0046, shares: 10, snapshotPrice: 0.003, snapshotText: "Snapshot: bid terakhir 0,003." })
+    ]).then(function (results) {
+      var ok = results.indexOf(true) !== -1;
+      setStatus("gamma-status", ok ? "Gamma: live, diperbarui " + wibStamp() : "Gamma: refresh gagal, tampil snapshot", ok);
+      return ok;
+    });
+  }
+  function refreshAll() {
+    Promise.all([refreshCoinGecko(), refreshGamma()]).then(function (results) {
+      if (results[0] || results[1]) { setText("live-stamp", wibStamp()); }
+      setText("live-bro8", "Refresh live: " + (results[0] || results[1] ? "berhasil " + wibStamp() : "gagal, tampil snapshot") + ".");
+    });
+  }
+  refreshAll();
+  setInterval(refreshAll, 60000);
+})();
+</script>
 </body>
 </html>
