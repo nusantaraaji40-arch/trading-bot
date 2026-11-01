@@ -18,6 +18,8 @@ API = "https://indodax.com/api"
 VIRTUAL_START = 50000.0
 BUY_IDR = 10000.0
 LEDGER_PATH = "/home/hatch/workspace/indodax-bot/paper_ledger.json"
+HISTORY_PATH = "/home/hatch/workspace/indodax-bot/indodax_history.jsonl"
+POSITION_PATH = "/home/hatch/workspace/indodax-bot/indodax_position.json"
 PAIRS = ["btc_idr", "eth_idr"]
 
 
@@ -53,8 +55,46 @@ def main():
         print("Tidak ada pair yang bisa dibaca.")
         return 0
 
+    # Celah yang diperbaiki 2026-11-01: jangan beli baru selagi posisi
+    # paper masih ada — beli ulang akan menimpa ledger dan menghapus
+    # jejak trade pertama (modul ini dulu tanpa riwayat). Posisi CLOSED
+    # (atau belum ada trade sama sekali) boleh beli baru.
+    def load_json(path):
+        try:
+            with open(path) as f:
+                return json.load(f)
+        except (OSError, ValueError):
+            return None
+
+    pos = load_json(POSITION_PATH)
+    old_ledger = load_json(LEDGER_PATH)
+    btc_row = next((r for r in rows if r["pair"] == "btc_idr"), rows[0])
+    if pos and pos.get("status") in ("OPEN", "PARTIAL"):
+        coin = float(pos["coin_total"])
+        value = coin * btc_row["bid"]
+        pnl = value - float(pos["cost_idr_total"])
+        print(f"Posisi paper masih {pos['status']}: {coin:.8f} BTC "
+              f"(beli @ Rp{float(pos['entry_ask']):,.0f}), nilai kini "
+              f"Rp{value:,.0f} @ bid Rp{btc_row['bid']:,.0f}, P&L MTM "
+              f"Rp{pnl:,.0f}. Beli baru dilewati supaya posisi tidak "
+              f"tertimpa. Jalankan indodax_exit.py untuk mengeceknya.")
+        return 0
+    if pos and pos.get("status") == "CLOSED":
+        print("Posisi lama sudah CLOSED — beli paper baru diizinkan.")
+    elif old_ledger and old_ledger.get("paper_trade"):
+        t = old_ledger["paper_trade"]
+        coin = float(t["coin_received"])
+        value = coin * btc_row["bid"]
+        pnl = value - float(t["idr_spent"])
+        print(f"Trade lama belum dikelola exit manager: {coin:.8f} BTC "
+              f"(beli @ Rp{float(t['ask_price']):,.0f}), nilai kini "
+              f"Rp{value:,.0f} @ bid Rp{btc_row['bid']:,.0f}, P&L MTM "
+              f"Rp{pnl:,.0f}. Beli baru dilewati — jalankan "
+              f"indodax_exit.py dulu supaya posisi lama tercatat.")
+        return 0
+
     # Paper trade: beli BTC Rp10.000 di harga ask
-    btc = next((r for r in rows if r["pair"] == "btc_idr"), rows[0])
+    btc = btc_row
     btc_bought = BUY_IDR / btc["ask"]
     ledger = {
         "mode": "paper",
@@ -76,6 +116,11 @@ def main():
     }
     with open(LEDGER_PATH, "w") as f:
         json.dump(ledger, f, indent=2)
+    try:
+        with open(HISTORY_PATH, "a") as f:
+            f.write(json.dumps(ledger) + "\n")
+    except OSError as e:
+        print(f"Riwayat gagal ditambah ({e}); ledger terbaru tetap tersimpan.")
     print(f"Paper trade tercatat: beli {btc_bought:.8f} {btc['pair']} "
           f"senilai Rp{BUY_IDR:,.0f} @ Rp{btc['ask']:,.0f}. "
           f"Saldo virtual tersisa: Rp{VIRTUAL_START - BUY_IDR:,.0f}. "

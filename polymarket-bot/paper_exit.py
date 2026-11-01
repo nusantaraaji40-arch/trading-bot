@@ -115,6 +115,7 @@ def load_position(ledger, position_path=POSITION_PATH):
         "remaining": shares,
         "cost_per_share_idr": round(trade["cost_idr"] / shares, 2),
         "cash_after_buy_idr": ledger["virtual_balance_after_idr"],
+        "cash_idr": ledger["virtual_balance_after_idr"],
         "realized_idr": 0.0,
         "tp1_done": False,
         "status": "OPEN",
@@ -148,6 +149,15 @@ def main():
     if pos["remaining"] <= 0:
         print(f"Posisi sudah CLOSED. Realisasi: Rp{pos['realized_idr']:,.0f}.")
         return 0
+    # Perbaikan kas kumulatif 2026-11-01: total dulu = cash_after_buy +
+    # realized (SALAH — cost terhitung dua kali, membuat saldo efektif
+    # 47.099 padahal kas benar 49.456). Kas kini dilacak eksplisit:
+    # cash_idr = kas setelah beli + seluruh hasil jual.
+    if "cash_idr" not in pos:
+        sold = pos["shares_total"] - pos["remaining"]
+        pos["cash_idr"] = round(
+            pos["cash_after_buy_idr"] + pos["realized_idr"]
+            + sold * pos["cost_per_share_idr"], 2)
 
     try:
         rate = float(get_json(COINGECKO_USDC_IDR, timeout=20)["usd-coin"]["idr"])
@@ -177,7 +187,7 @@ def main():
     tp1_price = entry * (1 + TP1_PCT / 100)
     tp2_price = entry * (1 + TP2_PCT / 100)
     position_value = pos["remaining"] * bid * rate
-    total = pos["cash_after_buy_idr"] + pos["realized_idr"] + position_value
+    total = pos["cash_idr"] + position_value
     ks_level = START_IDR * (1 - KILL_SWITCH_PCT / 100)
 
     print(f"Market: {pos['market']}")
@@ -206,6 +216,7 @@ def main():
     pnl_idr = round(proceeds_idr - qty * pos["cost_per_share_idr"], 2)
     pos["remaining"] -= qty
     pos["realized_idr"] = round(pos["realized_idr"] + pnl_idr, 2)
+    pos["cash_idr"] = round(pos["cash_idr"] + proceeds_idr, 2)
     if reason == "TP1":
         pos["tp1_done"] = True
     pos["status"] = "CLOSED" if pos["remaining"] == 0 else "PARTIAL"

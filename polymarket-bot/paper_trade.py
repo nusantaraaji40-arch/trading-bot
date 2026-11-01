@@ -22,6 +22,7 @@ COINGECKO_USDC_IDR = ("https://api.coingecko.com/api/v3/simple/price"
 VIRTUAL_START_IDR = 50000.0
 LEDGER_PATH = "/home/hatch/workspace/polymarket-bot/paper_ledger.json"
 HISTORY_PATH = "/home/hatch/workspace/polymarket-bot/paper_history.jsonl"
+POSITION_PATH = "/home/hatch/workspace/polymarket-bot/paper_position.json"
 
 CRYPTO_WORDS = ("bitcoin", "btc", "ethereum", "eth", "solana", "sol",
                 "crypto", "xrp", "dogecoin", "doge")
@@ -78,6 +79,34 @@ def append_history(record):
 
 
 def main():
+    # Celah yang diperbaiki 2026-11-01: jangan beli baru selagi posisi
+    # paper masih OPEN/PARTIAL — beli baru akan menimpa posisi lama
+    # karena exit manager menginisialisasi ulang dari ledger terbaru.
+    # Posisi CLOSED (atau belum ada posisi) boleh beli baru.
+    try:
+        with open(POSITION_PATH) as f:
+            pos = json.load(f)
+        if pos.get("status") in ("OPEN", "PARTIAL"):
+            print(f"Posisi paper masih {pos['status']} di market "
+                  f"\"{pos.get('market')}\" — beli baru dilewati supaya "
+                  f"posisi tidak tertimpa. Jalankan paper_exit.py untuk "
+                  f"mengecek posisi itu.")
+            return 0
+    except (OSError, ValueError):
+        pos = None
+    # Perbaikan kas kumulatif 2026-11-01: trade baru mulai dari kas
+    # terakhir posisi CLOSED (bukan reset ke Rp50.000 — reset dulu
+    # menghapus kerugian terealisasi -Rp544 dari pembukuan).
+    start_cash = VIRTUAL_START_IDR
+    if pos and pos.get("status") == "CLOSED":
+        if "cash_idr" in pos:
+            start_cash = float(pos["cash_idr"])
+        else:
+            sold = int(pos.get("shares_total", 0)) - int(pos.get("remaining", 0))
+            start_cash = round(
+                float(pos.get("cash_after_buy_idr", VIRTUAL_START_IDR))
+                + float(pos.get("realized_idr", 0.0))
+                + sold * float(pos.get("cost_per_share_idr", 0.0)), 2)
     market = pick_daily_crypto_market()
     if not market:
         print("Tidak ada market kripto harian aktif yang ditemukan saat ini.")
@@ -116,17 +145,17 @@ def main():
             "market": market.get("question"),
             "token_id": token_id,
             "timestamp": datetime.now(timezone.utc).isoformat(),
-            "virtual_balance_start_idr": VIRTUAL_START_IDR,
+            "virtual_balance_start_idr": start_cash,
             "paper_trade": None,
             "trade_skipped_reason": "kurs USDC/IDR tidak tersedia",
-            "virtual_balance_after_idr": VIRTUAL_START_IDR,
+            "virtual_balance_after_idr": start_cash,
             "note": ("Bukan order nyata. Tidak ada USDC asli yang bergerak; "
                      "saldo demo dalam rupiah."),
         }
         with open(LEDGER_PATH, "w") as f:
             json.dump(ledger, f, indent=2)
         print(f"Paper trade dilewati (tanpa kurs). Saldo virtual tetap: "
-              f"Rp{VIRTUAL_START_IDR:,.0f}. Ledger: {LEDGER_PATH}")
+              f"Rp{start_cash:,.0f}. Ledger: {LEDGER_PATH}")
         return 0
     cost_idr = cost_usdc * rate
     ledger = {
@@ -134,7 +163,7 @@ def main():
         "market": market.get("question"),
         "token_id": token_id,
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "virtual_balance_start_idr": VIRTUAL_START_IDR,
+        "virtual_balance_start_idr": start_cash,
         "usdc_idr_rate": rate,
         "paper_trade": {
             "side": "BUY YES",
@@ -143,7 +172,7 @@ def main():
             "cost_usdc": round(cost_usdc, 4),
             "cost_idr": round(cost_idr, 2),
         },
-        "virtual_balance_after_idr": round(VIRTUAL_START_IDR - cost_idr, 2),
+        "virtual_balance_after_idr": round(start_cash - cost_idr, 2),
         "note": ("Bukan order nyata. Tidak ada USDC asli yang bergerak; "
                  "saldo demo dalam rupiah."),
     }
@@ -162,7 +191,7 @@ def main():
     })
     print(f"Paper trade tercatat: beli {shares} YES @ {best_ask:.3f} USDC "
           f"(biaya virtual Rp{cost_idr:,.0f}, kurs Rp{rate:,.0f}/USDC). "
-          f"Saldo virtual tersisa: Rp{VIRTUAL_START_IDR - cost_idr:,.0f}. "
+          f"Saldo virtual tersisa: Rp{start_cash - cost_idr:,.0f}. "
           f"Ledger: {LEDGER_PATH}. Riwayat ditambah ke {HISTORY_PATH}.")
     return 0
 
