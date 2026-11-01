@@ -127,6 +127,14 @@ pemeriksaan di bawah — bukan janji "nol bug selamanya".
   tertangkap (live bisa lebih buruk), spread/fee/swap belum
   dimodelkan, P&L jumlah jendela (rata-rata ~Rp157/jendela validasi).
   Belum "berhasil mutlak": butuh data intraday + biaya.
+- Bot trading demo `bot-engine/demo_bot.py` (1 Nov 2026): orkestrator
+  satu siklus paper 5 venue (subprocess per modul, guard
+  anti-duplikat, ringkasan kas + terealisasi KUMULATIF dari riwayat
+  — bukan hanya posisi berjalan, supaya rugi lama tidak hilang dari
+  tabel). Siklus 1–2 terverifikasi: Indodax HOLD +0,024% (MTM +Rp2),
+  Polymarket CANNOT_EXIT (book kosong pra-resolusi), MT5/Moomoo HOLD
+  0%, Pump.fun 2 trade 2 SL (INKKY -955, BLUE -883, kumulatif
+  -1.838).
 - Status Polymarket pra-resolusi (1 Nov 2026 ~10:00 WIB): book CLOB
   token YES kosong → CANNOT_EXIT (posisi dipertahankan, tanpa harga
   tebakan). Market belum closed resmi (endDate 11:00 WIB), tapi harga
