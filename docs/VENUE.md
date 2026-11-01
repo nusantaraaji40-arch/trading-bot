@@ -6,7 +6,7 @@ baru dipertimbangkan live modal kecil setelah parameter disetujui.
 
 Ringkasan: modal Rp25.000 per venue, total Rp125.000. Kill-switch 15% per
 venue (= Rp3.750): hentikan venue saat rugi mencapai batas itu. Stop loss
-5%, take profit 10-15%.
+5%, take profit 10-15% (Indodax demo: TP 3% jual habis).
 
 | # | Venue | Modal | Status | Payout |
 | --- | --- | --- | --- | --- |
