@@ -18,6 +18,7 @@ Dokumen ini mengevaluasi SEMUA tools/repo dari materi yang dikirim user (carouse
 - **Batasan fetch yang jujur:** hasil fetch halaman GitHub **tidak menampilkan panel bahasa** untuk repo mana pun, jadi kolom bahasa di dokumen ini ditulis "tidak tampil di hasil fetch" untuk semua item — bukan ditebak dari ekstensi file. Di mana README secara eksplisit menyebut stack, itu dicatat terpisah sebagai "indikasi README".
 - **Batasan materi:** gambar/video batch tambahan tidak tersedia sebagai file di sesi riset ini, jadi inventaris batch tambahan bersandar pada checklist materi + verifikasi live tiap repo yang teridentifikasi. Item yang tidak bisa dikaitkan ke repo mana pun ditulis "belum teridentifikasi dari frame", bukan dikarang.
 - Angka bintang adalah snapshot saat fetch dan bisa berubah. Catatan dari sumber sekunder (bukan dari halaman repo) selalu ditandai sebagai "catatan sekunder".
+- **Screening gambar 1 Nov 2026:** 157 file gambar batch 16:17–16:20 WIB dibaca satu per satu (audit trail di `SCREENING.md` di working copy; 6 duplikat digabung, 0 gagal baca). Item baru di bagian G diverifikasi lewat GitHub API (snapshot 1 Nov 2026, ~10:00–10:10 UTC); satu repo (ComfyUI, G45) diverifikasi lewat fetch halaman repo karena API pencarian tidak mengembalikannya. Klaim angka di gambar tidak dipakai sebagai fakta.
 
 ## Format tiap entri
 
@@ -114,7 +115,7 @@ Batch ini SUDAH didokumentasikan lengkap di `REFERENSI-AI-TRADING.md` (9 repo + 
 
 ## B. Carousel regularbasis.studio — "7 open source AI tools"
 
-**Catatan jujur:** judul carousel bilang 7 tool, tapi hanya **6 tool yang terlihat di materi**. Slide ke-7 tidak ada di materi yang dikirim — masuk daftar BELUM JELAS di akhir dokumen, bukan dikarang.
+**Catatan jujur (TERSELESAIKAN lewat screening gambar 1 Nov 2026):** judul carousel bilang 7 tool, tapi set ini hanya berisi **6 tool**. Buktinya dari slide bernomor: cover 01/08 + 6 slide tool 02/08–07/08 + penutup 08/08. **Slide ke-7 (07/08) adalah Archon (B6)** — terkonfirmasi di slice C screening (file temp_image_623A8657…). Jadi tidak ada tool ke-7 yang hilang; judul "7" kelebihan hitung. Item ini DIHAPUS dari daftar BELUM JELAS.
 
 ### B1. BrowserUse — https://github.com/browser-use/browser-use
 - **Fungsi:** Library Python open source untuk agen browser AI (agen yang menjelajah dan bertindak di web).
@@ -229,7 +230,7 @@ Batch ini SUDAH didokumentasikan lengkap di `REFERENSI-AI-TRADING.md` (9 repo + 
 
 ### C8. Daytona — https://github.com/daytonaio/daytona
 - **Fungsi:** Infrastruktur aman dan elastis untuk menjalankan kode hasil AI (sandbox eksekusi).
-- **Bahasa:** tidak tampil di hasil fetch. **Lisensi:** tidak tampil di hasil fetch (README hanya menautkan file LICENSE tanpa menyebut tipenya di teks yang terambil).
+- **Bahasa:** tidak tampil di hasil fetch. **Lisensi:** tidak terdeteksi API GitHub 1 Nov 2026 (README hanya menautkan file LICENSE tanpa menyebut tipenya).
 - **Bintang terverifikasi:** 71.411.
 - **Biaya:** kode gratis (saat masih di-maintain).
 - **Relevansi:** SEDANG — sandbox untuk eksekusi kode agen; relevan untuk keamanan, bukan untuk trading itu sendiri.
@@ -308,7 +309,7 @@ Batch ini SUDAH didokumentasikan lengkap di `REFERENSI-AI-TRADING.md` (9 repo + 
 
 ### D3. Free Claude Code — https://github.com/Alishahryar1/free-claude-code
 - **Fungsi:** Proksi/router open source yang memungkinkan harness coding-agent (Claude Code, Codex, Antigravity, VSCode, Pi, OpenCode, plus 6 harness lain — total 12 di README) dipakai lewat berbagai provider, termasuk tier gratis, dari terminal/aplikasi/IDE/HP/browser.
-- **Bahasa:** tidak tampil sebagai label bahasa di hasil fetch (badge README menyebut Python 3.14; direktori `src/free_claude_code` juga Python). **Lisensi:** metadata GitHub "Other (NOASSERTION)" — badge README menampilkan "License: AGPL v3". **Ada perbedaan label antara metadata GitHub dan badge README — cek file LICENSE sebelum dipakai serius.**
+- **Bahasa:** tidak tampil sebagai label bahasa di hasil fetch (badge README menyebut Python 3.14; direktori `src/free_claude_code` juga Python). **Lisensi:** metadata GitHub "Other (NOASSERTION)" — badge README TIDAK KONSISTEN: satu tangkapan lama menampilkan "License: AGPL v3", sementara frame video Richo (IMG_8350, screening 1 Nov 2026) menampilkan badge "MIT license". **Cek file LICENSE sebelum dipakai serius — label lisensi repo ini tidak bisa dikutip satu versi saja.**
 - **Bintang terverifikasi:** 65.557 (forks 10.216).
 - **Biaya:** kode gratis; klaim README "1.3B+ free tokens" tergantung provider dan bisa berubah — bukan jaminan gratis tanpa batas.
 - **Relevansi:** SEDANG — penghemat biaya harness coding (router ke tier gratis), bukan komponen trading.
@@ -317,14 +318,14 @@ Batch ini SUDAH didokumentasikan lengkap di `REFERENSI-AI-TRADING.md` (9 repo + 
 - **Hubungan dengan OpenClaude (D4):** BERBEDA, jangan disamakan. Free Claude Code adalah proksi/router yang mengarahkan banyak harness ke banyak provider; OpenClaude adalah satu CLI coding-agent mandiri.
 - **Catatan:** screenshot TikTok batch pertama "Free Claude Code" (fabie6) kini teridentifikasi sebagai repo ini — bukan lagi item tak jelas.
 
-### D4. OpenClaude — https://github.com/Gitlawb/openclaude (kini Twigpine/openclaude)
+### D4. OpenClaude — https://github.com/Gitlawb/openclaude (pemilik saat video; lokasi kini tidak terkonfirmasi)
 - **Fungsi:** CLI coding-agent terminal open source multi-model (OpenAI-compatible, Gemini, GitHub Models, Codex, Ollama, dll.) dengan satu workflow terminal: prompt, tools, agents, MCP, slash command, streaming.
 - **Bahasa:** tidak tampil di hasil fetch (sumber sekunder: TypeScript). **Lisensi:** metadata GitHub "Other (NOASSERTION)" — sumber sekunder menyebut lisensi MIT berlaku untuk modifikasi komunitas, sementara kode turunan Anthropic tetap milik Anthropic. Status lisensinya tidak sesederhana "MIT murni".
 - **Bintang terverifikasi:** 34.236 (forks 9.128).
 - **Biaya:** kode gratis; jalan bisa pakai model lokal gratis atau API berbayar.
 - **Relevansi:** SEDANG — coding agent seperti Open Code/Aider, bukan komponen trading.
 - **Portabilitas:** terminal; ringan.
-- **Verdict:** LEWATI — untuk proyek ini, karena: (1) **atribusi video salah** — repo `gnanam1990/openclaude` tidak ditemukan (satu-satunya repo gnanam1990 yang muncul adalah `gnanam1990/argus`, 3 stars); repo openclaude yang benar adalah Gitlawb→Twigpine; (2) proyek pindah (paket npm lama `@gitlawb/openclaude` "no longer updated", pindah ke `@twigpine/openclaude`); (3) **risiko legal/kepercayaan menurut sumber sekunder**: proyek ini berangkat dari codebase Claude Code yang bocor lewat npm source map 31 Maret 2026 dan sempat tersangkut isu DMCA terhadap mirror/fork lain; README menyatakan tidak berafiliasi dengan Anthropic. Klaim video "25.4k stars, 8.2k forks" plausibel sebagai angka lama (sumber sekunder mencatat 26,4k/8,4k; 33.282/9.084 per 15 Sep 2026; kini 34.236/9.128). Pakai Open Code atau Aider saja — lebih bersih.
+- **Verdict:** LEWATI — untuk proyek ini, karena: (1) **atribusi video TERBUKTI salah dan kini terkoreksi** — `gnanam1990/openclaude` bukan repo pemiliknya; dua frame independen dari screening 1 Nov 2026 membuktikan pemilik saat video adalah **Gitlawb**: IMG_8322 (Pandu Rijal: header …/openclaude + situs openclaude.gitlawb.com + baris commit "gnanam1990" — gnanam1990 adalah penulis commit terakhir yang tampil, bukan pemilik) dan IMG_8332 (Aditya: header eksplisit "Gitlawb / openclaude"). Pencarian GitHub 1 Nov 2026 TIDAK mengembalikan repo Gitlawb/openclaude maupun Twigpine/openclaude (kemungkinan pindah/dihapus/diprivat; rujukan pihak ketiga ke @twigpine/openclaude tidak mengembalikan repo) — **lokasi repo kini tidak terkonfirmasi**; (2) proyek pindah (paket npm lama `@gitlawb/openclaude` "no longer updated", pindah ke `@twigpine/openclaude`); (3) **risiko legal/kepercayaan menurut sumber sekunder**: proyek ini berangkat dari codebase Claude Code yang bocor lewat npm source map 31 Maret 2026 dan sempat tersangkut isu DMCA terhadap mirror/fork lain; README menyatakan tidak berafiliasi dengan Anthropic. Klaim video "25.4k stars, 8.2k forks" plausibel sebagai angka lama (sumber sekunder mencatat 26,4k/8,4k; 33.282/9.084 per 15 Sep 2026; kini 34.236/9.128). Pakai Open Code atau Aider saja — lebih bersih.
 
 ### D5. G0DM0D3 / GOD MODE — https://github.com/elder-plinius/G0DM0D3
 - **Fungsi:** "LIBERATED AI CHAT" — antarmuka chat multi-model open source untuk red-teaming, riset kognisi, dan interaksi AI "liberated": 60 model OpenRouter terdaftar + hingga 44 model Venice + model lokal; mode GODMODE CLASSIC (5 kombinasi model+prompt berlomba paralel) dan ULTRAPLINIAN (evaluasi multi-model 12–60 model); ada mesin red-team Parseltongue (33 teknik perturbasi input) dan AutoTune.
@@ -343,9 +344,10 @@ Batch ini SUDAH didokumentasikan lengkap di `REFERENSI-AI-TRADING.md` (9 repo + 
 - **Portabilitas:** ringan; script Python.
 - **Verdict:** PAKAI — sebagai referensi desain (Time Machine + risk gate + paper default), diadaptasi ke venue user (Indodax, Polymarket, Forex, Moomoo, Pump.fun). Bukan bot otomatis: ini skill riset/proses untuk Claude; proyek sangat baru (dibuat 2026-10-20; sumber 23 Okt 2026 mencatat baru 637 stars, kini 4.075). README menegaskan bukan saran finansial.
 
-### D7. Carousel @okaashish #3–#7 — BELUM TERIDENTIFIKASI
-- Carousel "7 Alternatives to Claude Code, 100% Free and Local" — yang terkonfirmasi hanya #1 Open Code (D1) dan #2 Aider (D2). **Slide #3–#7 belum teridentifikasi dari materi**: pencarian judul carousel dan nama akun tidak mengembalikan salinan/daftar isi carousel itu. Tidak dikarang dari daftar generik lain (daftar "7 alternatif gratis" generik yang beredar berisi nama-nama lain, tapi itu bukan bukti isi carousel ini — dan dua di antaranya kini sudah berubah status: Roo Code tutup, Continue read-only setelah diakuisisi Cursor).
-- **Yang dibutuhkan:** screenshot/slide #3–#7 dari user, atau pembukaan carousel lewat browser live. Lihat daftar BELUM JELAS di akhir dokumen.
+### D7. Carousel @okaashish #3–#7 — TERSELESAIKAN lewat screening gambar 1 Nov 2026
+- Daftar lengkap carousel "7 Alternatives to Claude Code, 100% Free and Local" kini terbukti: **#1 Open Code (D1), #2 Aider (D2), #3 Plandex (G1), #4 Void (G2), #5 Zed (G3), #6 Cline (G4), #7 Kilo Code (G5)**.
+- **Rantai bukti:** slide rekap slice C (file temp_image_0124398C…, "SAVE THESE GITHUB REPOS:") mencantumkan ketujuh URL bernomor; slide individual mengonfirmasi #1 (slice C), #4 Void (slice C, 28.7k★ klaim), #5 Zed (slice C, 82.1k★ klaim), #7 Kilo Code (slice C, 19k★ klaim), #2 Aider (slice D, 44.4k★), #3 Plandex (slice D, 15.3k★) dan #6 Cline (slice D, 61.4k★). Kejujuran atribusi: slide #3/#6 di slice D tidak mencetak judul carousel — penautannya via akun @okaashish yang sama + gaya visual + nomor urut yang cocok dengan rekap (bukti kuat, bukan 100% eksplisit); slide #3/#6 juga tidak menampilkan URL GitHub di gambar — URL-nya diverifikasi live lewat API (lihat G1, G4).
+- Item ini DIHAPUS dari daftar BELUM JELAS.
 
 ---
 
@@ -355,7 +357,7 @@ Batch ini SUDAH didokumentasikan lengkap di `REFERENSI-AI-TRADING.md` (9 repo + 
 
 ### E1. Nocturne — https://github.com/Gajesh2007/ai-trading-agent
 - **Fungsi:** "Nocturne: AI Trading Agent on Hyperliquid" — agen AI memakai LLM untuk menganalisis data pasar real-time dari TAAPI, mengambil keputusan buy/sell/hold, dan mengeksekusi trade di Hyperliquid DEX, berjalan dalam loop kontinu dengan TP/SL.
-- **Bahasa:** tidak tampil di hasil fetch (indikasi README: Python — `src/main.py`, `poetry`, Dockerfile). **Lisensi:** tidak tampil di hasil fetch (tidak ada file LICENSE di root yang terdaftar). **Bintang terverifikasi:** 555 (klaim video 543 sudah terlampaui).
+- **Bahasa:** tidak tampil di hasil fetch (indikasi README: Python — `src/main.py`, `poetry`, Dockerfile). **Lisensi:** tidak terdeteksi API GitHub 1 Nov 2026 (tidak ada file LICENSE) — konsisten dengan catatan lama "tidak tampil di hasil fetch". **Bintang terverifikasi:** 555 (klaim video 543 sudah terlampaui).
 - **Biaya:** kode gratis; jalan butuh API: TAAPI + LLM (OpenRouter) berbayar; eksekusi di Hyperliquid butuh dana.
 - **Relevansi:** TINGGI — pola agen eksekusi lengkap (analisis → keputusan → eksekusi → TP/SL → loop).
 - **Portabilitas:** Docker; Python; self-host.
@@ -499,9 +501,430 @@ Batch ini SUDAH didokumentasikan lengkap di `REFERENSI-AI-TRADING.md` (9 repo + 
 - **Status eksplisit:** video mengklaim 6 repo, tapi dari materi yang dikirim baru **5 kartu terkonfirmasi**: Nautilus Trader (F1), Hummingbot (A7/F5), skfolio (F2), Freqtrade (F3), Kronos (F4).
 - **Usaha identifikasi yang sudah dilakukan:** pencarian beberapa varian ("6 GitHub repos run a hedge fund", nama creator "Kashi", kombinasi kelima nama repo) tidak menemukan daftar lengkap video tersebut. Hasil yang muncul adalah artikel/stack lain (mis. QuantFrame "Four Repos, Four Desks": Kronos + skfolio + NautilusTrader + Vibe-Trading, dan daftar bot kripto umum) yang tidak cocok dengan komposisi video ini.
 - **Tidak dikarang:** kandidat seperti Qlib/TradingAgents/ai-hedge-fund TIDAK ditebak sebagai repo ke-6 karena tidak ada bukti mengaitkannya dengan video itu.
+- **Hasil screening gambar 1 Nov 2026 (157 file):** hanya 5 kartu yang sama dari video yang sama yang muncul — IMG_8303.jpg (Kronos), IMG_8304.jpg (Freqtrade), IMG_8305.jpg (skfolio), IMG_8306.jpg (Nautilus), IMG_8307.jpg (Hummingbot), dengan angka interaksi identik (438/46/488/53). Tidak ada kartu ke-6, daftar lengkap, atau nama kandidat di file mana pun. Penampakan Nautilus/Kronos di slice B/C berasal dari video TikTok lain, bukan bukti untuk #6. Tetap BELUM TERIDENTIFIKASI.
 - **Yang dibutuhkan:** link video atau tangkapan layar daftar lengkapnya dari user, supaya repo ke-6 bisa diverifikasi langsung. Entri ini ditulis eksplisit supaya tidak ada yang hilang diam-diam.
 
 ---
+
+## G. Hasil screening gambar 1 Nov 2026 — temuan baru
+
+**Catatan screening (1 Nov 2026):** 157 file gambar dibaca satu per satu (audit trail
+lengkap di `SCREENING.md` di working copy). Duplikat file digabung (6 file), 0 gagal baca,
+0 item murni tak terbaca. Bagian ini menambahkan **47 repo + 4 observasi non-repo**
+(G1–G51) dengan angka live dari GitHub API (snapshot 1 Nov 2026, ~10:00–10:10 UTC;
+ComfyUI via fetch halaman repo). **Stack rekomendasi di bawah TIDAK diubah oleh
+screening ini** — kandidat tambahan yang layak dipertimbangkan di putaran berikut:
+Firecrawl (G33, riset web), last30days-skill (G38, riset sentimen termasuk Polymarket),
+MiroFish (G37, prediksi), 9Router (G21, lapisan model), markitdown (G27, alternatif Docling).
+Semua entri lama di atas dipertahankan apa adanya.
+
+### G-A. Coding agent & tooling
+
+### G1. Plandex — https://github.com/plandex-ai/plandex — okaashish #3
+- **Fungsi:** Coding agent terminal untuk codebase besar (konteks sampai 2M token).
+- **Bahasa:** Go. **Lisensi:** MIT. **Bintang terverifikasi:** 15.873. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan bisa pakai model lokal atau API berbayar.
+- **Relevansi:** SEDANG — tooling coding agent, bukan komponen trading.
+- **Portabilitas:** terminal; ringan.
+- **Verdict:** PERTIMBANGKAN — alternatif coding agent untuk codebase besar. Catatan slide: "Plandex Cloud is winding down" (layanan cloud-nya saja; CLI open source tetap). Slide tidak menampilkan URL GitHub — URL diverifikasi live lewat API + rekap okaashish.
+
+### G2. Void — https://github.com/voideditor/void — okaashish #4
+- **Fungsi:** Alternatif Cursor open source (editor + agen AI).
+- **Bahasa:** TypeScript. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 28.725. **DIARSIPKAN (archived=True).**
+- **Biaya:** kode gratis.
+- **Relevansi:** SEDANG sebagai editor, tapi statusnya membatalkan pemakaian baru.
+- **Portabilitas:** desktop; ringan.
+- **Verdict:** LEWATI — repo diarsipkan; jangan jadikan dependensi baru. (Klaim slide 28.7k terkonfirmasi angkanya, tapi bukan statusnya.)
+
+### G3. Zed — https://github.com/zed-industries/zed — okaashish #5
+- **Fungsi:** Editor kode cepat (Rust) dengan agen AI terintegrasi.
+- **Bahasa:** Rust. **Lisensi:** tidak terdeteksi API (NOASSERTION; Zed memakai multi-lisensi — cek file LICENSE). **Bintang terverifikasi:** 92.476. Tidak diarsipkan.
+- **Biaya:** kode gratis; fitur AI bisa butuh API berbayar.
+- **Relevansi:** SEDANG — tooling pengembangan bot.
+- **Portabilitas:** desktop (macOS/Linux); ringan dan cepat.
+- **Verdict:** PERTIMBANGKAN — editor alternatif bila butuh kecepatan; bukan komponen trading.
+
+### G4. Cline — https://github.com/cline/cline — okaashish #6
+- **Fungsi:** Coding agent di VS Code (autonomous coding dengan tools, file, terminal).
+- **Bahasa:** TypeScript. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 71.142. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh API LLM berbayar (atau model lokal).
+- **Relevansi:** SEDANG — tooling coding agent.
+- **Portabilitas:** ekstensi VS Code; ringan.
+- **Verdict:** PERTIMBANGKAN — pelengkap/pesaing Open Code & Aider di dalam IDE. Slide tidak menampilkan URL GitHub — URL diverifikasi live lewat API + rekap okaashish.
+
+### G5. Kilo Code — https://github.com/Kilo-Org/kilocode — okaashish #7
+- **Fungsi:** Coding agent open source untuk VS Code, JetBrains, dan CLI (500+ model).
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 27.821. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh API LLM berbayar (atau model lokal).
+- **Relevansi:** SEDANG — tooling coding agent.
+- **Portabilitas:** ekstensi/CLI; ringan.
+- **Verdict:** PERTIMBANGKAN — satu lagi kandidat coding agent; pilih satu sebagai harian, jangan menumpuk.
+
+### G6. mattpocock/skills — https://github.com/mattpocock/skills
+- **Fungsi:** Kumpulan skill untuk coding agent (folder skills: deprecated, engineering, in-progress, misc, personal, productivity).
+- **Bahasa:** Shell. **Lisensi:** MIT. **Bintang terverifikasi:** 308.790. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — pola skill untuk agen (relevan sebagai referensi desain skill bot, bukan trading langsung).
+- **Portabilitas:** file markdown/shell; ringan.
+- **Verdict:** PERTIMBANGKAN — sebagai referensi struktur skill agen. **Koreksi penting:** ini SATU repo, bukan 4 repo seperti framing lama ("4 repo github yang wajib lo install") — yang terlihat di frame (IMG_8401-2) adalah satu halaman repo dengan 6 kategori folder di dalamnya; video Satria Bahari menghitungnya sebagai #6 dari 6.
+
+### G7. everything-claude-code — https://github.com/WorldFlowAI/everything-claude-code (kandidat terkuat; owner tidak terbaca di gambar)
+- **Fungsi:** Toolkit Claude Code: agents, commands, skills, rules, dan hooks untuk pengembangan berbantuan AI.
+- **Bahasa:** JavaScript. **Lisensi:** tidak terdeteksi API (null). **Bintang terverifikasi:** 5.704. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — tooling Claude Code.
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — dengan caveat: frame video hanya menampilkan committer affaan-m, bukan pemilik repo; WorldFlowAI adalah kandidat terkuat via kecocokan deskripsi, BUKAN terbukti dari gambar. Konfirmasi owner sebelum dipakai serius.
+
+### G8. claude-code-best-practice — https://github.com/shanraisshan/claude-code-best-practice
+- **Fungsi:** Panduan dan praktik terbaik Claude Code (plus trik bolt.new: awali URL repo dengan `bolt.new/` untuk membukanya di Bolt).
+- **Bahasa:** HTML. **Lisensi:** MIT. **Bintang terverifikasi:** 68.394. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — panduan proses pengembangan agen.
+- **Portabilitas:** dokumen; ringan.
+- **Verdict:** PERTIMBANGKAN — sebagai panduan, bukan komponen.
+
+### G9. planning-with-files — https://github.com/OthmanAdi/planning-with-files
+- **Fungsi:** Skill Claude Code untuk planning persisten berbasis file markdown (pola ala Manus: rencana hidup di file, bukan hanya di konteks).
+- **Bahasa:** Shell. **Lisensi:** MIT. **Bintang terverifikasi:** 27.803. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — pola planning ini relevan untuk agen trading (rencana/keputusan tercatat di file, bisa diaudit — sejalan dengan ledger paper bot user).
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — pola planning-nya layak ditiru. (Klaim slide 260★ sudah sangat kedaluwarsa.)
+
+### G10. codex-plugin-cc — https://github.com/openai/codex-plugin-cc
+- **Fungsi:** Plugin resmi OpenAI yang menghubungkan Codex ke Claude Code.
+- **Bahasa:** JavaScript. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 34.779. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh API model berbayar.
+- **Relevansi:** SEDANG — jembatan antar-harness coding agent.
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — bila workflow memakai Codex + Claude Code bersamaan.
+
+### G11. andrej-karpathy-skills — https://github.com/multica-ai/andrej-karpathy-skills
+- **Fungsi:** Satu file CLAUDE.md berisi observasi/gaya kerja Andrej Karpathy untuk coding agent; README juga menyebut proyek baru Multica (platform menjalankan/mengelola coding agent dengan skill reusable).
+- **Bahasa:** tidak tampil (file markdown). **Lisensi:** tidak terdeteksi API (klaim slide: MIT). **Bintang terverifikasi:** 227.688. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — panduan gaya kerja agen coding.
+- **Portabilitas:** satu file; ringan.
+- **Verdict:** PERTIMBANGKAN — sebagai referensi gaya, bukan komponen.
+
+### G12. prompt-master — https://github.com/nidhinjs/prompt-master
+- **Fungsi:** Skill Claude untuk menulis prompt yang akurat.
+- **Bahasa:** tidak tampil di hasil API. **Lisensi:** MIT. **Bintang terverifikasi:** 15.345. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** RENDAH–SEDANG — prompt engineering umum.
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — untuk kualitas prompt analis; bukan komponen trading. (Konflik di gambar dicatat: layar 7.997★ vs klaim lisan "11K".)
+
+### G13. ECC — https://github.com/affaan-m/ECC
+- **Fungsi:** Setup universal Claude Code: 68 agents, 291 skills, 61 hooks, dan security scanner (klaim slide); instalasi via `npx ecc-universal@2.2.1 setup`; diklaim pemenang hackathon Anthropic (klaim slide).
+- **Bahasa:** JavaScript. **Lisensi:** MIT. **Bintang terverifikasi:** 294.325. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — tooling setup coding agent.
+- **Portabilitas:** ringan (katalog besar — pilih workflow yang dipakai, jangan semua).
+- **Verdict:** PERTIMBANGKAN — sebagai starter pack; risiko katalog raksasa: konteks membengkak bila semua skill dimuat (pakai headroom / pilih workflow).
+
+### G14. REA — https://github.com/morluto/rea
+- **Fungsi:** Jembatan MCP + CLI dari Claude Code/Cursor ke toolchain reverse-engineering (decompiler) untuk membedah cara kerja aplikasi.
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 416.701. Tidak diarsipkan.
+- **Biaya:** kode gratis.
+- **Relevansi:** RENDAH untuk trading agent — ini tool reverse engineering, bukan komponen trading.
+- **Portabilitas:** ringan.
+- **Verdict:** LEWATI — untuk trading agent. Alasan: relevansi trading nyaris nol, dan tool dual-use (membongkar aplikasi orang lain) dengan risiko keamanan/penyalahgunaan; slide sumber sendiri memberi disclaimer "buat belajar, bukan buat nyolong". Jangan dimasukkan ke pipeline bot.
+- **Catatan:** klaim video "170 ribu+ star" sudah terlampaui jauh (kini 416.701); klaim REA "7.019★" di video lain adalah angka lama/parsial, bukan total.
+
+### G15. security-audit-skill — https://github.com/cloudflare/security-audit-skill
+- **Fungsi:** Skill coding-agent untuk audit keamanan multi-fase dengan temuan machine-readable yang diverifikasi independen.
+- **Bahasa:** JavaScript. **Lisensi:** MIT. **Bintang terverifikasi:** 55.748. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — audit keamanan kode bot sendiri sebelum live (sejalan dengan gerbang pengaman bot user).
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — untuk audit kode bot. (Klaim video 15.072 = bintang/minggu, bukan total.)
+
+### G16. T3 Code — https://github.com/pingdotgg/t3code
+- **Fungsi:** Harness control surface (aplikasi mobile/web/Electron) untuk mengendalikan Claude Code, Codex, Cursor, Grok Build, OpenCode, dan Antigravity.
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 36.326. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh subscription harness/model.
+- **Relevansi:** SEDANG — monitoring/kontrol agen dari HP (relevan dengan gaya user yang bekerja dari HP).
+- **Portabilitas:** mobile/web/desktop.
+- **Verdict:** PERTIMBANGKAN — untuk kontrol agen jarak jauh; bukan komponen trading.
+
+### G17. agent-browser — https://github.com/vercel-labs/agent-browser
+- **Fungsi:** CLI browser automation untuk agen AI (agen menjelajah web lewat CLI).
+- **Bahasa:** Rust. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 45.073. Tidak diarsipkan.
+- **Biaya:** kode gratis.
+- **Relevansi:** SEDANG — riset/monitoring berbasis browser untuk analis; eksekusi trading tetap via API, bukan browser.
+- **Portabilitas:** CLI; ringan.
+- **Verdict:** PERTIMBANGKAN — pelengkap BrowserUse (B1) untuk riset; pilih satu.
+
+### G18. OpenMythos — https://github.com/kyegomez/OpenMythos
+- **Fungsi:** Rekonstruksi teoretis arsitektur Claude Mythos (bukan model jadi).
+- **Bahasa:** Python. **Lisensi:** MIT. **Bintang terverifikasi:** 14.914. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** RENDAH — riset arsitektur; klaim video "beats Claude Mythos" tidak terbukti dari repo ini.
+- **Portabilitas:** Python; ringan.
+- **Verdict:** LEWATI — bukan model yang bisa dipakai, bukan komponen trading. (Angka frame konflik: 10.4k vs 7.4k; live 14.914.)
+
+### G19. No AI Slop — https://github.com/petergyang/no-ai-slop
+- **Fungsi:** Menghapus 20+ pola "AI slop" dari tulisan apa pun.
+- **Bahasa:** Python. **Lisensi:** MIT. **Bintang terverifikasi:** 13.009. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** RENDAH — kualitas tulisan, bukan trading.
+- **Portabilitas:** ringan.
+- **Verdict:** LEWATI — untuk trading agent. (Berguna untuk konten affiliate user, bukan untuk bot.)
+
+### G20. AI Job Search — https://github.com/ai-job-search-dev/ai-job-search
+- **Fungsi:** Framework cari kerja yang jalan di mesin sendiri, dibangun di atas Claude Code: menilai lowongan, menyesuaikan CV, menulis surat lamaran, persiapan interview.
+- **Bahasa:** Python. **Lisensi:** MIT. **Bintang terverifikasi:** 68.547. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh API LLM.
+- **Relevansi:** RENDAH — bukan trading.
+- **Portabilitas:** ringan.
+- **Verdict:** LEWATI — untuk trading agent. (Deskripsi API cocok persis dengan frame video; nama repo tidak terlihat di frame.)
+
+### G21. 9Router — https://github.com/decolua/9router
+- **Fungsi:** Router multi-provider: satu endpoint untuk Claude Code, Codex, Cursor, Cline, Copilot, Antigravity ke 40+ provider (termasuk gratis), auto-fallback saat kuota habis, klaim hemat token.
+- **Bahasa:** JavaScript. **Lisensi:** MIT. **Bintang terverifikasi:** 31.782. Tidak diarsipkan.
+- **Biaya:** kode gratis; provider gratis/berbayar tergantung pilihan.
+- **Relevansi:** SEDANG–TINGGI — lapisan model untuk analis (hemat biaya/kuota LLM, sejalan dengan aturan gratis user).
+- **Portabilitas:** ringan; self-host.
+- **Verdict:** PERTIMBANGKAN — kandidat lapisan model analis. Catatan keamanan: kunci API model melewati router — pahami risikonya; JANGAN pernah merutekan kunci wallet/private key lewat router apa pun.
+
+### G22. CodeGraph — https://github.com/colbymchenry/codegraph
+- **Fungsi:** Knowledge graph kode pre-index yang auto-sync saat kode berubah, untuk Claude Code, Codex, Gemini, Cursor, OpenCode, Antigravity, Kiro, CoPilot, Hermes Agent.
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 76.111. Tidak diarsipkan.
+- **Biaya:** kode gratis.
+- **Relevansi:** SEDANG — hemat token coding agent (konteks kode siap pakai).
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — pelengkap/pesaing GRAPHIFY (G39) untuk konteks kode; pilih satu.
+
+### G23. Open Notebook — https://github.com/lfnovo/open-notebook (kandidat terkuat; nama repo tidak terlihat di frame)
+- **Fungsi:** Implementasi open source NotebookLM: PDF/video/situs/catatan menjadi sumber yang bisa di-chat, diringkas, dan dijadikan podcast.
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 41.215. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh API LLM.
+- **Relevansi:** SEDANG — riset dokumen untuk analis (laporan, berita, riset pasar).
+- **Portabilitas:** self-host; ringan–menengah.
+- **Verdict:** PERTIMBANGKAN — dengan caveat: identifikasi via kecocokan deskripsi persis, bukan URL di gambar.
+
+### G24. Anthropic-Cybersecurity-Skills — https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+- **Fungsi:** 817 skill keamanan siber untuk Claude (audit, threat modeling, secure code review, dst).
+- **Bahasa:** Python. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 35.373. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — audit keamanan kode bot (pelengkap G15).
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — untuk audit keamanan. **Peringatan:** proyek KOMUNITAS, bukan resmi Anthropic (sesuai disclaimernya sendiri) — jangan dikira dukungan resmi.
+
+### G25. openclaw — https://github.com/openclaw/openclaw
+- **Fungsi:** Platform agen AI open source (struktur repo: agents, apps, extensions, docs, skills; gateway + runtime agen).
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 393.598. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh API LLM.
+- **Relevansi:** SEDANG — platform agen umum (pesaing eliza/OpenAlice sebagai fondasi agen).
+- **Portabilitas:** self-host.
+- **Verdict:** PERTIMBANGKAN — sebagai fondasi agen alternatif. **Caveat frame:** teks overlay video ("APLIKASI INI BISA MENGUBAH REPOSITORI GITHUB MENJADI PROMPT") mungkin menjelaskan tool lain, bukan repo latar — repo dan overlay TIDAK digabung otomatis di sini.
+
+### G26. i-have-adhd — https://github.com/ayghri/i-have-adhd
+- **Fungsi:** Plugin Claude Code: jawaban dulu, penjelasan belakangan (gaya kerja cepat, 142 baris).
+- **Bahasa:** Python. **Lisensi:** MIT. **Bintang terverifikasi:** 59.633. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** RENDAH–SEDANG — tooling gaya kerja agen (sejalan dengan permintaan user: keputusan cepat).
+- **Portabilitas:** sangat ringan.
+- **Verdict:** PERTIMBANGKAN — kecil dan ringan; nilai utamanya gaya, bukan kemampuan baru.
+
+### G-B. Dokumen, RAG & data
+
+### G27. markitdown — https://github.com/microsoft/markitdown
+- **Fungsi:** Konverter file (PDF, Office, HTML, dll) ke Markdown (`pip install 'markitdown[all]'`).
+- **Bahasa:** Python. **Lisensi:** MIT. **Bintang terverifikasi:** 193.308. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** SEDANG — parsing dokumen untuk RAG analis, sekelas Docling (B4) tapi repo berbeda.
+- **Portabilitas:** Python; ringan; cocok VPS kecil.
+- **Verdict:** PERTIMBANGKAN — alternatif/pelengkap Docling untuk pipeline RAG. (Dua slide berbeda di slice D: kartu repo + demo perintah — bukan duplikat.)
+
+### G28. WeKnora — https://github.com/Tencent/WeKnora
+- **Fungsi:** Platform pengetahuan LLM: dokumen mentah menjadi basis pengetahuan yang bisa dikueri + reasoning agent + Wiki yang memelihara diri.
+- **Bahasa:** Go. **Lisensi:** tidak terdeteksi API (NOASSERTION). **Bintang terverifikasi:** 36.148. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh model (lokal/API).
+- **Relevansi:** SEDANG — RAG analis yang lebih berat dari markitdown/Docling.
+- **Portabilitas:** butuh Docker + model — setup terberat di set ini; bukan untuk VPS 512 MB.
+- **Verdict:** PERTIMBANGKAN — bila RAG analis naik kelas ke laptop/VPS menengah; bukan prioritas.
+
+### G29. archify — https://github.com/tt-a1i/archify
+- **Fungsi:** Skill agen untuk diagram arsitektur, workflow, sequence, data-flow, dan lifecycle yang terverifikasi (`npx skills add tt-a1i/archify -g`).
+- **Bahasa:** JavaScript. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 92.238. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** RENDAH–SEDANG — visualisasi/dokumentasi codebase bot.
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — untuk dokumentasi arsitektur bot; bukan komponen runtime.
+
+### G30. minimind — https://github.com/jingyaogong/minimind
+- **Fungsi:** Latih LLM 64M parameter dari nol dalam ~2 jam (klaim) — proyek edukasi.
+- **Bahasa:** Python. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 64.711. Tidak diarsipkan.
+- **Biaya:** kode gratis; training butuh GPU (3090 disarankan di slide).
+- **Relevansi:** RENDAH — edukasi; bukan model produksi untuk analis.
+- **Portabilitas:** butuh GPU untuk training; tidak cocok VPS kecil.
+- **Verdict:** LEWATI — untuk trading agent. (Nilai edukasi saja.)
+
+### G31. OpenMAIC — https://github.com/THU-MAIC/OpenMAIC
+- **Fungsi:** Kelas multi-agen interaktif open source (lingkungan belajar dengan banyak agen).
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 42.333. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh API key model (Azure OpenAI dll) = biaya.
+- **Relevansi:** RENDAH — edukasi, bukan trading.
+- **Portabilitas:** menengah.
+- **Verdict:** LEWATI — untuk trading agent (edukasi + biaya API).
+
+### G32. freellmapi — https://github.com/tashfeenahmed/freellmapi
+- **Fungsi:** 34 provider LLM gratis dan 635 endpoint model gratis di balik satu API /v1.
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 45.364. Tidak diarsipkan.
+- **Biaya:** kode gratis; provider gratis (kuota/keandalan tidak terjamin).
+- **Relevansi:** SEDANG — lapisan model gratis untuk analis (pesaing 9Router G21).
+- **Portabilitas:** ringan; self-host.
+- **Verdict:** PERTIMBANGKAN — dengan catatan repo sendiri: "personal experimentation only". Jangan untuk order; uji keandalan dulu sebelum dipakai analis rutin.
+
+### G33. Firecrawl — https://github.com/firecrawl/firecrawl
+- **Fungsi:** Ubah website menjadi data bersih siap-AI (crawl, scrape, extract, search).
+- **Bahasa:** TypeScript. **Lisensi:** AGPL-3.0. **Bintang terverifikasi:** 197.514. Tidak diarsipkan.
+- **Biaya:** kode gratis (self-host); layanan cloud-nya berbayar.
+- **Relevansi:** SEDANG–TINGGI — riset web analis (berita, laporan, data pasar dari web).
+- **Portabilitas:** self-host (Docker); menengah.
+- **Verdict:** PERTIMBANGKAN — kandidat kuat lapisan riset analis. Catatan: AGPL-3.0 copyleft — perhatikan bila dipakai sebagai layanan jaringan.
+
+### G34. public-apis — https://github.com/public-apis/public-apis
+- **Fungsi:** Direktori ribuan API publik gratis, terkategori (keuangan, cuaca, kripto, dll).
+- **Bahasa:** Python. **Lisensi:** MIT. **Bintang terverifikasi:** 493.917. Tidak diarsipkan.
+- **Biaya:** gratis (daftar).
+- **Relevansi:** SEDANG — sumber data gratis untuk analis (CoinGecko, Open-Meteo, dll sudah dipakai bot user).
+- **Portabilitas:** tidak berlaku (dokumen).
+- **Verdict:** PERTIMBANGKAN — sebagai referensi sumber data; cek tiap API satu per satu (gratis ≠ tanpa batas).
+
+### G35. Awesome Public Datasets — https://github.com/awesomedata/awesome-public-datasets
+- **Fungsi:** Direktori dataset publik (termasuk sebutan Indonesia Data Portal di frame).
+- **Bahasa:** tidak tampil (daftar). **Lisensi:** MIT. **Bintang terverifikasi:** 79.891. Tidak diarsipkan.
+- **Biaya:** gratis (daftar).
+- **Relevansi:** SEDANG–RENDAH — data riset/backtest.
+- **Portabilitas:** tidak berlaku (dokumen).
+- **Verdict:** PERTIMBANGKAN — sebagai referensi dataset; org tidak terbaca di frame, URL diverifikasi live lewat API.
+
+### G36. awesome-selfhosted — https://github.com/awesome-selfhosted/awesome-selfhosted
+- **Fungsi:** Direktori software self-host (bukan tool eksekusi).
+- **Bahasa:** tidak tampil (daftar). **Lisensi:** tidak terdeteksi API (NOASSERTION). **Bintang terverifikasi:** 332.560. Tidak diarsipkan.
+- **Biaya:** gratis (daftar).
+- **Relevansi:** RENDAH — referensi hosting mandiri untuk komponen bot.
+- **Portabilitas:** tidak berlaku (dokumen).
+- **Verdict:** PERTIMBANGKAN — sebagai referensi hosting; beda dengan E12 (Awesome Polymarket Tools).
+
+### G37. MiroFish — https://github.com/666ghj/MiroFish
+- **Fungsi:** "A Simple and Universal Swarm Intelligence Engine, Predicting Anything" — engine prediksi multi-agen (berita, kebijakan, sinyal finansial).
+- **Bahasa:** Python. **Lisensi:** AGPL-3.0. **Bintang terverifikasi:** 83.152. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh model/API.
+- **Relevansi:** SEDANG–TINGGI — prediksi adalah inti riset prediction market (Polymarket).
+- **Portabilitas:** Python; ringan–menengah.
+- **Verdict:** PERTIMBANGKAN — menarik untuk riset Polymarket; klaim prediksi WAJIB divalidasi paper dulu (seperti semua modul prediksi). **Koreksi org:** 666ghj, bukan 666gh seperti terbaca awal (klon yang merujuk 666ghj mengonfirmasinya).
+
+### G38. last30days-skill — https://github.com/mvanhorn/last30days-skill
+- **Fungsi:** Skill agen untuk riset topik 30 hari terakhir di Reddit, X, YouTube, HN, Polymarket, dan web, lalu sintesis ringkasan berdasar bukti.
+- **Bahasa:** Python. **Lisensi:** MIT. **Bintang terverifikasi:** 66.171. Tidak diarsipkan.
+- **Biaya:** gratis (skill); jalan butuh API LLM.
+- **Relevansi:** TINGGI — riset sentimen/berita termasuk Polymarket, langsung mengisi lapisan analis bot.
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — kandidat kuat lapisan riset. **Koreksi org:** mvanhorn (address bar di frame) benar; overlay video "mvan231" salah.
+
+### G39. GRAPHIFY — https://github.com/Graphify-Labs/graphify
+- **Fungsi:** Ubah codebase beserta docs, skema SQL, config, dan PDF menjadi knowledge graph yang bisa dikueri; skill /graphify untuk Claude Code, Cursor, Codex, Gemini CLI.
+- **Bahasa:** Python. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 140.220. Tidak diarsipkan.
+- **Biaya:** kode gratis.
+- **Relevansi:** SEDANG — konteks codebase untuk coding agent (pesaing CodeGraph G22).
+- **Portabilitas:** ringan–menengah.
+- **Verdict:** PERTIMBANGKAN — pilih satu vs CodeGraph. (Klaim video 6.903 = bintang/minggu.)
+
+### G-C. Agen umum & finansial
+
+### G40. cindy — https://github.com/makecindy/cindy
+- **Fungsi:** Agen AI open source siap pakai (desktop + mobile).
+- **Bahasa:** TypeScript. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 8.867. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh API LLM.
+- **Relevansi:** SEDANG — agen umum; bukan khusus trading.
+- **Portabilitas:** desktop/mobile; ringan.
+- **Verdict:** PERTIMBANGKAN — sebagai agen umum alternatif; bukan fondasi trading.
+
+### G41. ORCA — https://github.com/stablyai/orca
+- **Fungsi:** Tempat kerja multi-agen: jalankan banyak coding agent (Grok Bot, Claude Code, dll) dengan subscription sendiri; desktop, mobile, remote runtime.
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 112.009. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh subscription model.
+- **Relevansi:** SEDANG — orkestrasi banyak agen (berguna bila bot memakai beberapa harness).
+- **Portabilitas:** desktop/mobile/remote.
+- **Verdict:** PERTIMBANGKAN — untuk orkestrasi agen. (Klaim video 9.622 = bintang/minggu; fungsi tidak terbaca di frame — deskripsi API yang dipakai.)
+
+### G42. financial-services — https://github.com/anthropics/financial-services
+- **Fungsi:** Agen, skill, dan konektor resmi Anthropic untuk finansial (investment banking, equity research, private equity, wealth management).
+- **Bahasa:** Python. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 40.961. Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh Claude/API.
+- **Relevansi:** SEDANG–TINGGI — referensi desain agen finansial (riset, analisis, workflow) — bukan eksekutor dan bukan saran investasi.
+- **Portabilitas:** ringan.
+- **Verdict:** PERTIMBANGKAN — sebagai referensi desain agen finansial; perlu Claude untuk jalan penuh.
+
+### G-D. Konten & media
+
+### G43. Recordly — https://github.com/webadderallorg/Recordly
+- **Fungsi:** Perekam layar untuk video demo (zoom kursor, webcam bubble, output MP4/GIF).
+- **Bahasa:** TypeScript. **Lisensi:** tidak terdeteksi API (NOASSERTION). **Bintang terverifikasi:** 35.754. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** RENDAH — alat konten, bukan trading.
+- **Portabilitas:** desktop.
+- **Verdict:** LEWATI — untuk trading agent. (Berguna untuk konten demo/affiliate user.)
+
+### G44. marketingskills — https://github.com/coreyhaines31/marketingskills
+- **Fungsi:** 50 skill marketing untuk agen (cro, email, dll).
+- **Bahasa:** JavaScript. **Lisensi:** MIT. **Bintang terverifikasi:** 57.739. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** RENDAH — konten/affiliate, bukan trading.
+- **Portabilitas:** ringan.
+- **Verdict:** LEWATI — untuk trading agent. (Berguna untuk konten affiliate user — format promo 85 karakter tetap aturan user, bukan tool ini.)
+
+### G45. ComfyUI — https://github.com/Comfy-Org/ComfyUI (dulu comfyanonymous/ComfyUI; redirect aktif)
+- **Fungsi:** Engine node graph gambar/video: Stable Diffusion, Flux, Wan, dll, inferensi lokal dengan workflow visual.
+- **Bahasa:** Python. **Lisensi:** GPL-3.0. **Bintang terverifikasi:** 144.412 (via fetch halaman repo — API pencarian tidak mengembalikannya). Tidak diarsipkan.
+- **Biaya:** kode gratis; jalan butuh GPU (model besar) atau CPU (lambat).
+- **Relevansi:** RENDAH — konten visual, bukan trading.
+- **Portabilitas:** butuh GPU untuk nyaman; tidak cocok VPS 512 MB.
+- **Verdict:** LEWATI — untuk trading agent. (Berguna untuk konten affiliate user — foto/video AI memakai produk — bukan untuk bot.)
+
+### G46. shadcn/ui — https://github.com/shadcn-ui/ui
+- **Fungsi:** Library komponen UI (bukan agen, bukan tool trading).
+- **Bahasa:** TypeScript. **Lisensi:** MIT. **Bintang terverifikasi:** 127.091. Tidak diarsipkan.
+- **Biaya:** gratis.
+- **Relevansi:** RENDAH — frontend dashboard.
+- **Portabilitas:** web.
+- **Verdict:** LEWATI — untuk trading agent. (Berguna bila user membangun dashboard sendiri.)
+
+### G-E. Bot X/Grok & observasi non-repo
+
+### G47. OpenMausBot — https://github.com/milind-soni/OpenMausBot
+- **Fungsi:** Alternatif Grok Bot open source (VM yang bisa dipakai bot), situs www.openmausbot.com.
+- **Bahasa:** TypeScript. **Lisensi:** Apache-2.0. **Bintang terverifikasi:** 10.025. Tidak diarsipkan.
+- **Biaya:** kode gratis.
+- **Relevansi:** RENDAH — bot X, bukan trading.
+- **Portabilitas:** ringan.
+- **Verdict:** LEWATI — untuk trading agent.
+
+### G48. grokbot.dev — OBSERVASI (situs direktori, bukan repo)
+- **Fungsi:** Direktori 402 setup Grok Bot siap pakai (satu entri "Fable 5.1 Oracle" terlihat di dalam direktori).
+- **Biaya:** direktori (gratis dilihat).
+- **Relevansi:** RENDAH — ekosistem bot X/Grok, bukan trading agent user.
+- **Verdict:** LEWATI — untuk trading agent. (Dicatat supaya tidak hilang; bukan entri repo.)
+
+### G49. Origin Pilot / Origin Quantum — OBSERVASI (produk, bukan repo)
+- **Fungsi:** Komputer kuantum Tiongkok (produk hardware, bukan software open source).
+- **Relevansi:** RENDAH — bukan alat trading, bukan repo.
+- **Verdict:** LEWATI — bukan komponen apa pun. (Dicatat supaya tidak hilang.)
+
+### G50. Claude Fable 5.5 news — OBSERVASI (slide berita, bukan repo)
+- **Fungsi:** Jejak rilis Fable 5.5 yang beredar: ID "fable-5.5" di Cursor, codename "claude-onigiri-eap" di Artificial Analysis, 6 codename early-access di Devin CLI, commit "Co-authored-by: Fable 5.5" di T3 Code, entri azure_ai/claude-fable-5-5 di LiteLLM (klaim slide).
+- **Relevansi:** RENDAH — rumor rilis; bukan model/repo yang bisa dipakai.
+- **Verdict:** LEWATI — bukan komponen. Jangan pakai slide ini sebagai bukti rilis atau sebagai model.
+
+### G51. Claude system-prompt files — OBSERVASI (file klaim bocoran, owner tidak terbaca)
+- **Fungsi:** Kumpulan file yang diklaim sebagai system prompt Claude (claude-fable-5.md, claude-fable-5.1.md, dst) — owner/repo TIDAK terbaca di kedua frame.
+- **Relevansi:** RENDAH + RISIKO — keaslian tidak terverifikasi; file prompt bocoran bisa berisi instruksi jahat atau teks yang dimodifikasi.
+- **Verdict:** LEWATI — jangan dijalankan mentah-mentah, jangan dipakai sebagai prompt bot. (Dicatat supaya tidak hilang; bukan entri repo.)
 
 ## Rekomendasi stack gabungan (maks 7, saling melengkapi)
 
@@ -533,24 +956,43 @@ Catatan stack:
 | **hyperframes** (C12) | Produksi video, bukan trading |
 | **OpenMontage** (C13) | Produksi video, bukan trading |
 | **G0DM0D3** (D5) | Frontend chat multi-model berframing jailbreak/red-team, bukan alat trading; model OpenRouter bayar per token (klaim "gratis" menyesatkan); telemetri default on |
-| **OpenClaude** (D4) | Atribusi video salah (gnanam1990/openclaude tidak ditemukan); pindah org/paket; risiko legal/kepercayaan dari asal-usul codebase (sumber sekunder: bocoran + DMCA). Pakai Open Code/Aider |
+| **OpenClaude** (D4) | Atribusi video TERBUKTI salah (pemilik saat video = Gitlawb, bukan gnanam1990 — gnanam1990 hanya penulis commit yang tampil); lokasi repo kini tidak terkonfirmasi via pencarian; pindah org/paket; risiko legal/kepercayaan dari asal-usul codebase (sumber sekunder: bocoran + DMCA). Pakai Open Code/Aider |
 | **pensource.id.lol** (A10) | Gagal diverifikasi (fetch gagal tanpa status HTTP); isinya tidak diketahui |
+| **Void** (G2) | Diarsipkan (terkonfirmasi live via API 1 Nov 2026) |
+| **REA** (G14) | Relevansi trading RENDAH + dual-use reverse engineering; bukan komponen trading |
+| **OpenMythos** (G18) | Rekonstruksi teoretis arsitektur, bukan model jadi |
+| **No AI Slop** (G19) | Kualitas tulisan, bukan trading |
+| **AI Job Search** (G20) | Framework cari kerja, bukan trading |
+| **minimind** (G30) | Edukasi latih LLM + butuh GPU |
+| **OpenMAIC** (G31) | Edukasi + butuh API key model berbayar |
+| **Recordly** (G43) | Perekam layar konten, bukan trading |
+| **marketingskills** (G44) | Skill marketing/konten, bukan trading |
+| **ComfyUI** (G45) | Engine gambar/video + butuh GPU; konten, bukan trading |
+| **shadcn/ui** (G46) | Library komponen UI, bukan trading |
+| **OpenMausBot** (G47) | Bot X/Grok, bukan trading |
+| **grokbot.dev** (G48) | Direktori bot Grok, bukan trading |
+| **Origin Pilot** (G49) | Produk komputer kuantum, bukan repo/alat trading |
+| **Fable 5.5 news** (G50) | Slide rumor rilis, bukan repo/model |
+| **system-prompt files** (G51) | Klaim bocoran tak terverifikasi + risiko instruksi jahat |
 
 ## Daftar yang BELUM JELAS (perlu materi lebih jelas dari user)
 
-1. **Slide ke-7 carousel regularbasis.studio** — judul bilang 7 tool, hanya 6 yang terlihat di materi.
-2. **Slide #3–#7 carousel @okaashish** — hanya #1 Open Code dan #2 Aider terkonfirmasi; 5 slide lain belum teridentifikasi dari materi.
-3. **Repo ke-6 video hedge fund Kashi** — video mengklaim 6, baru 5 kartu terkonfirmasi (Nautilus, Hummingbot, skfolio, Freqtrade, Kronos). Butuh link video / screenshot daftar lengkap.
-4. **Screenshot "MATTPOCOCK SKILLS" / "4 repo github yang wajib lo install"** (TikTok, batch pertama) — yang terbaca hanya header, teks pencarian "cara install repo di github", caption, dan "Kumpulan skills"; ke-4 nama repo tidak terbaca (area video gelap/kecil). Perlu kiriman yang lebih jelas bila mau dievaluasi penuh.
-5. **Atribusi OpenClaude ke gnanam1990** — repo `gnanam1990/openclaude` tidak ditemukan; yang ada hanya `gnanam1990/argus` (3 stars). Atribusi video kemungkinan salah.
-6. **Isi situs valuecell.ai** — fetch situs gagal dimuat; hanya penyebutannya di README ValueCell yang terkonfirmasi.
-7. **Lisensi Free Claude Code** — metadata GitHub "NOASSERTION" vs badge README "AGPL v3"; cek file LICENSE sebelum dipakai serius.
-8. **Lisensi Nocturne & Daytona** — tidak tampil di hasil fetch (Nocturne: tidak ada file LICENSE di root yang terdaftar; Daytona: README hanya menautkan file LICENSE).
-9. **Isi pensource.id.lol** — fetch gagal; perlu pengecekan browser live bila isinya memang dibutuhkan.
+Yang tersisa hanya **3 item**. Tujuh item lama DISELESAIKAN lewat screening gambar
+1 Nov 2026 (bukti di `SCREENING.md`): slide ke-7 regularbasis (= Archon B6, bukan
+tool baru), slide #3–#7 okaashish (= Plandex, Void, Zed, Cline, Kilo Code — G1–G5),
+screenshot MATTPOCOCK SKILLS (= satu repo mattpocock/skills, G6 — bukan 4 repo),
+atribusi OpenClaude (= Gitlawb, bukan gnanam1990; lokasi kini tak terkonfirmasi),
+lisensi Free Claude Code (= API NOASSERTION + badge README tidak konsisten AGPL v3
+vs MIT — cek file LICENSE), lisensi Nocturne (= tidak terdeteksi API), lisensi
+Daytona (= tidak terdeteksi API + arsip terkonfirmasi).
+
+1. **Repo ke-6 video hedge fund Kashi** — video mengklaim 6, baru 5 kartu terkonfirmasi (Nautilus, Hummingbot, skfolio, Freqtrade, Kronos). Screening 157 file hanya menemukan 5 kartu yang sama dari video yang sama (IMG_8303.jpg–IMG_8307.jpg); tidak ada kartu ke-6 di file mana pun. Butuh link video / screenshot daftar lengkap.
+2. **Isi situs valuecell.ai** — fetch situs gagal dimuat; hanya penyebutannya di README ValueCell yang terkonfirmasi.
+3. **Isi situs pensource.id.lol** — fetch gagal; perlu pengecekan browser live bila isinya memang dibutuhkan.
 
 ## Penutup
 
-Total **52 tool/repo unik** dievaluasi (10 dari carousel OpensourceID + 6 dari regularbasis + 14 baru dari carousel @adityagnwann + 6 dari batch coding-agent + 12 dari batch trading/Polymarket + 4 baru dari video hedge fund; duplikat digabung: Docling 1x, Vibe-Trading 1x, Hummingbot 1x, TradingAgents 1x, ai-hedge-fund 1x).
+Total **99 tool/repo unik** dievaluasi (52 lama + 47 baru dari screening gambar 1 Nov 2026, bagian G; duplikat digabung: Docling 1x, Vibe-Trading 1x, Hummingbot 1x, TradingAgents 1x, ai-hedge-fund 1x, plus pengulangan lintas slice di screening: public-apis, REA, markitdown, i-have-adhd, marketingskills, Recordly, hyperframes, karpathy-skills). Di luar 99 itu: 4 observasi non-repo (G48–G51) dan 1 item yang tetap belum teridentifikasi (F6, repo ke-6 video Kashi).
 
 Pola yang paling berulang di semua materi: **paper mode dulu, risk gate, dan simulasi ribuan outcome** — tiga hal yang sudah sejalan dengan aturan demo user (demo dulu, tanpa order nyata sampai berhasil dan disetujui). Tool termahal bukan lisensinya (semua gratis) melainkan **biaya API LLM** — untuk menekan biaya: pakai model lokal (Ollama/LM Studio) untuk loop rutin, headroom untuk kompres konteks, dan mem0 agar agen tidak mengulang riset yang sama.
 
