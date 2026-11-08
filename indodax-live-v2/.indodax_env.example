@@ -1,0 +1,10 @@
+# TEMPLATE env Indodax — BUKAN file key asli.
+# Salin di SERVER Tencent saja, isi dengan mengetik sendiri di terminal server.
+#   cp .indodax_env.example ~/.indodax_env
+#   nano ~/.indodax_env   (isi nilai asli, jangan tempel di chat)
+#   chmod 600 ~/.indodax_env
+# File ini HANYA placeholder. Key trade-only (View + Trade, TANPA withdraw).
+# JANGAN kirim nilai asli ke Muse, JANGAN commit ke GitHub, JANGAN taruh di Drive.
+export INDODAX_API_KEY="ISI_API_KEY_DI_SINI"
+export INDODAX_SECRET="ISI_SECRET_DI_SINI"
+export LIVE_TRADING="1"

@@ -1,0 +1,18 @@
+[Unit]
+Description=Indodax live loop (spot, paper parameters locked, Tencent)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/indodax-live
+EnvironmentFile=/home/ubuntu/.indodax_env
+ExecStart=/usr/bin/python3 /home/ubuntu/indodax-live/live_loop.py
+Restart=always
+RestartSec=60
+StandardOutput=append:/home/ubuntu/indodax-live/loop.log
+StandardError=append:/home/ubuntu/indodax-live/loop.log
+
+[Install]
+WantedBy=multi-user.target
