@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T21:49:01.294427+08:00",
+  "generated_at": "2026-11-12T21:50:01.394480+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -56,7 +56,7 @@
           "bought_at": 1794389088
         }
       ],
-      "_total_idr_from_log": 152814.0,
+      "_total_idr_from_log": 152817.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini."
     },
     "mexc": {
@@ -106,7 +106,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-12T20:48:36+07:00"
+      "updated": "2026-11-12T20:49:37+07:00"
     },
     "fourmeme": {
       "baseline_bnb": 0.002195316439438127,
@@ -121,7 +121,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-12T20:48:43+07:00",
+      "updated": "2026-11-12T20:49:46+07:00",
       "_cash_flag": "cash_idr 0.0 di file state — BERBEDA dari klaim kas Rp10.000 sebelumnya. Jangan tampilkan kas Rp10.000 sampai direkonsiliasi."
     },
     "clanker": {
@@ -132,26 +132,11 @@
       "ks_tripped": false,
       "paper_eth_free": 0.0,
       "paper_usdc_free": 0.0,
-      "positions": [
-        {
-          "dex": "uniswap",
-          "entry_idr": 9900.990099009901,
-          "entry_price_usd": 0.0001561,
-          "entry_rate_usd_idr": 18180.71,
-          "fee_buy_idr": 99.00990099009901,
-          "highest_price_usd": 0.0003678,
-          "mint": "0x3441e8fCdD380c4e7F5C7F55CCd599B2a2afCcCC",
-          "opened": "2026-11-12T05:35:33+07:00",
-          "pair_address": "0xeabeac2e1264cda3e8bdca532a415c69a6d7c67225aabf270ee17a9b9282a78e",
-          "qty": 3488.7101093061756,
-          "symbol": "REVVY",
-          "token": "0x3441e8fCdD380c4e7F5C7F55CCd599B2a2afCcCC"
-        }
-      ],
-      "realized_idr": 0.0,
+      "positions": [],
+      "realized_idr": -10000.0,
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
-      "trades_count": 0,
+      "trades_count": 1,
       "updated": "2026-11-12T20:48:59+07:00"
     }
   },
