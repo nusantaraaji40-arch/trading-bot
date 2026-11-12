@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-11-12T19:21:01.330857+08:00",
+  "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
+  "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
+  "venues": {
+    "indodax": {
+      "version": 2,
+      "deposit_baseline_idr": 45309.0,
+      "positions": [
+        {
+          "slot": 1,
+          "symbol": "BTC",
+          "pair_id": "btcidr",
+          "qty": 1.417e-05,
+          "entry": 1410454000,
+          "entry_source": "asumsi (order 13:04)",
+          "tp_pct": null,
+          "sl_pct": null,
+          "ks_floor_idr": null,
+          "bought_at": 1794241716
+        },
+        {
+          "slot": 2,
+          "symbol": "HFT",
+          "pair_id": "hftidr",
+          "qty": 296.18072289,
+          "entry": 83.0,
+          "entry_source": "/api/v2/order/histories",
+          "tp_pct": null,
+          "sl_pct": null,
+          "ks_floor_idr": 15978,
+          "bought_at": 1794388480
+        },
+        {
+          "slot": 3,
+          "symbol": "ZKJ",
+          "pair_id": "zkjidr",
+          "qty": 276.21348314,
+          "entry": 89.0,
+          "entry_source": "/api/v2/order/histories",
+          "tp_pct": null,
+          "sl_pct": null,
+          "ks_floor_idr": 15978,
+          "bought_at": 1794388480
+        },
+        {
+          "slot": 4,
+          "symbol": "ISLM",
+          "pair_id": "islmidr",
+          "qty": 831.61904761,
+          "entry": 40.0,
+          "entry_source": "bid saat ini (riwayat tidak terbaca)",
+          "tp_pct": null,
+          "sl_pct": null,
+          "ks_floor_idr": 21622,
+          "bought_at": 1794389088
+        }
+      ],
+      "_total_idr_from_log": 154117.0,
+      "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini."
+    },
+    "mexc": {
+      "baseline_usdt": 1.63941769,
+      "cash_idr": 20000.0,
+      "created": "2026-11-10T03:03:21+07:00",
+      "ks_tripped": false,
+      "paper_usdt_free": 0.0,
+      "positions": [
+        {
+          "entry_idr": 19980.01998001998,
+          "entry_price": 0.009071,
+          "entry_rate": 18120.6,
+          "fee_buy_idr": 19.980019980019982,
+          "highest_price": 0.009245,
+          "opened": "2026-11-11T10:10:16+07:00",
+          "qty": 121.55,
+          "symbol": "FLOATUSDT"
+        },
+        {
+          "entry_idr": 37962.03796203797,
+          "entry_price": 0.1766,
+          "entry_rate": 18176.34,
+          "fee_buy_idr": 37.96203796203797,
+          "highest_price": 0.18,
+          "opened": "2026-11-11T21:56:20+07:00",
+          "qty": 11.8,
+          "symbol": "ADAUSDT"
+        }
+      ],
+      "realized_idr": 0.0,
+      "reserve_idr": 9212.529999999999,
+      "total_deposited_idr": 87212.53,
+      "trades_count": 0,
+      "updated": "2026-11-12T18:20:25+07:00"
+    },
+    "pumpfun": {
+      "baseline_sol": 0.02135348,
+      "baseline_usdc": 0.0,
+      "cash_idr": 10000.0,
+      "created": "2026-11-10T16:21:40+07:00",
+      "ks_tripped": false,
+      "paper_sol_free": 0.0,
+      "paper_usdc_free": 0.0,
+      "positions": [],
+      "realized_idr": 0.0,
+      "reserve_idr": 22102.76,
+      "total_deposited_idr": 32102.76,
+      "trades_count": 0,
+      "updated": "2026-11-12T18:19:23+07:00"
+    },
+    "fourmeme": {
+      "baseline_bnb": 0.002195316439438127,
+      "baseline_usdt": 0.0,
+      "cash_idr": 0.0,
+      "created": "2026-11-11T14:53:13+07:00",
+      "ks_tripped": false,
+      "paper_bnb_free": 0.0,
+      "paper_usdt_free": 0.0,
+      "positions": [],
+      "realized_idr": -3779.977997799781,
+      "reserve_idr": 17303.59,
+      "total_deposited_idr": 37303.59,
+      "trades_count": 2,
+      "updated": "2026-11-12T18:20:50+07:00",
+      "_cash_flag": "cash_idr 0.0 di file state — BERBEDA dari klaim kas Rp10.000 sebelumnya. Jangan tampilkan kas Rp10.000 sampai direkonsiliasi."
+    },
+    "clanker": {
+      "baseline_eth": 0.0009781,
+      "baseline_usdc": 0.0,
+      "cash_idr": 0.0,
+      "created": "2026-11-11T15:11:05+07:00",
+      "ks_tripped": false,
+      "paper_eth_free": 0.0,
+      "paper_usdc_free": 0.0,
+      "positions": [
+        {
+          "dex": "uniswap",
+          "entry_idr": 9900.990099009901,
+          "entry_price_usd": 0.0001561,
+          "entry_rate_usd_idr": 18180.71,
+          "fee_buy_idr": 99.00990099009901,
+          "highest_price_usd": 0.0003678,
+          "mint": "0x3441e8fCdD380c4e7F5C7F55CCd599B2a2afCcCC",
+          "opened": "2026-11-12T05:35:33+07:00",
+          "pair_address": "0xeabeac2e1264cda3e8bdca532a415c69a6d7c67225aabf270ee17a9b9282a78e",
+          "qty": 3488.7101093061756,
+          "symbol": "REVVY",
+          "token": "0x3441e8fCdD380c4e7F5C7F55CCd599B2a2afCcCC"
+        }
+      ],
+      "realized_idr": 0.0,
+      "reserve_idr": 26685.55,
+      "total_deposited_idr": 36685.55,
+      "trades_count": 0,
+      "updated": "2026-11-12T18:19:58+07:00"
+    }
+  },
+  "notes": [
+    "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE (cek 18:20 WIB); loop jalan manual PID 1036041 tanpa auto-restart.",
+    "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
+    "Pluang tidak punya file posisi di VPS ini; status AZN dari MCP Claude.",
+    "Tidak ada private key / seed phrase / API key di file ini."
+  ]
+}
