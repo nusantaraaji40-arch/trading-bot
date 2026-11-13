@@ -1,3 +1,4 @@
+// office override 14 Nov 2026: live P/L, chatbot, debate, search, bots
 /* Patch kantor 2026-11-14: P/L belum terealisasi, total harga sekarang, dst.
    Override fungsi render (definisi terakhir yang berlaku). */
 (function () {
@@ -1565,4 +1566,7 @@ else {
   window.addEventListener("load", function(){ setTimeout(_p14init, 600); });
   setTimeout(_p14init, 2500);
 }
+
+  function _deskZoomHook(z) { try { var target = Math.max(0.4, Math.min(2.0, z)); if (target >= 1.5 && !document.getElementById("deskDetail")) { var sceneEl = document.querySelector(".scene"); if (sceneEl) { var sr = sceneEl.getBoundingClientRect(); var cx = sr.left + sr.width / 2, cy = sr.top + sr.height / 2; var best = null, bestD = 170; document.querySelectorAll(".agent-tag").forEach(function (tg) { var q = tg.getBoundingClientRect(); var d = Math.hypot(q.left + q.width / 2 - cx, q.top + q.height / 2 - cy); if (d < bestD) { bestD = d; best = tg; } }); if (best) { var nm = (best.textContent || "").trim(); var a = (C.agents || []).filter(function (x) { return x.name === nm; })[0]; if (a) _deskDetail(a); } } } } catch (e) {} }
+  window.__onZoom = _deskZoomHook;
 })();
