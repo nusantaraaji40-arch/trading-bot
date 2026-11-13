@@ -5343,7 +5343,7 @@ window.CONFIG = {
     live.generatedAt = d.generated_at || null;
     live.stamp = fmtWIBfull(live.generatedAt);
     live.notes = Array.isArray(d.notes) ? d.notes : [];
-    var keyMap = [["INDODAX", "indodax"], ["MEXC", "mexc"], ["PUMPFUN", "pumpfun"], ["FOURMEME", "fourmeme"], ["CLANKER", "clanker"]];
+    var keyMap = [["INDODAX", "indodax"], ["MEXC", "mexc"], ["PUMPFUN", "pumpfun"], ["FOURMEME", "fourmeme"], ["CLANKER", "clanker"], ["PLUANG", "pluang"]];
     var sum = 0, realized = 0;
     keyMap.forEach(function (pair) {
       var key = pair[0], raw = d.venues[pair[1]], v = VENUES[key];
@@ -5632,7 +5632,7 @@ window.CONFIG = {
      loop, dan catatan notes baru dari VPS. Tanpa localStorage — daftar
      hidup selama halaman terbuka. */
   var ntf = { list: [], unread: 0, open: false, prev: null, prevNotes: null, linkDown: false };
-  var NTF_KEYS = [["indodax", "INDODAX"], ["mexc", "MEXC"], ["pumpfun", "PUMP.FUN"], ["fourmeme", "FOUR.MEME"], ["clanker", "CLANKER"]];
+  var NTF_KEYS = [["indodax", "INDODAX"], ["mexc", "MEXC"], ["pumpfun", "PUMP.FUN"], ["fourmeme", "FOUR.MEME"], ["clanker", "CLANKER"], ["pluang", "PLUANG"]];
 
   function pushNtf(kind, title, body) {
     ntf.list.unshift({ kind: kind, title: title, body: body, at: Date.now() });
