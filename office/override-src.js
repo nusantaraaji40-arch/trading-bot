@@ -1326,3 +1326,54 @@ if (typeof renderDock === "function" && !renderDock.__p14d) {
   renderDock = function(){ __rd(); _dockRestyle(); };
   renderDock.__p14d = true;
 }
+
+// ---- 11d: corner buttons in one neat row, tooltips above (item 31) ----
+function _cornerRow() {
+  var chat = $("#chatFab"), fs = $("#fsBtnStage"), zc = $("#zoomCtl");
+  if (!chat || !fs) return;
+  var dock = $("#cornerDock");
+  if (!dock) {
+    dock = document.createElement("div");
+    dock.id = "cornerDock";
+    (chat.parentNode || document.body).appendChild(dock);
+  }
+  if (chat.parentNode !== dock) dock.appendChild(chat);
+  if (fs.parentNode !== dock) dock.appendChild(fs);
+  [chat, fs].forEach(function(b){
+    var t = b.getAttribute("title");
+    if (t) { b.setAttribute("data-tip", t); b.removeAttribute("title"); }
+  });
+  Array.prototype.slice.call(chat.querySelectorAll("[title]")).forEach(function(l){
+    l.setAttribute("data-tip", l.getAttribute("title"));
+    l.removeAttribute("title");
+  });
+  if (zc) Array.prototype.slice.call(zc.querySelectorAll("[title]")).forEach(function(l){
+    l.setAttribute("data-tip", l.getAttribute("title"));
+    l.removeAttribute("title");
+  });
+  var strip = document.querySelector(".dock-wrap"), tick = $("#newsTicker");
+  var base = 10;
+  if (strip) base += (strip.getBoundingClientRect().height || 56);
+  if (tick && tick.offsetParent !== null) base += (tick.getBoundingClientRect().height || 28);
+  dock.style.bottom = base + "px";
+  if (zc) {
+    zc.style.position = "fixed";
+    zc.style.right = "12px";
+    var dh = dock.offsetHeight || 44;
+    zc.style.bottom = (base + dh + 12) + "px";
+  }
+}
+var _p14cssCorner = document.createElement("style");
+_p14cssCorner.textContent = "#cornerDock{position:fixed;right:12px;z-index:90;display:flex;align-items:center;gap:10px;}" +
+"#cornerDock .chat-fab,#cornerDock .yt-fs-btn{position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:0!important;flex:0 0 auto;}" +
+"#cornerDock [data-tip]{position:relative;}" +
+"#cornerDock [data-tip]::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);background:rgba(17,24,39,.95);color:#fff;font-size:11px;line-height:1.2;padding:6px 8px;border-radius:6px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s;z-index:5;}" +
+"#cornerDock [data-tip]:hover::after,#cornerDock [data-tip]:focus-visible::after{opacity:1;}" +
+"#zoomCtl [data-tip]{position:relative;}" +
+"#zoomCtl [data-tip]::after{content:attr(data-tip);position:absolute;right:calc(100% + 8px);top:50%;transform:translateY(-50%);background:rgba(17,24,39,.95);color:#fff;font-size:11px;line-height:1.2;padding:6px 8px;border-radius:6px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s;z-index:5;}" +
+"#zoomCtl [data-tip]:hover::after,#zoomCtl [data-tip]:focus-visible::after{opacity:1;}" +
+"body.is-fs #cornerDock{display:flex!important;}" +
+"@media (max-width:640px){#cornerDock{right:8px;gap:8px;}}";
+document.head.appendChild(_p14cssCorner);
+window.addEventListener("resize", _cornerRow);
+document.addEventListener("fullscreenchange", function(){ setTimeout(_cornerRow, 300); });
