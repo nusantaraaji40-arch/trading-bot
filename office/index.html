@@ -5227,8 +5227,8 @@ window.CONFIG = {
     },
     "PLUANG": {
       display: "PLUANG", status: "TOKEN MATI", pid: "—", total: "Tidak bisa dicek", totalNum: null, pl: "—", plNum: null, plPct: "401 invalid_token", neg: true,
-      note: "Token VPS kedaluwarsa dan login kena limit. Posisi terakhir diketahui dari Claude (tersambung). Login ulang pakai URL ronde 5 begitu limit lepas.",
-      rows: [["AZN · 0,005750244 lbr", "beli $184,34 · terakhir $186,11"]],
+      note: "Posisi AZN + dompet dari MCP (pluang.json, cron 5 menit, segar <10 menit); harga terakhir ikut data live di office.",
+      rows: [["AZN · 0,005750244 lbr", "beli $184,34 · terakhir ikut data live"]],
       extra: [["Misi", "Scalping — target Rp1,5 jt bersih"], ["Modal", "Rp500.000"], ["TP / SL", "+12% / −5% · trail ke BE di +4%"], ["Per trade", "Rp20.000 · maks 5 posisi"], ["Universe", "Saham AS + ETF + logam (bukan crypto / saham ID)"]]
     }
   };
@@ -5397,14 +5397,22 @@ window.CONFIG = {
         });
         v.extra = [["Posisi", String(pos.length)], ["Kas", fmtRp(raw.cash_idr)], ["Reserve", fmtRp(raw.reserve_idr)], ["Modal tercatat", fmtRp(raw.total_deposited_idr)], ["Terealisasi", fmtSigned(raw.realized_idr)], ["TP / SL / KS", "+150% / −35% / 65%"]];
         v.note = "Trade live pertama misi kilat: beli REVVY 12 Nov 05:35 WIB, skor 71,8. Angka state dari VPS.";
-      }
+     } else if (key === "PLUANG") {
+        var fmtUsdId = function (x) { return (Math.round(x * 100) / 100).toFixed(2).replace(".", ","); };
+        v.rows = pos.map(function (p) {
+            var entryUsd = (p.entry_price != null ? p.entry_price : p.entry);
+            var lastUsd = (p.price != null ? p.price : entryUsd);
+            return [String(p.symbol || "?") + " · " + String(p.qty).replace(".", ",") + " lbr", "beli $" + fmtUsdId(entryUsd) + " · terakhir $" + fmtUsdId(lastUsd)];
+        });
+        v.note = "Posisi AZN + dompet dari MCP (pluang.json, cron 5 menit, segar <10 menit); tampil live di office.";
+    }
     });
     live.totals = { sum: sum, realized: realized };
     try { anaSample(); renderAnalytics(); } catch (e) { /* analitik tidak boleh menggagalkan render data */ }
     try { renderPlTicker(); } catch (e) { /* arus P/L tidak boleh menggagalkan render data */ }
     try { diffLive(d); } catch (e) { /* notifikasi tidak boleh menggagalkan render data */ }
     var pluang = VENUES.PLUANG;
-    if (pluang && !pluang.liveNoteAdded) {
+    if (pluang && !pluang.live && !pluang.liveNoteAdded) {
       pluang.liveNoteAdded = true;
       pluang.meta = "Tidak ada di status.json VPS";
       pluang.note += " File status live VPS tidak memuat Pluang, jadi angka ini tetap yang terakhir diketahui.";
