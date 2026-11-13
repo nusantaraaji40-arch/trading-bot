@@ -1886,6 +1886,7 @@ html[data-theme="dark"] .ntf-badge { box-shadow: 0 0 0 2px #0f141c; }
 .ntf-clear:hover { text-decoration: underline; }
 .ntf-list { overflow-y: auto; padding: 6px; }
 .ntf-empty { padding: 16px 12px; font-size: 12px; line-height: 1.55; color: #7b8290; }
+.ntf-src { font-size: 10px; font-weight: 600; color: #8a6d00; background: #fff3bf; border-radius: 4px; padding: 1px 5px; margin-left: 6px; }
 .ntf-item {
   display: flex; gap: 9px;
   padding: 9px 8px;
@@ -5642,13 +5643,20 @@ window.CONFIG = {
   var ntf = { list: [], unread: 0, open: false, prev: null, prevNotes: null, linkDown: false };
   var NTF_KEYS = [["indodax", "INDODAX"], ["mexc", "MEXC"], ["pumpfun", "PUMP.FUN"], ["fourmeme", "FOUR.MEME"], ["clanker", "CLANKER"], ["pluang", "PLUANG"]];
 
-  function pushNtf(kind, title, body) {
-    ntf.list.unshift({ kind: kind, title: title, body: body, at: Date.now() });
+  function pushNtf(kind, title, body, src) {
+    ntf.list.unshift({ kind: kind, title: title, body: body, at: Date.now(), src: src || "live" });
     if (ntf.list.length > 40) ntf.list.length = 40;
     if (!ntf.open) ntf.unread = Math.min(99, ntf.unread + 1);
     renderNtf();
   }
 
+function dropNtf(title) {
+  var before = ntf.list.length;
+  ntf.list = ntf.list.filter(function (x) { return x.title !== title; });
+  var removed = before - ntf.list.length;
+  if (removed > 0) ntf.unread = Math.max(0, ntf.unread - removed);
+  renderNtf();
+}
   function renderNtf() {
     var badge = $("#ntfBadge");
     if (badge) {
@@ -5667,7 +5675,7 @@ window.CONFIG = {
     }
     list.innerHTML = ntf.list.map(function (n) {
       return '<div class="ntf-item ntf-' + n.kind + '"><span class="ntf-dot"></span>' +
-        '<div class="ntf-txt"><b>' + esc(n.title) + "</b><span>" + esc(n.body) + "</span>" +
+        '<div class="ntf-txt"><b>' + esc(n.title) + (n.src === 'snapshot' ? ' <span class="ntf-src">snapshot</span>' : '') + "</b><span>" + esc(n.body) + "</span>" +
         "<time>" + esc(fmtWIBshort(new Date(n.at).toISOString())) + "</time></div></div>";
     }).join("");
   }
@@ -5714,10 +5722,10 @@ window.CONFIG = {
       NTF_KEYS.forEach(function (pair) {
         var c = cur[pair[0]];
         if (!c) return;
-        if (c.flag) pushNtf("warn", "Peringatan · " + pair[1], String(c.flag));
+        if (c.flag) pushNtf("warn", "Peringatan · " + pair[1], String(c.flag), "snapshot");
         if (isStale(c, genMs)) {
           c.staleWarned = true;
-          pushNtf("warn", "Loop basi · " + pair[1], "State venue tidak berubah sejak " + fmtWIBshort(c.updated) + " — cek loop-nya di VPS.");
+          pushNtf("warn", "Loop basi · " + pair[1], "State venue tidak berubah sejak " + fmtWIBshort(c.updated) + " — cek loop-nya di VPS.", "snapshot");
         }
       });
       ntf.prev = cur;
@@ -5766,11 +5774,17 @@ window.CONFIG = {
 
       if (c.flag && c.flag !== p.flag) {
         pushNtf("warn", "Peringatan · " + disp, String(c.flag));
+      } else if (!c.flag && p.flag) {
+        dropNtf("Peringatan · " + disp);
+        pushNtf("ok", "Peringatan selesai · " + disp, "Peringatan sebelumnya sudah tidak ada di data live.");
       }
 
       var stale = isStale(c, genMs);
       if (stale && !p.staleWarned) {
         pushNtf("warn", "Loop basi · " + disp, "State venue tidak berubah sejak " + fmtWIBshort(c.updated) + " — cek loop-nya di VPS.");
+      } else if (!stale && p.staleWarned) {
+        dropNtf("Loop basi · " + disp);
+        pushNtf("ok", "Loop pulih · " + disp, "State venue berubah lagi sejak " + fmtWIBshort(c.updated) + ".");
       }
       c.staleWarned = stale;
     });
