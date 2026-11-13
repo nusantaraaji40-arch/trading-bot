@@ -1523,6 +1523,9 @@ input, select { font-family: inherit; }
 .agent-tags.is-hidden .agent-tag { opacity: 0; pointer-events: none; }
 .agent-tags.is-hidden .agent-tag.is-hover,
 .agent-tags.is-hidden .agent-tag.is-active { opacity: 1; pointer-events: auto; }
+.agent-tag.is-limited { border-color: #f59e0b; }
+.agent-tag.is-limited .agent-tag-name { color: #fbbf24; }
+.agent-tag.is-limited .agent-tag-dot { box-shadow: 0 0 0 2px rgba(245, 158, 11, .45); }
 .zoom-ctl button.zoom-tags { font-size: 11px; font-weight: 700; letter-spacing: -.02em; }
 .zoom-ctl button.is-on { background: #2f6bff; color: #fff; }
 .agent-tag {
@@ -3142,7 +3145,7 @@ window.ICONS = {
 window.CONFIG = {
   /* ---------------- aset gambar (isi kalau sudah ada) ---------------- */
   assets: {
-    room: "",            // contoh: "assets/room.png"  (render ruangan isometrik, tanpa karakter)
+    room: "assets/room.png", // render ruangan isometrik tanpa karakter (latar transparan)
     logo: "",            // contoh: "assets/logo.svg"
     agentSprite: {       // contoh: "assets/agents/agent-orange.png"
       orange: "", green: "", purple: "", yellow: "", red: "", blue: ""
@@ -3150,7 +3153,7 @@ window.CONFIG = {
   },
 
   /* ------------------------- geometri ruangan ------------------------ */
-  room: { x: 23, y: 13, wallHeight: 4.6, plate: 1.05, spriteHeight: 1.28 },
+  room: { x: 23, y: 13, wallHeight: 4.6, plate: 1.05, spriteHeight: 0.92 },
 
   /* ruangan khusus per brand — terpisah dari 51 agent */
   pods: [
@@ -3707,8 +3710,8 @@ window.CONFIG = {
   /* titik berdiri di dalam satu ruangan (hindari meja di sisi belakang) */
   function roomSpots(r, seed) {
     var spots = [];
-    for (var y = r[1] + 2.05; y < r[3] - 0.4; y += 0.82) {
-      for (var x = r[0] + 0.7; x < r[2] - 0.5; x += 0.88) {
+    for (var y = r[1] + 1.55; y < r[3] - 0.4; y += 0.45) {
+      for (var x = r[0] + 0.62; x < r[2] - 0.5; x += 0.55) {
         spots.push([x, y]);
       }
     }
@@ -3769,8 +3772,8 @@ window.CONFIG = {
         uptime: (1 + (idx % 9)) + "h " + (5 + ((idx * 7) % 52)) + "m",
         home: spots[k % spots.length] || [(g.roomRect[0] + g.roomRect[2]) / 2, (g.roomRect[1] + g.roomRect[3]) / 2],
         seated: false,
-        /* 40 agent tampil di kantor; sisanya hidup di tab */
-        inRoom: k < 5
+        /* semua 170 agen tampil di kantor: grid rapat + sprite lebih kecil */
+        inRoom: true
       });
       idx++;
     });
@@ -4433,6 +4436,7 @@ window.CONFIG = {
     var s = defs();
     s += skyline();
     s += floorAndWalls(R);
+  if (cfg.assets && cfg.assets.room) s += '<image x="-560" y="-220" width="1560" height="1030" href="' + cfg.assets.room + '" preserveAspectRatio="none" style="pointer-events:none"></image>';
 
     /* logo di dinding belakang */
     s += wallLogo(5.7, 1.35, 3.0, 2.85);
@@ -4610,6 +4614,16 @@ window.CONFIG = {
       var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
       g.setAttribute("class", "agent");
       g.innerHTML = window.ROBOT.markup(a, a.seated ? "back" : "front");
+  var sring = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
+  sring.setAttribute("cx", "50");
+  sring.setAttribute("cy", "166");
+  sring.setAttribute("rx", "52");
+  sring.setAttribute("ry", "16");
+  sring.setAttribute("fill", "none");
+  sring.setAttribute("stroke", a.state === "idle" ? "#f59e0b" : "#22c55e");
+  sring.setAttribute("stroke-width", "5");
+  sring.setAttribute("opacity", "0.85");
+  g.insertBefore(sring, g.firstChild);
       g.style.cursor = "pointer";
       g.addEventListener("click", function (ev) {
         ev.stopPropagation();
@@ -4787,8 +4801,9 @@ window.CONFIG = {
     list.forEach(function (a) {
       var t = document.createElement("button");
       t.type = "button";
-      t.className = "agent-tag";
+      t.className = "agent-tag" + (a.data.state === "idle" ? " is-limited" : "");
       t.setAttribute("data-agent", a.id);
+  t.title = a.data.name + " - " + (a.data.state === "idle" ? "TERBATAS" : "AKTIF");
       t.innerHTML = '<span class="agent-tag-dot" style="background:' + (a.data.groupColor || a.data.color) + '"></span>' +
         '<span class="agent-tag-name">' + esc(a.data.name) + "</span>";
       t.addEventListener("click", function (ev) {
@@ -7325,8 +7340,10 @@ function dropNtf(title) {
             '<button class="ap-edit" type="button" aria-label="Edit">' + icon("pen") + "</button>" +
           "</div>" +
           '<div class="ap-name">' + esc(a.name) + "</div>" +
-          '<div class="ap-status"><span class="ap-dot"></span>' + (a.state === "idle" ? "is idle" : "is working") + "</div>" +
+          '<div class="ap-status"><span class="ap-dot"></span>' + (a.state === "idle" ? "TERBATAS" : "AKTIF") + "</div>" +
           '<div class="ap-status" style="margin-top:2px"><span style="width:7px;height:7px;border-radius:50%;background:' + (a.groupColor || a.color) + ';display:inline-block"></span>Ruangan ' + esc(a.group || "") + " · " + esc(a.role || "") + "</div>" +
+  '<div class="ap-status">Fungsi: ' + esc(a.task || a.role || "") + ' - ' + esc(a.status || "") + '</div>' +
+  '<div class="ap-status">Terakhir dicek: ' + esc((typeof live !== "undefined" && live && live.stamp) ? live.stamp : "-") + '</div>' +
         "</div>" +
         '<div class="ap-seg">' +
           '<button class="is-on" type="button">' + icon("message") + "</button>" +
@@ -7721,7 +7738,7 @@ function dropNtf(title) {
           return '<article class="card agent-card" data-agent-card="' + a.id + '">' +
             '<div class="ac-top"><span class="ac-av" style="background:' + a.color + "22;border:1px solid " + a.color + '55">' + a.emoji + "</span>" +
             '<span><span class="ac-name">' + esc(a.name) + '</span><br><span class="ac-role">' + esc(a.role) + "</span></span></div>" +
-            '<div class="ac-meta"><span class="ac-badge' + (a.inRoom ? "" : " off") + '">' + (a.inRoom ? "Di ruangan" : "Standby") + "</span>" +
+            '<div class="ac-meta"><span class="ac-badge' + (a.state === "idle" ? " off" : "") + '">' + (a.state === "idle" ? "TERBATAS - Di ruangan" : "AKTIF - Di ruangan") + "</span>" +
             '<span style="font-size:10.5px;opacity:.7">' + esc(a.status) + "</span></div></article>";
         }).join("") || '<div class="board-empty">Tidak ada robot yang cocok.</div>') + "</div></section>";
     }).join("");
