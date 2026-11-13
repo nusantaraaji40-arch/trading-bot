@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T06:17:02.081257+08:00",
+  "generated_at": "2026-11-14T06:17:32.857670+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -75,7 +75,7 @@
       "_total_idr_from_log": 150449.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
-      "unrealized_at": "2026-11-14T06:16:32.130299+08:00"
+      "unrealized_at": "2026-11-14T06:17:32.116287+08:00"
     },
     "mexc": {
       "baseline_usdt": 1.63941769,
@@ -93,11 +93,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003243,
-          "value_usd": 0.394187,
-          "value_idr": 7174.72,
-          "unrealized_idr": -12805.3,
-          "unrealized_pct": -64.25
+          "price": 0.003235,
+          "value_usd": 0.393214,
+          "value_idr": 7157.03,
+          "unrealized_idr": -12822.99,
+          "unrealized_pct": -64.34
         },
         {
           "entry_idr": 37962.03796203797,
@@ -108,20 +108,20 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1677,
-          "value_usd": 1.97886,
-          "value_idr": 36017.9,
-          "unrealized_idr": -1944.14,
-          "unrealized_pct": -5.04
+          "price": 0.1676,
+          "value_usd": 1.97768,
+          "value_idr": 35996.42,
+          "unrealized_idr": -1965.62,
+          "unrealized_pct": -5.1
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-14T05:16:22+07:00",
-      "unrealized_idr": -14749.44,
-      "unrealized_at": "2026-11-14T06:16:32.130299+08:00",
+      "updated": "2026-11-14T05:17:23+07:00",
+      "unrealized_idr": -14788.61,
+      "unrealized_at": "2026-11-14T06:17:32.116287+08:00",
       "usd_idr_used": 18201.337121529028
     },
     "pumpfun": {
@@ -137,7 +137,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-14T05:16:48+07:00",
+      "updated": "2026-11-14T05:17:23+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -154,7 +154,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-14T05:16:51+07:00",
+      "updated": "2026-11-14T05:17:23+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -170,7 +170,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-14T05:16:44+07:00",
+      "updated": "2026-11-14T05:17:16+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -221,6 +221,18 @@
   },
   "news": [
     {
+      "title": "Here’s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-14T06:08:37+08:00"
+    },
+    {
+      "title": "OpenAI launches AI payments in ChatGPT with Visa, Mastercard and Amex",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/openai-ai-payments-chatgpt-wallet-visa-mastercard-amex?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-14T06:01:03+08:00"
+    },
+    {
       "title": "Adam Back makes case for simpler security as Blockstream launches Bitcoin custody system",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/adam-back-simpler-security-blockstream-bitcoin-custody-system?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -237,18 +249,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/us-regulators-crypto-trust-charters-senate-scrutiny-grows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-14T04:53:20+08:00"
-    },
-    {
-      "title": "Metaplanet swings to $170M loss as Bitcoin sale hits earnings",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/metaplanet-swings-170m-loss-bitcoin-sale-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-14T02:28:29+08:00"
-    },
-    {
-      "title": "Bitcoin holds below $70K as stocks slip despite a cooler US PPI print",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/markets/bitcoin-below-70k-stocks-slip-cooler-us-ppi-print?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-14T00:39:11+08:00"
     },
     {
       "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance - CNBC",
@@ -281,22 +281,22 @@
       "time": "2026-11-13T23:41:32+08:00"
     },
     {
-      "title": "Nasdaq falls on Friday as Nvidia sells off, but index notches best week since August: Live updates - CNBC",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1DUGhtX3RkQk1tTVc3WFZQOGhSalVKd2RzNks0R1dHRlFMSUd1bUhOeVVmNTQxS09JQjhaaTBQVWVnY3RBblNRRlc3a21TVEJJUnZmVm9pYmJMSVNWazl5bU9lZkdyOVpSSXhoSUlfeEx1ZUdvakVR0gF8QVVfeXFMUEZVRDFwUjNBQ01QTjdQX0h5WXU5R3BqdDZwVFJiNU9obl9qYk1lWC1XTWUxbDhFaGR4V2x0cERQdDAyNFlJQk1fNXBqdFItb3FaTDdyV2R6WklkbExBZHNnQ3k1WFR4X0FaeGpRM09SZHprem0zajZXbEx6Vg?oc=5",
-      "time": "2026-11-14T05:22:00+08:00"
-    },
-    {
-      "title": "Stock market today: Nasdaq leads Dow, S&P 500 lower as chip stock sell-off accelerates - Yahoo Finance",
+      "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip to cap volatile week, Nvidia stock plunge deepens - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORHNBdWVhWllRY0IzSV9JUGtmWVdfQk5EaGVSVVNNXzVtUWtITW1xRUhYRDA3SVdSbWFaWjExbkI0VXA1ZjVuWXNWWkI2M3hUTVpxeUxvekxyZmhLOGdBMFZXdktzTWdvT0tOdnVIenp6UFQtdWt5bkJtNWlMSGpGdDZ2WEZmbTlidlQ2QVhSREdGdXNDb0F0ZzNJUGNSejZwSXE4Y2NCdHRHQWxKNkZrTWNQbUtVYXFGU3k4Tw?oc=5",
-      "time": "2026-11-14T03:15:23+08:00"
+      "time": "2026-11-14T05:33:36+08:00"
     },
     {
       "title": "U.S. Stocks Mixed on Nvidia Fallout Fears - WSJ",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbXo0WGszbS1hZnpTdTRYYjJ0MnNDYVo3c1paejV2WkowZl93UVNiamRIQ0xEWU9HZWp3Ui14aEhFUEZkbWNQTXhfUVNSVE5tQkhELWJEcmZxYVpEM2c0aGRwdWpQZWM5MmdETXFXMDd5TTR5cHNvZUdaWmp4MlBLMG5KTm9JTFVrRmpfVA?oc=5",
       "time": "2026-11-14T05:34:51+08:00"
+    },
+    {
+      "title": "Nasdaq falls on Friday as Nvidia sells off, but index notches best week since August: Live updates - CNBC",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1DUGhtX3RkQk1tTVc3WFZQOGhSalVKd2RzNks0R1dHRlFMSUd1bUhOeVVmNTQxS09JQjhaaTBQVWVnY3RBblNRRlc3a21TVEJJUnZmVm9pYmJMSVNWazl5bU9lZkdyOVpSSXhoSUlfeEx1ZUdvakVR0gF8QVVfeXFMUEZVRDFwUjNBQ01QTjdQX0h5WXU5R3BqdDZwVFJiNU9obl9qYk1lWC1XTWUxbDhFaGR4V2x0cERQdDAyNFlJQk1fNXBqdFItb3FaTDdyV2R6WklkbExBZHNnQ3k1WFR4X0FaeGpRM09SZHprem0zajZXbEx6Vg?oc=5",
+      "time": "2026-11-14T05:22:00+08:00"
     },
     {
       "title": "US Supreme Court to consider lawsuit over Robinhood's 2021 IPO - Yahoo Finance",
@@ -311,7 +311,7 @@
       "time": "2026-11-13T18:00:15+08:00"
     }
   ],
-  "news_at": "2026-11-14T06:02:32.000771+08:00",
+  "news_at": "2026-11-14T06:17:32.857513+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
