@@ -2,24 +2,169 @@
   "title": "Riwayat Perbaiki",
   "sub": "Perbaikan yang sudah dilakukan - kronologis.",
   "repairs": [
-    {"date": "12 Nov 2026", "what": "Perbaikan Kurs", "result": "Kurs USD/IDR selaras dengan sumber live"},
-    {"date": "12 Nov 2026", "what": "Perbaikan kas MEXC", "result": "Kas MEXC tercatat benar di state"},
-    {"date": "13 Nov 2026", "what": "Perbaikan kilat E1-E7", "result": "7 loop kilat kembali jalan normal"},
-    {"date": "13 Nov 2026", "what": "Diagnosis + rekonsiliasi Four.meme", "result": "Selisih tercatat dan dijurnal; realized -Rp10.000"},
-    {"date": "13 Nov 2026", "what": "Perbaikan REVVY + dexId Clanker", "result": "Jalur Clanker kembali terbaca"},
-    {"date": "13 Nov 2026", "what": "Perbaikan receipt 3 loop kilat", "result": "Receipt tercatat untuk 3 loop kilat"},
-    {"date": "13 Nov 2026", "what": "Login Pluang", "result": "Token Pluang hidup; saldo AZN terbaca"},
-    {"date": "14 Nov 2026", "what": "Perbaikan kantor: keyMap Pluang", "result": "Pluang masuk hitungan state live"},
-    {"date": "14 Nov 2026", "what": "Perbaikan kantor: teks basi", "result": "Teks snapshot lama diganti data live"},
-    {"date": "14 Nov 2026", "what": "Perbaikan kantor: lonceng", "result": "Notifikasi lonceng kembali berfungsi"},
-    {"date": "14 Nov 2026", "what": "Perbaikan kantor: re-embed snapshot", "result": "Snapshot kantor diperbarui dari status live"},
-    {"date": "14 Nov 2026", "what": "Perbaikan kantor: 170 robot", "result": "Semua 170 robot tampil di ruangan"},
-    {"date": "14 Nov 2026", "what": "Perbaikan kantor: sambung status asli", "result": "Kantor membaca status.json VPS asli (live)"},
-    {"date": "14 Nov 2026", "what": "Tampilkan rugi/untung belum terealisasi", "result": "Harga live MEXC/Indodax + unrealized per posisi/venue tampil di ARUS P/L"}
+    {
+      "date": "12 Nov 2026",
+      "what": "Perbaikan Kurs",
+      "result": "Kurs USD/IDR selaras dengan sumber live"
+    },
+    {
+      "date": "12 Nov 2026",
+      "what": "Perbaikan kas MEXC",
+      "result": "Kas MEXC tercatat benar di state"
+    },
+    {
+      "date": "13 Nov 2026",
+      "what": "Perbaikan kilat E1-E7",
+      "result": "7 loop kilat kembali jalan normal"
+    },
+    {
+      "date": "13 Nov 2026",
+      "what": "Diagnosis + rekonsiliasi Four.meme",
+      "result": "Selisih tercatat dan dijurnal; realized -Rp10.000"
+    },
+    {
+      "date": "13 Nov 2026",
+      "what": "Perbaikan REVVY + dexId Clanker",
+      "result": "Jalur Clanker kembali terbaca"
+    },
+    {
+      "date": "13 Nov 2026",
+      "what": "Perbaikan receipt 3 loop kilat",
+      "result": "Receipt tercatat untuk 3 loop kilat"
+    },
+    {
+      "date": "13 Nov 2026",
+      "what": "Login Pluang",
+      "result": "Token Pluang hidup; saldo AZN terbaca"
+    },
+    {
+      "date": "14 Nov 2026",
+      "what": "Perbaikan kantor: keyMap Pluang",
+      "result": "Pluang masuk hitungan state live"
+    },
+    {
+      "date": "14 Nov 2026",
+      "what": "Perbaikan kantor: teks basi",
+      "result": "Teks snapshot lama diganti data live"
+    },
+    {
+      "date": "14 Nov 2026",
+      "what": "Perbaikan kantor: lonceng",
+      "result": "Notifikasi lonceng kembali berfungsi"
+    },
+    {
+      "date": "14 Nov 2026",
+      "what": "Perbaikan kantor: re-embed snapshot",
+      "result": "Snapshot kantor diperbarui dari status live"
+    },
+    {
+      "date": "14 Nov 2026",
+      "what": "Perbaikan kantor: 170 robot",
+      "result": "Semua 170 robot tampil di ruangan"
+    },
+    {
+      "date": "14 Nov 2026",
+      "what": "Perbaikan kantor: sambung status asli",
+      "result": "Kantor membaca status.json VPS asli (live)"
+    },
+    {
+      "date": "14 Nov 2026",
+      "what": "Tampilkan rugi/untung belum terealisasi",
+      "result": "Harga live MEXC/Indodax + unrealized per posisi/venue tampil di ARUS P/L"
+    }
   ],
   "upcoming": [
-    {"date": "1 Des 2026", "what": "LPJ trading 1 Desember 2026 - 6 venue"},
-    {"date": "6 Des 2026", "what": "Perpanjangan VPS Tencent (H-3)"},
-    {"date": "Setelah limit lepas", "what": "Login ulang Pluang - URL ronde 5"}
+    {
+      "date": "1 Des 2026",
+      "what": "LPJ trading 1 Desember 2026 - 6 venue"
+    },
+    {
+      "date": "6 Des 2026",
+      "what": "Perpanjangan VPS Tencent (H-3)"
+    },
+    {
+      "date": "Setelah limit lepas",
+      "what": "Login ulang Pluang - URL ronde 5"
+    }
+  ],
+  "updates": [
+    {
+      "date": "14 Nov 2026 01:13",
+      "type": "perbaikan",
+      "what": "ARUS P/L: tampilkan rugi/untung belum terealisasi",
+      "detail": "Harga live MEXC/Indodax masuk status.json; MEXC FLOAT kini tampil rugi belum terealisasi."
+    },
+    {
+      "date": "14 Nov 2026 01:23",
+      "type": "perbaikan",
+      "what": "SYSTEM OVERVIEW: total dihitung dari harga sekarang",
+      "detail": "Total bergerak live mengikuti pasar; label venue dibetulkan ke 6 venue."
+    },
+    {
+      "date": "14 Nov 2026 01:26",
+      "type": "fitur baru",
+      "what": "Chatbot Asisten Investasi jadi chatbot sungguhan",
+      "detail": "Sapaan, variasi pertanyaan, ingat konteks, jawaban singkat dari data live."
+    },
+    {
+      "date": "14 Nov 2026 01:27",
+      "type": "fitur baru",
+      "what": "Chatbot: lampirkan file + diskusi multi-agen + toggle suara",
+      "detail": "Paperclip untuk kirim file; MausBot, Dots, GrokBot, Hermes berdiskusi; suara id-ID bisa on/off."
+    },
+    {
+      "date": "14 Nov 2026 01:31",
+      "type": "fitur baru",
+      "what": "Analitik: Saran & Analisis + donut",
+      "detail": "Saran per posisi/venue dari data live + donut aset, untung vs rugi, jarak ke target."
+    },
+    {
+      "date": "14 Nov 2026 01:36",
+      "type": "fitur baru",
+      "what": "Ruang Debat di tengah kantor",
+      "detail": "6 pendebat, skor akurasi, prediksi menuju target, bahan dari latihan 20 jam."
+    },
+    {
+      "date": "14 Nov 2026 01:39",
+      "type": "perbaikan",
+      "what": "Pencarian kantor + tombol ⌘K berfungsi",
+      "detail": "Ketik crypto/mexc memfilter 170 alat + venue + ruangan; ⌘K memfokuskan pencarian."
+    },
+    {
+      "date": "14 Nov 2026 01:45",
+      "type": "fitur baru",
+      "what": "Ticker berita live di atas strip agen",
+      "detail": "Headline CoinDesk/CoinTelegraph/Google News + jam WIB, bisa di-pause dan dibuka panelnya."
+    },
+    {
+      "date": "14 Nov 2026 01:48",
+      "type": "fitur baru",
+      "what": "Menu Scheduled menjadi Riwayat Perbaiki",
+      "detail": "Daftar perbaikan kronologis dari repairs.json + Jadwal mendatang."
+    },
+    {
+      "date": "14 Nov 2026 02:05",
+      "type": "fitur baru",
+      "what": "Tabel Pasar Live + strip bawah gaya indeks",
+      "detail": "Harga live 6 venue di kiri bawah ruangan; strip bawah kartu indeks urut dari yang paling naik."
+    },
+    {
+      "date": "14 Nov 2026 02:16",
+      "type": "perbaikan",
+      "what": "Tombol pojok tidak lagi bertumpuk",
+      "detail": "Chat + Layar penuh + zoom tersusun rapi berjajar; tooltip tampil di atas tombol."
+    },
+    {
+      "date": "14 Nov 2026 02:25",
+      "type": "fitur baru",
+      "what": "Robot Bengkel AI + Robot Notifikasi + panel Update",
+      "detail": "Bengkel AI merawat kantor (log di Riwayat Perbaiki); Notifikasi robot memberi kabar trade/TP/SL; panel Update mencatat semua update."
+    },
+    {
+      "date": "13 Nov 2026 08:01",
+      "type": "perubahan loop",
+      "what": "Latihan 20 jam: strategi terpilih BreakoutTren",
+      "detail": "Paper +759% vs Aturan A +605%, Hunter A -84% jangan dipakai; filter Fear & Greed ditolak."
+    }
   ]
 }

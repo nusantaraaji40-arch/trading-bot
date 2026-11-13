@@ -1377,3 +1377,152 @@ _p14cssCorner.textContent = "#cornerDock{position:fixed;right:12px;z-index:90;di
 document.head.appendChild(_p14cssCorner);
 window.addEventListener("resize", _cornerRow);
 document.addEventListener("fullscreenchange", function(){ setTimeout(_cornerRow, 300); });
+
+// ---- 11e: Bengkel AI, Notifikasi robot, panel Update (items 32-34) ----
+function _tpSlOf(k) {
+  if (k === "pluang") return { tp: 12, sl: -5 };
+  if (k === "pumpfun" || k === "fourmeme" || k === "clanker") return { tp: 150, sl: -35 };
+  return { tp: 15, sl: -30 };
+}
+function _notifFeed() {
+  var raw = window.__liveRaw;
+  var out = [];
+  if (!raw) return out;
+  var worst = null, worstPct = 0;
+  VENUE_ORDER.forEach(function(k){
+    var v = raw[k];
+    if (!v || !v.positions) return;
+    v.positions.forEach(function(p){
+      var sym = _sym(p);
+      var up = (p.unrealized_pct != null) ? p.unrealized_pct : null;
+      if (up != null && up < worstPct) { worstPct = up; worst = { sym: sym, venue: k, pct: up }; }
+      if (up != null) {
+        var ts = _tpSlOf(k);
+        if (up >= ts.tp - 5) out.push({ t: "tp", urgent: true, title: sym + " mendekati TP (+" + ts.tp + "%)", detail: "Sekarang " + up.toFixed(1) + "% dari entry di " + (VENUES[k] ? VENUES[k].display : k) + " \u2014 TP +" + ts.tp + "%." });
+        else if (up <= ts.sl + 5) out.push({ t: "sl", urgent: true, title: sym + " mendekati SL (" + ts.sl + "%)", detail: "Sekarang " + up.toFixed(1) + "% dari entry di " + (VENUES[k] ? VENUES[k].display : k) + " \u2014 SL " + ts.sl + "%; batas rugi tidak dilonggarkan." });
+      }
+      if (sym === "FLOAT" && p.price != null && p.price < 0.008227) out.push({ t: "loop", urgent: true, title: "FLOAT di bawah min order MEXC $1", detail: "Harga $" + p.price.toFixed(6) + " \u2014 tidak bisa dijual sampai harga \u2265 $0,008227 (keputusan user 13 Nov: biarkan dulu)." });
+    });
+    var tc = v.trades_count;
+    var prev = (window.__prevTrades || {})[k];
+    if (tc != null && prev != null && tc > prev) out.push({ t: "trade", urgent: false, title: "Trade baru di " + (VENUES[k] ? VENUES[k].display : k), detail: tc + " trade tercatat (sebelumnya " + prev + ")." });
+  });
+  if (!window.__prevTrades) window.__prevTrades = {};
+  VENUE_ORDER.forEach(function(k){ var v = raw[k]; if (v && v.trades_count != null) window.__prevTrades[k] = v.trades_count; });
+  if (worst) out.push({ t: "loop", urgent: false, title: "Posisi paling rugi: " + worst.sym + " " + worst.pct.toFixed(1) + "%", detail: "Di " + (VENUES[worst.venue] ? VENUES[worst.venue].display : worst.venue) + ". Lihat Saran & Analisis di Analitik." });
+  var gen = raw.generated_at || raw.generatedAt || (raw.pluang && raw.pluang.updated);
+  out.push({ t: "sync", urgent: false, title: "Status tersinkron dari VPS", detail: "status.json terakhir diperbarui " + (gen ? fmtWIBShort(gen) : "baru saja") + " WIB; harga MEXC/Indodax publik, cache 60 dtk." });
+  return out;
+}
+function _p14overlay(id, title, bodyHtml) {
+  var old = document.getElementById(id);
+  if (old) { old.remove(); return null; }
+  var ovl = document.createElement("div");
+  ovl.className = "p14-ovl";
+  ovl.id = id;
+  ovl.innerHTML = "<div class=\"p14-ovl-card\"><div class=\"p14-ovl-head\"><b>" + esc(title) + "</b><button type=\"button\" class=\"p14-ovl-x\" aria-label=\"Tutup\">\u2715</button></div><div class=\"p14-ovl-body\">" + bodyHtml + "</div></div>";
+  ovl.addEventListener("click", function(e){ if (e.target === ovl || e.target.className === "p14-ovl-x") ovl.remove(); });
+  document.body.appendChild(ovl);
+  return ovl;
+}
+function _notifPanel() {
+  var feed = _notifFeed();
+  var urg = feed.filter(function(n){ return n.urgent; }).length;
+  var rows = feed.map(function(n){
+    var ic = n.t === "trade" ? "\uD83D\uDCE5" : (n.t === "tp" ? "\uD83C\uDFAF" : (n.t === "sl" ? "\u26A0\uFE0F" : (n.t === "loop" ? "\uD83D\uDD27" : "\uD83D\uDD04")));
+    return "<div class=\"zone-item\">" + ic + " <b>" + esc(n.title) + "</b>" + (n.urgent ? "<span class=\"p14-badge p14-badge-loop\">URGENT</span>" : "") + "<br><span style=\"color:#64748b\">" + esc(n.detail) + "</span></div>";
+  }).join("");
+  var note = "<div class=\"p14-note\">Notifikasi dihitung dari status.json live di halaman ini (trade, TP/SL, loop bermasalah, sinkron). Lonceng kantor membuka panel ini. Notifikasi Telegram dikirim cron tg_notify.py tiap 1 menit dari VPS \u2014 isinya tidak bisa dibaca halaman ini.</div>";
+  _p14overlay("notifPanel", "Notifikasi \u2014 " + feed.length + " kabar (" + urg + " urgent)", note + rows);
+}
+function _bengkelDetail() {
+  var reps = (window.__repairs && window.__repairs.repairs) || [];
+  var rows = reps.slice(0, 10).map(function(r){
+    return "<div class=\"zone-item\"><b>" + esc(r.date || "") + "</b> \u2014 " + esc(r.what || "") + "<br><span style=\"color:#64748b\">" + esc(r.result || "") + "</span></div>";
+  }).join("") || "<div class=\"zone-item\">Log perbaikan belum termuat.</div>";
+  var head = "<div class=\"p14-note\"><b>Bengkel AI</b> \u2014 robot engineering/perbaikan kantor. Tugasnya memperbaiki semuanya: status, harga, tampilan, dan loop. Log di bawah sama dengan panel Riwayat Perbaiki (data office/repairs.json).</div>";
+  _p14overlay("bengkelDetail", "\uD83D\uDD27 Bengkel AI \u2014 log perbaikan", head + rows + "<div class=\"p14-note\">Lihat riwayat lengkap di menu kiri: Riwayat Perbaiki.</div>");
+}
+window.__updateFallback = [
+  { date: "14 Nov 2026 02:25", type: "fitur baru", what: "Robot Bengkel AI + Robot Notifikasi + panel Update", detail: "Bengkel AI merawat kantor; Notifikasi robot memberi kabar trade/TP/SL; panel Update mencatat semua update." },
+  { date: "14 Nov 2026 02:16", type: "perbaikan", what: "Tombol pojok tidak lagi bertumpuk", detail: "Chat + Layar penuh + zoom tersusun rapi berjajar; tooltip tampil di atas tombol." },
+  { date: "14 Nov 2026 02:14", type: "fitur baru", what: "Strip bawah gaya indeks", detail: "Kartu venue dengan nilai + % chip, urut dari yang paling naik." },
+  { date: "14 Nov 2026 01:36", type: "fitur baru", what: "Ruang Debat di tengah kantor", detail: "6 pendebat, skor akurasi, prediksi menuju target." },
+  { date: "13 Nov 2026 08:01", type: "perubahan loop", what: "Latihan 20 jam: strategi terpilih BreakoutTren", detail: "Paper +759% vs Aturan A +605%, Hunter A \u221284% jangan dipakai; filter Fear & Greed ditolak." }
+];
+function _updatePanel() {
+  if (window.__repairsLoad) { try { window.__repairsLoad(); } catch (e) {} }
+  var ups = (window.__repairs && window.__repairs.updates && window.__repairs.updates.length) ? window.__repairs.updates : window.__updateFallback;
+  var rows = ups.map(function(u){
+    var bc = u.type === "perbaikan" ? "p14-badge-fix" : (u.type === "perubahan loop" ? "p14-badge-loop" : "p14-badge-feat");
+    return "<div class=\"zone-item\"><b>" + esc(u.date || "") + "</b><span class=\"p14-badge " + bc + "\">" + esc(u.type || "update") + "</span><br><b>" + esc(u.what || "") + "</b><br><span style=\"color:#64748b\">" + esc(u.detail || "") + "</span></div>";
+  }).join("");
+  _p14overlay("updatePanel", "\uD83D\uDCE3 Update terbaru", "<div class=\"p14-note\">Semua perbaikan, fitur baru, dan perubahan loop tercatat di sini, dari file data office/repairs.json (bagian updates).</div>" + rows);
+}
+function _updateMenuItem() {
+  if (document.querySelector("[data-update-menu]")) return;
+  var spans = document.querySelectorAll("span");
+  var rp = null;
+  for (var i = 0; i < spans.length; i++) { if (spans[i].textContent.trim() === "Riwayat Perbaiki") { rp = spans[i]; break; } }
+  if (!rp) return;
+  var item = rp.closest("button, a, li, [role=menuitem]");
+  if (!item || !item.parentNode) return;
+  var clone = item.cloneNode(true);
+  clone.removeAttribute("id");
+  clone.removeAttribute("data-panel");
+  clone.removeAttribute("data-id");
+  clone.setAttribute("data-update-menu", "1");
+  var sp = clone.querySelector("span");
+  if (sp) sp.textContent = "Update";
+  clone.addEventListener("click", function(e){ e.preventDefault(); e.stopPropagation(); _updatePanel(); });
+  item.parentNode.insertBefore(clone, item.nextSibling);
+}
+function _specialBots() {
+  var scene = document.querySelector(".scene");
+  if (!scene) return;
+  var box = document.getElementById("specialBots");
+  if (box) { _specialBotsBadge(); return; }
+  box = document.createElement("div");
+  box.className = "special-bots";
+  box.id = "specialBots";
+  box.innerHTML = "<button type=\"button\" class=\"special-bot\" id=\"botBengkel\"><span class=\"special-bot-av\" style=\"background:#fef3c7\">\uD83D\uDD27</span><span><span class=\"special-bot-name\">Bengkel AI</span><br><span class=\"special-bot-sub\">Engineering \u00B7 perbaikan</span></span></button>" +
+    "<button type=\"button\" class=\"special-bot\" id=\"botNotif\"><span class=\"special-bot-av\" style=\"background:#fee2e2\">\uD83D\uDD14</span><span><span class=\"special-bot-name\">Notifikasi</span><br><span class=\"special-bot-sub\">Trade \u00B7 TP/SL \u00B7 sinkron</span></span><span class=\"special-bot-badge\" id=\"notifBadge\">0</span></button>";
+  scene.appendChild(box);
+  document.getElementById("botBengkel").addEventListener("click", function(){ _bengkelDetail(); });
+  document.getElementById("botNotif").addEventListener("click", function(){ _notifPanel(); });
+  _specialBotsBadge();
+}
+function _specialBotsBadge() {
+  var b = document.getElementById("notifBadge");
+  if (!b) return;
+  var feed = _notifFeed();
+  var urg = feed.filter(function(n){ return n.urgent; }).length;
+  b.textContent = urg;
+  b.style.display = (urg > 0) ? "flex" : "none";
+}
+function _bindBell() {
+  var els = document.querySelectorAll("button, [role=button]");
+  for (var i = 0; i < els.length; i++) {
+    var b = els[i];
+    var s = (b.getAttribute("aria-label") || "") + " " + (b.title || "") + " " + (b.textContent || "");
+    if (/lonceng|bell|notif|\uD83D\uDD14/i.test(s) && !b.__p14bell) { b.__p14bell = true; b.addEventListener("click", function(){ _notifPanel(); }); }
+  }
+}
+var _p14cssSpecial = document.createElement("style");
+_p14cssSpecial.textContent = ".p14-ovl{position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:120;display:flex;align-items:center;justify-content:center;padding:16px;}" +
+".p14-ovl-card{background:linear-gradient(180deg,#ffffff,#e0e7ff);color:#111827;border-radius:14px;max-width:560px;width:100%;max-height:86vh;overflow:auto;box-shadow:0 20px 60px rgba(0,0,0,.35);padding:16px 18px;}" +
+".p14-ovl-head{display:flex;justify-content:space-between;align-items:center;font-size:16px;margin-bottom:6px;}" +
+".p14-ovl-x{border:1px solid #cbd5e1;background:#fff;border-radius:8px;width:30px;height:30px;cursor:pointer;font-size:14px;}" +
+".p14-ovl-body{font-size:13px;line-height:1.5;}" +
+".p14-badge{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;margin-left:6px;}" +
+".p14-badge-fix{background:#dcfce7;color:#15803d;}" +
+".p14-badge-feat{background:#dbeafe;color:#1d4ed8;}" +
+".p14-badge-loop{background:#fef3c7;color:#92400e;}" +
+".p14-note{font-size:12px;color:#475569;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:8px;padding:8px 10px;margin:8px 0;}" +
+".special-bots{position:absolute;top:8px;right:8px;z-index:8;display:flex;gap:8px;}" +
+".special-bot{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.94);border:1px solid rgba(226,229,235,.95);border-radius:12px;padding:6px 10px;cursor:pointer;box-shadow:0 4px 14px rgba(16,24,40,.12);font-size:12px;text-align:left;}" +
+".special-bot-av{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;flex:0 0 auto;}" +
+".special-bot-name{font-weight:800;color:#111827;line-height:1.1;}" +
+".special-bot-sub{font-size:11px;color:#6b7280;line-height:1.2;}" +
+".special-bot-badge{background:#dc2626;color:#fff;font-size:10px;font-weight:800;border-radius:999px;min-width:18px;height:18px;display:flex;align-items:center;justify-content:center;padding:0 4px;}";
+document.head.appendChild(_p14cssSpecial);
