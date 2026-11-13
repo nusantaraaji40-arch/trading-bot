@@ -5103,7 +5103,7 @@ C.agents = [];
     homeCam();
 
     function clampCam() {
-      cam.zoom = Math.max(0.8, Math.min(3.2, cam.zoom));
+      cam.zoom = Math.max(0.4, Math.min(2.0, cam.zoom));
       var w = BASE.w / cam.zoom, h = BASE.h / cam.zoom;
       var mx = Math.abs(BASE.w - w) / 2, my = Math.abs(BASE.h - h) / 2;
       cam.cx = Math.min(BASE.x + BASE.w / 2 + mx, Math.max(BASE.x + BASE.w / 2 - mx, cam.cx));
@@ -5543,7 +5543,14 @@ C.agents = [];
     try { chatStatusLine(); } catch (e) { /* chat belum tentu siap */ }
   }
 
-  function applyLive(d) {
+  function targetBar(cur, tgt) {
+    if (cur == null || tgt == null || !isFinite(cur) || !isFinite(tgt) || tgt <= 0) return "—";
+    var pct = Math.max(0, Math.min(100, cur / tgt * 100));
+    var filled = Math.round(pct / 10), bar = "", i;
+    for (i = 0; i < 10; i++) bar += (i < filled) ? "▓" : "░";
+    return bar + " " + pct.toFixed(0) + "%";
+}
+function applyLive(d) {
     if (!d || !d.venues) throw new Error("format status tidak dikenal");
     live.ok = true;
     live.error = "";
@@ -5551,18 +5558,20 @@ C.agents = [];
     live.stamp = fmtWIBfull(live.generatedAt);
     live.notes = Array.isArray(d.notes) ? d.notes : [];
     var keyMap = [["INDODAX", "indodax"], ["MEXC", "mexc"], ["PUMPFUN", "pumpfun"], ["FOURMEME", "fourmeme"], ["CLANKER", "clanker"], ["PLUANG", "pluang"]];
-    var sum = 0, realized = 0;
+    var sum = 0, realized = 0, unrealized = 0, count = 0;
     keyMap.forEach(function (pair) {
       var key = pair[0], raw = d.venues[pair[1]], v = VENUES[key];
       if (!raw || !v) return;
       var pos = Array.isArray(raw.positions) ? raw.positions : [];
-      var entrySum = 0;
-      pos.forEach(function (p) { entrySum += (p.entry_idr != null ? p.entry_idr : (p.qty || 0) * (p.entry || 0)); });
+      var entrySum = 0, valueSum = 0;
+      pos.forEach(function (p) { entrySum += (p.entry_idr != null ? p.entry_idr : (p.qty || 0) * (p.entry || 0)); valueSum += (p.value_idr != null && !isNaN(p.value_idr)) ? p.value_idr : (p.entry_idr != null ? p.entry_idr : (p.qty || 0) * (p.entry || 0)); });
       var total = (key === "INDODAX" && raw._total_idr_from_log != null)
         ? raw._total_idr_from_log
-        : (raw.cash_idr || 0) + (raw.reserve_idr || 0) + entrySum;
+        : (raw.cash_idr || 0) + (raw.reserve_idr || 0) + valueSum;
       sum += total;
       if (raw.realized_idr != null) realized += raw.realized_idr;
+    if (raw.unrealized_idr != null && !isNaN(raw.unrealized_idr)) unrealized += raw.unrealized_idr;
+    if (total != null && !isNaN(total)) count++;
       v.live = true;
       v.status = "LIVE";
       v.pid = "—";
@@ -5577,19 +5586,34 @@ C.agents = [];
         v.neg = raw.realized_idr < 0;
       } else {
         v.pl = "—";
-        v.plPct = "terealisasi belum ada di state";
+        v.plNum = null;
+            v.plPct = "terealisasi tidak tercatat di state";
         v.neg = false;
       }
-      if (key === "INDODAX") {
-        v.rows = pos.map(function (p) { return [String(p.symbol || "?"), "HOLD"]; });
-        v.extra = [["Posisi", pos.length + " · semua HOLD"], ["Nilai posisi (harga beli)", fmtRp(entrySum)], ["Total tercatat", fmtRp(total)], ["Baseline deposit", fmtRp(raw.deposit_baseline_idr)], ["TP / SL", "+15% / −30%"]];
+      if (raw["unrealized_idr"] != null && !isNaN(raw["unrealized_idr"])) {
+            v.unrealizedNum = raw["unrealized_idr"];
+            v.unrealized = fmtSigned(raw["unrealized_idr"]);
+        } else {
+            v.unrealizedNum = null;
+            v.unrealized = "—";
+        }
+        v.valueSum = valueSum;
+        v.entrySum = entrySum;
+        v.unrealizedAt = raw["unrealized_at"] || null;
+        if (key === "INDODAX") {
+        v.rows = pos.map(function (p) { var un = (p.unrealized_idr != null) ? fmtSigned(p.unrealized_idr) : "—"; var pc = (p.unrealized_pct != null) ? ((p.unrealized_pct > 0 ? "+" : "") + p.unrealized_pct.toFixed(2) + "%") : ""; var pr = (p.price != null) ? " · terakhir Rp" + fmtRp(p.price) : ""; return [String(p.symbol || "?") + " · " + fmtQty(p.qty) + " @ Rp" + fmtRp(p.entry) + pr, "belum terealisasi " + un + (pc ? " (" + pc + ")" : "")]; });
+        v.extra = [["Posisi", pos.length + " · semua HOLD"], ["Nilai posisi (harga beli)", fmtRp(entrySum)], ["Nilai posisi (harga sekarang)", fmtRp(valueSum)], ["Belum terealisasi", (raw["unrealized_idr"] != null ? fmtSigned(raw["unrealized_idr"]) : "—")], ["Pencapaian target (vs modal · timbunan)", targetBar(total, raw.deposit_baseline_idr) + " · " + fmtRp(total) + " / modal " + fmtRp(raw.deposit_baseline_idr)], ["Total tercatat", fmtRp(total)], ["Baseline deposit", fmtRp(raw.deposit_baseline_idr)], ["TP / SL", "+15% / −30%"]];
         v.note = "Posisi = timbunan (holdings) — jual hanya di TP/SL/KS." + (live.notes[0] ? " " + live.notes[0] : "");
       } else if (key === "MEXC") {
         v.rows = pos.map(function (p) {
-          return [String(p.symbol || "?").replace(/USDT$/, "") + " · " + fmtQty(p.qty) + " @ " + p.entry_price, "beli " + fmtRp(p.entry_idr)];
+          var un = (p.unrealized_idr != null) ? fmtSigned(p.unrealized_idr) : "—";
+                var pc = (p.unrealized_pct != null) ? ((p.unrealized_pct > 0 ? "+" : "") + p.unrealized_pct.toFixed(2) + "%") : "";
+                var pr = (p.price != null) ? " · terakhir $" + p.price : "";
+                return [String(p.symbol || "?").replace(/USDT$/, "") + " · " + fmtQty(p.qty) + " @ $" + p.entry_price + pr, "belum terealisasi " + un + (pc ? " (" + pc + ")" : "") + " · beli " + fmtRp(p.entry_idr)];
         });
-        v.extra = [["Posisi", String(pos.length)], ["Kas", fmtRp(raw.cash_idr)], ["Reserve", fmtRp(raw.reserve_idr)], ["Modal tercatat", fmtRp(raw.total_deposited_idr)], ["Terealisasi", fmtSigned(raw.realized_idr)], ["TP / SL / KS", "+15% / −30% / 65%"]];
-        v.note = "Angka dari file state loop MEXC di VPS — nilai pasar posisi bisa berbeda dari total harga beli di atas.";
+        v.extra = [["Posisi", String(pos.length)], ["Kas", fmtRp(raw.cash_idr)], ["Reserve", fmtRp(raw.reserve_idr)], ["Modal tercatat", fmtRp(raw.total_deposited_idr)], ["Terealisasi", fmtSigned(raw.realized_idr)], ["Nilai posisi (harga sekarang)", fmtRp(valueSum)], ["Belum terealisasi", (raw["unrealized_idr"] != null ? fmtSigned(raw["unrealized_idr"]) : "—")], ["Pencapaian target (vs modal)", targetBar(total, raw.total_deposited_idr) + " · " + fmtRp(total) + " / modal " + fmtRp(raw.total_deposited_idr)], ["TP / SL / KS", "+15% / −30% / 65%"]];
+        v.note = "Posisi dinilai harga sekarang (ticker publik MEXC, cache 60 dtk) — total bergerak mengikuti pasar; realized tetap dari file state loop.";
+            v.usdIdr = raw.usd_idr_used || null;
       } else if (key === "PUMPFUN") {
         v.rows = [];
         v.extra = [["Posisi", String(pos.length)], ["Kas", fmtRp(raw.cash_idr)], ["Reserve", fmtRp(raw.reserve_idr)], ["Modal tercatat", fmtRp(raw.total_deposited_idr)], ["Terealisasi", fmtSigned(raw.realized_idr)], ["TP / SL / KS", "+150% / −35% / 65%"]];
@@ -5614,7 +5638,7 @@ C.agents = [];
         v.note = "Posisi AZN + dompet dari MCP (pluang.json, cron 5 menit, segar <10 menit); tampil live di office.";
     }
     });
-    live.totals = { sum: sum, realized: realized };
+    live.totals = { sum: sum, realized: realized, unrealized: unrealized, count: count };
     try { anaSample(); renderAnalytics(); } catch (e) { /* analitik tidak boleh menggagalkan render data */ }
     try { renderPlTicker(); } catch (e) { /* arus P/L tidak boleh menggagalkan render data */ }
     try { diffLive(d); } catch (e) { /* notifikasi tidak boleh menggagalkan render data */ }
