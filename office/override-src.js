@@ -1526,3 +1526,43 @@ _p14cssSpecial.textContent = ".p14-ovl{position:fixed;inset:0;background:rgba(15
 ".special-bot-sub{font-size:11px;color:#6b7280;line-height:1.2;}" +
 ".special-bot-badge{background:#dc2626;color:#fff;font-size:10px;font-weight:800;border-radius:999px;min-width:18px;height:18px;display:flex;align-items:center;justify-content:center;padding:0 4px;}";
 document.head.appendChild(_p14cssSpecial);
+
+// ---- 11f: final init + live hook + close (items 30-34) ----
+if (!applyLive.__p14c) {
+  var __alC = applyLive;
+  applyLive = function(d){ var r = __alC(d); try { if (document.querySelector("#debateRoom")) _debateRender(); } catch (e) {} try { _dockRestyle(); } catch (e) {} try { _cornerRow(); } catch (e) {} try { _specialBots(); } catch (e) {} return r; };
+  applyLive.__p14c = true;
+}
+function _p14init() {
+  if (window.__p14initDone) return;
+  window.__p14initDone = true;
+  try { _searchInit(); } catch (e) {}
+  try { _repairsLoad(); } catch (e) {}
+  try { _renameScheduledMenu(); } catch (e) {}
+  try { _seedBoardTasks(); } catch (e) {}
+  try {
+    var z = JSON.parse(localStorage.getItem("room-zones-v1") || "null");
+    if (z) C.agents.forEach(function(a){ if (z[a.id]) a.zone = z[a.id]; });
+    var m = JSON.parse(localStorage.getItem("room-moves-v1") || "null");
+    if (m) window.__roomLog = m;
+  } catch (e) {}
+  try { _roomLogRender(); } catch (e) {}
+  try { _newsTickerRender(); } catch (e) {}
+  try { _marketTableRender(); } catch (e) {}
+  try { _dockRestyle(); } catch (e) {}
+  try { _cornerRow(); } catch (e) {}
+  try { _specialBots(); } catch (e) {}
+  try { _updateMenuItem(); } catch (e) {}
+  try { _bindBell(); } catch (e) {}
+  setInterval(_roomMoveCheck, 60000);
+  setTimeout(_roomMoveCheck, 8000);
+  setTimeout(_debateRender, 2000);
+  setTimeout(_cornerRow, 1200);
+  setTimeout(_updateMenuItem, 1500);
+}
+if (document.readyState === "complete") setTimeout(_p14init, 600);
+else {
+  window.addEventListener("load", function(){ setTimeout(_p14init, 600); });
+  setTimeout(_p14init, 2500);
+}
+})();
