@@ -5554,8 +5554,8 @@ function applyLive(d) {
     if (!d || !d.venues) throw new Error("format status tidak dikenal");
     live.ok = true;
     live.error = "";
-    live.generatedAt = d.generated_at || null;
-    live.stamp = fmtWIBfull(live.generatedAt);
+    live.generatedAt = d.generated_at || null; live.fetchedAt = Date.now(); window.__liveFetchedAt = live.fetchedAt;
+    live.stamp = fmtWIBfull(live.generatedAt || new Date(live.fetchedAt).toISOString());
     live.notes = Array.isArray(d.notes) ? d.notes : [];
     var keyMap = [["INDODAX", "indodax"], ["MEXC", "mexc"], ["PUMPFUN", "pumpfun"], ["FOURMEME", "fourmeme"], ["CLANKER", "clanker"], ["PLUANG", "pluang"]];
     var sum = 0, realized = 0, unrealized = 0, count = 0;
@@ -6324,7 +6324,7 @@ function dropNtf(title) {
       b.addEventListener("click", function () { var ab = $("#anaBtn"); if (ab) ab.click(); });
     });
     if (dot) dot.className = "pl-tick-dot " + (!f.total.plKnown ? "is-unk" : plCls(f.total.pl));
-    if (foot) foot.textContent = (live.ok ? "Live · " + fmtWIBshort(live.generatedAt) : "Snapshot · live gagal") + " · klik angka untuk detail";
+    if (foot) foot.textContent = (live.ok ? "Live · " + fmtWIBshort((live.fetchedAt || window.__liveFetchedAt) ? new Date(live.fetchedAt || window.__liveFetchedAt).toISOString() : live.generatedAt) : "Snapshot · live gagal") + " · klik angka untuk detail";
   }
 
   function anaFeed() {
@@ -6342,7 +6342,7 @@ function dropNtf(title) {
     var t = anaTotals();
     var sub = $("#anaSub");
     if (sub) sub.textContent = live.ok
-      ? "Live · " + fmtWIBshort(live.generatedAt) + " · via " + (live.source || "GitHub Pages")
+      ? "Live · " + fmtWIBshort((live.fetchedAt || window.__liveFetchedAt) ? new Date(live.fetchedAt || window.__liveFetchedAt).toISOString() : live.generatedAt) + " · via " + (live.source || "GitHub Pages")
       : "Snapshot 12 Nov · live belum termuat";
     var bv = $("#anaBtnVal");
     if (bv) bv.textContent = fmtRp(t.sum);
@@ -6384,7 +6384,7 @@ function dropNtf(title) {
           '<span class="ana-tile-sub">' + esc(posBreak) + "</span>" +
           sparkSVG(anaHist.map(function (s) { return s.pos; }), 96, 22, "#7c5cd6") + "</div>" +
         '<div class="ana-tile"><span>Venue live</span><b>' + (live.ok ? t.liveVenues + " / 5" : "Snapshot") + '</b>' +
-          '<span class="ana-tile-sub">' + (live.ok ? "status " + esc(fmtWIBshort(live.generatedAt)) : "live belum termuat") + "</span>" +
+          '<span class="ana-tile-sub">' + (live.ok ? "status " + esc(fmtWIBshort((live.fetchedAt || window.__liveFetchedAt) ? new Date(live.fetchedAt || window.__liveFetchedAt).toISOString() : live.generatedAt)) : "live belum termuat") + "</span>" +
           "<span>" + blocks + "</span></div>" +
       "</div>" +
       '<div class="ana-sec"><div class="ana-sec-head"><b>Saldo &amp; P/L — ' + (anaHist.length > 1 ? "sesi ini" : "kumulatif per venue") + '</b><span>' + (anaHist.length > 1 ? anaHist.length + " titik data" : "sampel sesi baru 1 titik") + '</span>' +
@@ -8770,7 +8770,7 @@ function _renderPlTicker() {
         b.addEventListener("click", function () { var ab = $("#anaBtn"); if (ab) ab.click(); });
     });
     if (dot) dot.className = "pl-tick-dot " + (!f.total.plKnown ? "is-unk" : plCls(f.total.pl));
-    if (foot) { var _fr = live.ok; if (!_fr) { var _g2 = live.generatedAt || (window.__liveRaw && (window.__liveRaw.generatedAt || window.__liveRaw.generated_at)); if (_g2) { var _a2 = (Date.now() - new Date(_g2).getTime()) / 60000; if (_a2 >= 0 && _a2 < 10) _fr = true; } } if (!_fr && window.__liveRaw && window.__liveRaw.generated_at) { var _age = (Date.now() - new Date(window.__liveRaw.generated_at).getTime()) / 60000; _fr = _age >= 0 && _age < 10; } foot.textContent = (_fr ? "Live · " + fmtWIBShort(live.generatedAt || (window.__liveRaw && window.__liveRaw.generated_at)) : "Snapshot · live gagal") + " · Terealisasi tidak termasuk Indodax (tidak tercatat di state) · klik angka untuk detail"; }
+    if (foot) { foot.textContent = (live.ok && (live.fetchedAt || window.__liveFetchedAt) ? "Live · " + fmtWIBshort(new Date(live.fetchedAt || window.__liveFetchedAt).toISOString()) : "Snapshot · live gagal") + " · Terealisasi tidak termasuk Indodax (tidak tercatat di state) · klik angka untuk detail"; }
 }
 if (typeof renderPlTicker === "function") { renderPlTicker = _renderPlTicker; }
 function _anaFeed() {
