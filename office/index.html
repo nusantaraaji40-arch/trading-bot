@@ -6355,7 +6355,8 @@ function dropNtf(title) {
         bd.className = "ana-delta " + (t.pl < 0 ? "dn" : "up");
       } else bd.textContent = "";
     }
-    var body = $("#anaBody");
+    var _dls = document.querySelectorAll("[aria-label]"); var dlgA = null; for (var _di = 0; _di < _dls.length; _di++) { if (_dls[_di].getAttribute("aria-label") === "Dasbor analitik live") { dlgA = _dls[_di]; break; } } var body = (dlgA ? dlgA.querySelector("#anaBody") : null) || $("#anaBody");
+if (body.querySelector(".ana-row")) { var _ar = body.querySelectorAll(".ana-row"); var _av = { "Posisi terbuka": String(t.positions), "Venue live": (live.ok ? t.liveVenues + " / " + VENUE_ORDER.length : "Snapshot") }; for (var _ai = 0; _ai < _ar.length; _ai++) { var _sp = _ar[_ai].querySelector("span"); var _bb = _ar[_ai].querySelector("b"); if (_sp && _bb && _av[_sp.textContent] != null) _bb.textContent = _av[_sp.textContent]; } }
     if (!body) return;
     var first = anaHist[0], last = anaHist[anaHist.length - 1];
     var dSum = (first && last && anaHist.length > 1) ? last.sum - first.sum : 0;
@@ -6383,7 +6384,7 @@ function dropNtf(title) {
         '<div class="ana-tile"><span>Posisi terbuka</span><b>' + t.positions + '</b>' +
           '<span class="ana-tile-sub">' + esc(posBreak) + "</span>" +
           sparkSVG(anaHist.map(function (s) { return s.pos; }), 96, 22, "#7c5cd6") + "</div>" +
-        '<div class="ana-tile"><span>Venue live</span><b>' + (live.ok ? t.liveVenues + " / 5" : "Snapshot") + '</b>' +
+        '<div class="ana-tile"><span>Venue live</span><b>' + (live.ok ? t.liveVenues + " / " + VENUE_ORDER.length : "Snapshot") + '</b>' +
           '<span class="ana-tile-sub">' + (live.ok ? "status " + esc(fmtWIBshort((live.fetchedAt || window.__liveFetchedAt) ? new Date(live.fetchedAt || window.__liveFetchedAt).toISOString() : live.generatedAt)) : "live belum termuat") + "</span>" +
           "<span>" + blocks + "</span></div>" +
       "</div>" +
@@ -6560,7 +6561,7 @@ function dropNtf(title) {
     return "Tren sesi ini (" + anaHist.length + " sampel, ±" + mins + " menit terakhir):\n" +
       "• Saldo: " + fmtRp(f.sum) + " → " + fmtRp(l.sum) + " (" + (dSum === 0 ? "tetap" : fmtSigned(dSum)) + ")\n" +
       "• P/L tercatat: " + fmtSigned(f.pl) + " → " + fmtSigned(l.pl) + " (" + (dPl === 0 ? "tetap" : fmtSigned(dPl)) + ")\n" +
-      "• Posisi terbuka: " + f.pos + " → " + l.pos + " · venue live: " + l.lv + "/5\n" +
+      "• Posisi terbuka: " + f.pos + " → " + l.pos + " · venue live: " + l.lv + "/" + VENUE_ORDER.length + "\n" +
       (dPl < 0 ? "Arahnya memburuk di sesi ini — rincian penyebabnya ada di \"kenapa aku rugi?\"." : dPl > 0 ? "Arahnya membaik di sesi ini." : "Datar di sesi ini — belum ada trade/posisi yang mengubah angka.") + "\n" + srcLine();
   }
 
@@ -8714,15 +8715,17 @@ if (typeof applyLive === "function" && !applyLive.__p14) {
     applyLive.__p14 = true;
 }
 function _anaTotals() {
-    var sum = 0, sumPL = 0, sumUN = 0, plKnown = false, unKnown = false, n = 0;
+    var sum = 0, sumPL = 0, sumUN = 0, plKnown = false, unKnown = false, n = 0, pos = 0, liveN = 0;
     VENUE_ORDER.forEach(function (k) {
         var v = VENUES[k];
         if (!v) return;
         if (v.totalNum != null && !isNaN(v.totalNum)) { sum += v.totalNum; n++; }
         if (v.plNum != null && !isNaN(v.plNum)) { sumPL += v.plNum; plKnown = true; }
         if (v.unrealizedNum != null && !isNaN(v.unrealizedNum)) { sumUN += v.unrealizedNum; unKnown = true; }
+    pos += (v.rows ? v.rows.length : 0);
+    if (v.live) liveN++;
     });
-    return { sum: sum, pl: sumPL, realized: sumPL, plKnown: plKnown, unrealized: sumUN, unrealizedKnown: unKnown, count: n };
+    return { sum: sum, pl: sumPL, realized: sumPL, plKnown: plKnown, unrealized: sumUN, unrealizedKnown: unKnown, count: n, positions: pos, liveVenues: liveN };
 }
 if (typeof anaTotals === "function") { anaTotals = _anaTotals; }
 function _plFeed() {
