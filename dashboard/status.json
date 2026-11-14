@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T06:02:01.635365+08:00",
+  "generated_at": "2026-11-15T06:03:01.670298+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -72,10 +72,10 @@
           "unrealized_pct": -7.5
         }
       ],
-      "_total_idr_from_log": 142145.0,
+      "_total_idr_from_log": 142149.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
-      "unrealized_at": "2026-11-15T06:01:31.880518+08:00"
+      "unrealized_at": "2026-11-15T06:03:01.669569+08:00"
     },
     "mexc": {
       "baseline_usdt": 1.63941769,
@@ -93,11 +93,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003213,
-          "value_usd": 0.39054,
-          "value_idr": 7108.38,
-          "unrealized_idr": -12871.64,
-          "unrealized_pct": -64.58
+          "price": 0.003217,
+          "value_usd": 0.391026,
+          "value_idr": 7117.23,
+          "unrealized_idr": -12862.79,
+          "unrealized_pct": -64.54
         },
         {
           "entry_idr": 37962.03796203797,
@@ -119,9 +119,9 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-15T05:01:53+07:00",
-      "unrealized_idr": -19304.48,
-      "unrealized_at": "2026-11-15T06:01:31.880518+08:00",
+      "updated": "2026-11-15T05:02:58+07:00",
+      "unrealized_idr": -19295.63,
+      "unrealized_at": "2026-11-15T06:03:01.669569+08:00",
       "usd_idr_used": 18201.403308339
     },
     "pumpfun": {
@@ -137,7 +137,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-15T05:01:59+07:00",
+      "updated": "2026-11-15T05:02:34+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -154,7 +154,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-15T05:01:33+07:00",
+      "updated": "2026-11-15T05:02:37+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -170,7 +170,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-15T05:01:50+07:00",
+      "updated": "2026-11-15T05:02:55+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -257,10 +257,10 @@
       "time": "2026-11-13T20:03:24+08:00"
     },
     {
-      "title": "JD Nov 2026 25.500 put (JD261120P00025500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "title": "Democrats Win Sweeping Control of Congress. Here's 1 Cryptocurrency to Buy and 1 Cryptocurrency to Sell. - Yahoo Finance",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE83RXBKdVYxanRzTFlmVG1uLXJ2Wmo1M3lYV0FYRzlCS19sS1RIVldVSUV2ZHJiU25CTkxWSkp5a1BnT3dXNXo0R3RuUFNub3MxWTNiRmRRTGU0cnFBTG5xeVIzSQ?oc=5",
-      "time": "2026-11-15T05:36:37+08:00"
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc1NtSDlIQ20yX1hZVjRlR0JuNElCQU5id0ZfSkFfeC10MWttTTVrcWk1blBxTGVReTZKek9aWmRKalozUlljVG9RaHFXdE90M2t4TUdpaDFrRkRjbEIxZl96Q3FkRC1ldGpmX0FYSlU0ZDZJY2QxRWhCbU90SUtNTDVvWjFEdV9yVUp2dUV3Ulg5SFVyRkh0cWwydGNnVVkyOFJERGp4MA?oc=5",
+      "time": "2026-11-13T02:55:00+08:00"
     },
     {
       "title": "Crypto scammers are draining Oregon seniors. Lawmakers want the ATMs gone - OregonLive.com",
@@ -311,7 +311,7 @@
       "time": "2026-11-13T18:00:15+08:00"
     }
   ],
-  "news_at": "2026-11-15T05:47:02.142391+08:00",
+  "news_at": "2026-11-15T06:02:32.490128+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
