@@ -10362,7 +10362,8 @@ function _roomCountsSync() {
         }
       }
     }
-  } catch (e) {}
+  for (i = 0; i < btns.length; i++) { var fullR = btns[i].textContent; for (j = 0; j < keys.length; j++) { var t2 = keys[j]; if (t2 === '' || fullR.indexOf(t2) < 0) continue; var sub = btns[i].querySelector('.venue-sub'); if (sub && sub.textContent.indexOf('robot') >= 0) sub.textContent = counts[t2] + ' robot di ruangan'; break; } }
+    } catch (e) {}
 }
 function _p14layoutFix() {
   try {
