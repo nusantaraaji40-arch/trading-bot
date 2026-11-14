@@ -7413,7 +7413,7 @@ if (body.querySelector(".ana-row")) { var _ar = body.querySelectorAll(".ana-row"
 
     var catRows = C.zones.map(function (z) {
       var here = C.agents.filter(function (a) { return a.zone === z.id; });
-      var inRoom = here.filter(function (a) { return a.inRoom; }).length;
+      var inRoom = here.length;
       return '<button class="venue-row" data-cat="' + z.id + '" type="button">' +
         '<span class="venue-dot" style="background:' + z.color + '"></span>' +
         '<span class="venue-name">' + esc(z.title) + '<span class="venue-sub">' + inRoom + " robot di ruangan</span></span>" +
@@ -7501,7 +7501,7 @@ if (body.querySelector(".ana-row")) { var _ar = body.querySelectorAll(".ana-row"
 
   function zoneDetail(z) {
     var here = C.agents.filter(function (a) { return a.zone === z.id; });
-    var inRoom = here.filter(function (a) { return a.inRoom; });
+    var inRoom = here;
     var col = z.color || "#2f6bff";
     return '' +
       '<button class="back-btn" data-back type="button">' + icon("chevronLeft") + "Back</button>" +
