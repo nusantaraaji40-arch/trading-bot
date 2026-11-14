@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T12:59:01.986153+08:00",
+  "generated_at": "2026-11-14T13:00:02.840831+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -75,7 +75,7 @@
       "_total_idr_from_log": 149690.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
-      "unrealized_at": "2026-11-14T12:59:01.985507+08:00"
+      "unrealized_at": "2026-11-14T13:00:02.334669+08:00"
     },
     "mexc": {
       "baseline_usdt": 1.63941769,
@@ -93,11 +93,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003748,
-          "value_usd": 0.455569,
-          "value_idr": 8292.0,
-          "unrealized_idr": -11688.02,
-          "unrealized_pct": -58.68
+          "price": 0.003753,
+          "value_usd": 0.456177,
+          "value_idr": 8303.06,
+          "unrealized_idr": -11676.96,
+          "unrealized_pct": -58.63
         },
         {
           "entry_idr": 37962.03796203797,
@@ -119,9 +119,9 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-14T11:58:40+07:00",
-      "unrealized_idr": -14319.31,
-      "unrealized_at": "2026-11-14T12:59:01.985507+08:00",
+      "updated": "2026-11-14T11:59:41+07:00",
+      "unrealized_idr": -14308.25,
+      "unrealized_at": "2026-11-14T13:00:02.334669+08:00",
       "usd_idr_used": 18201.403308339
     },
     "pumpfun": {
@@ -137,7 +137,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-14T11:58:48+07:00",
+      "updated": "2026-11-14T11:59:59+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -154,7 +154,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-14T11:59:00+07:00",
+      "updated": "2026-11-14T11:59:33+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -170,7 +170,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-14T11:58:57+07:00",
+      "updated": "2026-11-14T12:00:02+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -287,10 +287,10 @@
       "time": "2026-11-14T00:00:00+08:00"
     },
     {
-      "title": "S&P 500, Nasdaq end lower as Nvidia uncertainty weighs on tech shares - Reuters",
+      "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip to cap volatile week, Nvidia stock plunge deepens - Yahoo Finance",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa0xIRkJ1T2xEOU9abUNDYi1vTlpmRWJzd0MyQkFqa2NSb1BkMEdUNDROMmVmaXo3bDVRdThuRDFRaWZySXAyRjN5d1NDNjhCclFJUDVxdG9CQ1dyWWpDbUEwVHVRaHpNWUg5SjdreUtMeHNHXy1feGNBVkFLN3Z4cGNTcGtyYXg2bXFHdlpZQWtneFJDSWVreFROZ09oamc?oc=5",
-      "time": "2026-11-13T18:35:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORHNBdWVhWllRY0IzSV9JUGtmWVdfQk5EaGVSVVNNXzVtUWtITW1xRUhYRDA3SVdSbWFaWjExbkI0VXA1ZjVuWXNWWkI2M3hUTVpxeUxvekxyZmhLOGdBMFZXdktzTWdvT0tOdnVIenp6UFQtdWt5bkJtNWlMSGpGdDZ2WEZmbTlidlQ2QVhSREdGdXNDb0F0ZzNJUGNSejZwSXE4Y2NCdHRHQWxKNkZrTWNQbUtVYXFGU3k4Tw?oc=5",
+      "time": "2026-11-14T05:33:36+08:00"
     },
     {
       "title": "Nasdaq falls on Friday as Nvidia sells off, but index notches best week since August: Live updates - CNBC",
@@ -311,7 +311,7 @@
       "time": "2026-11-13T18:00:15+08:00"
     }
   ],
-  "news_at": "2026-11-14T12:44:32.760535+08:00",
+  "news_at": "2026-11-14T13:00:02.840646+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
