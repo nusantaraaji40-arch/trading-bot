@@ -8777,7 +8777,7 @@ function _renderPlTicker() {
         b.addEventListener("click", function () { var ab = $("#anaBtn"); if (ab) ab.click(); });
     });
     if (dot) dot.className = "pl-tick-dot " + (!f.total.plKnown ? "is-unk" : plCls(f.total.pl));
-    if (foot) { foot.textContent = (live.ok && (live.fetchedAt || window.__liveFetchedAt) ? "Live · " + fmtWIBshort(new Date(live.fetchedAt || window.__liveFetchedAt).toISOString()) : "Snapshot · live gagal") + " · Terealisasi tidak termasuk Indodax (tidak tercatat di state) · klik angka untuk detail"; }
+    if (foot) { foot.textContent = ((live.ok && !live.embedded && (live.fetchedAt || window.__liveFetchedAt) ? "Live · " + fmtWIBshort(new Date(live.fetchedAt || window.__liveFetchedAt).toISOString()) : (live.ok && live.embedded ? "Data VPS · " + fmtWIBshort(live.generatedAt) : "Snapshot · live gagal"))) + " · Terealisasi tidak termasuk Indodax (tidak tercatat di state) · klik angka untuk detail"; }
 }
 if (typeof renderPlTicker === "function") { renderPlTicker = _renderPlTicker; }
 function _anaFeed() {
