@@ -9287,12 +9287,12 @@ function _roomLogRender() {
 
 
 function _brandDomain(a) {
-    var name = (a.name || "").toLowerCase();
-    var map = { "coingecko": "coingecko.com", "dexscreener": "dexscreener.com", "geckoterminal": "geckoterminal.com", "coinpaprika": "coinpaprika.com", "coinlore": "coinlore.com", "coinranking": "coinranking.com", "mexc": "mexc.com", "indodax": "indodax.com", "pluang": "pluang.com", "binance": "binance.com", "coinmarketcap": "coinmarketcap.com", "tradingview": "tradingview.com", "coindesk": "coindesk.com", "cointelegraph": "cointelegraph.com", "pump.fun": "pump.fun", "four.meme": "four.meme", "clanker": "clanker.world" };
+    var name = ((a.name || "") + " " + (a.tool || "") + " " + (a.brand || "") + " " + (a.category || "") + " " + (a.id || "")).toLowerCase();
+    var map = { "coingecko": "coingecko.com", "dexscreener": "dexscreener.com", "geckoterminal": "geckoterminal.com", "coinpaprika": "coinpaprika.com", "coinlore": "coinlore.com", "coinranking": "coinranking.com", "mexc": "mexc.com", "indodax": "indodax.com", "pluang": "pluang.com", "binance": "binance.com", "coinmarketcap": "coinmarketcap.com", "tradingview": "tradingview.com", "coindesk": "coindesk.com", "cointelegraph": "cointelegraph.com", "pump.fun": "pump.fun", "four.meme": "four.meme", "clanker": "clanker.world", "dextools": "dextools.io", "birdeye": "birdeye.so", "solscan": "solscan.io", "etherscan": "etherscan.io", "bscscan": "bscscan.com", "basescan": "basescan.org", "polygonscan": "polygonscan.com", "uniswap": "uniswap.org", "jupiter": "jupiter.ag", "raydium": "raydium.io", "orca": "orca.so", "kraken": "kraken.com", "coinbase": "coinbase.com", "okx": "okx.com", "bybit": "bybit.com", "bitget": "bitget.com", "gate.io": "gate.io", "kucoin": "kucoin.com", "crypto.com": "crypto.com", "defillama": "defillama.com", "dune": "dune.com", "coinglass": "coinglass.com", "nansen": "nansen.ai", "arkham": "arkhamintelligence.com", "goplus": "gopluslabs.io", "rugcheck": "rugcheck.xyz", "honeypot": "honeypot.is", "tokensniffer": "tokensniffer.com", "bubblemaps": "bubblemaps.io", "pumpfun": "pump.fun", "fourmeme": "four.meme", "solana": "solana.com", "ethereum": "ethereum.org" };
     for (var k in map) { if (name.indexOf(k) >= 0) return map[k]; }
     var u = (a.url || a.link || a.tool || "");
     var m = String(u).match(/https?:\/\/([^\/]+)/);
-    if (m) return m[1];
+    if (m) return m[1]; var uu = String(u); var dm = uu.split("//").pop().split("/")[0].split(":")[0].split("?")[0]; if (dm && dm.indexOf(".") > 0 && dm.length < 80 && dm.indexOf(" ") < 0) return dm.toLowerCase();
     return null;
 }
 function _brandImg(a, sz) {
