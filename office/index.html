@@ -332,6 +332,10 @@ input, select { font-family: inherit; }
   scrollbar-width: none;
 }
 .dock::-webkit-scrollbar { display: none; }
+/* FIX3(c): sembunyikan empty state dock secara menetap */
+.dock .board-empty { display: none !important; }
+.dock:empty { display: none !important; }
+.dock-wrap:has(> .dock:empty), .dock-wrap:has(> .dock > .board-empty:only-child) { display: none !important; }
 
 .chip {
   display: flex;
