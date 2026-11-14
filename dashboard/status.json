@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T02:09:31.227365+08:00",
+  "generated_at": "2026-11-15T02:10:32.095985+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -75,7 +75,7 @@
       "_total_idr_from_log": 146608.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
-      "unrealized_at": "2026-11-15T02:09:31.226712+08:00"
+      "unrealized_at": "2026-11-15T02:10:32.095343+08:00"
     },
     "mexc": {
       "baseline_usdt": 1.63941769,
@@ -93,11 +93,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003312,
-          "value_usd": 0.402574,
-          "value_idr": 7327.4,
-          "unrealized_idr": -12652.62,
-          "unrealized_pct": -63.49
+          "price": 0.003307,
+          "value_usd": 0.401966,
+          "value_idr": 7316.34,
+          "unrealized_idr": -12663.68,
+          "unrealized_pct": -63.54
         },
         {
           "entry_idr": 37962.03796203797,
@@ -119,9 +119,9 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-15T01:09:19+07:00",
-      "unrealized_idr": -17238.38,
-      "unrealized_at": "2026-11-15T02:09:31.226712+08:00",
+      "updated": "2026-11-15T01:10:25+07:00",
+      "unrealized_idr": -17249.44,
+      "unrealized_at": "2026-11-15T02:10:32.095343+08:00",
       "usd_idr_used": 18201.403308339
     },
     "pumpfun": {
@@ -137,7 +137,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-15T01:09:21+07:00",
+      "updated": "2026-11-15T01:09:57+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -154,7 +154,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-15T01:09:26+07:00",
+      "updated": "2026-11-15T01:10:29+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -170,12 +170,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-15T01:09:10+07:00",
+      "updated": "2026-11-15T01:10:14+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-15T02:05:01.785345+08:00",
-      "fetched_at": "2026-11-15T02:05:01.785345+08:00",
+      "updated": "2026-11-15T02:10:02.770744+08:00",
+      "fetched_at": "2026-11-15T02:10:02.770744+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 474911.0,
       "cash_usd": 0.01,
@@ -216,7 +216,7 @@
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
       "unrealized_idr": 40.0,
-      "unrealized_at": "2026-11-15T02:05:01.785345+08:00"
+      "unrealized_at": "2026-11-15T02:10:02.770744+08:00"
     }
   },
   "news": [
@@ -257,6 +257,12 @@
       "time": "2026-11-13T20:03:24+08:00"
     },
     {
+      "title": "FBI says it's recovered $1.2 billion worth of cryptocurrency stolen from Binance - CBS News",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE43bUp2RG1MVE9CcnlUTl92U3p4U1J4Zl9qMEFiV2RzSUFkY2ttY2Y2aHc5Z09rN1ZRcUxoWWdZQks0X0w4bGdyNWpWcGdXRzQwdlpWTk1JVl9ZYUFMV2lzZjlsXzIzVlFuLVc1RkppTmJWcmQzcm1n?oc=5",
+      "time": "2026-11-13T18:52:16+08:00"
+    },
+    {
       "title": "Owner of shuttered Richmond Heights athletic complex charged in $1M cryptocurrency fraud - Cleveland.com",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOT2dRM01iTWtINWZENm1fVVVNR3hPNGpVMUhkMzFrb3U5Yi1idm5UelIyRk1hd204RHc1b1RIeHZ3X0YxZjVieFdhcDJHeEJ0d21rcy0yZzhyc240Q05KY0JlZ0twZGVXMjI5QU1xamxPRF9pWEg0ZnNKX21YNHh5Z3lUR3hjRkJGX2RQRXUxekRzLWpCVi1IeHpLNXQ3bXU1TEw5S0laMTRaLXF0Y05wY2MzdUx0M2hyV2tuWEVNblJDZDQ0ZnVWeGZjNVVFZ0VBeURDMVNtRQ?oc=5",
@@ -273,12 +279,6 @@
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdWxfRW16Y0I3THl0VjFhblNnbjM1cU9EZ21Pd2tPUGlWUXhrSF9OSkRNenpWQ00xZVgxTDNMT0xxX1hkSGEzcjVMTWk0Mzd1V1Q5d2VXYjdKNmRGWEJMekxlYmNkMDItVlVEcVF6UnZ3em9rY0tqcE9sVUwzSmhyQVZoUVY0RGJVeFE0cVNMb1U3VnA3bGJsMF93LW8tTUcxXzlyWlo2eUtrVlV0eXRieHo4azdhRFdUQklzVUt3?oc=5",
       "time": "2026-11-14T04:50:00+08:00"
-    },
-    {
-      "title": "Suspect in murder of Montreal cryptocurrency influencer Kevin Mirshahi arrested in Mexico - Montreal Gazette",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWnZzdjhDaloyNjBiaU1kRGlxdlAya1l2VFpPT0E2dTJQMnY4V2xLVEpseDJOUjhJMUZHNjFYWmV3akdTUWIyUUYwcFVUajFxOXl5ZXdpY0VFaTl2eDVMaXIwY0hXM09XRzloNU8zbURjOGN6VEJoSkNxTTZMeEdPbzBvS043YU5nVGwtTg?oc=5",
-      "time": "2026-11-14T06:34:05+08:00"
     },
     {
       "title": "FAA lifts ground stop flights, airline stocks fall - Yahoo Finance",
@@ -311,7 +311,7 @@
       "time": "2026-11-14T05:33:36+08:00"
     }
   ],
-  "news_at": "2026-11-15T01:54:31.974719+08:00",
+  "news_at": "2026-11-15T02:10:02.814839+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
