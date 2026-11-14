@@ -9270,12 +9270,12 @@ function _animateAgent(a, zone) {
     tag.style.transform = "translate(" + Math.round(tx - cx) + "px," + Math.round(ty - cy) + "px)";
 }
 function _roomLogRender() {
-    var el = document.getElementById("roomLogPanel");
+        var el = document.getElementById("roomLogPanel"); if (el) { if (!el.isConnected) document.body.appendChild(el); el.style.display = "block"; el.style.visibility = "visible"; }
     if (!el) {
-        var scene = document.querySelector(".scene") || document.body;
+        var scene = document.body;
         el = document.createElement("div");
         el.id = "roomLogPanel";
-        el.style.cssText = "position:absolute;left:452px;bottom:12px;z-index:40;width:280px;max-width:280px;max-height:56px;overflow:auto;background:rgba(15,23,42,.94);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:8px 10px;font-size:11px;color:#e2e8f0;box-shadow:0 12px 32px rgba(0,0,0,.45);cursor:pointer"; el.title = "Klik untuk memperbesar / mengecilkan log"; el.onclick = function () { el.style.maxHeight = (el.style.maxHeight === "260px") ? "56px" : "260px"; };
+        el.style.cssText = "position:fixed;left:452px;bottom:12px;z-index:80;width:280px;max-width:280px;max-height:56px;overflow:auto;background:rgba(15,23,42,.94);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:8px 10px;font-size:11px;color:#e2e8f0;box-shadow:0 12px 32px rgba(0,0,0,.45);cursor:pointer"; el.title = "Klik untuk memperbesar / mengecilkan log"; el.onclick = function () { el.style.maxHeight = (el.style.maxHeight === "260px") ? "56px" : "260px"; };
         scene.appendChild(el);
     }
     var log = window.__roomLog || [];
@@ -9455,7 +9455,7 @@ function _fmtLivePrice(price, k) {
     return "$" + Number(price).toFixed(6);
 }
 function _marketTableRender() {
-    var scene = document.querySelector(".scene") || document.body;
+    var scene = document.body;
     var panel = document.getElementById("marketTable");
     if (!panel) {
         panel = document.createElement("div");
@@ -9584,7 +9584,7 @@ function _debateArgs() {
 
 
 function _debateRender() {
-    var scene = document.querySelector(".scene") || document.body;
+    var scene = document.body;
     var el = document.getElementById("debateRoom");
     if (!el) {
         el = document.createElement("div");
