@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T10:41:02.949913+08:00",
+  "generated_at": "2026-11-15T10:41:32.117281+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -72,7 +72,7 @@
           "unrealized_pct": -7.5
         }
       ],
-      "_total_idr_from_log": 143885.0,
+      "_total_idr_from_log": 143879.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
       "unrealized_at": "2026-11-15T10:41:02.150793+08:00"
@@ -119,7 +119,7 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-15T09:39:57+07:00",
+      "updated": "2026-11-15T09:41:04+07:00",
       "unrealized_idr": -17563.36,
       "unrealized_at": "2026-11-15T10:41:02.150793+08:00",
       "usd_idr_used": 18201.403308339
@@ -311,7 +311,7 @@
       "time": "2026-11-14T10:09:00+08:00"
     }
   ],
-  "news_at": "2026-11-15T10:41:02.949775+08:00",
+  "news_at": "2026-11-15T10:41:02.949458+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
