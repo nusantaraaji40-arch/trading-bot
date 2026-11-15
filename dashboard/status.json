@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:20:31.233446+08:00",
+  "generated_at": "2026-11-15T16:21:33.044226+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -75,7 +75,7 @@
       "_total_idr_from_log": 141105.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
-      "unrealized_at": "2026-11-15T16:20:31.232812+08:00"
+      "unrealized_at": "2026-11-15T16:21:32.130933+08:00"
     },
     "mexc": {
       "baseline_usdt": 1.63941769,
@@ -93,11 +93,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003594,
-          "value_usd": 0.436851,
-          "value_idr": 7951.3,
-          "unrealized_idr": -12028.72,
-          "unrealized_pct": -60.38
+          "price": 0.0036,
+          "value_usd": 0.43758,
+          "value_idr": 7964.57,
+          "unrealized_idr": -12015.45,
+          "unrealized_pct": -60.31
         },
         {
           "entry_idr": 37962.03796203797,
@@ -108,20 +108,20 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1494,
-          "value_usd": 1.76292,
-          "value_idr": 32087.62,
-          "unrealized_idr": -5874.42,
-          "unrealized_pct": -15.4
+          "price": 0.1498,
+          "value_usd": 1.76764,
+          "value_idr": 32173.53,
+          "unrealized_idr": -5788.51,
+          "unrealized_pct": -15.18
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-15T15:19:59+07:00",
-      "unrealized_idr": -17903.14,
-      "unrealized_at": "2026-11-15T16:20:31.232812+08:00",
+      "updated": "2026-11-15T15:21:05+07:00",
+      "unrealized_idr": -17803.96,
+      "unrealized_at": "2026-11-15T16:21:32.130933+08:00",
       "usd_idr_used": 18201.403308339
     },
     "pumpfun": {
@@ -137,7 +137,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-15T15:20:06+07:00",
+      "updated": "2026-11-15T15:21:18+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -154,7 +154,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-15T15:20:19+07:00",
+      "updated": "2026-11-15T15:21:23+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -170,7 +170,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-15T15:20:22+07:00",
+      "updated": "2026-11-15T15:21:27+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -221,6 +221,12 @@
   },
   "news": [
     {
+      "title": "Coinone warns of phishing, identity theft after customer data breach",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-15T16:07:58+08:00"
+    },
+    {
       "title": "RWA protocol stUSDT winds down three years after $2.3B TVL peak",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -243,12 +249,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/megaeth-parent-cuts-20-percent-staff-ai-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-14T16:12:30+08:00"
-    },
-    {
-      "title": "Bitcoin ETFs shed $2.35B in 2 weeks, BlackRock’s losing streak hits 11",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/markets/bitcoin-etf-outflows-2-35-billion-blackrock-11-session-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-14T14:33:13+08:00"
     },
     {
       "title": "FBI says it's recovered $1.2 billion worth of cryptocurrency stolen from Binance - CBS News",
@@ -281,16 +281,22 @@
       "time": "2026-11-13T02:55:00+08:00"
     },
     {
+      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy - CNBC",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yNU1iYi1qSUg2aEhWenhhdTI3STdFT19jVEw3WjFnMGR3WXRPdHRPODY3d3hNTTF2RlAtMzFsSUV5cS1SNDQzLUZibDNWZTV4cU5LTkJCNGlxNk1nOVlQUVNTMTU5TGI4VmNLTXA1LUswN0d1WHNqU24yRUFRUlnSAYQBQVVfeXFMT010VGJCQ0VzZG1tbFZiRlhSZlgzZm85SUlQc1Zha1ZLOHNTZ0ItVmtWX1VzRnFfcEVRMWEyWkZxR0FfNVRxNE1LRS11SWpCcFdyUUJYZGVaeVZhNFdVaDZnTmlMbWVrcWVWc3EwRFNiQks0cHV4WlBvQ1FwWVM1bUNxdGdx?oc=5",
+      "time": "2026-11-14T17:26:23+08:00"
+    },
+    {
       "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal broke — and no trading plan was flagged - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLTktc1RQNWQxUnRyQXVkcVRpYUtRSUV6Y2dXX0lpYmduS2Q5NHBLXzc1Q2trUktLdi1RMGs4ekJycno1Q0pSTWpna29rV1p2LWNkVkhDQ2RuNmNHaGxHdkZTSEh2czQtS1RfVnFCb29DNU04a2ZjYnZXQ05nZlI3MThaQVZUTlFEMmliVmJ3R1FycnBtRFV6UndwNA?oc=5",
       "time": "2026-11-14T00:00:00+08:00"
     },
     {
-      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy - CNBC",
+      "title": "U.S. Stocks Mixed on Nvidia Fallout Fears - WSJ",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yNU1iYi1qSUg2aEhWenhhdTI3STdFT19jVEw3WjFnMGR3WXRPdHRPODY3d3hNTTF2RlAtMzFsSUV5cS1SNDQzLUZibDNWZTV4cU5LTkJCNGlxNk1nOVlQUVNTMTU5TGI4VmNLTXA1LUswN0d1WHNqU24yRUFRUlnSAYQBQVVfeXFMT010VGJCQ0VzZG1tbFZiRlhSZlgzZm85SUlQc1Zha1ZLOHNTZ0ItVmtWX1VzRnFfcEVRMWEyWkZxR0FfNVRxNE1LRS11SWpCcFdyUUJYZGVaeVZhNFdVaDZnTmlMbWVrcWVWc3EwRFNiQks0cHV4WlBvQ1FwWVM1bUNxdGdx?oc=5",
-      "time": "2026-11-14T17:26:23+08:00"
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbXo0WGszbS1hZnpTdTRYYjJ0MnNDYVo3c1paejV2WkowZl93UVNiamRIQ0xEWU9HZWp3Ui14aEhFUEZkbWNQTXhfUVNSVE5tQkhELWJEcmZxYVpEM2c0aGRwdWpQZWM5MmdETXFXMDd5TTR5cHNvZUdaWmp4MlBLMG5KTm9JTFVrRmpfVA?oc=5",
+      "time": "2026-11-14T06:14:00+08:00"
     },
     {
       "title": "Trump’s tariffs face a new threat: Republicans - CNN",
@@ -299,19 +305,13 @@
       "time": "2026-11-13T18:00:15+08:00"
     },
     {
-      "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip to cap volatile week, Nvidia stock plunge deepens - Yahoo Finance",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORHNBdWVhWllRY0IzSV9JUGtmWVdfQk5EaGVSVVNNXzVtUWtITW1xRUhYRDA3SVdSbWFaWjExbkI0VXA1ZjVuWXNWWkI2M3hUTVpxeUxvekxyZmhLOGdBMFZXdktzTWdvT0tOdnVIenp6UFQtdWt5bkJtNWlMSGpGdDZ2WEZmbTlidlQ2QVhSREdGdXNDb0F0ZzNJUGNSejZwSXE4Y2NCdHRHQWxKNkZrTWNQbUtVYXFGU3k4Tw?oc=5",
-      "time": "2026-11-14T05:33:36+08:00"
-    },
-    {
       "title": "Goldman Sees S&P 500 Rising 14% on Cheap Hyperscaler Valuations - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNzk5dkdOVUdtc0x6M002ZHJOQXc5M1JTSkVXU1FvX0lkdzJxcnFaS1hXQUtUbVFYQmRZb1JnZ3ZtbkFNbVNqZExydHN4M3BKb04tNVRyNmRnTmxJTlBMdktwa2JGbUZVcGw1SGRKYktiZUpVZFo0TTVYWEc0TG5oTFNkSXYtbkdrVjBKWUJiMm5RcDJQ?oc=5",
       "time": "2026-11-13T18:14:15+08:00"
     }
   ],
-  "news_at": "2026-11-15T16:06:02.623950+08:00",
+  "news_at": "2026-11-15T16:21:33.044119+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
