@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T06:48:01.944522+08:00",
+  "generated_at": "2026-11-16T06:49:31.755689+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -75,7 +75,7 @@
       "_total_idr_from_log": 140560.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
-      "unrealized_at": "2026-11-16T06:48:01.943825+08:00"
+      "unrealized_at": "2026-11-16T06:49:31.755096+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -93,11 +93,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003222,
-          "value_usd": 0.391634,
-          "value_idr": 7128.29,
-          "unrealized_idr": -12851.73,
-          "unrealized_pct": -64.48
+          "price": 0.003241,
+          "value_usd": 0.393944,
+          "value_idr": 7170.33,
+          "unrealized_idr": -12809.69,
+          "unrealized_pct": -64.27
         },
         {
           "entry_idr": 37962.03796203797,
@@ -108,11 +108,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1545,
-          "value_usd": 1.8231,
-          "value_idr": 33182.98,
-          "unrealized_idr": -4779.06,
-          "unrealized_pct": -12.51
+          "price": 0.1544,
+          "value_usd": 1.82192,
+          "value_idr": 33161.5,
+          "unrealized_idr": -4800.54,
+          "unrealized_pct": -12.57
         },
         {
           "entry_idr": 19980.01998001998,
@@ -123,20 +123,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9696,
-          "value_usd": 1.06656,
-          "value_idr": 19412.89,
-          "unrealized_idr": -567.13,
-          "unrealized_pct": 0.8
+          "price": 0.9695,
+          "value_usd": 1.06645,
+          "value_idr": 19410.89,
+          "unrealized_idr": -569.13,
+          "unrealized_pct": 0.79
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-16T05:47:14+07:00",
-      "unrealized_idr": -18197.92,
-      "unrealized_at": "2026-11-16T06:48:01.943825+08:00",
+      "updated": "2026-11-16T05:49:16+07:00",
+      "unrealized_idr": -18179.36,
+      "unrealized_at": "2026-11-16T06:49:31.755096+08:00",
       "usd_idr_used": 18201.403308339
     },
     "pumpfun": {
@@ -152,7 +152,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-16T05:48:00+07:00",
+      "updated": "2026-11-16T05:49:11+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -169,7 +169,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-16T05:47:32+07:00",
+      "updated": "2026-11-16T05:49:08+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -185,7 +185,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-16T05:47:59+07:00",
+      "updated": "2026-11-16T05:49:04+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -326,7 +326,7 @@
       "time": "2026-11-13T06:17:13+08:00"
     }
   ],
-  "news_at": "2026-11-16T06:33:02.269943+08:00",
+  "news_at": "2026-11-16T06:48:32.567769+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
