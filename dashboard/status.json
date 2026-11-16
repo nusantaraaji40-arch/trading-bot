@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:19:31.757043+08:00",
+  "generated_at": "2026-11-17T00:20:31.663957+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -56,7 +56,7 @@
           "unrealized_pct": -8.99
         }
       ],
-      "_total_idr_from_log": 154374.0,
+      "_total_idr_from_log": 154361.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -5564.23,
       "unrealized_at": "2026-11-17T00:19:31.756424+08:00"
@@ -79,8 +79,8 @@
           "symbol": "FLOATUSDT",
           "price": 0.002582,
           "value_usd": 0.313842,
-          "value_idr": 5733.09,
-          "unrealized_idr": -14246.93,
+          "value_idr": 5733.02,
+          "unrealized_idr": -14247.0,
           "unrealized_pct": -71.54
         },
         {
@@ -94,8 +94,8 @@
           "symbol": "ADAUSDT",
           "price": 0.1526,
           "value_usd": 1.80068,
-          "value_idr": 32893.82,
-          "unrealized_idr": -5068.22,
+          "value_idr": 32893.4,
+          "unrealized_idr": -5068.63,
           "unrealized_pct": -13.59
         },
         {
@@ -109,8 +109,8 @@
           "symbol": "XRPUSDT",
           "price": 0.9506,
           "value_usd": 1.04566,
-          "value_idr": 19101.53,
-          "unrealized_idr": -878.49,
+          "value_idr": 19101.29,
+          "unrealized_idr": -878.73,
           "unrealized_pct": -1.17
         }
       ],
@@ -118,10 +118,10 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-16T23:19:05+07:00",
-      "unrealized_idr": -20193.64,
+      "updated": "2026-11-16T23:20:08+07:00",
+      "unrealized_idr": -20194.36,
       "unrealized_at": "2026-11-17T00:19:31.756424+08:00",
-      "usd_idr_used": 18267.440983406395
+      "usd_idr_used": 18267.212771031576
     },
     "pumpfun": {
       "baseline_sol": 0.02135348,
@@ -136,7 +136,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-16T23:19:01+07:00",
+      "updated": "2026-11-16T23:20:13+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -153,7 +153,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-16T23:19:16+07:00",
+      "updated": "2026-11-16T23:20:20+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -169,12 +169,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-16T23:19:03+07:00",
+      "updated": "2026-11-16T23:20:10+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-17T00:15:02.568620+08:00",
-      "fetched_at": "2026-11-17T00:15:02.568620+08:00",
+      "updated": "2026-11-17T00:20:02.275852+08:00",
+      "fetched_at": "2026-11-17T00:20:02.275852+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 474911.0,
       "cash_usd": 0.01,
@@ -182,26 +182,26 @@
       "realized_idr": 0,
       "total_deposited_idr": 500000,
       "trades_count": 1,
-      "usd_idr": 18267.440983406395,
+      "usd_idr": 18267.212771031576,
       "positions": [
         {
           "symbol": "AZN",
           "name": "AstraZeneca plc",
           "qty": 0.005750244,
           "entry": 184.34,
-          "price": 185.83,
-          "value_usd": 1.06856784252,
-          "pnl_usd": 0.00856786356,
-          "pnl_pct": 0.81,
+          "price": 185.67999999999998,
+          "value_usd": 1.06770530592,
+          "pnl_usd": 0.00770532696,
+          "pnl_pct": 0.73,
           "currency": "USD",
-          "entry_idr": 19363.49,
-          "value_idr": 19520.0,
-          "unrealized_idr": 255.0,
-          "unrealized_pct": 0.81
+          "entry_idr": 19363.25,
+          "value_idr": 19504.0,
+          "unrealized_idr": 239.0,
+          "unrealized_pct": 0.73
         }
       ],
-      "positions_value_idr": 19520.0,
-      "total_idr": 494431.0,
+      "positions_value_idr": 19504.0,
+      "total_idr": 494415.0,
       "wallets": {
         "IDR_CRYPTO_FUNDING": 474911,
         "IDR_CASH": 0,
@@ -210,12 +210,12 @@
         "USD_MARGIN": 0
       },
       "reported": {
-        "netAssetValueIdr": 19520.0,
-        "unrealisedPnLIdr": 255.0
+        "netAssetValueIdr": 19504.0,
+        "unrealisedPnLIdr": 239.0
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
-      "unrealized_idr": 255.0,
-      "unrealized_at": "2026-11-17T00:15:02.568620+08:00"
+      "unrealized_idr": 239.0,
+      "unrealized_at": "2026-11-17T00:20:02.275852+08:00"
     }
   },
   "news": [
@@ -289,7 +289,7 @@
       "title": "Stock market today: Dow, S&P 500, Nasdaq drop ahead of pivotal week for AI - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQm1pRzVJd0lQc2F6aUtMUGIzUnVtazZTRFQtUndVeHZCSzhTTkVTSEJJRnIyN0JhVnN0eTVuZkFiVEN5a0xWbk54cjlXejFPTjlkb3JhTDdjQnNNMXFvblF0S3ZNUmtiTmFDdEd2NkdpZmtLSG01eldfYWZDT3lIcldSc2VlZnNQSGRkWmRmYmh3b195WDY1bnNoU25neEFTc3dwX21yTkRGdkRiSW5FMDZrdmpRZTdDZUpHaw?oc=5",
-      "time": "2026-11-16T23:56:10+08:00"
+      "time": "2026-11-17T00:01:28+08:00"
     },
     {
       "title": "Stocks dip ahead of Nvidia earnings, Anthropic IPO - Yahoo Finance",
@@ -310,7 +310,7 @@
       "time": "2026-11-16T18:35:57+08:00"
     }
   ],
-  "news_at": "2026-11-17T00:04:32.566498+08:00",
+  "news_at": "2026-11-17T00:20:02.161306+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
