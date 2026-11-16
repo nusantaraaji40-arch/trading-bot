@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-17T05:23:01.862508+08:00",
+  "generated_at": "2026-11-17T05:23:31.720923+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
     "indodax": {
       "version": 2,
-      "deposit_baseline_idr": 96642.0,
+      "deposit_baseline_idr": 113698.0,
       "positions": [
         {
           "slot": 1,
@@ -38,27 +38,11 @@
           "value_idr": 23398.28,
           "unrealized_idr": -1184.72,
           "unrealized_pct": -4.82
-        },
-        {
-          "slot": 3,
-          "symbol": "ZKJ",
-          "pair_id": "zkjidr",
-          "qty": 276.21348314,
-          "entry": 89.0,
-          "entry_source": "/api/v2/order/histories",
-          "tp_pct": null,
-          "sl_pct": null,
-          "ks_floor_idr": 15978,
-          "bought_at": 1794388480,
-          "price": 81.0,
-          "value_idr": 22373.29,
-          "unrealized_idr": -2209.71,
-          "unrealized_pct": -8.99
         }
       ],
-      "_total_idr_from_log": 153429.0,
+      "_total_idr_from_log": 154576.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
-      "unrealized_idr": -5564.23,
+      "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-17T05:23:01.861832+08:00"
     },
     "mexc": {
@@ -136,7 +120,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T04:22:47+07:00",
+      "updated": "2026-11-17T04:23:23+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -153,7 +137,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T04:22:54+07:00",
+      "updated": "2026-11-17T04:23:26+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -169,7 +153,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-17T04:22:50+07:00",
+      "updated": "2026-11-17T04:23:22+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
