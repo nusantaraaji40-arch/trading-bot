@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T16:29:31.752383+08:00",
+  "generated_at": "2026-11-16T16:30:31.673677+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -75,7 +75,7 @@
       "_total_idr_from_log": 143520.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
-      "unrealized_at": "2026-11-16T16:29:01.896325+08:00"
+      "unrealized_at": "2026-11-16T16:30:31.672661+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -93,11 +93,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002829,
-          "value_usd": 0.343865,
-          "value_idr": 6282.03,
-          "unrealized_idr": -13697.99,
-          "unrealized_pct": -68.81
+          "price": 0.002817,
+          "value_usd": 0.342406,
+          "value_idr": 6255.38,
+          "unrealized_idr": -13724.64,
+          "unrealized_pct": -68.94
         },
         {
           "entry_idr": 37962.03796203797,
@@ -108,11 +108,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.152,
-          "value_usd": 1.7936,
-          "value_idr": 32767.08,
-          "unrealized_idr": -5194.96,
-          "unrealized_pct": -13.93
+          "price": 0.1522,
+          "value_usd": 1.79596,
+          "value_idr": 32810.19,
+          "unrealized_idr": -5151.85,
+          "unrealized_pct": -13.82
         },
         {
           "entry_idr": 19980.01998001998,
@@ -123,20 +123,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9532,
-          "value_usd": 1.04852,
-          "value_idr": 19155.29,
-          "unrealized_idr": -824.73,
-          "unrealized_pct": -0.9
+          "price": 0.9538,
+          "value_usd": 1.04918,
+          "value_idr": 19167.35,
+          "unrealized_idr": -812.67,
+          "unrealized_pct": -0.84
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-16T15:29:17+07:00",
-      "unrealized_idr": -19717.68,
-      "unrealized_at": "2026-11-16T16:29:01.896325+08:00",
+      "updated": "2026-11-16T15:30:18+07:00",
+      "unrealized_idr": -19689.16,
+      "unrealized_at": "2026-11-16T16:30:31.672661+08:00",
       "usd_idr_used": 18268.887315256005
     },
     "pumpfun": {
@@ -152,7 +152,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-16T15:29:24+07:00",
+      "updated": "2026-11-16T15:30:00+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -169,7 +169,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-16T15:29:15+07:00",
+      "updated": "2026-11-16T15:30:19+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -185,12 +185,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-16T15:29:23+07:00",
+      "updated": "2026-11-16T15:30:28+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-16T16:25:02.187116+08:00",
-      "fetched_at": "2026-11-16T16:25:02.187116+08:00",
+      "updated": "2026-11-16T16:30:02.371842+08:00",
+      "fetched_at": "2026-11-16T16:30:02.371842+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 474911.0,
       "cash_usd": 0.01,
@@ -231,7 +231,7 @@
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
       "unrealized_idr": 161.0,
-      "unrealized_at": "2026-11-16T16:25:02.187116+08:00"
+      "unrealized_at": "2026-11-16T16:30:02.371842+08:00"
     }
   },
   "news": [
