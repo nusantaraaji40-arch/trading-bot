@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T01:36:01.188511+08:00",
+  "generated_at": "2026-11-17T01:37:02.141852+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -56,10 +56,10 @@
           "unrealized_pct": -8.99
         }
       ],
-      "_total_idr_from_log": 154742.0,
+      "_total_idr_from_log": 154770.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -5564.23,
-      "unrealized_at": "2026-11-17T01:35:31.246780+08:00"
+      "unrealized_at": "2026-11-17T01:37:01.357177+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -92,11 +92,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1529,
-          "value_usd": 1.80422,
-          "value_idr": 32959.14,
-          "unrealized_idr": -5002.9,
-          "unrealized_pct": -13.42
+          "price": 0.1534,
+          "value_usd": 1.81012,
+          "value_idr": 33066.92,
+          "unrealized_idr": -4895.12,
+          "unrealized_pct": -13.14
         },
         {
           "entry_idr": 19980.01998001998,
@@ -107,11 +107,11 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9602,
-          "value_usd": 1.05622,
-          "value_idr": 19294.82,
-          "unrealized_idr": -685.2,
-          "unrealized_pct": -0.18
+          "price": 0.9634,
+          "value_usd": 1.05974,
+          "value_idr": 19359.12,
+          "unrealized_idr": -620.9,
+          "unrealized_pct": 0.16
         }
       ],
       "realized_idr": 0.0,
@@ -119,8 +119,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
       "updated": "2026-11-17T00:36:00+07:00",
-      "unrealized_idr": -19672.9,
-      "unrealized_at": "2026-11-17T01:35:31.246780+08:00",
+      "unrealized_idr": -19500.82,
+      "unrealized_at": "2026-11-17T01:37:01.357177+08:00",
       "usd_idr_used": 18267.804620123006
     },
     "pumpfun": {
@@ -136,7 +136,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T00:35:42+07:00",
+      "updated": "2026-11-17T00:36:53+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -153,7 +153,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T00:35:59+07:00",
+      "updated": "2026-11-17T00:36:31+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -169,7 +169,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-17T00:35:33+07:00",
+      "updated": "2026-11-17T00:36:38+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -286,18 +286,6 @@
       "time": "2026-11-16T23:46:11+08:00"
     },
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq drop ahead of pivotal week for AI - Yahoo Finance",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQm1pRzVJd0lQc2F6aUtMUGIzUnVtazZTRFQtUndVeHZCSzhTTkVTSEJJRnIyN0JhVnN0eTVuZkFiVEN5a0xWbk54cjlXejFPTjlkb3JhTDdjQnNNMXFvblF0S3ZNUmtiTmFDdEd2NkdpZmtLSG01eldfYWZDT3lIcldSc2VlZnNQSGRkWmRmYmh3b195WDY1bnNoU25neEFTc3dwX21yTkRGdkRiSW5FMDZrdmpRZTdDZUpHaw?oc=5",
-      "time": "2026-11-17T00:28:47+08:00"
-    },
-    {
-      "title": "US Futures Drop as Market Looks to Nvidia Results, Anthropic IPO - Bloomberg",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcFhFeVFsT0wxMG1zZWtMN1gzNzV5XzN2aUJtclZEa2NaUTN0a2Y3cV83djJMeWZ0Zk5uUThTa2o0SGhQb1NrUGJVWXBLV2xoRzFyUC1mU0s1bXJfekVJaDl2RndqTGJfN0Vkd25OS0JROUNZQ0V3bjJ0b0dkUDIwNlpCcXl4NVpHX3pGQkNCZjZOOFliV0JjaG96NnJVM1BfVDRIa2x1MElXNVZXZ1VHNXdyaXE?oc=5",
-      "time": "2026-11-16T23:02:50+08:00"
-    },
-    {
       "title": "Chip stocks fall on US semiconductor restrictions: AlphaCheck - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPX0NYQzlGd3NpY1NLcXNmMm84U1pmQ1dKelhJSkRNY09iTHJVbnZfTGprZFNQWXBteHNCbnhmYVJXaDJIUEd6RkxXVlNEYzlVMzBMWnRQc0NZblllQlY3REtxN0hoQ1h2QTBzS3Q1QTh2OWdXbHBubm1IcGhBSndxNkVXa3JIMVpXUG5XV2RHcndCa2UtR1Z6NDkxTDZERXlMNmxFVUJHV2tRTXdpb1FEVkh4RlZZaTBoaWQw?oc=5",
@@ -308,9 +296,21 @@
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNd2lqbmhHQy1wMC1zZjIwaFlyR2lJZVJMd091Y2ZnbThMQ003Y1UxVGJmWFN4N3JLZEhKc2JEeHhDLWhYdzhybGJVb3VtY2pYS3h6NERqWE83eU0zcnh6LWk1YU9STUh1d1lFVFVVdXVUc2FrYl9TNjBVYkg2ZENuT2Vn?oc=5",
       "time": "2026-11-16T01:00:15+08:00"
+    },
+    {
+      "title": "Nvidia’s stock extends declines following harsh words from the U.S. government - MarketWatch",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSkJsamppQU9MUGc1UDk1MG5XclJteGw5Z3hzSVdCbHg4cGNnOVRSVzNuY2N3ZW9zb0ZDUWMyQUF6Qmk5ck9CSE10RUdCSTdfMnhNbEJrVWxKaDZtVXBDRWRDTUlTekh1Y3pqdjZ5ZkVKSFI0QVBPQmdXVUU1Nl9GanlnSkoyaExNLUJzYVlIQVJiX3JZWE1HWkNMWmdsa2NwbXBpWjV4STJtNV9aQjhVeU5hRFVERDNYcmxZ?oc=5",
+      "time": "2026-11-16T23:22:00+08:00"
+    },
+    {
+      "title": "US Futures Drop as Market Looks to Nvidia Results, Anthropic IPO - Bloomberg",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcFhFeVFsT0wxMG1zZWtMN1gzNzV5XzN2aUJtclZEa2NaUTN0a2Y3cV83djJMeWZ0Zk5uUThTa2o0SGhQb1NrUGJVWXBLV2xoRzFyUC1mU0s1bXJfekVJaDl2RndqTGJfN0Vkd25OS0JROUNZQ0V3bjJ0b0dkUDIwNlpCcXl4NVpHX3pGQkNCZjZOOFliV0JjaG96NnJVM1BfVDRIa2x1MElXNVZXZ1VHNXdyaXE?oc=5",
+      "time": "2026-11-16T23:02:50+08:00"
     }
   ],
-  "news_at": "2026-11-17T01:21:32.289951+08:00",
+  "news_at": "2026-11-17T01:37:02.141736+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
