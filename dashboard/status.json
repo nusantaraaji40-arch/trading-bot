@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T07:30:02.186951+08:00",
+  "generated_at": "2026-11-17T07:30:31.910376+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -63,8 +63,8 @@
           "symbol": "FLOATUSDT",
           "price": 0.002717,
           "value_usd": 0.330251,
-          "value_idr": 6033.51,
-          "unrealized_idr": -13946.51,
+          "value_idr": 6033.2,
+          "unrealized_idr": -13946.82,
           "unrealized_pct": -70.05
         },
         {
@@ -78,8 +78,8 @@
           "symbol": "ADAUSDT",
           "price": 0.1528,
           "value_usd": 1.80304,
-          "value_idr": 32940.55,
-          "unrealized_idr": -5021.49,
+          "value_idr": 32938.85,
+          "unrealized_idr": -5023.19,
           "unrealized_pct": -13.48
         },
         {
@@ -93,8 +93,8 @@
           "symbol": "XRPUSDT",
           "price": 0.955,
           "value_usd": 1.0505,
-          "value_idr": 19192.06,
-          "unrealized_idr": -787.96,
+          "value_idr": 19191.07,
+          "unrealized_idr": -788.95,
           "unrealized_pct": -0.72
         }
       ],
@@ -103,9 +103,9 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
       "updated": "2026-11-17T06:29:36+07:00",
-      "unrealized_idr": -19755.96,
+      "unrealized_idr": -19758.96,
       "unrealized_at": "2026-11-17T07:30:02.186218+08:00",
-      "usd_idr_used": 18269.450565952164
+      "usd_idr_used": 18268.505529196216
     },
     "pumpfun": {
       "baseline_sol": 0.02135348,
@@ -120,7 +120,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T06:29:35+07:00",
+      "updated": "2026-11-17T06:30:13+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -137,7 +137,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T06:29:37+07:00",
+      "updated": "2026-11-17T06:30:13+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -153,12 +153,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-17T06:29:48+07:00",
+      "updated": "2026-11-17T06:30:21+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-17T07:25:02.221654+08:00",
-      "fetched_at": "2026-11-17T07:25:02.221654+08:00",
+      "updated": "2026-11-17T07:30:02.548333+08:00",
+      "fetched_at": "2026-11-17T07:30:02.548333+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 474911.0,
       "cash_usd": 0.01,
@@ -166,7 +166,7 @@
       "realized_idr": 0,
       "total_deposited_idr": 500000,
       "trades_count": 1,
-      "usd_idr": 18269.450565952164,
+      "usd_idr": 18268.505529196216,
       "positions": [
         {
           "symbol": "AZN",
@@ -178,14 +178,14 @@
           "pnl_usd": -0.00184007808,
           "pnl_pct": -0.17,
           "currency": "USD",
-          "entry_idr": 19365.62,
-          "value_idr": 19332.0,
-          "unrealized_idr": 67.0,
+          "entry_idr": 19364.62,
+          "value_idr": 19331.0,
+          "unrealized_idr": 66.0,
           "unrealized_pct": -0.17
         }
       ],
-      "positions_value_idr": 19332.0,
-      "total_idr": 494243.0,
+      "positions_value_idr": 19331.0,
+      "total_idr": 494242.0,
       "wallets": {
         "IDR_CRYPTO_FUNDING": 474911,
         "IDR_CASH": 0,
@@ -194,12 +194,12 @@
         "USD_MARGIN": 0
       },
       "reported": {
-        "netAssetValueIdr": 19332.0,
-        "unrealisedPnLIdr": 67.0
+        "netAssetValueIdr": 19331.0,
+        "unrealisedPnLIdr": 66.0
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
-      "unrealized_idr": 67.0,
-      "unrealized_at": "2026-11-17T07:25:02.221654+08:00"
+      "unrealized_idr": 66.0,
+      "unrealized_at": "2026-11-17T07:30:02.548333+08:00"
     }
   },
   "news": [
