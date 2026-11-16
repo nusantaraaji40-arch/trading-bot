@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T06:15:31.244293+08:00",
+  "generated_at": "2026-11-17T06:16:31.488954+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -43,7 +43,7 @@
       "_total_idr_from_log": 156154.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-17T06:15:31.243685+08:00"
+      "unrealized_at": "2026-11-17T06:16:31.488217+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -61,11 +61,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002786,
-          "value_usd": 0.338638,
-          "value_idr": 6186.74,
-          "unrealized_idr": -13793.28,
-          "unrealized_pct": -69.29
+          "price": 0.002787,
+          "value_usd": 0.33876,
+          "value_idr": 6188.96,
+          "unrealized_idr": -13791.06,
+          "unrealized_pct": -69.28
         },
         {
           "entry_idr": 37962.03796203797,
@@ -91,20 +91,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.963,
-          "value_usd": 1.0593,
-          "value_idr": 19352.83,
-          "unrealized_idr": -627.19,
-          "unrealized_pct": 0.11
+          "price": 0.9618,
+          "value_usd": 1.05798,
+          "value_idr": 19328.71,
+          "unrealized_idr": -651.31,
+          "unrealized_pct": -0.01
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-17T05:15:27+07:00",
-      "unrealized_idr": -19183.26,
-      "unrealized_at": "2026-11-17T06:15:31.243685+08:00",
+      "updated": "2026-11-17T05:16:28+07:00",
+      "unrealized_idr": -19205.16,
+      "unrealized_at": "2026-11-17T06:16:31.488217+08:00",
       "usd_idr_used": 18269.450565952164
     },
     "pumpfun": {
@@ -120,7 +120,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T05:15:24+07:00",
+      "updated": "2026-11-17T05:15:59+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -137,7 +137,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T05:15:06+07:00",
+      "updated": "2026-11-17T05:16:10+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -153,7 +153,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-17T05:14:58+07:00",
+      "updated": "2026-11-17T05:16:03+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -204,6 +204,12 @@
   },
   "news": [
     {
+      "title": "Here’s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-17T06:07:36+08:00"
+    },
+    {
       "title": "Bitmine edges toward 5% of ETH supply as treasuries report buys amid market slump",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/markets/bitmine-nears-5-eth-supply-treasuries-report-buys-amid-market-slump?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -228,13 +234,67 @@
       "time": "2026-11-17T02:07:49+08:00"
     },
     {
-      "title": "Safe wallet reportedly loses $6.5M as Zodiac suspects key compromise",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/safe-wallet-reportedly-loses-millions-after-key-compromise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-17T01:49:13+08:00"
+      "title": "States, cities move to ban cryptocurrency kiosks as scams mount - Stateline",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZ3VGb3JiYUNndlVGUjFBQll6NGpBSnNBQXllTjlkajFfTWRNT2NreGFOeXZQano0UFR6aDB2bHVhejNrbGtjWVZrek4xX0hGa3JsY2Z4elRHQ2JMRUhLUTdfUVJjd1BYcGx1RlJ3aXVrNzZYUEFDNVo3eWtXbW9tTkFsUDh3QndtSHg1M1NvLXVBV2lCYzlLSGtJNnQ?oc=5",
+      "time": "2026-11-16T18:05:26+08:00"
+    },
+    {
+      "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdW1pNlZXMVNNRXJtVGFiRUhPUm0tWGFqeGt4Q1VwallIOGtKTGFiTlZGZnZCd2F5RldrQ2E0b0V0emF1TkFkOTh0Q1FOa3phejllUmhxZGpGUkhlUFJqUlhoSkNFUWR6ZVhhbmxiUDRENXJXTEFZS3ZVUzQ1clVybUVIUFBzTWNhejhxSURKeUVEa2RSaWNGd3czU1B4WWxmZ1R6QURmVWJLWWJIMkVlck5UVnRxY1luMlFXVFBqMVVmeWQ2clpvOGhn?oc=5",
+      "time": "2026-11-17T04:49:43+08:00"
+    },
+    {
+      "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance - CNBC",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKOHA5R0ZGa0tFdEtTZElXN1Q3eDNQZndVeGw2aERqWjNSdEtZVjlacUVpZ0hWZFNDLUV2Zzk5OGRkemg3WGJxd0lwMEJxRXNfTU1aTlEzeXk4eTZJckl3Y1JNV2J4QTFEWVpaQVFvZHlNS0Ja0gF6QVVfeXFMT1ZJWGJJc3BxU2xqY1JBdmZDM3FELU1XWjNHVW9ubzFIQldoaFlXdzcyX2J0Q2txRGN5Q05xZEZjMS1VVDlhcWhpQ0s4VW1GWGhpWjdzQWtJU3hTLURZVlZiVXh2VERlOGtjR2l2MHFGUmVaOTJCTWNLQ0E?oc=5",
+      "time": "2026-11-13T20:03:24+08:00"
+    },
+    {
+      "title": "German parliament passes bill allowing crypto seizures over $115,000 without charges - CoinDesk",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQY2pJU2R4SHNEOERKbWpmNzBtZ1lJdTBMSFZubnl0TDZNZTVoTnBFMUJuNFZKNl9pVlczQTNsSkZWS1d2aEJ5cEcyS1BBUWU5UEhGb3dGT2M4YUQ1bWxjTHhsX1Fod3JaUFZqcTlsbGNKMFJzbGw1SHdicEVrYXdGSVdrQjlSZk9JNzJGcC01WFNDdkFDbWFDa2RjMDRHVUdWS0RQZThNcWdydjdYb1ZN?oc=5",
+      "time": "2026-11-16T23:44:59+08:00"
+    },
+    {
+      "title": "More than $540K in cryptocurrency recovered from fraud scheme involving Connecticut victim - Yahoo",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNV2NpQVRsc1NFakZLc3Ftb09jaTdLaUF0czRjcnBlaXZCSV9fOEVmN1pLaDZwemg1dW1aQVVfMndCMnpCcUVQN2xZdGNrNDA2Y2hPZnl4ell5Q2draDRyRkFsUzEzVlNUb05PeTVsYXNtY1VHWGx3eG5FMndZTWdjOUFPdDdiMWNBTHVNakRDdUN0TDhqNE1OWFBR?oc=5",
+      "time": "2026-11-17T03:30:49+08:00"
+    },
+    {
+      "title": "Stock market today: Dow and S&P 500 drop, Nasdaq sinks over 2% as Nvidia leads AI trade lower, Anthropic IPO looms - Yahoo Finance",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQm1pRzVJd0lQc2F6aUtMUGIzUnVtazZTRFQtUndVeHZCSzhTTkVTSEJJRnIyN0JhVnN0eTVuZkFiVEN5a0xWbk54cjlXejFPTjlkb3JhTDdjQnNNMXFvblF0S3ZNUmtiTmFDdEd2NkdpZmtLSG01eldfYWZDT3lIcldSc2VlZnNQSGRkWmRmYmh3b195WDY1bnNoU25neEFTc3dwX21yTkRGdkRiSW5FMDZrdmpRZTdDZUpHaw?oc=5",
+      "time": "2026-11-17T05:04:00+08:00"
+    },
+    {
+      "title": "Nasdaq falls more than 2%, extending slide to third day as Nvidia drags down AI trade - CNBC",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1mcjluX1NZUEVzZ0dXVXFRX3c3SkZubmJJclpoSlNQVDV2TTloVERqNU54dnBhNG9oVTVObVJzMExPSkQyVEZzNkpmQ09sTWRTaWZwSjc1cEJiZ0k1U1NNZ1pJSVlKQlNidFcwT2NRLVJCbGVLMzln0gF8QVVfeXFMUG1YMkpQVmR5RkUzM0x4dkxzdjZsbV9MUTZWbl92M3BvT1lfWWYwX3RxZjBIMHd1cGdBYndYbkdXVmk4Y2hObFVKVUVlT0xmdTBNR21qd3M1YV80ZFI1eFQtbUpqbG1kQUpqSlVDc3hWbVJRUV8yU2lhcmRpeA?oc=5",
+      "time": "2026-11-17T05:18:00+08:00"
+    },
+    {
+      "title": "Wall Street ends sharply lower on AI jitters ahead of Nvidia results, Anthropic IPO - Reuters",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZEJobHpHMl90WUdVbnpzSGxLb1l3bi1BczhrN29iVW9rUzBtQWE4aFNuM2ZGS1RIQThLdEZPWmZjeExVaHhRaXBubkdqR3R3TXJYTlRqUmRYcXZxYS1pV1lyRlExUDdEUWJ3cTg4aktJVWcxbkg5UW9oeVRXLXhCZjdRQmFNeFJlLXhpWTRMM1lEUVlodGwxVHNCSE9ONTlnem0yekw1dDNraElYZGc?oc=5",
+      "time": "2026-11-17T05:01:11+08:00"
+    },
+    {
+      "title": "U.S. Stocks Fall as Nvidia Drama Continues - WSJ",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOS3NsU18tTmdONnFEdnZIZzUyb3JXVFVpQjhhQ04tcG15MFpUclFpeTVUczh3X3RmRWZ4eWQ2Tk5SbUwtVlBvaGNSQ3N6MXRYa0tSVk43alVlMFZNTGZRdnNDWHlQcUwxMjNtR3lnVU5zbkJpQkpta0R5anRiQ01rVTZhNDdqbEtsMWFnWms2ZzFHVUJLSWlZdXhlZFlIWXk0dUVOS3M2elFGOFhuRFU3bk9MOVgtMnJ6azltUGktWXdhd2lRaUZMYkp5UQ?oc=5",
+      "time": "2026-11-17T04:25:00+08:00"
+    },
+    {
+      "title": "US Futures Drop as Market Looks to Nvidia Results, Anthropic IPO - Bloomberg.com",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcFhFeVFsT0wxMG1zZWtMN1gzNzV5XzN2aUJtclZEa2NaUTN0a2Y3cV83djJMeWZ0Zk5uUThTa2o0SGhQb1NrUGJVWXBLV2xoRzFyUC1mU0s1bXJfekVJaDl2RndqTGJfN0Vkd25OS0JROUNZQ0V3bjJ0b0dkUDIwNlpCcXl4NVpHX3pGQkNCZjZOOFliV0JjaG96NnJVM1BfVDRIa2x1MElXNVZXZ1VHNXdyaXE?oc=5",
+      "time": "2026-11-17T00:52:15+08:00"
     }
   ],
-  "news_at": "2026-11-17T06:00:31.930406+08:00",
+  "news_at": "2026-11-17T06:16:01.872921+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
