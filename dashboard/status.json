@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T02:07:01.692048+08:00",
+  "generated_at": "2026-11-17T02:08:02.709097+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -59,7 +59,7 @@
       "_total_idr_from_log": 154772.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -5564.23,
-      "unrealized_at": "2026-11-17T02:06:31.824214+08:00"
+      "unrealized_at": "2026-11-17T02:08:01.910822+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -92,11 +92,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1528,
-          "value_usd": 1.80304,
-          "value_idr": 32937.14,
-          "unrealized_idr": -5024.9,
-          "unrealized_pct": -13.48
+          "price": 0.153,
+          "value_usd": 1.8054,
+          "value_idr": 32980.25,
+          "unrealized_idr": -4981.79,
+          "unrealized_pct": -13.36
         },
         {
           "entry_idr": 19980.01998001998,
@@ -107,20 +107,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9557,
-          "value_usd": 1.05127,
-          "value_idr": 19204.14,
-          "unrealized_idr": -775.88,
-          "unrealized_pct": -0.64
+          "price": 0.9561,
+          "value_usd": 1.05171,
+          "value_idr": 19212.17,
+          "unrealized_idr": -767.85,
+          "unrealized_pct": -0.6
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-17T01:06:30+07:00",
-      "unrealized_idr": -19783.44,
-      "unrealized_at": "2026-11-17T02:06:31.824214+08:00",
+      "updated": "2026-11-17T01:07:31+07:00",
+      "unrealized_idr": -19732.3,
+      "unrealized_at": "2026-11-17T02:08:01.910822+08:00",
       "usd_idr_used": 18267.559471937322
     },
     "pumpfun": {
@@ -136,7 +136,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T01:06:34+07:00",
+      "updated": "2026-11-17T01:07:45+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -153,7 +153,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T01:06:54+07:00",
+      "updated": "2026-11-17T01:07:58+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -169,7 +169,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-17T01:06:52+07:00",
+      "updated": "2026-11-17T01:07:57+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -220,6 +220,12 @@
   },
   "news": [
     {
+      "title": "Safe wallet reportedly loses $6.5M as Zodiac suspects key compromise",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/safe-wallet-reportedly-loses-millions-after-key-compromise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-17T01:49:13+08:00"
+    },
+    {
       "title": "Bitcoin price fails to hold $65K as US stocks drop further on AI nerves",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/markets/bitcoin-price-fails-to-hold-65k-us-stocks-drop-on-ai-nerves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -242,12 +248,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-16T21:31:49+08:00"
-    },
-    {
-      "title": "Banks are banning AI agents over security... and competition concerns",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/magazine/banks-are-banning-ai-agents-over-security-and-competition-concerns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-16T21:30:00+08:00"
     },
     {
       "title": "FBI says it's recovered $1.2 billion worth of cryptocurrency stolen from Binance - CBS News",
@@ -280,10 +280,10 @@
       "time": "2026-11-16T19:25:47+08:00"
     },
     {
-      "title": "Stocks slide as Nvidia leads AI names lower: Live updates - CNBC",
+      "title": "Dow falls 450 points, Nasdaq loses 2% as Nvidia leads AI stocks lower: Live updates - CNBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1mcjluX1NZUEVzZ0dXVXFRX3c3SkZubmJJclpoSlNQVDV2TTloVERqNU54dnBhNG9oVTVObVJzMExPSkQyVEZzNkpmQ09sTWRTaWZwSjc1cEJiZ0k1U1NNZ1pJSVlKQlNidFcwT2NRLVJCbGVLMzln0gF8QVVfeXFMUG1YMkpQVmR5RkUzM0x4dkxzdjZsbV9MUTZWbl92M3BvT1lfWWYwX3RxZjBIMHd1cGdBYndYbkdXVmk4Y2hObFVKVUVlT0xmdTBNR21qd3M1YV80ZFI1eFQtbUpqbG1kQUpqSlVDc3hWbVJRUV8yU2lhcmRpeA?oc=5",
-      "time": "2026-11-16T23:46:11+08:00"
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1mcjluX1NZUEVzZ0dXVXFRX3c3SkZubmJJclpoSlNQVDV2TTloVERqNU54dnBhNG9oVTVObVJzMExPSkQyVEZzNkpmQ09sTWRTaWZwSjc1cEJiZ0k1U1NNZ1pJSVlKQlNidFcwT2NRLVJCbGVLMzln?oc=5",
+      "time": "2026-11-17T01:57:24+08:00"
     },
     {
       "title": "Chip stocks fall on US semiconductor restrictions: AlphaCheck - Yahoo Finance",
@@ -310,7 +310,7 @@
       "time": "2026-11-17T00:52:15+08:00"
     }
   ],
-  "news_at": "2026-11-17T01:52:31.912434+08:00",
+  "news_at": "2026-11-17T02:08:02.708979+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
