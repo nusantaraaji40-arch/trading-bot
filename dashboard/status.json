@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T07:17:31.258604+08:00",
+  "generated_at": "2026-11-17T07:18:31.392317+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -43,7 +43,7 @@
       "_total_idr_from_log": 155214.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-17T07:17:31.258001+08:00"
+      "unrealized_at": "2026-11-17T07:18:31.391697+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -61,11 +61,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002709,
-          "value_usd": 0.329279,
-          "value_idr": 6015.75,
-          "unrealized_idr": -13964.27,
-          "unrealized_pct": -70.14
+          "price": 0.002723,
+          "value_usd": 0.330981,
+          "value_idr": 6046.83,
+          "unrealized_idr": -13933.19,
+          "unrealized_pct": -69.98
         },
         {
           "entry_idr": 37962.03796203797,
@@ -91,20 +91,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9572,
-          "value_usd": 1.05292,
-          "value_idr": 19236.27,
-          "unrealized_idr": -743.75,
-          "unrealized_pct": -0.49
+          "price": 0.9574,
+          "value_usd": 1.05314,
+          "value_idr": 19240.29,
+          "unrealized_idr": -739.73,
+          "unrealized_pct": -0.47
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-17T06:17:24+07:00",
-      "unrealized_idr": -19600.16,
-      "unrealized_at": "2026-11-17T07:17:31.258001+08:00",
+      "updated": "2026-11-17T06:18:25+07:00",
+      "unrealized_idr": -19565.06,
+      "unrealized_at": "2026-11-17T07:18:31.391697+08:00",
       "usd_idr_used": 18269.450565952164
     },
     "pumpfun": {
@@ -120,7 +120,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T06:17:07+07:00",
+      "updated": "2026-11-17T06:18:18+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -137,7 +137,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T06:17:23+07:00",
+      "updated": "2026-11-17T06:18:27+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -153,7 +153,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-17T06:17:25+07:00",
+      "updated": "2026-11-17T06:18:30+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -204,6 +204,12 @@
   },
   "news": [
     {
+      "title": "Custodia Bank loses Supreme Court bid for direct Fed payment access",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/custodia-bank-loses-supreme-court-bid-for-direct-fed-payment-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-17T06:54:57+08:00"
+    },
+    {
       "title": "German lawmakers back crypto freezes outside criminal cases",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/german-lawmakers-back-crypto-freezes-outside-criminal-cases?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -228,16 +234,40 @@
       "time": "2026-11-17T04:45:47+08:00"
     },
     {
-      "title": "Boris Johnson says UK must lead blockchain development despite crypto doubts",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/boris-johnson-uk-must-lead-blockchain-development-despite-crypto-doubts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-17T04:18:02+08:00"
+      "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdW1pNlZXMVNNRXJtVGFiRUhPUm0tWGFqeGt4Q1VwallIOGtKTGFiTlZGZnZCd2F5RldrQ2E0b0V0emF1TkFkOTh0Q1FOa3phejllUmhxZGpGUkhlUFJqUlhoSkNFUWR6ZVhhbmxiUDRENXJXTEFZS3ZVUzQ1clVybUVIUFBzTWNhejhxSURKeUVEa2RSaWNGd3czU1B4WWxmZ1R6QURmVWJLWWJIMkVlck5UVnRxY1luMlFXVFBqMVVmeWQ2clpvOGhn?oc=5",
+      "time": "2026-11-17T04:49:43+08:00"
     },
     {
-      "title": "Stock market today: Dow and S&P 500 drop, Nasdaq sinks over 2% as Nvidia leads AI trade lower, Anthropic IPO looms - Yahoo Finance",
+      "title": "More than $540K in cryptocurrency recovered from fraud scheme involving Connecticut victim - WTNH.com",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZ3h5ekh1V2tObzQ1ajd6WHYzX1N6bmRsYzJ5TkxuRjd0WEZRbnN6RmZTMnRlcUlQWTNoUHdxRk9ySnNqQ1RDQktORG9Cb0JPaHpvMnl5S3NGU0pEWlg2T25iSW1kN2JYd0pjdjRpWHk1ZHk0WUdMZ1ZaT2RTUVpEWEF2dFZWNDFlNGI3YmVidEVNcWV0cUZhQk5LMjQyZmgzb0hEUnB0Um83SGR3VG1nQXZSZC0zR2hSNTE0aUdMb2hESklIWHFhZXpYWU1xX25paVBpMdIB2gFBVV95cUxPYVZHM1ZrRXItOHFoR3VJWFpFWGIwNW9FckJTNkdHdVpoZEd5TTJ0Zm0yREdBeHhhMm1rY3lMeDgxU3BfS1UwSENCRnVvSWNMc0dNOE9Tc2ppTnRvZnVhdk1iX3hQdG05LVNORlVBR1N0ckEwdDFmQkZCU2Fta005R3NEdzBaN1pZczhSQngzb0lRZGFWOThCUGtvcDROMlFzWEx4SWtCdGJ5T0YxRHI2YXFBdS1KR2p3aVFDRFZhR3dqMDNtVG5HZkdJNGJqM3F6anJUQ0FmWUozZw?oc=5",
+      "time": "2026-11-17T03:30:49+08:00"
+    },
+    {
+      "title": "States, cities move to ban cryptocurrency kiosks as scams mount - CT Mirror",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSTJEYkh6WHpGbkJTZUVJd1dVTnlVd000NFNmTjNud0paSkYxY2UyQUl4Z05NMzYtanJEbUV1cG9DdEZDdS0tQk9VSWZOZGY3VTU5bjhmdy1KZlVGRjZnQ08wdFVhRnZyazFNRk1iOXNUdlJHZGlvX2VqdUo1YnAtQVpLejZpQ3R5bzBfMTgwX3F3aTZtUllXZDFVTQ?oc=5",
+      "time": "2026-11-16T20:00:00+08:00"
+    },
+    {
+      "title": "Vision Makers Highlights AI-Powered Cryptocurrency Research and Market Analysis Platform - Benzinga",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUE40MlBwcmJrZVFsVWhiTUl1dUV5TmNIdE9XUWcwZFcxTGUyN2trUzc0MENQemQ4TW9rOUhKcFlDOHF2SFhWNzBnZlV1bHN3a0pWZ2k0UnFmSkpFUHR4YnNobWpiNjEwRjJIQVVRTUoyWEJEc0E2ZDJ6UU1kVlNBQnZTTW1JU3hkV3loTEZmRVNTbi1HekFYLW9CZmpLZEJSeEUtanRrZXVOVGM3RzJsZmNGYTQ5MUhqRGVQdEhjVDZaeE1wTGJpTlR3?oc=5",
+      "time": "2026-11-16T12:42:11+08:00"
+    },
+    {
+      "title": "FaceStealer Cryptocurrency Theft Scheme | Federal Bureau of Investigation - FBI (.gov)",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb25Cbm9nTXo4TDlXNXo4bzd6NXZvOTVDSVhMSWNqZ2c0b25xZ3hob2o4Y2RxbXNVcjZWS2k0dHY3el9kekxBYThxdDBKWm1VT3NYRVdzRG44MFdhNS04UU0yMm0tdWhUbEZUcWFuTWM1Um5qQmlZcVJZSmpmOWxoWXd1VQ?oc=5",
+      "time": "2026-11-13T07:46:56+08:00"
+    },
+    {
+      "title": "Nasdaq falls more than 2%, extending slide to third day as Nvidia drags down AI trade - CNBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQm1pRzVJd0lQc2F6aUtMUGIzUnVtazZTRFQtUndVeHZCSzhTTkVTSEJJRnIyN0JhVnN0eTVuZkFiVEN5a0xWbk54cjlXejFPTjlkb3JhTDdjQnNNMXFvblF0S3ZNUmtiTmFDdEd2NkdpZmtLSG01eldfYWZDT3lIcldSc2VlZnNQSGRkWmRmYmh3b195WDY1bnNoU25neEFTc3dwX21yTkRGdkRiSW5FMDZrdmpRZTdDZUpHaw?oc=5",
-      "time": "2026-11-17T06:37:30+08:00"
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1mcjluX1NZUEVzZ0dXVXFRX3c3SkZubmJJclpoSlNQVDV2TTloVERqNU54dnBhNG9oVTVObVJzMExPSkQyVEZzNkpmQ09sTWRTaWZwSjc1cEJiZ0k1U1NNZ1pJSVlKQlNidFcwT2NRLVJCbGVLMzln0gF8QVVfeXFMUG1YMkpQVmR5RkUzM0x4dkxzdjZsbV9MUTZWbl92M3BvT1lfWWYwX3RxZjBIMHd1cGdBYndYbkdXVmk4Y2hObFVKVUVlT0xmdTBNR21qd3M1YV80ZFI1eFQtbUpqbG1kQUpqSlVDc3hWbVJRUV8yU2lhcmRpeA?oc=5",
+      "time": "2026-11-17T05:18:00+08:00"
     },
     {
       "title": "Russian diesel under Trump deal struggles to reach US market amid legal fears and criticism - CNN",
@@ -264,7 +294,7 @@
       "time": "2026-11-16T18:17:39+08:00"
     }
   ],
-  "news_at": "2026-11-17T07:02:32.100220+08:00",
+  "news_at": "2026-11-17T07:18:02.046407+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
