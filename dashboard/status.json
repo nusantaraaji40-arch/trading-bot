@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T21:29:02.169352+08:00",
+  "generated_at": "2026-11-16T21:30:32.311266+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -75,7 +75,7 @@
       "_total_idr_from_log": 144306.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
-      "unrealized_at": "2026-11-16T21:29:02.168638+08:00"
+      "unrealized_at": "2026-11-16T21:30:31.391682+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -93,11 +93,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002612,
-          "value_usd": 0.317489,
-          "value_idr": 5799.72,
-          "unrealized_idr": -14180.3,
-          "unrealized_pct": -71.2
+          "price": 0.00261,
+          "value_usd": 0.317245,
+          "value_idr": 5795.19,
+          "unrealized_idr": -14184.83,
+          "unrealized_pct": -71.23
         },
         {
           "entry_idr": 37962.03796203797,
@@ -108,11 +108,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1509,
-          "value_usd": 1.78062,
-          "value_idr": 32527.48,
-          "unrealized_idr": -5434.56,
-          "unrealized_pct": -14.55
+          "price": 0.1514,
+          "value_usd": 1.78652,
+          "value_idr": 32634.76,
+          "unrealized_idr": -5327.28,
+          "unrealized_pct": -14.27
         },
         {
           "entry_idr": 19980.01998001998,
@@ -123,21 +123,21 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9489,
-          "value_usd": 1.04379,
-          "value_idr": 19067.44,
-          "unrealized_idr": -912.58,
-          "unrealized_pct": -1.35
+          "price": 0.9529,
+          "value_usd": 1.04819,
+          "value_idr": 19147.52,
+          "unrealized_idr": -832.5,
+          "unrealized_pct": -0.94
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-16T20:28:57+07:00",
-      "unrealized_idr": -20527.44,
-      "unrealized_at": "2026-11-16T21:29:02.168638+08:00",
-      "usd_idr_used": 18267.50346916246
+      "updated": "2026-11-16T20:29:58+07:00",
+      "unrealized_idr": -20344.61,
+      "unrealized_at": "2026-11-16T21:30:31.391682+08:00",
+      "usd_idr_used": 18267.22160156095
     },
     "pumpfun": {
       "baseline_sol": 0.02135348,
@@ -152,7 +152,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-16T20:28:54+07:00",
+      "updated": "2026-11-16T20:30:06+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -169,7 +169,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-16T20:28:41+07:00",
+      "updated": "2026-11-16T20:30:17+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -185,12 +185,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-16T20:28:33+07:00",
+      "updated": "2026-11-16T20:30:11+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-16T21:25:02.287889+08:00",
-      "fetched_at": "2026-11-16T21:25:02.287889+08:00",
+      "updated": "2026-11-16T21:30:02.319645+08:00",
+      "fetched_at": "2026-11-16T21:30:02.319645+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 474911.0,
       "cash_usd": 0.01,
@@ -198,26 +198,26 @@
       "realized_idr": 0,
       "total_deposited_idr": 500000,
       "trades_count": 1,
-      "usd_idr": 18267.50346916246,
+      "usd_idr": 18267.22160156095,
       "positions": [
         {
           "symbol": "AZN",
           "name": "AstraZeneca plc",
           "qty": 0.005750244,
           "entry": 184.34,
-          "price": 186.61,
-          "value_usd": 1.07305303284,
-          "pnl_usd": 0.01305305388,
-          "pnl_pct": 1.23,
+          "price": 186.67000000000002,
+          "value_usd": 1.07339804748,
+          "pnl_usd": 0.01339806852,
+          "pnl_pct": 1.26,
           "currency": "USD",
-          "entry_idr": 19363.55,
-          "value_idr": 19602.0,
-          "unrealized_idr": 337.0,
-          "unrealized_pct": 1.23
+          "entry_idr": 19363.25,
+          "value_idr": 19608.0,
+          "unrealized_idr": 343.0,
+          "unrealized_pct": 1.26
         }
       ],
-      "positions_value_idr": 19602.0,
-      "total_idr": 494513.0,
+      "positions_value_idr": 19608.0,
+      "total_idr": 494519.0,
       "wallets": {
         "IDR_CRYPTO_FUNDING": 474911,
         "IDR_CASH": 0,
@@ -226,15 +226,21 @@
         "USD_MARGIN": 0
       },
       "reported": {
-        "netAssetValueIdr": 19602.0,
-        "unrealisedPnLIdr": 337.0
+        "netAssetValueIdr": 19608.0,
+        "unrealisedPnLIdr": 343.0
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
-      "unrealized_idr": 337.0,
-      "unrealized_at": "2026-11-16T21:25:02.287889+08:00"
+      "unrealized_idr": 343.0,
+      "unrealized_at": "2026-11-16T21:30:02.319645+08:00"
     }
   },
   "news": [
+    {
+      "title": "Binance Pay Later offers credit backed by Bitcoin, Ether and BNB holdings",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/binance-pay-later-crypto-backed-credit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-16T21:00:00+08:00"
+    },
     {
       "title": "HKMA, Swift explore tokenized deposits for cross-border bank payments",
       "source": "CoinTelegraph",
@@ -258,12 +264,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/dbs-jpmorgans-kinexys-launch-tokenized-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-16T16:50:50+08:00"
-    },
-    {
-      "title": "Harvard, Dartmouth keep Bitcoin ETF stakes steady as fund gains 42% in Q3",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/harvard-dartmouth-bitcoin-etf-ibit-up-q3?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-16T16:27:39+08:00"
     },
     {
       "title": "FBI says it's recovered $1.2 billion worth of cryptocurrency stolen from Binance - CBS News",
@@ -320,13 +320,13 @@
       "time": "2026-11-14T07:01:27+08:00"
     },
     {
-      "title": "Stocks making the biggest moves premarket: Nvidia, Take-Two Interactive, Yeti, American Airlines & more - CNBC",
+      "title": "Stock Market Today, Nov. 16: U.S. Stocks Mixed Ahead of Nvidia Results and Anthropic IPO - TipRanks",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQME9iTDItMnB6RV9JdTQ4a25oVlpKbEJiSGljYndud2Y0ZTRWcXdpbEZrZVE0c09ZdzlYWGN4SU5wZEptSW1CdTFqSG9QakN1eHQ4V1F6TzlHejZ2WTNYaG40b3lBVDltSTBCeUhGS2J3YVZqNVYwclE5WVQyME1YZ0dwYUPSAYoBQVVfeXFMT09rbGlHMzNQa29QNXR4Vk1sZko1RU5pQ21VdkNOZGxZNWc4RzRTYzlYaGRHZTNLbWxuZGhaZVdmbkFYeHU3OGxVTFlzT21QZUxpTnhIVkVic3E3TWw2UzhyWndBaGN2anl6ZE5HS0NveW9YRXZpaktHNEpsT2hhdUdpNXAwYWxLaEx3?oc=5",
-      "time": "2026-11-16T20:20:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQU3IwYS1TWmtZTzRqXzJEVmhzbldmNnZISlRvbFBhZHhqSkpkdlBHSV91SzMxcXZrN1V0VFQ0MXZDNlJYLWx0bTRDdHVmc0FITm9IN2hCVGJZZTdIZnlxVjZWUlhzV2ZsNF9JLXNkc1hFYWNUYlBXUHZzUjdFV1hiSGdualFvTncySEV2NElaSEJ4SzZlQ2tpWXZhLWpCM3pTV0J5dldOY0hjdEZJNjRNSW13OEc?oc=5",
+      "time": "2026-11-16T19:14:08+08:00"
     }
   ],
-  "news_at": "2026-11-16T21:15:02.570207+08:00",
+  "news_at": "2026-11-16T21:30:32.311149+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
