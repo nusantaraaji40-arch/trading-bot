@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T12:13:01.860172+08:00",
+  "generated_at": "2026-11-16T12:14:01.663539+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -72,7 +72,7 @@
           "unrealized_pct": -7.5
         }
       ],
-      "_total_idr_from_log": 143243.0,
+      "_total_idr_from_log": 143540.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
       "unrealized_at": "2026-11-16T12:13:01.859505+08:00"
@@ -134,7 +134,7 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-16T11:12:38+07:00",
+      "updated": "2026-11-16T11:13:39+07:00",
       "unrealized_idr": -18920.07,
       "unrealized_at": "2026-11-16T12:13:01.859505+08:00",
       "usd_idr_used": 18254.51484119677
@@ -152,7 +152,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-16T11:12:28+07:00",
+      "updated": "2026-11-16T11:13:38+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -169,7 +169,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-16T11:12:55+07:00",
+      "updated": "2026-11-16T11:13:58+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -185,7 +185,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-16T11:12:56+07:00",
+      "updated": "2026-11-16T11:14:01+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -326,7 +326,7 @@
       "time": "2026-11-15T19:00:00+08:00"
     }
   ],
-  "news_at": "2026-11-16T11:58:02.687329+08:00",
+  "news_at": "2026-11-16T12:13:32.517735+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
