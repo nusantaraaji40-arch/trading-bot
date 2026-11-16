@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T22:31:31.595709+08:00",
+  "generated_at": "2026-11-16T22:32:32.382968+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -72,7 +72,7 @@
           "unrealized_pct": -7.5
         }
       ],
-      "_total_idr_from_log": 148476.0,
+      "_total_idr_from_log": 148491.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -8059.09,
       "unrealized_at": "2026-11-16T22:31:31.595033+08:00"
@@ -134,7 +134,7 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-16T21:31:10+07:00",
+      "updated": "2026-11-16T21:32:11+07:00",
       "unrealized_idr": -20073.71,
       "unrealized_at": "2026-11-16T22:31:31.595033+08:00",
       "usd_idr_used": 18267.77728159489
@@ -152,7 +152,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-16T21:31:14+07:00",
+      "updated": "2026-11-16T21:32:25+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -169,7 +169,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-16T21:31:04+07:00",
+      "updated": "2026-11-16T21:32:07+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -185,7 +185,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-16T21:31:10+07:00",
+      "updated": "2026-11-16T21:32:14+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -236,6 +236,12 @@
   },
   "news": [
     {
+      "title": "Lighter pauses withdrawals after reported $10M account theft",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/lighter-dex-pauses-withdrawals-10m-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-16T22:19:50+08:00"
+    },
+    {
       "title": "Here’s what happened in crypto today",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -258,12 +264,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/binance-pay-later-crypto-backed-credit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-16T21:00:00+08:00"
-    },
-    {
-      "title": "HKMA, Swift explore tokenized deposits for cross-border bank payments",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/hkma-swift-tokenized-deposits-cross-border-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-16T20:54:51+08:00"
     },
     {
       "title": "FBI says it's recovered $1.2 billion worth of cryptocurrency stolen from Binance - CBS News",
@@ -326,7 +326,7 @@
       "time": "2026-11-16T19:14:08+08:00"
     }
   ],
-  "news_at": "2026-11-16T22:17:02.313163+08:00",
+  "news_at": "2026-11-16T22:32:32.382846+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
