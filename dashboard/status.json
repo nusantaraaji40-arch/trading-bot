@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T11:30:01.921986+08:00",
+  "generated_at": "2026-11-17T11:30:31.756413+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -63,8 +63,8 @@
           "symbol": "FLOATUSDT",
           "price": 0.00275,
           "value_usd": 0.334262,
-          "value_idr": 6104.44,
-          "unrealized_idr": -13875.58,
+          "value_idr": 6103.49,
+          "unrealized_idr": -13876.53,
           "unrealized_pct": -69.68
         },
         {
@@ -78,8 +78,8 @@
           "symbol": "ADAUSDT",
           "price": 0.1546,
           "value_usd": 1.82428,
-          "value_idr": 33315.77,
-          "unrealized_idr": -4646.27,
+          "value_idr": 33310.57,
+          "unrealized_idr": -4651.47,
           "unrealized_pct": -12.46
         },
         {
@@ -93,8 +93,8 @@
           "symbol": "XRPUSDT",
           "price": 0.9642,
           "value_usd": 1.06062,
-          "value_idr": 19369.49,
-          "unrealized_idr": -610.53,
+          "value_idr": 19366.47,
+          "unrealized_idr": -613.55,
           "unrealized_pct": 0.24
         }
       ],
@@ -102,10 +102,10 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-17T10:29:28+07:00",
-      "unrealized_idr": -19132.38,
+      "updated": "2026-11-17T10:30:29+07:00",
+      "unrealized_idr": -19141.55,
       "unrealized_at": "2026-11-17T11:30:01.921015+08:00",
-      "usd_idr_used": 18262.421548643477
+      "usd_idr_used": 18259.572348755497
     },
     "pumpfun": {
       "baseline_sol": 0.02135348,
@@ -120,7 +120,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T10:29:35+07:00",
+      "updated": "2026-11-17T10:30:11+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -137,7 +137,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T10:29:36+07:00",
+      "updated": "2026-11-17T10:30:08+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -157,8 +157,8 @@
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-17T11:25:02.660614+08:00",
-      "fetched_at": "2026-11-17T11:25:02.660614+08:00",
+      "updated": "2026-11-17T11:30:02.348256+08:00",
+      "fetched_at": "2026-11-17T11:30:02.348256+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 474911.0,
       "cash_usd": 0.01,
@@ -166,7 +166,7 @@
       "realized_idr": 0,
       "total_deposited_idr": 500000,
       "trades_count": 1,
-      "usd_idr": 18262.421548643477,
+      "usd_idr": 18259.572348755497,
       "positions": [
         {
           "symbol": "AZN",
@@ -178,14 +178,14 @@
           "pnl_usd": -0.00707280012,
           "pnl_pct": -0.67,
           "currency": "USD",
-          "entry_idr": 19358.17,
-          "value_idr": 19229.0,
-          "unrealized_idr": -35.0,
+          "entry_idr": 19355.15,
+          "value_idr": 19226.0,
+          "unrealized_idr": -39.0,
           "unrealized_pct": -0.67
         }
       ],
-      "positions_value_idr": 19229.0,
-      "total_idr": 494140.0,
+      "positions_value_idr": 19226.0,
+      "total_idr": 494137.0,
       "wallets": {
         "IDR_CRYPTO_FUNDING": 474911,
         "IDR_CASH": 0,
@@ -194,12 +194,12 @@
         "USD_MARGIN": 0
       },
       "reported": {
-        "netAssetValueIdr": 19229.0,
-        "unrealisedPnLIdr": -35.0
+        "netAssetValueIdr": 19226.0,
+        "unrealisedPnLIdr": -39.0
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
-      "unrealized_idr": -35.0,
-      "unrealized_at": "2026-11-17T11:25:02.660614+08:00"
+      "unrealized_idr": -39.0,
+      "unrealized_at": "2026-11-17T11:30:02.348256+08:00"
     }
   },
   "news": [
