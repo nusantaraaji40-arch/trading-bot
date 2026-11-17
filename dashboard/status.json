@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T08:19:31.686776+08:00",
+  "generated_at": "2026-11-17T08:20:31.639825+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -40,7 +40,7 @@
           "unrealized_pct": -4.82
         }
       ],
-      "_total_idr_from_log": 156831.0,
+      "_total_idr_from_log": 156807.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-17T08:19:31.686140+08:00"
@@ -102,7 +102,7 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-17T07:19:21+07:00",
+      "updated": "2026-11-17T07:20:22+07:00",
       "unrealized_idr": -19847.74,
       "unrealized_at": "2026-11-17T08:19:31.686140+08:00",
       "usd_idr_used": 18268.45782289038
@@ -120,7 +120,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T07:19:24+07:00",
+      "updated": "2026-11-17T07:20:00+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -137,7 +137,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T07:19:18+07:00",
+      "updated": "2026-11-17T07:20:22+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -153,12 +153,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-17T07:19:19+07:00",
+      "updated": "2026-11-17T07:20:24+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-17T08:15:02.298512+08:00",
-      "fetched_at": "2026-11-17T08:15:02.298512+08:00",
+      "updated": "2026-11-17T08:20:02.197642+08:00",
+      "fetched_at": "2026-11-17T08:20:02.197642+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 474911.0,
       "cash_usd": 0.01,
@@ -199,7 +199,7 @@
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
       "unrealized_idr": 67.0,
-      "unrealized_at": "2026-11-17T08:15:02.298512+08:00"
+      "unrealized_at": "2026-11-17T08:20:02.197642+08:00"
     }
   },
   "news": [
@@ -240,6 +240,12 @@
       "time": "2026-11-17T06:38:46+08:00"
     },
     {
+      "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance - CNBC",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKOHA5R0ZGa0tFdEtTZElXN1Q3eDNQZndVeGw2aERqWjNSdEtZVjlacUVpZ0hWZFNDLUV2Zzk5OGRkemg3WGJxd0lwMEJxRXNfTU1aTlEzeXk4eTZJckl3Y1JNV2J4QTFEWVpaQVFvZHlNS0Ja0gF6QVVfeXFMT1ZJWGJJc3BxU2xqY1JBdmZDM3FELU1XWjNHVW9ubzFIQldoaFlXdzcyX2J0Q2txRGN5Q05xZEZjMS1VVDlhcWhpQ0s4VW1GWGhpWjdzQWtJU3hTLURZVlZiVXh2VERlOGtjR2l2MHFGUmVaOTJCTWNLQ0E?oc=5",
+      "time": "2026-11-13T20:03:24+08:00"
+    },
+    {
       "title": "German parliament passes bill allowing crypto seizures over $115,000 without charges - CoinDesk",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQY2pJU2R4SHNEOERKbWpmNzBtZ1lJdTBMSFZubnl0TDZNZTVoTnBFMUJuNFZKNl9pVlczQTNsSkZWS1d2aEJ5cEcyS1BBUWU5UEhGb3dGT2M4YUQ1bWxjTHhsX1Fod3JaUFZqcTlsbGNKMFJzbGw1SHdicEVrYXdGSVdrQjlSZk9JNzJGcC01WFNDdkFDbWFDa2RjMDRHVUdWS0RQZThNcWdydjdYb1ZN?oc=5",
@@ -256,45 +262,9 @@
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSTJEYkh6WHpGbkJTZUVJd1dVTnlVd000NFNmTjNud0paSkYxY2UyQUl4Z05NMzYtanJEbUV1cG9DdEZDdS0tQk9VSWZOZGY3VTU5bjhmdy1KZlVGRjZnQ08wdFVhRnZyazFNRk1iOXNUdlJHZGlvX2VqdUo1YnAtQVpLejZpQ3R5bzBfMTgwX3F3aTZtUllXZDFVTQ?oc=5",
       "time": "2026-11-16T20:00:00+08:00"
-    },
-    {
-      "title": "DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea’s Binance Hack - WSJ",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaHBWVGNXcW1VWElRUU1zTGRhUl9uZkc3ZGFMdTBKUTNReF93eTZRb0tXNklsRzdNMTMxVDM2WUc3NDgyUTF2RmdQTkdRNTV1S29yY0N6S25UcS1MaXcyaHpiWDRGSmFaQnY3TWY4Uy1vQkxWVVRzallNMFZ6eVUyVDF6NmlhX3lpOUVyMmsyeUxYYmd3SGs1M0wwWmhlVTVIRFpvNC1nUloyVzFLX2NSeTdmblZ0bDFOb0N3akVGR0ZPWDUx?oc=5",
-      "time": "2026-11-13T21:52:00+08:00"
-    },
-    {
-      "title": "Nasdaq falls more than 2%, extending slide to third day as Nvidia drags down AI trade - CNBC",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1mcjluX1NZUEVzZ0dXVXFRX3c3SkZubmJJclpoSlNQVDV2TTloVERqNU54dnBhNG9oVTVObVJzMExPSkQyVEZzNkpmQ09sTWRTaWZwSjc1cEJiZ0k1U1NNZ1pJSVlKQlNidFcwT2NRLVJCbGVLMzln0gF8QVVfeXFMUG1YMkpQVmR5RkUzM0x4dkxzdjZsbV9MUTZWbl92M3BvT1lfWWYwX3RxZjBIMHd1cGdBYndYbkdXVmk4Y2hObFVKVUVlT0xmdTBNR21qd3M1YV80ZFI1eFQtbUpqbG1kQUpqSlVDc3hWbVJRUV8yU2lhcmRpeA?oc=5",
-      "time": "2026-11-17T07:14:35+08:00"
-    },
-    {
-      "title": "Nvidia’s stock extends decline following harsh words from the U.S. government - MarketWatch",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSkJsamppQU9MUGc1UDk1MG5XclJteGw5Z3hzSVdCbHg4cGNnOVRSVzNuY2N3ZW9zb0ZDUWMyQUF6Qmk5ck9CSE10RUdCSTdfMnhNbEJrVWxKaDZtVXBDRWRDTUlTekh1Y3pqdjZ5ZkVKSFI0QVBPQmdXVUU1Nl9GanlnSkoyaExNLUJzYVlIQVJiX3JZWE1HWkNMWmdsa2NwbXBpWjV4STJtNV9aQjhVeU5hRFVERDNYcmxZ?oc=5",
-      "time": "2026-11-17T05:53:00+08:00"
-    },
-    {
-      "title": "Stocks tumble on Wall Street as Nvidia leads another sell-off in technology companies - AP News",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYXdFLTA2eFh1c1k5N2ZnWnBXdkpYX3ZzMkNaUC03SjBXeDlVcHplSm1fUnRnVzJsaGhFb0I2eHp2Si1uaTNRaEotekFyYlZYRVlxdzNydUhEaXZaa0c5dW1ybEp5T2wyWUN2eVhGaTdpdVV5bkRuRDJxQVd0X2wySmFhQXNiaWROVmRJRXdIRDVtSC1CN3c?oc=5",
-      "time": "2026-11-17T06:14:00+08:00"
-    },
-    {
-      "title": "Global Stocks Are Expected to Rally in 2027 Even as Earnings Growth Slows - Goldman Sachs",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVncwVWdFNkk4NnRjbENhTDQwWDlIMklGS19CWVNmM3RwbC11M2l4amROS3IyVG1SbXJUQWZwbWp4OWZjVjh5TWlaaWFaUG9tQWRuZVZPUHZDcU5CaVRHMzhLUS1RYjdkNTdkVml2a2xOandyT25fTTVUZHJhWjVGWkw0djNPMlpicE4xaUp6N3dsN3ZJVHNZNHl0bFZSR1NLU1N2WlU4WlZFWExhZ3JxWg?oc=5",
-      "time": "2026-11-17T04:26:06+08:00"
-    },
-    {
-      "title": "Stocks Fall Before Nvidia Earnings, Anthropic IPO: Markets Wrap - Bloomberg.com",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU3BQd2lUam5YX1RGekdqV203U1BmRzNUQnlhem10ajRycVpfTUYzRWtOM2h1ZDd5M2tvUnNXeG1VOHRGTEl4VkJsSUhuQk41UlcyNU1EZDJaSTNTd2NvM3lDUDV5NU95SUtxSHZaZEpjSnMxRGgtamUtb0lYWUtHMTFZZDBLblVaeXhVTEhSa2ZPeF9y?oc=5",
-      "time": "2026-11-17T05:05:18+08:00"
     }
   ],
-  "news_at": "2026-11-17T08:04:31.942152+08:00",
+  "news_at": "2026-11-17T08:20:02.481413+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
