@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T19:22:32.152639+08:00",
+  "generated_at": "2026-11-17T19:24:02.148092+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -43,7 +43,7 @@
       "_total_idr_from_log": 152625.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-17T19:22:32.152003+08:00"
+      "unrealized_at": "2026-11-17T19:24:01.263262+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -61,11 +61,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002786,
-          "value_usd": 0.338638,
-          "value_idr": 6183.57,
-          "unrealized_idr": -13796.45,
-          "unrealized_pct": -69.29
+          "price": 0.002788,
+          "value_usd": 0.338881,
+          "value_idr": 6188.01,
+          "unrealized_idr": -13792.01,
+          "unrealized_pct": -69.26
         },
         {
           "entry_idr": 37962.03796203797,
@@ -76,11 +76,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1535,
-          "value_usd": 1.8113,
-          "value_idr": 33074.51,
-          "unrealized_idr": -4887.53,
-          "unrealized_pct": -13.08
+          "price": 0.1537,
+          "value_usd": 1.81366,
+          "value_idr": 33117.6,
+          "unrealized_idr": -4844.43,
+          "unrealized_pct": -12.97
         },
         {
           "entry_idr": 19980.01998001998,
@@ -91,20 +91,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9632,
-          "value_usd": 1.05952,
-          "value_idr": 19346.94,
-          "unrealized_idr": -633.08,
-          "unrealized_pct": 0.14
+          "price": 0.9639,
+          "value_usd": 1.06029,
+          "value_idr": 19361.0,
+          "unrealized_idr": -619.02,
+          "unrealized_pct": 0.21
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-17T18:22:15+07:00",
-      "unrealized_idr": -19317.06,
-      "unrealized_at": "2026-11-17T19:22:32.152003+08:00",
+      "updated": "2026-11-17T18:23:16+07:00",
+      "unrealized_idr": -19255.46,
+      "unrealized_at": "2026-11-17T19:24:01.263262+08:00",
       "usd_idr_used": 18260.094702068294
     },
     "pumpfun": {
@@ -120,7 +120,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-17T18:22:11+07:00",
+      "updated": "2026-11-17T18:23:58+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -137,7 +137,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-17T18:22:05+07:00",
+      "updated": "2026-11-17T18:23:41+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -153,7 +153,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-17T18:22:05+07:00",
+      "updated": "2026-11-17T18:23:42+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -204,6 +204,18 @@
   },
   "news": [
     {
+      "title": "BlackRock’s Bitcoin ETF snaps $2.35B outflow streak amid extreme fear",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/markets/blackrock-ibit-outflow-streak-end-extreme-fear?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-17T19:18:18+08:00"
+    },
+    {
+      "title": "Bitcoin realized loss metric beats June high as open interest eyes 2-year low",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/markets/bitcoin-realized-loss-metric-beats-june-high-open-interest-eyes-2-year-low?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-17T19:14:05+08:00"
+    },
+    {
       "title": "Google says hackers use AI agents to find and exploit software flaws",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/google-ai-agents-automated-cyberattacks-software-flaws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -220,18 +232,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/goldman-sachs-reports-122b-ether-etfs-etha-shares-jumps?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-17T17:08:32+08:00"
-    },
-    {
-      "title": "Ex-Robinhood engineer pleads guilty to $125K Hyperliquid trading scheme",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/ex-robinhood-engineer-pleads-guilty-125k-crypto-trading-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-17T14:35:19+08:00"
-    },
-    {
-      "title": "Here’s what happened in crypto today",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-17T14:00:00+08:00"
     },
     {
       "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
@@ -294,7 +294,7 @@
       "time": "2026-11-17T05:57:57+08:00"
     }
   ],
-  "news_at": "2026-11-17T19:08:33.241542+08:00",
+  "news_at": "2026-11-17T19:24:02.147912+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
