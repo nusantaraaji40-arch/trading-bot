@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T02:05:32.061180+08:00",
+  "generated_at": "2026-11-18T02:06:32.036533+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -43,7 +43,7 @@
       "_total_idr_from_log": 152195.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-18T02:05:02.136370+08:00"
+      "unrealized_at": "2026-11-18T02:06:32.035565+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -61,11 +61,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002487,
-          "value_usd": 0.302295,
-          "value_idr": 5520.16,
-          "unrealized_idr": -14459.86,
-          "unrealized_pct": -72.58
+          "price": 0.002528,
+          "value_usd": 0.307278,
+          "value_idr": 5611.17,
+          "unrealized_idr": -14368.85,
+          "unrealized_pct": -72.13
         },
         {
           "entry_idr": 37962.03796203797,
@@ -76,11 +76,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.152,
-          "value_usd": 1.7936,
-          "value_idr": 32752.67,
-          "unrealized_idr": -5209.37,
-          "unrealized_pct": -13.93
+          "price": 0.1521,
+          "value_usd": 1.79478,
+          "value_idr": 32774.22,
+          "unrealized_idr": -5187.82,
+          "unrealized_pct": -13.87
         },
         {
           "entry_idr": 19980.01998001998,
@@ -91,20 +91,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9577,
-          "value_usd": 1.05347,
-          "value_idr": 19237.26,
-          "unrealized_idr": -742.76,
-          "unrealized_pct": -0.44
+          "price": 0.9581,
+          "value_usd": 1.05391,
+          "value_idr": 19245.3,
+          "unrealized_idr": -734.72,
+          "unrealized_pct": -0.4
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-18T01:05:09+07:00",
-      "unrealized_idr": -20411.99,
-      "unrealized_at": "2026-11-18T02:05:02.136370+08:00",
+      "updated": "2026-11-18T01:06:10+07:00",
+      "unrealized_idr": -20291.39,
+      "unrealized_at": "2026-11-18T02:06:32.035565+08:00",
       "usd_idr_used": 18260.85554385841
     },
     "pumpfun": {
@@ -120,7 +120,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-18T01:05:07+07:00",
+      "updated": "2026-11-18T01:06:17+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -137,7 +137,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-18T01:05:25+07:00",
+      "updated": "2026-11-18T01:06:29+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -153,7 +153,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-18T01:05:12+07:00",
+      "updated": "2026-11-18T01:06:16+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -234,6 +234,12 @@
   },
   "news": [
     {
+      "title": "Lighter incident exposes risks beyond withdrawal controls",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/lighter-incident-exposes-risks-beyond-withdrawal-controls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-18T01:51:53+08:00"
+    },
+    {
       "title": "Fed’s Waller cites Binance hack in warning over tokenized finance",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/feds-waller-cites-binance-hack-in-warning-over-tokenized-finance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -256,12 +262,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/coingecko-solana-foundation-majority-stake?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-17T22:45:49+08:00"
-    },
-    {
-      "title": "Bitcoin to $1M by 2030? ‘Almost certainly not,’ says Dragonfly’s Qureshi",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/magazine/bitcoin-to-1m-by-2030-almost-certainly-not-says-dragonflys-qureshi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-17T21:30:00+08:00"
     },
     {
       "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
@@ -288,13 +288,13 @@
       "time": "2026-11-17T06:33:35+08:00"
     },
     {
-      "title": "German parliament passes bill allowing crypto seizures over $115,000 without charges - CoinDesk",
+      "title": "Cyber attack hits 178 major websites including CNN and Zoom in bid to steal crypto, infect iPhones: report - New York Post",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQY2pJU2R4SHNEOERKbWpmNzBtZ1lJdTBMSFZubnl0TDZNZTVoTnBFMUJuNFZKNl9pVlczQTNsSkZWS1d2aEJ5cEcyS1BBUWU5UEhGb3dGT2M4YUQ1bWxjTHhsX1Fod3JaUFZqcTlsbGNKMFJzbGw1SHdicEVrYXdGSVdrQjlSZk9JNzJGcC01WFNDdkFDbWFDa2RjMDRHVUdWS0RQZThNcWdydjdYb1ZN?oc=5",
-      "time": "2026-11-16T23:44:59+08:00"
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZVBEeElMZldnWUF0OERTSXdqXzdYOWpMdUVPX2FXN1BsWWR5amxHQ2VUSkZnUWFEcUd2WC03YlhpMVFRVzY3RjFuRlAzYkszeXBpaEhFU1FxVjQ0QVpHQWJ6cE0yX0hvZFJXYUhMMnBhdUtvd29RdmV3Nko2WGowclNPVjBTendZRC12NURRa2dUVEJDd0VUb19wWkR5dDlod091c0FwY2gwcHNBQTFJNE1XOEhzVmlqWE5yb0lleTRzcFRzUi0xbnFXYVpvVnNGZkVsaWpZMVU0dnM?oc=5",
+      "time": "2026-11-17T22:30:00+08:00"
     },
     {
-      "title": "Dow falls 600 points as tech shares decline, traders eye reported NSA network outage: Live updates - CNBC",
+      "title": "Dow falls 700 points as tech shares decline, traders eye reported NSA network outage: Live updates - CNBC",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ZX1A1ZUpLQzUwdUhDWHJmSktxM0JhR1RsZU43OTR1TndFamZ4LXBqcjJKakZyWWFHeHVzdHhLM0JRYnJnemNXVHpsT0dXYm9WWWRUdXUxXzc0VV9yUkF5QlBGLTA4WkVOTFpvb0NDQ0p4d0lpbzVj0gF8QVVfeXFMUGFfWnJDSW5odWJYOGZPaks3ZUtHZUxHSkVrdDVmeVY3UnhPX0ExTVFXVmQ2Qjd6eVNXbHowQnBzNmJobUNvOTRSRW5IZVFWVk5xOVNwV3ViT3haX1R1S0J1YW8wMU1pdmVZMFNacFg2YnlvdlFnanVBM0RJTA?oc=5",
       "time": "2026-11-18T00:39:41+08:00"
@@ -324,7 +324,7 @@
       "time": "2026-11-17T23:48:33+08:00"
     }
   ],
-  "news_at": "2026-11-18T01:50:32.545710+08:00",
+  "news_at": "2026-11-18T02:06:02.766724+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
