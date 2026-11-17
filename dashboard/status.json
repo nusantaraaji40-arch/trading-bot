@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T05:44:01.779924+08:00",
+  "generated_at": "2026-11-18T05:44:31.682776+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -50,9 +50,46 @@
           "sl_pct": null,
           "ks_floor_idr": 12999,
           "bought_at": 1794949701
+        },
+        {
+          "slot": 4,
+          "symbol": "LINK",
+          "pair_id": "linkidr",
+          "qty": 0.16466818,
+          "entry": 169128.0,
+          "entry_source": "/api/v2/order/histories",
+          "tp_pct": null,
+          "sl_pct": null,
+          "ks_floor_idr": 18102,
+          "bought_at": 1794951858
+        },
+        {
+          "slot": 5,
+          "symbol": "SOL",
+          "pair_id": "solidr",
+          "qty": 0.02063565,
+          "entry": 1349606.0,
+          "entry_source": "/api/v2/order/histories",
+          "tp_pct": null,
+          "sl_pct": null,
+          "ks_floor_idr": 18102,
+          "bought_at": 1794951858
+        },
+        {
+          "slot": 6,
+          "symbol": "XRP",
+          "pair_id": "xrpidr",
+          "qty": 1.56048635,
+          "entry": 17847.0,
+          "entry_source": "/api/v2/order/histories",
+          "tp_pct": null,
+          "sl_pct": null,
+          "ks_floor_idr": 18102,
+          "bought_at": 1794951858
         }
       ],
-      "_total_idr_from_log": 151633.0,
+      "buy_floor_idr": 65809,
+      "_total_idr_from_log": 151658.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-18T05:44:01.779255+08:00"
@@ -132,7 +169,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-18T04:43:42+07:00",
+      "updated": "2026-11-18T04:44:17+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -149,7 +186,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-18T04:43:52+07:00",
+      "updated": "2026-11-18T04:44:24+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -165,7 +202,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-18T04:43:33+07:00",
+      "updated": "2026-11-18T04:44:05+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
