@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T05:07:32.107789+08:00",
+  "generated_at": "2026-11-18T05:08:32.180120+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -38,12 +38,24 @@
           "value_idr": 23398.28,
           "unrealized_idr": -1184.72,
           "unrealized_pct": -4.82
+        },
+        {
+          "slot": 3,
+          "symbol": "VET",
+          "pair_id": "vetidr",
+          "qty": 219.78021978,
+          "entry": 91.0,
+          "entry_source": "/api/v2/order/histories",
+          "tp_pct": null,
+          "sl_pct": null,
+          "ks_floor_idr": 12999,
+          "bought_at": 1794949701
         }
       ],
-      "_total_idr_from_log": 152533.0,
+      "_total_idr_from_log": 152055.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-18T05:07:32.107146+08:00"
+      "unrealized_at": "2026-11-18T05:08:32.179451+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -76,11 +88,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1539,
-          "value_usd": 1.81602,
-          "value_idr": 33162.19,
-          "unrealized_idr": -4799.85,
-          "unrealized_pct": -12.85
+          "price": 0.1538,
+          "value_usd": 1.81484,
+          "value_idr": 33140.64,
+          "unrealized_idr": -4821.39,
+          "unrealized_pct": -12.91
         },
         {
           "entry_idr": 19980.01998001998,
@@ -91,20 +103,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.971,
-          "value_usd": 1.0681,
-          "value_idr": 19504.49,
-          "unrealized_idr": -475.53,
-          "unrealized_pct": 0.95
+          "price": 0.9705,
+          "value_usd": 1.06755,
+          "value_idr": 19494.44,
+          "unrealized_idr": -485.58,
+          "unrealized_pct": 0.89
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-18T04:07:12+07:00",
-      "unrealized_idr": -20230.19,
-      "unrealized_at": "2026-11-18T05:07:32.107146+08:00",
+      "updated": "2026-11-18T04:08:13+07:00",
+      "unrealized_idr": -20261.78,
+      "unrealized_at": "2026-11-18T05:08:32.179451+08:00",
       "usd_idr_used": 18260.91725120534
     },
     "pumpfun": {
@@ -120,7 +132,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-18T04:07:29+07:00",
+      "updated": "2026-11-18T04:08:05+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -137,7 +149,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-18T04:07:08+07:00",
+      "updated": "2026-11-18T04:08:12+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -153,7 +165,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-18T04:07:32+07:00",
+      "updated": "2026-11-18T04:08:04+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
