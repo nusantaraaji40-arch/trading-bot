@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T06:13:01.391064+08:00",
+  "generated_at": "2026-11-18T06:14:01.302322+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -89,10 +89,10 @@
         }
       ],
       "buy_floor_idr": 65809,
-      "_total_idr_from_log": 151842.0,
+      "_total_idr_from_log": 151808.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-18T06:12:31.579924+08:00"
+      "unrealized_at": "2026-11-18T06:14:01.301654+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -110,11 +110,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002219,
-          "value_usd": 0.269719,
-          "value_idr": 4925.33,
-          "unrealized_idr": -15054.69,
-          "unrealized_pct": -75.54
+          "price": 0.002211,
+          "value_usd": 0.268747,
+          "value_idr": 4907.58,
+          "unrealized_idr": -15072.44,
+          "unrealized_pct": -75.63
         },
         {
           "entry_idr": 37962.03796203797,
@@ -140,20 +140,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9716,
-          "value_usd": 1.06876,
-          "value_idr": 19516.58,
-          "unrealized_idr": -463.44,
-          "unrealized_pct": 1.01
+          "price": 0.9712,
+          "value_usd": 1.06832,
+          "value_idr": 19508.54,
+          "unrealized_idr": -471.48,
+          "unrealized_pct": 0.97
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-18T05:12:21+07:00",
-      "unrealized_idr": -20274.81,
-      "unrealized_at": "2026-11-18T06:12:31.579924+08:00",
+      "updated": "2026-11-18T05:13:23+07:00",
+      "unrealized_idr": -20300.6,
+      "unrealized_at": "2026-11-18T06:14:01.301654+08:00",
       "usd_idr_used": 18260.955285960456
     },
     "pumpfun": {
@@ -169,7 +169,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-18T05:12:44+07:00",
+      "updated": "2026-11-18T05:13:54+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -186,7 +186,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-18T05:12:37+07:00",
+      "updated": "2026-11-18T05:13:41+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -202,7 +202,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-18T05:12:35+07:00",
+      "updated": "2026-11-18T05:13:40+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -313,6 +313,12 @@
   },
   "news": [
     {
+      "title": "Maple Finance CEO targets up to $15B in assets by the end of 2027",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/maple-finance-15b-assets-target-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-18T05:56:35+08:00"
+    },
+    {
       "title": "Eastern Europe crypto flows fall 7.9% as Ukraine draws $12B in stablecoins",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/eastern-europe-crypto-activity-decline-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -337,16 +343,10 @@
       "time": "2026-11-18T00:39:43+08:00"
     },
     {
-      "title": "Here’s what happened in crypto today",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-17T22:54:40+08:00"
-    },
-    {
-      "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
+      "title": "FaceStealer Cryptocurrency Theft Scheme | Federal Bureau of Investigation - FBI (.gov)",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdW1pNlZXMVNNRXJtVGFiRUhPUm0tWGFqeGt4Q1VwallIOGtKTGFiTlZGZnZCd2F5RldrQ2E0b0V0emF1TkFkOTh0Q1FOa3phejllUmhxZGpGUkhlUFJqUlhoSkNFUWR6ZVhhbmxiUDRENXJXTEFZS3ZVUzQ1clVybUVIUFBzTWNhejhxSURKeUVEa2RSaWNGd3czU1B4WWxmZ1R6QURmVWJLWWJIMkVlck5UVnRxY1luMlFXVFBqMVVmeWQ2clpvOGhn?oc=5",
-      "time": "2026-11-17T06:38:46+08:00"
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb25Cbm9nTXo4TDlXNXo4bzd6NXZvOTVDSVhMSWNqZ2c0b25xZ3hob2o4Y2RxbXNVcjZWS2k0dHY3el9kekxBYThxdDBKWm1VT3NYRVdzRG44MFdhNS04UU0yMm0tdWhUbEZUcWFuTWM1Um5qQmlZcVJZSmpmOWxoWXd1VQ?oc=5",
+      "time": "2026-11-13T07:46:56+08:00"
     },
     {
       "title": "States, cities move to ban cryptocurrency kiosks as scams mount - Stateline",
@@ -355,22 +355,22 @@
       "time": "2026-11-16T18:05:26+08:00"
     },
     {
-      "title": "Investigators seize $542K of cryptocurrency in connection with CT resident who fell victim to scam - Hartford Courant",
+      "title": "Police: Atherton burglary suspects have ties to cryptocurrency crime in San Jose - The Almanac",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVWpOTmVycUlnMGpnUkZ3blZzbWZ0ZnRMQjJHc2Fia0RnektXWEpVTTAzNTBJWjdZR1hyT1R0aF9yVjFfTlV4akY3eHFOQ2VlRWpzbmpVNGhOTnhGczdpNzNVZHc3WkJZa0c0bmkyNkF3ZjNWYVkwNkNnYTRKTmhnMVpjVTZfZlFuQ2Q4bjRocWZ1dEp6S0RZYWhHelR2S1hBWnhSYldEN3FJVzBVdkY3OWdYMlVlTlVOeDFReGlTVEdqOUNaMmlRQXhWd1ZnQQ?oc=5",
-      "time": "2026-11-17T18:32:57+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVW9wVUNndVpIRVNJQTFNekZSQTR2ZldzTUhVTUJvSklYR0lBV1JkWmljbjFkTG90VmllUUdWTHM2elpSaHpGa2k4dGF0UF9lVXp2Yno3MnVtRGJJSEFrSl9SZjFUYWRfR2pPQVk5c3E3c3pOb0IzeDZ1LXppSENSZVB3d29vY0FicVpxS3YzVWM3ZHl1MVpEVXZNMkF2TUYzOUdZbU5CRVNSb0hMUkwyazVCYjl1YXB1WGM5dzA0a3pudTQ?oc=5",
+      "time": "2026-11-18T03:34:48+08:00"
     },
     {
-      "title": "Cyber attack hits 178 major websites including CNN and Zoom in bid to steal crypto, infect iPhones: report - New York Post",
+      "title": "Police warn residents of fake police calls and cryptocurrency investment scams - FOX43",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZVBEeElMZldnWUF0OERTSXdqXzdYOWpMdUVPX2FXN1BsWWR5amxHQ2VUSkZnUWFEcUd2WC03YlhpMVFRVzY3RjFuRlAzYkszeXBpaEhFU1FxVjQ0QVpHQWJ6cE0yX0hvZFJXYUhMMnBhdUtvd29RdmV3Nko2WGowclNPVjBTendZRC12NURRa2dUVEJDd0VUb19wWkR5dDlod091c0FwY2gwcHNBQTFJNE1XOEhzVmlqWE5yb0lleTRzcFRzUi0xbnFXYVpvVnNGZkVsaWpZMVU0dnM?oc=5",
-      "time": "2026-11-18T03:02:23+08:00"
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONVdxMTdHbnZod04ydWZzOVFhRUpDRDFCZ2poQ193YWpqOG9HRXlCWExIdUR1UmFMZS1LRlg5TTQ0RVJ3M09obkhRWjFaMEpPUU14ZnNtTzNpNzNsam8xdFlWdE5YakFjc29NUk90SjQ2aDRHUWZpbno2R2FXVEVEWENrQ1hqVHVlT3NSOVRPT2hxRGFzWTFMZVJjZGZGeE1oNGdjcWktTkVOQVFIN3pWaDAzNTlIMThaSDdSSG5WbjJZZ01QWTBlTXpVaW5jUlltQWN1NGhzMV9sS0VFd2hnb3ZJcVIzUF9vbGtfTFI4VzNqZw?oc=5",
+      "time": "2026-11-18T03:56:00+08:00"
     },
     {
-      "title": "Police warn residents of fake police calls and cryptocurrency investment scams - Yahoo",
+      "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance - CNBC",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORnQwMWlaVy1DQWY4dmR4RURGRWdON0xPQndKeWNrcEZtUi1VN0ROLWhRcmkwcW1lY2p4QUhTdE15S3VlSlc4WGF6RE1tN2FFQ1pHN2RSQndlWUl6Qk1MUlQ3eFozZTRJTzd1YzVKbXNBLW1QeDBLdmRQWExLd2lUWE4tQzdENlFkWUphYg?oc=5",
-      "time": "2026-11-18T03:56:21+08:00"
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKOHA5R0ZGa0tFdEtTZElXN1Q3eDNQZndVeGw2aERqWjNSdEtZVjlacUVpZ0hWZFNDLUV2Zzk5OGRkemg3WGJxd0lwMEJxRXNfTU1aTlEzeXk4eTZJckl3Y1JNV2J4QTFEWVpaQVFvZHlNS0Ja0gF6QVVfeXFMT1ZJWGJJc3BxU2xqY1JBdmZDM3FELU1XWjNHVW9ubzFIQldoaFlXdzcyX2J0Q2txRGN5Q05xZEZjMS1VVDlhcWhpQ0s4VW1GWGhpWjdzQWtJU3hTLURZVlZiVXh2VERlOGtjR2l2MHFGUmVaOTJCTWNLQ0E?oc=5",
+      "time": "2026-11-13T20:03:24+08:00"
     },
     {
       "title": "Dow drops more than 800 points, S&P 500 posts lowest close since July - CNBC",
@@ -382,7 +382,7 @@
       "title": "Stock market today: Dow sinks 850 points, S&P 500 and Nasdaq drop with focus on Nvidia earnings - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNlo3VXhMalBfa2JwdDF2VnBsa1E5RnVPSG5lekhEOXRQa0tqS0RIRW5qYmxQRzFZOGdyTlU5VUM1RGgwWENlYlR5RDUtMFRQdlhxRkRhNU1CdWRiR0dQUm1MMldMbUlOM295UVZ2eFRFOTlRUUVEX0swd1YzVTkyRkRYeEI2VW00LTRZUG5JX3RiVHh1UVBKN3VoUUlidWgwaWJvR2lSZHdmaVUzTmJWYUFMX21LaUVjeTJMWU94NUZtRm1DTmhlQUZTY0RSNXhTM1hGTnRR?oc=5",
-      "time": "2026-11-18T05:02:53+08:00"
+      "time": "2026-11-18T06:03:11+08:00"
     },
     {
       "title": "U.S. Stocks Fall as AI Doubts Fester - WSJ",
@@ -391,19 +391,19 @@
       "time": "2026-11-18T05:21:00+08:00"
     },
     {
-      "title": "Wall Street ends lower ahead of Nvidia earnings, Anthropic debut - Reuters",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOemNySVhGbms1VkxVYXFsTFdtdVh1MjNQQk16Y1ZfNGFHMFhDRWUtZldZRzJzSWxpNlBLWVpTenJnU2FHZndaVUlEclFtQVNvTzJBWTNpM1p0N3dmWjlyMEFKbkowZkpSanhVcEVLUjZfOWxNcW5OZVFuLTNFNF93ZDd4b0wxX1VzNlJPODdqc0xob1ZrR0xuQkJ6bExvNDdQMk5saFVSdkVBZw?oc=5",
-      "time": "2026-11-18T05:01:55+08:00"
-    },
-    {
       "title": "6 Undervalued US Stocks That Crushed Earnings - Morningstar",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSnJpcldiQnBEQXpLX2NrWmRlWHJMd2FIVDl6a0VZem1JN2VxanFpRmJKclNRRENFalNtdEdCVC1CeEpVdHJwTE42RDN3UEFmM2pSY00wUkxQYVZNYzlLRkpqR0pJQzNaREY5X3lUbW5oN2ZQajVsa3FLY1BrR241dGk4cXV3WHlzSXBxVnFHa1BqSzA?oc=5",
       "time": "2026-11-16T18:18:10+08:00"
+    },
+    {
+      "title": "Millions opens US stocks, ETFs to Indian investors - Rediff",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQM3dkRGRIdWlxWnZteFJSd05xemh3OTJoN3ZuRmhmQk56YnlwOFZPdXQ3MkJVcUZHcWFkOUpQRnQwbGFKcVJnRGU2Y1lCZzN1YVNfd1R0ZDk2blpyazlOUjhud3NwMnN4Z3dTbFhTN1Q4THcyS0RxeVF0bHltVnRRZ1p6el9XNVJpMVFGaEhBMUFTelAzbmEyaW9lb1N4aWYtNXhGdmJpVUoycC1iU3pXNnkyVl90anBQMVlvektFd0dPa2ROcWMteHF5ak9kdw?oc=5",
+      "time": "2026-11-17T19:15:56+08:00"
     }
   ],
-  "news_at": "2026-11-18T05:58:02.225965+08:00",
+  "news_at": "2026-11-18T06:13:32.100061+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
