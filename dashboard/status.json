@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T18:21:02.159707+08:00",
+  "generated_at": "2026-11-18T18:22:01.457522+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -77,10 +77,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 152378.0,
+      "_total_idr_from_log": 152368.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-18T18:20:31.362601+08:00"
+      "unrealized_at": "2026-11-18T18:22:01.456817+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -98,11 +98,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002133,
-          "value_usd": 0.259266,
-          "value_idr": 4727.18,
-          "unrealized_idr": -15252.84,
-          "unrealized_pct": -76.49
+          "price": 0.002127,
+          "value_usd": 0.258537,
+          "value_idr": 4713.88,
+          "unrealized_idr": -15266.14,
+          "unrealized_pct": -76.55
         },
         {
           "entry_idr": 37962.03796203797,
@@ -113,11 +113,11 @@
           "opened": "2026-11-11T21:56:20+07:00",
           "qty": 11.8,
           "symbol": "ADAUSDT",
-          "price": 0.1541,
-          "value_usd": 1.81838,
-          "value_idr": 33154.4,
-          "unrealized_idr": -4807.64,
-          "unrealized_pct": -12.74
+          "price": 0.154,
+          "value_usd": 1.8172,
+          "value_idr": 33132.88,
+          "unrealized_idr": -4829.15,
+          "unrealized_pct": -12.8
         },
         {
           "entry_idr": 19980.01998001998,
@@ -128,20 +128,20 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 1.0019,
-          "value_usd": 1.10209,
-          "value_idr": 20094.33,
-          "unrealized_idr": 114.31,
-          "unrealized_pct": 4.16
+          "price": 1.0004,
+          "value_usd": 1.10044,
+          "value_idr": 20064.25,
+          "unrealized_idr": 84.23,
+          "unrealized_pct": 4.0
         }
       ],
       "realized_idr": 0.0,
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-18T17:20:53+07:00",
-      "unrealized_idr": -19946.17,
-      "unrealized_at": "2026-11-18T18:20:31.362601+08:00",
+      "updated": "2026-11-18T17:21:54+07:00",
+      "unrealized_idr": -20011.06,
+      "unrealized_at": "2026-11-18T18:22:01.456817+08:00",
       "usd_idr_used": 18232.932151792967
     },
     "pumpfun": {
@@ -157,7 +157,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-18T17:20:32+07:00",
+      "updated": "2026-11-18T17:21:44+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -174,7 +174,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-18T17:20:36+07:00",
+      "updated": "2026-11-18T17:21:40+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -190,7 +190,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-18T17:20:49+07:00",
+      "updated": "2026-11-18T17:21:54+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -391,7 +391,7 @@
       "time": "2026-11-17T18:51:00+08:00"
     }
   ],
-  "news_at": "2026-11-18T18:21:02.159585+08:00",
+  "news_at": "2026-11-18T18:21:02.159257+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
