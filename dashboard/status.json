@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T18:05:01.970408+08:00",
+  "generated_at": "2026-11-18T18:05:32.783847+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -139,10 +139,10 @@
       "reserve_idr": 9212.529999999999,
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
-      "updated": "2026-11-18T17:04:28+07:00",
+      "updated": "2026-11-18T17:05:29+07:00",
       "unrealized_idr": -19939.7,
       "unrealized_at": "2026-11-18T18:05:01.969730+08:00",
-      "usd_idr_used": 18232.949774046076
+      "usd_idr_used": 18232.950100651487
     },
     "pumpfun": {
       "baseline_sol": 0.02135348,
@@ -157,7 +157,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-18T17:04:30+07:00",
+      "updated": "2026-11-18T17:05:06+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -174,7 +174,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-18T17:04:37+07:00",
+      "updated": "2026-11-18T17:05:09+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -190,12 +190,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-18T17:04:42+07:00",
+      "updated": "2026-11-18T17:05:14+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-18T18:00:02.669823+08:00",
-      "fetched_at": "2026-11-18T18:00:02.669823+08:00",
+      "updated": "2026-11-18T18:05:02.455811+08:00",
+      "fetched_at": "2026-11-18T18:05:02.455811+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 273347.0,
       "cash_usd": 0.0,
@@ -203,52 +203,52 @@
       "realized_idr": 0,
       "total_deposited_idr": 500000,
       "trades_count": 5,
-      "usd_idr": 18232.949774046076,
+      "usd_idr": 18232.950100651487,
       "positions": [
         {
           "symbol": null,
           "name": null,
           "qty": 0.026322015,
           "entry": 101.436,
-          "price": 108.06,
-          "value_usd": 2.8443569409,
-          "pnl_usd": 0.17435702736,
-          "pnl_pct": 6.53,
+          "price": 107.89,
+          "value_usd": 2.83988219835,
+          "pnl_usd": 0.16988228481,
+          "pnl_pct": 6.36,
           "currency": "USD",
-          "entry_idr": 48681.97,
-          "value_idr": 51861.02,
-          "unrealized_idr": 3179.04,
-          "unrealized_pct": 6.53
+          "entry_idr": 48681.98,
+          "value_idr": 51779.43,
+          "unrealized_idr": 3097.46,
+          "unrealized_pct": 6.36
         },
         {
           "symbol": null,
           "name": null,
           "qty": 0.02765,
           "entry": 99.11,
-          "price": 98.05999999999999,
-          "value_usd": 2.711359,
-          "pnl_usd": -0.0290325,
-          "pnl_pct": -1.06,
+          "price": 98.00999999999999,
+          "value_usd": 2.7099765,
+          "pnl_usd": -0.030415,
+          "pnl_pct": -1.11,
           "currency": "USD",
           "entry_idr": 49965.42,
-          "value_idr": 49436.07,
-          "unrealized_idr": -529.35,
-          "unrealized_pct": -1.06
+          "value_idr": 49410.87,
+          "unrealized_idr": -554.56,
+          "unrealized_pct": -1.11
         },
         {
           "symbol": null,
           "name": null,
           "qty": 0.0127,
           "entry": 215.664,
-          "price": 212.19,
-          "value_usd": 2.694813,
-          "pnl_usd": -0.0441198,
-          "pnl_pct": -1.61,
+          "price": 212.12,
+          "value_usd": 2.693924,
+          "pnl_usd": -0.0450088,
+          "pnl_pct": -1.64,
           "currency": "USD",
-          "entry_idr": 49938.82,
-          "value_idr": 49134.39,
-          "unrealized_idr": -804.43,
-          "unrealized_pct": -1.61
+          "entry_idr": 49938.83,
+          "value_idr": 49118.18,
+          "unrealized_idr": -820.64,
+          "unrealized_pct": -1.64
         },
         {
           "symbol": null,
@@ -281,8 +281,8 @@
           "unrealized_pct": -2.09
         }
       ],
-      "positions_value_idr": 217931.0,
-      "total_idr": 491278.0,
+      "positions_value_idr": 217808.0,
+      "total_idr": 491155.0,
       "wallets": {
         "IDR_CRYPTO_FUNDING": 273347,
         "IDR_CASH": 0,
@@ -291,12 +291,12 @@
         "USD_MARGIN": 0
       },
       "reported": {
-        "netAssetValueIdr": 217931.0,
-        "unrealisedPnLIdr": 911.0
+        "netAssetValueIdr": 217808.0,
+        "unrealisedPnLIdr": 788.0
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
-      "unrealized_idr": 911.0,
-      "unrealized_at": "2026-11-18T18:00:02.669823+08:00"
+      "unrealized_idr": 788.0,
+      "unrealized_at": "2026-11-18T18:05:02.455811+08:00"
     }
   },
   "news": [
@@ -373,12 +373,6 @@
       "time": "2026-11-17T23:05:27+08:00"
     },
     {
-      "title": "Asian Stocks to Fall, Nvidia Sales Outlook Beats: Markets Wrap - Bloomberg.com",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUHhZZG5FcFhON3BCMkRyY201M2FVdVRTaUF2a29ScWc3ZTd4TkI1Zm44SXNOcmZoOE9tN29nalFxMllaQV9ZQVp5SFNKbFlmVWtxVmtjdGl4WVVRRnpFeVZaVjVCVGozeFVWYzF6NnM1dERENnQ5SWpLTlNsejBDS21mS2k2aUhQeHZHNU80V2dvbG9h?oc=5",
-      "time": "2026-11-18T16:34:28+08:00"
-    },
-    {
       "title": "6 Undervalued US Stocks That Crushed Earnings - Morningstar",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSnJpcldiQnBEQXpLX2NrWmRlWHJMd2FIVDl6a0VZem1JN2VxanFpRmJKclNRRENFalNtdEdCVC1CeEpVdHJwTE42RDN3UEFmM2pSY00wUkxQYVZNYzlLRkpqR0pJQzNaREY5X3lUbW5oN2ZQajVsa3FLY1BrR241dGk4cXV3WHlzSXBxVnFHa1BqSzA?oc=5",
@@ -389,9 +383,15 @@
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOV1A3MHlsRkFKVUlSM2lIakJTZm53YVR5dGVnWC13bFczVzBXNmJUck5SLVNpMTBhamZkT3VoRGs1R1AyYkx6XzVibmlsZGhUMTBGcHFOcnBKSzM3Nnh0ZnFFaXVOSjZYVzlPcklIZ1RnWXJ4b25LLThVQjdnZWtjMGhLRTBuY3lBTURCYm5tRmdoRUxhSVhzSXJSZXNmOXNScWJ1dFRDaDJrLTRaS1hOY2xwNlVtV3J5bEt1R2FiX2JXbzVFZjhZ?oc=5",
       "time": "2026-11-18T05:35:15+08:00"
+    },
+    {
+      "title": "US stocks fall; Dow stocks are the hardest hit with a drop of 1.65% - investingLive",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTjNfSno0Q3ZiNkVyLXF6LVRVWC1uSGZSMmYxWnBvd2lJd0dkTWZXM2ZpazNYUWJURVpCWDVlRWpUVlZGcnljY3JUZTMzWmhFMjh4dEtaSFVGUWNieFotNmE3VjRSMm9zM25nREczMXBBSXNOWDQ4VGtwTmRBV2NvMk52VXFURFF3R1JndXUtTkl0akN3NVNEdm9kbzduaEts?oc=5",
+      "time": "2026-11-18T05:17:45+08:00"
     }
   ],
-  "news_at": "2026-11-18T17:50:03.237382+08:00",
+  "news_at": "2026-11-18T18:05:32.783727+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
