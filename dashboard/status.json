@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:12:31.397339+08:00",
+  "generated_at": "2026-11-18T14:13:02.363178+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -80,7 +80,7 @@
       "_total_idr_from_log": 151747.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-18T14:11:31.585244+08:00"
+      "unrealized_at": "2026-11-18T14:13:01.407574+08:00"
     },
     "mexc": {
       "baseline_usdt": 0.58121769,
@@ -98,11 +98,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002274,
-          "value_usd": 0.276405,
-          "value_idr": 5048.52,
-          "unrealized_idr": -14931.5,
-          "unrealized_pct": -74.93
+          "price": 0.002272,
+          "value_usd": 0.276162,
+          "value_idr": 5044.08,
+          "unrealized_idr": -14935.94,
+          "unrealized_pct": -74.95
         },
         {
           "entry_idr": 37962.03796203797,
@@ -128,11 +128,11 @@
           "opened": "2026-11-16T02:49:30+07:00",
           "qty": 1.1,
           "symbol": "XRPUSDT",
-          "price": 0.9835,
-          "value_usd": 1.08185,
-          "value_idr": 19759.95,
-          "unrealized_idr": -220.07,
-          "unrealized_pct": 2.25
+          "price": 0.9843,
+          "value_usd": 1.08273,
+          "value_idr": 19776.02,
+          "unrealized_idr": -204.0,
+          "unrealized_pct": 2.33
         }
       ],
       "realized_idr": 0.0,
@@ -140,8 +140,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 0,
       "updated": "2026-11-18T13:12:09+07:00",
-      "unrealized_idr": -19879.42,
-      "unrealized_at": "2026-11-18T14:11:31.585244+08:00",
+      "unrealized_idr": -19867.79,
+      "unrealized_at": "2026-11-18T14:13:01.407574+08:00",
       "usd_idr_used": 18264.95964061295
     },
     "pumpfun": {
@@ -157,7 +157,7 @@
       "reserve_idr": 22102.76,
       "total_deposited_idr": 32102.76,
       "trades_count": 0,
-      "updated": "2026-11-18T13:12:02+07:00",
+      "updated": "2026-11-18T13:12:38+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -174,7 +174,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-18T13:12:24+07:00",
+      "updated": "2026-11-18T13:12:56+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -301,6 +301,12 @@
   },
   "news": [
     {
+      "title": "Here’s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-18T14:00:00+08:00"
+    },
+    {
       "title": "Ledger hardware implant saga reaches Dubai’s Virgin Megastore",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/ledger-hardware-implant-saga-reaches-dubais-virgin-megastore?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -323,12 +329,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/maple-finance-15b-assets-target-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-18T05:56:35+08:00"
-    },
-    {
-      "title": "Eastern Europe crypto flows fall 7.9% as Ukraine draws $12B in stablecoins",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/eastern-europe-crypto-activity-decline-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-18T04:05:04+08:00"
     },
     {
       "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
@@ -391,7 +391,7 @@
       "time": "2026-11-18T05:35:15+08:00"
     }
   ],
-  "news_at": "2026-11-18T13:57:32.917971+08:00",
+  "news_at": "2026-11-18T14:13:02.362994+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
