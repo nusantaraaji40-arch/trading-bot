@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T21:28:31.773654+08:00",
+  "generated_at": "2026-11-18T21:29:01.756548+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -77,7 +77,7 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 152339.0,
+      "_total_idr_from_log": 152316.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-18T21:28:31.772991+08:00"
@@ -115,33 +115,20 @@
       "usd_idr_used": 18229.978000851745
     },
     "pumpfun": {
-      "baseline_sol": 0.012557426054997123,
+      "baseline_sol": 0.022159421,
       "baseline_usdc": 0.0,
-      "cash_idr": 1991.57,
+      "cash_idr": 11591.79,
       "created": "2026-11-10T16:21:40+07:00",
-      "ks_tripped": false,
+      "ks_tripped": true,
       "paper_sol_free": 0.0,
       "paper_usdc_free": 0.0,
-      "positions": [
-        {
-          "dex": "pumpfun",
-          "entry_idr": 9970.089730807578,
-          "entry_price_usd": 1.194e-05,
-          "entry_rate_usd_idr": 18226.9,
-          "fee_buy_idr": 29.910269192422735,
-          "highest_price_usd": 1.194e-05,
-          "mint": "9q1e32Nqwd97gydrVZt9mqeS4GJJ3MBvtbvm8aDtpump",
-          "opened": "2026-11-18T20:28:18+07:00",
-          "pair_address": "8Fe9khfjQBjot934v7EzSZ7QfnpzgWoxXM5a6VjTscQ7",
-          "qty": 44706.306123,
-          "symbol": "THUG"
-        }
-      ],
-      "realized_idr": 1991.5677253095737,
-      "reserve_idr": 22102.76,
-      "total_deposited_idr": 32102.76,
-      "trades_count": 1,
-      "updated": "2026-11-18T20:28:18+07:00"
+      "positions": [],
+      "realized_idr": 1591.7892581277738,
+      "reserve_idr": 25516.37,
+      "total_deposited_idr": 35516.369999999995,
+      "trades_count": 2,
+      "updated": "2026-11-18T20:28:54+07:00",
+      "unrealized_idr": 0.0
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -157,7 +144,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-18T20:28:05+07:00",
+      "updated": "2026-11-18T20:28:37+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -173,7 +160,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-18T20:28:05+07:00",
+      "updated": "2026-11-18T20:28:37+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
