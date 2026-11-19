@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T15:59:01.923793+08:00",
+  "generated_at": "2026-11-19T16:00:06.891590+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": 150617.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-19T15:59:01.923156+08:00"
+      "unrealized_at": "2026-11-19T16:00:02.243129+08:00"
     },
     "mexc": {
       "baseline_usdt": 3.45638576,
@@ -122,20 +122,20 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.001464,
-          "value_usd": 0.177949,
-          "value_idr": 3251.48,
-          "unrealized_idr": -16728.54,
-          "unrealized_pct": -83.86
+          "price": 0.001455,
+          "value_usd": 0.176855,
+          "value_idr": 3231.49,
+          "unrealized_idr": -16748.53,
+          "unrealized_pct": -83.96
         }
       ],
       "realized_idr": -5214.750147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 106339.75,
       "trades_count": 2,
-      "updated": "2026-11-19T14:58:18+07:00",
-      "unrealized_idr": -16728.54,
-      "unrealized_at": "2026-11-19T15:59:01.923156+08:00",
+      "updated": "2026-11-19T14:59:19+07:00",
+      "unrealized_idr": -16748.53,
+      "unrealized_at": "2026-11-19T16:00:02.243129+08:00",
       "usd_idr_used": 18271.957943000987
     },
     "pumpfun": {
@@ -151,7 +151,7 @@
       "reserve_idr": 27764.809999999998,
       "total_deposited_idr": 47764.81,
       "trades_count": 2,
-      "updated": "2026-11-19T14:59:01+07:00",
+      "updated": "2026-11-19T14:59:31+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -168,7 +168,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-19T14:58:56+07:00",
+      "updated": "2026-11-19T14:59:59+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -184,7 +184,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-19T14:58:30+07:00",
+      "updated": "2026-11-19T14:59:34+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -280,6 +280,12 @@
   },
   "news": [
     {
+      "title": "Bitcoin retests $62K as Nasdaq futures rise ahead of Anthropic debut",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/markets/bitcoin-retests-62k-nasdaq-futures-anthropic-debut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-19T15:55:56+08:00"
+    },
+    {
       "title": "Bitcoin carry trades could beat Treasury bills in 2027, Sygnum predicts",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/markets/sygnum-bitcoin-carry-trades-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -302,12 +308,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/binance-hackers-stole-192-tokens-across-11-networks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-19T13:09:45+08:00"
-    },
-    {
-      "title": "Trump administration unveils new center to choke off scam payments",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/trump-administration-unveils-new-center-choke-off-scam-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-19T09:45:33+08:00"
     },
     {
       "title": "North Korea’s cyber-antics should worry every chief executive - The Economist",
@@ -370,7 +370,7 @@
       "time": "2026-11-19T05:06:47+08:00"
     }
   ],
-  "news_at": "2026-11-19T15:45:01.851558+08:00",
+  "news_at": "2026-11-19T16:00:06.891475+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
