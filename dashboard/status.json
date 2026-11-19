@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T14:05:02.138438+08:00",
+  "generated_at": "2026-11-19T14:05:32.058875+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -124,8 +124,8 @@
           "symbol": "FLOATUSDT",
           "price": 0.001455,
           "value_usd": 0.176855,
-          "value_idr": 3230.42,
-          "unrealized_idr": -16749.6,
+          "value_idr": 3230.24,
+          "unrealized_idr": -16749.78,
           "unrealized_pct": -83.96
         }
       ],
@@ -133,10 +133,10 @@
       "reserve_idr": 28339.75,
       "total_deposited_idr": 106339.75,
       "trades_count": 2,
-      "updated": "2026-11-19T13:04:22+07:00",
-      "unrealized_idr": -16749.6,
+      "updated": "2026-11-19T13:05:22+07:00",
+      "unrealized_idr": -16749.78,
       "unrealized_at": "2026-11-19T14:05:02.137700+08:00",
-      "usd_idr_used": 18265.895785899113
+      "usd_idr_used": 18264.900763037364
     },
     "pumpfun": {
       "baseline_sol": 0.003116744,
@@ -151,7 +151,7 @@
       "reserve_idr": 27764.809999999998,
       "total_deposited_idr": 47764.81,
       "trades_count": 2,
-      "updated": "2026-11-19T13:04:44+07:00",
+      "updated": "2026-11-19T13:05:14+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -168,7 +168,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-19T13:04:46+07:00",
+      "updated": "2026-11-19T13:05:18+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -184,12 +184,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-19T13:04:37+07:00",
+      "updated": "2026-11-19T13:05:09+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-19T14:00:02.617755+08:00",
-      "fetched_at": "2026-11-19T14:00:02.617755+08:00",
+      "updated": "2026-11-19T14:05:03.081667+08:00",
+      "fetched_at": "2026-11-19T14:05:03.081667+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 273347.0,
       "cash_usd": 2.52,
@@ -197,22 +197,22 @@
       "realized_idr": 0,
       "total_deposited_idr": 500000,
       "trades_count": 4,
-      "usd_idr": 18265.895785899113,
+      "usd_idr": 18264.900763037364,
       "positions": [
         {
           "symbol": null,
           "name": null,
           "qty": 0.02765,
           "entry": 99.11,
-          "price": 98.00999999999999,
-          "value_usd": 2.7099765,
-          "pnl_usd": -0.030415,
-          "pnl_pct": -1.11,
+          "price": 98.0,
+          "value_usd": 2.7097,
+          "pnl_usd": -0.0306915,
+          "pnl_pct": -1.12,
           "currency": "USD",
-          "entry_idr": 50055.71,
-          "value_idr": 49500.15,
-          "unrealized_idr": -555.56,
-          "unrealized_pct": -1.11
+          "entry_idr": 50052.98,
+          "value_idr": 49492.4,
+          "unrealized_idr": -560.58,
+          "unrealized_pct": -1.12
         },
         {
           "symbol": null,
@@ -224,9 +224,9 @@
           "pnl_usd": -0.041190258906,
           "pnl_pct": -1.54,
           "currency": "USD",
-          "entry_idr": 48952.6,
-          "value_idr": 48200.22,
-          "unrealized_idr": -752.38,
+          "entry_idr": 48949.93,
+          "value_idr": 48197.6,
+          "unrealized_idr": -752.34,
           "unrealized_pct": -1.54
         },
         {
@@ -239,9 +239,9 @@
           "pnl_usd": -0.1226058,
           "pnl_pct": -4.48,
           "currency": "USD",
-          "entry_idr": 50029.06,
-          "value_idr": 47789.56,
-          "unrealized_idr": -2239.5,
+          "entry_idr": 50026.34,
+          "value_idr": 47786.95,
+          "unrealized_idr": -2239.38,
           "unrealized_pct": -4.48
         },
         {
@@ -254,14 +254,14 @@
           "pnl_usd": -0.03059129808,
           "pnl_pct": -2.89,
           "currency": "USD",
-          "entry_idr": 19361.85,
-          "value_idr": 18803.07,
-          "unrealized_idr": -558.78,
+          "entry_idr": 19360.79,
+          "value_idr": 18802.05,
+          "unrealized_idr": -558.75,
           "unrealized_pct": -2.89
         }
       ],
-      "positions_value_idr": 164293.0,
-      "total_idr": 437640.0,
+      "positions_value_idr": 164279.0,
+      "total_idr": 437626.0,
       "wallets": {
         "IDR_CRYPTO_FUNDING": 273347,
         "IDR_CASH": 0,
@@ -270,12 +270,12 @@
         "USD_MARGIN": 0
       },
       "reported": {
-        "netAssetValueIdr": 164293.0,
-        "unrealisedPnLIdr": -3969.0
+        "netAssetValueIdr": 164279.0,
+        "unrealisedPnLIdr": -3983.0
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
-      "unrealized_idr": -3969.0,
-      "unrealized_at": "2026-11-19T14:00:02.617755+08:00"
+      "unrealized_idr": -3983.0,
+      "unrealized_at": "2026-11-19T14:05:03.081667+08:00"
     }
   },
   "news": [
