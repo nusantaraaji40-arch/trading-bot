@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T05:23:31.802862+08:00",
+  "generated_at": "2026-11-20T05:25:02.715763+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": null,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-20T05:23:31.802279+08:00"
+      "unrealized_at": "2026-11-20T05:25:01.981226+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -137,50 +137,37 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61604.4,
-          "value_usd": 1.047275,
-          "value_idr": 19149.4,
-          "unrealized_idr": -830.62,
-          "unrealized_pct": -1.16
+          "price": 61554.39,
+          "value_usd": 1.046425,
+          "value_idr": 19133.85,
+          "unrealized_idr": -846.17,
+          "unrealized_pct": -1.24
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-20T04:23:11+07:00",
-      "unrealized_idr": -17630.19,
-      "unrealized_at": "2026-11-20T05:23:31.802279+08:00",
+      "updated": "2026-11-20T04:24:12+07:00",
+      "unrealized_idr": -17645.74,
+      "unrealized_at": "2026-11-20T05:25:01.981226+08:00",
       "usd_idr_used": 18284.98010010589
     },
     "pumpfun": {
-      "baseline_sol": 0.030386955,
+      "baseline_sol": 0.038220481,
       "baseline_usdc": 0.669533,
-      "cash_idr": 23071.62,
+      "cash_idr": 33465.65,
       "created": "2026-11-10T16:21:40+07:00",
       "ks_tripped": true,
       "paper_sol_free": 0.0,
       "paper_usdc_free": 0.0,
-      "positions": [
-        {
-          "dex": "pumpfun",
-          "entry_idr": 9970.089730807578,
-          "entry_price_usd": 1.546e-05,
-          "entry_rate_usd_idr": 18267.81,
-          "fee_buy_idr": 29.910269192422735,
-          "highest_price_usd": 2.017e-05,
-          "mint": "8nq3Jmgd1tpbroiuVMehQyC266ZUZJU2BTad8Nigpump",
-          "opened": "2026-11-20T00:28:46+07:00",
-          "pair_address": "A3p8H9wboKN2LvkAjUaiPZKG4Yyxw2q3WShveEUmdxqX",
-          "qty": 34712.660651,
-          "symbol": "STANK"
-        }
-      ],
-      "realized_idr": 5376.172862628141,
+      "positions": [],
+      "realized_idr": 5770.201427679878,
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
-      "trades_count": 3,
-      "updated": "2026-11-20T04:23:06+07:00"
+      "trades_count": 4,
+      "updated": "2026-11-20T04:24:47+07:00",
+      "unrealized_idr": 0.0
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -196,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-20T04:23:13+07:00",
+      "updated": "2026-11-20T04:24:49+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -212,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-20T04:23:03+07:00",
+      "updated": "2026-11-20T04:24:40+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -383,10 +370,10 @@
       "time": "2026-11-20T02:09:32+08:00"
     },
     {
-      "title": "What Will 3,000 XRP Be Worth in 5 Years? - 24/7 Wall St.",
+      "title": "The top cryptocurrency is down 13% in a week. Is it really over? - Yahoo Finance",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON2p5SXM3UnkwVHB5Zk9IWUNIWnpxV3dEaGQ0c3RRTE9mbERPNEFNTnNnRFlabl9nR1U2ZUY0bFV3RW5yV2lHMWN3c3czRkszTXhzazdzZ1B1SmxyaWp5eElETlBZQ05rZzVHQS1LUVNnREJOMDlsQTVGdWdHN0pRLVZVN1ZPY2ZDdHNtLUR5Slh0ZWdRaEVGNlV3UnRadw?oc=5",
-      "time": "2026-11-19T04:33:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaHU3cndmSjJ6aEZ3YzRWdTV4SFMtU3g2M3FxMllHQjd1bURZRlpWSmNZb3dRbzgxX1RZQUxIbUhCa09Gck9KRVlNODF4YllLakNNckhBdmJOZEUyNkNabk1hV2FLWjhRLXVxSlFjcGdqdzNLZ2xBcnFVZXlTOExEMmt2aWw4QzdBUGUxVzJRdlVFMU9LMnM1OVNpZ1I?oc=5",
+      "time": "2026-11-20T05:00:00+08:00"
     },
     {
       "title": "Not Bitcoin. Not Ethereum. This Could Be the Best Cryptocurrency to Hold During the Next 5 Years. - The Motley Fool",
@@ -413,10 +400,10 @@
       "time": "2026-11-16T18:05:26+08:00"
     },
     {
-      "title": "Wall St slides as Anthropic's debut fails to revive AI trade optimism - Reuters",
+      "title": "Wall Street ends sharply lower as Anthropic's debut fails to revive AI fervor - Reuters",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONFhTcEs0ZXJTOXhCWUVEQlBXR3BaeFdLVjdiNkNXdVFrNWtaVjFJRVc0cTcyRUJBRXBqV0JZUHUza3I0TndGYzZRX3N3eU4zR3plNl9wUkR5VU1FQ0phSjZEODlXYjJYQk5QaVRoTFotemhuTWFwSkhrYzFfNE1tM0JJNlBFY1BmNFNhS0FTeURyaGtHM2xJb3VoRE5LY0I1SVUxeko5dDJvRGlGam1ITllSRFU1OEV6T0tF?oc=5",
-      "time": "2026-11-20T03:31:20+08:00"
+      "time": "2026-11-20T05:01:02+08:00"
     },
     {
       "title": "8 Top-Performing US Stock ETFs - Morningstar",
@@ -437,13 +424,13 @@
       "time": "2026-11-19T07:22:55+08:00"
     },
     {
-      "title": "US Tech Stocks Are Set to Rally as Anthropic IPO Boosts AI Trade - Bloomberg.com",
+      "title": "No relief for US stocks. Major indices trade to new lows - investingLive",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVVIyNnhmRkZ6eEo2Q2tmb3N1UU9vNkFIWnFveHZfRElvZlQ4c3pMSFJNeVYtMWxYY1ZLWTJCTWFkTVN6QmN2S3luOGVhUURQczU2ZmwwVmw3VlVUS2xYdlIwbUJiVEt3SXZkVXpSZW1DZDBHb01TcF82NWZULTZzMDRMcjJMaDhsOUpCZHZRUzEyVXloUlRZV2RleE5EZUV3RUJJWDFNaV8yLWxsY2tfR19tMFE?oc=5",
-      "time": "2026-11-20T04:07:43+08:00"
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRG5UdkNEYVpvR2lyTWxqU0hVYVRDQTRpWkU0VjNla05MZm1SUUlYcGNfa0U3U3Z1NVUtRkJ6dWJXZjYtYUd6dmkzN1J3S1hDdGdTZ1AtSmVjMHRmOFZQazduUkU0WFc3ZjV2YWw1bEJsVFpDLWlFVW41anVacjBNVkVqUUdreFVYUkdhbVNYTkNUNTA?oc=5",
+      "time": "2026-11-20T04:13:23+08:00"
     }
   ],
-  "news_at": "2026-11-20T05:09:32.130631+08:00",
+  "news_at": "2026-11-20T05:25:02.715648+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
