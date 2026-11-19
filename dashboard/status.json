@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T17:01:31.348200+08:00",
+  "generated_at": "2026-11-19T17:03:01.430571+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": null,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-19T17:01:31.347587+08:00"
+      "unrealized_at": "2026-11-19T17:03:01.429951+08:00"
     },
     "mexc": {
       "baseline_usdt": 3.45638576,
@@ -122,20 +122,20 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.00136,
-          "value_usd": 0.165308,
-          "value_idr": 3020.66,
-          "unrealized_idr": -16959.36,
-          "unrealized_pct": -85.01
+          "price": 0.001393,
+          "value_usd": 0.169319,
+          "value_idr": 3093.96,
+          "unrealized_idr": -16886.06,
+          "unrealized_pct": -84.64
         }
       ],
       "realized_idr": -5214.750147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 106339.75,
       "trades_count": 2,
-      "updated": "2026-11-19T16:00:49+07:00",
-      "unrealized_idr": -16959.36,
-      "unrealized_at": "2026-11-19T17:01:31.347587+08:00",
+      "updated": "2026-11-19T16:02:50+07:00",
+      "unrealized_idr": -16886.06,
+      "unrealized_at": "2026-11-19T17:03:01.429951+08:00",
       "usd_idr_used": 18272.93634875223
     },
     "pumpfun": {
@@ -151,7 +151,7 @@
       "reserve_idr": 27764.809999999998,
       "total_deposited_idr": 47764.81,
       "trades_count": 2,
-      "updated": "2026-11-19T16:01:01+07:00",
+      "updated": "2026-11-19T16:02:32+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -168,7 +168,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-19T16:00:59+07:00",
+      "updated": "2026-11-19T16:02:35+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -184,7 +184,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-19T16:01:13+07:00",
+      "updated": "2026-11-19T16:02:50+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -280,6 +280,12 @@
   },
   "news": [
     {
+      "title": "Singapore settles $77.5M tokenized bill sale with wholesale CBDC",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/mas-issues-77m-tokenized-bills-singapore-dollar-test-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-19T16:54:58+08:00"
+    },
+    {
       "title": "Bitcoin ETF assets fall to three-month low as 2026 net outflows top $2.5B",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/markets/bitcoin-etf-assets-three-month-low-78-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -301,12 +307,6 @@
       "title": "Bitcoin carry trades could beat Treasury bills in 2027, Sygnum predicts",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/markets/sygnum-bitcoin-carry-trades-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-19T14:00:00+08:00"
-    },
-    {
-      "title": "Here’s what happened in crypto today",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-19T14:00:00+08:00"
     },
     {
@@ -334,10 +334,10 @@
       "time": "2026-11-18T19:45:00+08:00"
     },
     {
-      "title": "Suspect arrested in Mexico after cryptocurrency influencer found dead in Montreal park - CTV News",
+      "title": "British hackers face prison for GTA 6 data breach and crypto thefts - TechCrunch",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQenVwLUxObHoyZjgwRWtEMW1GVFJZSk5lS2FXN19YUWw3QWwtc19fZy1LODVaSGNrQUNTcGFFTG5QaVNpQUZGdzlLMFg3ZnQtaTQ5cU5zT0ZzbFI1OC1GUVYwRHFvcVllaEQ3bVpzVXo3akxNREVCbUE2MUo0ckZqek5zTEllcGpmODVRMC1zc0szQUY1Q2ltM1gxdm8xVkhvVndKNG4xV09wNlk2X01jTXRJSjlYREdUV2trUGc5d2MySE50Wmc?oc=5",
-      "time": "2026-11-19T06:22:32+08:00"
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTWo5REZBZlZsZjNhREs3WVN6TUlHRmgyZlpvMHVJcHBSYWVjV043dzNreHlPSG9VM2NManhWWmlTZmdqMFJRcHRJVFM0eHJCb1owYWhrMXZ5SmhJVVRaTlc0MnM3OEFqQldfdjhtZHdhdzF0bE9VLXh2R1JXQ1hBVlVNNVJpVlljM2FjOXl1c0I4amVKWUlIeUZGLWQwSVNXbUp0TQ?oc=5",
+      "time": "2026-11-18T22:55:13+08:00"
     },
     {
       "title": "Nasdaq-100 futures gain as traders gear up for Anthropic’s highly anticipated debut: Live updates - CNBC",
@@ -352,10 +352,10 @@
       "time": "2026-11-19T06:53:54+08:00"
     },
     {
-      "title": "Wall Street ends mixed after Nvidia earnings, Fed minutes - Reuters",
+      "title": "Dow drops more than 500 points; S&P 500 falls for fifth day as Nvidia sells off - CNBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNLUw0WGdCZWFQMDBna01NRTEzWEQxbHlSU2RHS2FFX0dIdDc5Si1kQjdzRVFpSTRLeThVQ1V5NG01UG1HSGtJNFZOYjI0OHpIbHRvWjdNOFNjZWhhYzFTWVJJVklORUV4YmJoOWhjd1Nhc1hULXVVYncyUmZUQjJwMFh4RGJsSFhhcjlwc2NpVUhNUEdfQXdsekQ1c3AzZVlZcUdSN3ZlTDJUQ3g4WjRlNHhydEJ2OVJTeHpj?oc=5",
-      "time": "2026-11-18T18:28:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAwTDVScDA1ZzNHQi1GT1RaRFVzYTJPa2lHVVJyVzR6RlhfaGZNbG5Va1BFblNtYm54eG82YWl4dlA3SkltcC1WSmdCVEUtMlVKNXlCVDNVcG8wRnBaNkc0UVctakctUDdZUDJsNEp4dWN0Z0Vsczlv0gF8QVVfeXFMT014TXpKZ2hKbVhJT0dVekl1Z2tCbjE3MnMtLWhMUG1DaUc3UUd0emE1R2xPd2pDZXMzVXhGbHFVRmdWRm1iRWJnejN6YjJJYlpDWkxJOVhDS3RuRGUyQkhHZ2wzSzJJdnVrNDVqcHQxb2ZXVkUwSVRJcjE4RA?oc=5",
+      "time": "2026-11-19T16:17:51+08:00"
     },
     {
       "title": "Lombard Odier ‘Almost All In’ on US Stocks, Especially Tech - Bloomberg.com",
@@ -370,7 +370,7 @@
       "time": "2026-11-19T03:59:00+08:00"
     }
   ],
-  "news_at": "2026-11-19T16:46:32.858894+08:00",
+  "news_at": "2026-11-19T17:02:02.415030+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
