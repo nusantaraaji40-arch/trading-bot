@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T14:41:31.993968+08:00",
+  "generated_at": "2026-11-20T14:43:02.116382+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": null,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-20T14:41:31.993322+08:00"
+      "unrealized_at": "2026-11-20T14:43:02.115602+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -137,20 +137,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61797.61,
-          "value_usd": 1.050559,
-          "value_idr": 19209.44,
-          "unrealized_idr": -770.58,
-          "unrealized_pct": -0.85
+          "price": 61720.45,
+          "value_usd": 1.049248,
+          "value_idr": 19185.45,
+          "unrealized_idr": -794.57,
+          "unrealized_pct": -0.97
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-20T13:41:31+07:00",
-      "unrealized_idr": -17183.43,
-      "unrealized_at": "2026-11-20T14:41:31.993322+08:00",
+      "updated": "2026-11-20T13:42:32+07:00",
+      "unrealized_idr": -17207.42,
+      "unrealized_at": "2026-11-20T14:43:02.115602+08:00",
       "usd_idr_used": 18284.960904146956
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-20T13:41:07+07:00",
+      "updated": "2026-11-20T13:42:39+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-20T13:41:31+07:00",
+      "updated": "2026-11-20T13:42:35+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-20T13:41:05+07:00",
+      "updated": "2026-11-20T13:42:42+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -340,6 +340,12 @@
   },
   "news": [
     {
+      "title": "Anthropic’s $81B IPO draws half the net retail buying of SpaceX’s",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/markets/anthropic-ipo-spacex-retail-buying-first-day-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-20T14:24:41+08:00"
+    },
+    {
       "title": "Here’s what happened in crypto today",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -362,12 +368,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/magazine/binances-65b-freeze-order-hong-kong-suspicious-of-hype-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-20T06:25:18+08:00"
-    },
-    {
-      "title": "MoonPay seeks US bank charter for stablecoin, custody services",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/moonpay-seeks-us-bank-charter-for-stablecoin-custody-services?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-20T05:01:42+08:00"
     },
     {
       "title": "‘Boneheaded’: Crypto faces a blue wave reckoning - Politico",
@@ -394,10 +394,10 @@
       "time": "2026-11-20T12:50:11+08:00"
     },
     {
-      "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
+      "title": "Bots are replacing reporters in cryptocurrency journalism → - Nieman Journalism Lab",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdW1pNlZXMVNNRXJtVGFiRUhPUm0tWGFqeGt4Q1VwallIOGtKTGFiTlZGZnZCd2F5RldrQ2E0b0V0emF1TkFkOTh0Q1FOa3phejllUmhxZGpGUkhlUFJqUlhoSkNFUWR6ZVhhbmxiUDRENXJXTEFZS3ZVUzQ1clVybUVIUFBzTWNhejhxSURKeUVEa2RSaWNGd3czU1B4WWxmZ1R6QURmVWJLWWJIMkVlck5UVnRxY1luMlFXVFBqMVVmeWQ2clpvOGhn?oc=5",
-      "time": "2026-11-17T06:38:46+08:00"
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc3FFaWl3ZUU3REttdGZNQXNXMHZvZFp0aktCSVNoWEJaOWgwT3VjZndjam8wRVUwcU56dHZXa1FucnlTQTJIN1oyRUF2X1BBUGV5WktjRXROOXZMT3c3T3lDQWlGYk9nQ3E1Nm83SDR6MXR1dk91bkQ2S05jb2llU241Smt3R1VncTZyUVl1WkFWLUY5cUlR?oc=5",
+      "time": "2026-11-20T04:09:26+08:00"
     },
     {
       "title": "Dow closes below 50,000; Nasdaq falls 2% as Anthropic IPO fails to resuscitate AI trade - CNBC",
@@ -430,7 +430,7 @@
       "time": "2026-11-20T04:13:23+08:00"
     }
   ],
-  "news_at": "2026-11-20T14:26:32.481733+08:00",
+  "news_at": "2026-11-20T14:42:02.922355+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
