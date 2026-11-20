@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T07:59:01.649826+08:00",
+  "generated_at": "2026-11-20T08:00:01.806502+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": null,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-20T07:59:01.649108+08:00"
+      "unrealized_at": "2026-11-20T08:00:01.805864+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -122,11 +122,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.001468,
-          "value_usd": 0.178435,
-          "value_idr": 3262.69,
-          "unrealized_idr": -16717.33,
-          "unrealized_pct": -83.82
+          "price": 0.001474,
+          "value_usd": 0.179165,
+          "value_idr": 3276.02,
+          "unrealized_idr": -16704.0,
+          "unrealized_pct": -83.75
         },
         {
           "entry_idr": 19980.01998001998,
@@ -137,20 +137,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61985.15,
-          "value_usd": 1.053748,
-          "value_idr": 19267.74,
-          "unrealized_idr": -712.28,
-          "unrealized_pct": -0.55
+          "price": 61977.38,
+          "value_usd": 1.053615,
+          "value_idr": 19265.33,
+          "unrealized_idr": -714.69,
+          "unrealized_pct": -0.56
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-20T06:58:37+07:00",
-      "unrealized_idr": -17429.61,
-      "unrealized_at": "2026-11-20T07:59:01.649108+08:00",
+      "updated": "2026-11-20T06:59:37+07:00",
+      "unrealized_idr": -17418.69,
+      "unrealized_at": "2026-11-20T08:00:01.805864+08:00",
       "usd_idr_used": 18284.971557320983
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-20T06:58:51+07:00",
+      "updated": "2026-11-20T06:59:52+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-20T06:58:50+07:00",
+      "updated": "2026-11-20T06:59:54+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-20T06:58:32+07:00",
+      "updated": "2026-11-20T06:59:37+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -340,6 +340,12 @@
   },
   "news": [
     {
+      "title": "Ledger CTO Charles Guillemet to leave after nine years at company",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/ledger-cto-charles-guillemet-to-leave-after-nine-years-at-company?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-20T07:44:02+08:00"
+    },
+    {
       "title": "Binance’s $6.5B freeze order, Hong Kong ‘suspicious’ of HYPE: Asia Express",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/magazine/binances-65b-freeze-order-hong-kong-suspicious-of-hype-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -364,12 +370,6 @@
       "time": "2026-11-20T04:33:24+08:00"
     },
     {
-      "title": "Trump’s SEC nominee Johnson backs formal rulemaking for tokenized stock trading",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/sec-nominees-johnson-levine-tokenized-stocks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-20T04:06:34+08:00"
-    },
-    {
       "title": "‘Boneheaded’: Crypto faces a blue wave reckoning - Politico",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa2FQdTJBZ0piNWlyblN5bFlHLTU0emlVb09HTXZTVDNIR21HV2Z6WGpOeDBESDZLLUZXZzVMSFItVWxJLVhWOW9Ed29xYy02X3Jwd1FfTHZLNGU3YUdRbFhqdC1hRGxvSzdxSkwzVU1TanFMRmFUeDVMbm1IeUpJX2libC0zdnkyREpLaFNHclJXeW5uTTdoUy1KTQ?oc=5",
@@ -382,16 +382,16 @@
       "time": "2026-11-20T05:20:00+08:00"
     },
     {
-      "title": "Not Bitcoin. Not Ethereum. This Could Be the Best Cryptocurrency to Hold During the Next 5 Years. - The Motley Fool",
+      "title": "Not Bitcoin. Not Ethereum. This Could Be the Best Cryptocurrency to Hold During the Next 5 Years. - Yahoo Finance",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSFJGWjFSRnhqNjhOZTBfQVBLRmFFOWFMYVNLUVRNejcwam1GUmFqUVZvTU8wVTZtM2EybUtDcUhNbkJfRFRBR0g4WW1MRWczN0ItOGpuNE1nRU9FNVhtcTF5QnVYb1BTdmZMTFFEdjZNOFdtY1F5dkk1UVpUSW1IYnVqbTNqVkdBV1VLN2V3TGlzQjFsclR6WFRtY2dWNXlucG9OYjd3Rm5CR2lLUFNrQlNUVkVQbFNkZHBDeGtzaEVsaHdiZG5VX2h3ZUh0RGV3?oc=5",
-      "time": "2026-11-19T19:00:02+08:00"
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPU3NCVzQ2VHV2UmhMWW9yU015bG8wcDc3UU5CdDgtVDBibEloRF9VNkhUTlBmYUNBblI4RHF3V2w4aGUxTHlDQWlDa0tEdGh0MUZ6Uk02Qlp0QjBSdlNZdlNXeDA1a0R0RDJ2b0E5cHRjMWlZbk5KUms0NUpuMFRyazJTSUZ6cHZ4ZHlVbnYyVmQzWWZKM1F5UVhRYw?oc=5",
+      "time": "2026-11-19T19:20:02+08:00"
     },
     {
-      "title": "Suspect arrested in Mexico after cryptocurrency influencer found dead in Montreal park - CTV News",
+      "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQenVwLUxObHoyZjgwRWtEMW1GVFJZSk5lS2FXN19YUWw3QWwtc19fZy1LODVaSGNrQUNTcGFFTG5QaVNpQUZGdzlLMFg3ZnQtaTQ5cU5zT0ZzbFI1OC1GUVYwRHFvcVllaEQ3bVpzVXo3akxNREVCbUE2MUo0ckZqek5zTEllcGpmODVRMC1zc0szQUY1Q2ltM1gxdm8xVkhvVndKNG4xV09wNlk2X01jTXRJSjlYREdUV2trUGc5d2MySE50Wmc?oc=5",
-      "time": "2026-11-19T11:03:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdW1pNlZXMVNNRXJtVGFiRUhPUm0tWGFqeGt4Q1VwallIOGtKTGFiTlZGZnZCd2F5RldrQ2E0b0V0emF1TkFkOTh0Q1FOa3phejllUmhxZGpGUkhlUFJqUlhoSkNFUWR6ZVhhbmxiUDRENXJXTEFZS3ZVUzQ1clVybUVIUFBzTWNhejhxSURKeUVEa2RSaWNGd3czU1B4WWxmZ1R6QURmVWJLWWJIMkVlck5UVnRxY1luMlFXVFBqMVVmeWQ2clpvOGhn?oc=5",
+      "time": "2026-11-17T06:38:46+08:00"
     },
     {
       "title": "Hackers used fake texts to steal $11.6 million in cryptocurrency, feds say - KTLA",
@@ -418,19 +418,19 @@
       "time": "2026-11-20T04:42:21+08:00"
     },
     {
-      "title": "US Stocks Are Splitting into Different Market Rhythms - AllianceBernstein",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQUcxc0xHTE9fN2tBSUl3b1B3a3ppdXpzMlNRZEQ2YWFjdUFQeldhMGdpR3Utb3duZWVGeENudnlzT2NUMktUeERhTzBoeWpSaTlSNTgxWVk0M1ZkOEJ1OFdsTFhQNXdXVHoxeHVhVVNGS2NKYWpWYXRoM0s1ckVPcXRLMnROXzJjZWpmOHh1QUIwdjRsZVhMQUFNRFo1UXZ0ejRtZnp2SlNRWTU4VHU1bDNldHBFWU5YMGdVZXczS0psTmNLNFp6YjZTdWFsU28?oc=5",
-      "time": "2026-11-19T15:49:26+08:00"
-    },
-    {
       "title": "US Tech Stocks Are Set to Rally as Anthropic IPO Boosts AI Trade - Bloomberg.com",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVVIyNnhmRkZ6eEo2Q2tmb3N1UU9vNkFIWnFveHZfRElvZlQ4c3pMSFJNeVYtMWxYY1ZLWTJCTWFkTVN6QmN2S3luOGVhUURQczU2ZmwwVmw3VlVUS2xYdlIwbUJiVEt3SXZkVXpSZW1DZDBHb01TcF82NWZULTZzMDRMcjJMaDhsOUpCZHZRUzEyVXloUlRZV2RleE5EZUV3RUJJWDFNaV8yLWxsY2tfR19tMFE?oc=5",
       "time": "2026-11-20T05:18:45+08:00"
+    },
+    {
+      "title": "US stocks move sharply lower following Anthropic's debut - Yahoo Finance",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSGtFU1RRc1NuMS00N2lGbjZtLU9kX0tsUTE0dGU2M0NTZ2RHVEQ3MGdfNTd1ekdZa0N3RXNSWEVqeWhDMVdORFljNzdOWmVBVUJSV3cweV9mMXlEMUZ2bUwzNFBGZTZXdEhpYzl2a2JrUXBBZG1rNWJYNXdsdTdrbDRQNm9jb3N6bXdFUER4NktCbFV4YkczZA?oc=5",
+      "time": "2026-11-20T06:03:40+08:00"
     }
   ],
-  "news_at": "2026-11-20T07:44:02.779017+08:00",
+  "news_at": "2026-11-20T07:59:32.457158+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
