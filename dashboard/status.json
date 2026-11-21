@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T12:38:31.252556+08:00",
+  "generated_at": "2026-11-21T12:39:31.207154+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -101,10 +101,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 176329.0,
+      "_total_idr_from_log": 176571.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-21T12:38:01.491353+08:00"
+      "unrealized_at": "2026-11-21T12:39:31.206564+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -122,11 +122,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003366,
-          "value_usd": 0.409137,
-          "value_idr": 7482.29,
-          "unrealized_idr": -12497.73,
-          "unrealized_pct": -62.89
+          "price": 0.003362,
+          "value_usd": 0.408651,
+          "value_idr": 7473.4,
+          "unrealized_idr": -12506.62,
+          "unrealized_pct": -62.94
         },
         {
           "entry_idr": 19980.01998001998,
@@ -137,20 +137,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 56042.5,
-          "value_usd": 0.952723,
-          "value_idr": 17423.36,
-          "unrealized_idr": -2556.66,
-          "unrealized_pct": -10.08
+          "price": 56057.58,
+          "value_usd": 0.952979,
+          "value_idr": 17428.04,
+          "unrealized_idr": -2551.98,
+          "unrealized_pct": -10.06
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-21T11:37:56+07:00",
-      "unrealized_idr": -15054.39,
-      "unrealized_at": "2026-11-21T12:38:01.491353+08:00",
+      "updated": "2026-11-21T11:38:57+07:00",
+      "unrealized_idr": -15058.6,
+      "unrealized_at": "2026-11-21T12:39:31.206564+08:00",
       "usd_idr_used": 18287.96465199529
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-21T11:38:08+07:00",
+      "updated": "2026-11-21T11:39:08+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-21T11:38:09+07:00",
+      "updated": "2026-11-21T11:39:14+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-21T11:38:24+07:00",
+      "updated": "2026-11-21T11:39:29+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -376,7 +376,7 @@
       "time": "2026-11-21T00:26:27+08:00"
     },
     {
-      "title": "Bitcoin falls 3.57% to $56,814 - Reuters",
+      "title": "Bitcoin falls 5.10% to $55,830 - Reuters",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NUk9lTzRodUF5M1QyMkpkS3ViSDhVQ2hHZlV1ZUowRnBQeF9Za3l0WkRFb1BUNzVoS1NxcFFERDAydTVnLVpIMG9hcmRUV3hyb1F1RURKeGF3WV9iNlJScVlrYk95VmRJWWxjcE5GLUR4NUgtYWVj?oc=5",
       "time": "2026-11-21T12:10:00+08:00"
@@ -430,7 +430,7 @@
       "time": "2026-11-21T05:52:25+08:00"
     }
   ],
-  "news_at": "2026-11-21T12:23:33.005041+08:00",
+  "news_at": "2026-11-21T12:39:02.214500+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
