@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T13:09:31.140747+08:00",
+  "generated_at": "2026-11-21T13:10:02.102514+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": 175762.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-21T13:08:31.190945+08:00"
+      "unrealized_at": "2026-11-21T13:10:01.217111+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -122,11 +122,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003342,
-          "value_usd": 0.40622,
-          "value_idr": 7428.94,
-          "unrealized_idr": -12551.08,
-          "unrealized_pct": -63.16
+          "price": 0.003321,
+          "value_usd": 0.403668,
+          "value_idr": 7382.26,
+          "unrealized_idr": -12597.76,
+          "unrealized_pct": -63.39
         },
         {
           "entry_idr": 19980.01998001998,
@@ -137,11 +137,11 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 56305.97,
-          "value_usd": 0.957201,
-          "value_idr": 17505.27,
-          "unrealized_idr": -2474.75,
-          "unrealized_pct": -9.66
+          "price": 56339.82,
+          "value_usd": 0.957777,
+          "value_idr": 17515.79,
+          "unrealized_idr": -2464.23,
+          "unrealized_pct": -9.6
         }
       ],
       "realized_idr": -6087.530147940009,
@@ -149,8 +149,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-21T12:09:16+07:00",
-      "unrealized_idr": -15025.83,
-      "unrealized_at": "2026-11-21T13:08:31.190945+08:00",
+      "unrealized_idr": -15061.99,
+      "unrealized_at": "2026-11-21T13:10:01.217111+08:00",
       "usd_idr_used": 18287.96465199529
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-21T12:09:04+07:00",
+      "updated": "2026-11-21T12:09:35+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-21T12:09:10+07:00",
+      "updated": "2026-11-21T12:09:42+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-21T12:09:07+07:00",
+      "updated": "2026-11-21T12:09:40+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -402,20 +402,14 @@
     {
       "title": "S&P 500 and Dow close in correction; Nasdaq erases 2026 gain as AI rout picks up steam - CNBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0tY1RiS3BadWcwVVMwU2oteTAzRVdyVEpSeUwtUGJOU3RZV3BmOEJQRmtrT25udndSRVUxRDVpSkRCLUdCS2lDc3dTRm9Ja19qNzh3MlNXVDVDM0UwQXItVWgyMUJnaV9xY2RlWEJmbnBCWWE1ZEdz0gF8QVVfeXFMUDFCSzhsWkpPUEpfV1BiOTNJUkJCbGNwaFVlUmtCcm42WTNmaXF6RVdpbnNwcWJOV1V6QWRtSjVMdFBuLU5kSmFwM0Q5S0ZQOVdPdVVlMGh3dVQyQnAtY0lXcU9xbjN0NE5pYUU1MEM5cU1WN25lc3pYUmpJaQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0tY1RiS3BadWcwVVMwU2oteTAzRVdyVEpSeUwtUGJOU3RZV3BmOEJQRmtrT25udndSRVUxRDVpSkRCLUdCS2lDc3dTRm9Ja19qNzh3MlNXVDVDM0UwQXItVWgyMUJnaV9xY2RlWEJmbnBCWWE1ZEdz?oc=5",
       "time": "2026-11-21T07:46:00+08:00"
     },
     {
-      "title": "Anthropic debut as it happened: Shares in Claude maker close 17% higher after record IPO, US stocks end 2% lower - Financial Times",
+      "title": "U.S. Stocks Slide as AI Bust Continues Despite Anthropic IPO - WSJ",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWFFxVUFBLVlLb0k2U3FPZmdnNzZqa09rdF9NZzNjbzJVaXlJOFJwektjZlEtNlFZMEkwWXZjQ2k3ckpJdDNjTUxjdDBiQWdjQS0zYUtSRFpFRC1OeWJPUklDVEIwRkFDY1JlNGlUSWZ4Ui04SEdmbnk3RmQ4TEQyQWZTSWQ?oc=5",
-      "time": "2026-11-20T06:06:05+08:00"
-    },
-    {
-      "title": "US Stocks Are Predicted to Extend Their Historic Rally as Gains Moderate - Goldman Sachs",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOXJSam1KZ1d3Z2dsQlhYa19WRE9PWURGWEg4TDhsUXc4dmRmYzRPUTd1ZXZ6ZFA4dWVpMWxqSnBIOGZuRjVmOGY0VVk5a0xjVkgyVkRwWUtxbkdLRWhMTksxNW40VUp5aHdmNVlDN0hUWEFrQnJrRXZNSHVLazAzQTlmT0JqTmIzTndlNXhUYXJSSzFKZHZKQUFtU1FsNDBqYWZqMzQzVHEwUTNuOWc?oc=5",
-      "time": "2026-11-20T04:42:21+08:00"
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOS0gyWjhIVGZYS3A2TDJtbVdaZVJHdlo5Smt3RkhsMHJ2bUh6ZVlOLWE5cDhkV3hXcmFVZFRVTmgxdlJXQ3dLRWREYVljemhSVjkycmlFYzctSW44YlhybXNtOFNyYVVvMEw2bGFNSmFnMEJrd2xWMklDbHJ4RGNRNFVnX1VTNUR0QXA5V1BaRlo3Tmo2eUE3U2lCQko5c21rQVMxOGlB?oc=5",
+      "time": "2026-11-20T06:04:00+08:00"
     },
     {
       "title": "AI tech rout prompts US investors to rush into value stocks - Reuters",
@@ -424,13 +418,19 @@
       "time": "2026-11-21T06:16:35+08:00"
     },
     {
+      "title": "US Stocks Are Predicted to Extend Their Historic Rally as Gains Moderate - Goldman Sachs",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOXJSam1KZ1d3Z2dsQlhYa19WRE9PWURGWEg4TDhsUXc4dmRmYzRPUTd1ZXZ6ZFA4dWVpMWxqSnBIOGZuRjVmOGY0VVk5a0xjVkgyVkRwWUtxbkdLRWhMTksxNW40VUp5aHdmNVlDN0hUWEFrQnJrRXZNSHVLazAzQTlmT0JqTmIzTndlNXhUYXJSSzFKZHZKQUFtU1FsNDBqYWZqMzQzVHEwUTNuOWc?oc=5",
+      "time": "2026-11-20T04:42:21+08:00"
+    },
+    {
       "title": "US tech stocks plunge into bear market in worst week since Covid-19 crisis - Financial Times",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcXlaSEs0VF84U3VRbVowdTMxMm5kRktENGl6bGtweEtZWVJfVzZQUWY3eUkyamtzMFBJYVBhWFMwSW8zWTBxSm1BWTU2aEZVX2RGOFhENWg1dU5CQ0lDNU53bFZldFlmaEZvSElQakZ6Zk1lWmFvYkMtUHEyS3pRX2FLYVQ?oc=5",
       "time": "2026-11-21T05:52:25+08:00"
     }
   ],
-  "news_at": "2026-11-21T12:54:32.891222+08:00",
+  "news_at": "2026-11-21T13:10:02.102390+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
