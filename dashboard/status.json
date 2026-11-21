@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T20:46:02.047092+08:00",
+  "generated_at": "2026-11-21T20:46:32.058417+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": 181668.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-21T20:45:31.193031+08:00"
+      "unrealized_at": "2026-11-21T20:46:32.057799+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -137,11 +137,11 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 58954.48,
-          "value_usd": 1.002226,
-          "value_idr": 18328.68,
-          "unrealized_idr": -1651.34,
-          "unrealized_pct": -5.41
+          "price": 58900.0,
+          "value_usd": 1.0013,
+          "value_idr": 18311.74,
+          "unrealized_idr": -1668.28,
+          "unrealized_pct": -5.5
         }
       ],
       "realized_idr": -6087.530147940009,
@@ -149,8 +149,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-21T19:45:41+07:00",
-      "unrealized_idr": -14484.73,
-      "unrealized_at": "2026-11-21T20:45:31.193031+08:00",
+      "unrealized_idr": -14501.67,
+      "unrealized_at": "2026-11-21T20:46:32.057799+08:00",
       "usd_idr_used": 18287.96465199529
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-21T19:45:43+07:00",
+      "updated": "2026-11-21T19:46:14+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-21T19:45:40+07:00",
+      "updated": "2026-11-21T19:46:12+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
