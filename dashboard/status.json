@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T17:47:01.354168+08:00",
+  "generated_at": "2026-11-22T17:48:01.548842+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -101,10 +101,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 185198.0,
+      "_total_idr_from_log": 185209.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-22T17:47:01.353514+08:00"
+      "unrealized_at": "2026-11-22T17:48:01.547878+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -122,11 +122,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002814,
-          "value_usd": 0.342042,
-          "value_idr": 6255.25,
-          "unrealized_idr": -13724.77,
-          "unrealized_pct": -68.98
+          "price": 0.002813,
+          "value_usd": 0.34192,
+          "value_idr": 6253.02,
+          "unrealized_idr": -13727.0,
+          "unrealized_pct": -68.99
         },
         {
           "entry_idr": 19980.01998001998,
@@ -137,20 +137,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60190.48,
-          "value_usd": 1.023238,
-          "value_idr": 18712.94,
-          "unrealized_idr": -1267.08,
-          "unrealized_pct": -3.43
+          "price": 60168.14,
+          "value_usd": 1.022858,
+          "value_idr": 18706.0,
+          "unrealized_idr": -1274.02,
+          "unrealized_pct": -3.46
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-22T16:46:41+07:00",
-      "unrealized_idr": -14991.85,
-      "unrealized_at": "2026-11-22T17:47:01.353514+08:00",
+      "updated": "2026-11-22T16:47:41+07:00",
+      "unrealized_idr": -15001.02,
+      "unrealized_at": "2026-11-22T17:48:01.547878+08:00",
       "usd_idr_used": 18287.96465199529
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-22T16:46:34+07:00",
+      "updated": "2026-11-22T16:47:35+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-22T16:46:52+07:00",
+      "updated": "2026-11-22T16:47:56+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-22T16:46:55+07:00",
+      "updated": "2026-11-22T16:47:59+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -340,6 +340,12 @@
   },
   "news": [
     {
+      "title": "Bitcoin briefly drops to $17K on Kraken, exchange upholds trades",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/bitcoin-17k-kraken-canadian-dollar-market-trades-stand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-22T17:33:06+08:00"
+    },
+    {
       "title": "South Korean exchanges halt CYBER transfers amid suspected bridge exploit",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -364,16 +370,16 @@
       "time": "2026-11-21T17:48:56+08:00"
     },
     {
-      "title": "US lawmakers propose up to 30% rewards for prediction market whistleblowers",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/us-prediction-market-whistleblower-rewards-30-percent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-21T15:51:47+08:00"
-    },
-    {
       "title": "Bitcoin rises after falling to two-year low - Reuters",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NUk9lTzRodUF5M1QyMkpkS3ViSDhVQ2hHZlV1ZUowRnBQeF9Za3l0WkRFb1BUNzVoS1NxcFFERDAydTVnLVpIMG9hcmRUV3hyb1F1RURKeGF3WV9iNlJScVlrYk95VmRJWWxjcE5GLUR4NUgtYWVj?oc=5",
       "time": "2026-11-21T12:10:00+08:00"
+    },
+    {
+      "title": "Is This Cryptocurrency a Potential Millionaire Maker? - Yahoo Finance",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbmgxTF9zRHdlZl84WHJ2bUpPSzZSYWlpVVQwLWJnUURMa0UxRURScDFWbDhFTm9wQkhaeE9Vdl9ORlVxQXFiMmNTd0FLN0FjZkQ4X3VvQV83RDRjZ2NGQ2NLMDcyX0xCUUdhRjZScGpocmF6eUpjWWhKQTZVdkxDNmNnQmR4VVJaVVE3RDJIcWNUSTJsdnNQOTZ6YjVvWDNabHN0YV9nazFGa2c?oc=5",
+      "time": "2026-11-22T17:20:02+08:00"
     },
     {
       "title": "How exactly did Trump get so rich on crypto? We explain - NPR",
@@ -386,12 +392,6 @@
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPLVNqeHRuZFNnVU13SUFEbmdRZ19nYjl4X2p4SHIwaVpYNUF5VGMzNGhET2ZhNW9vS1V3MmFPZEphMkQ1Zl92YndiLVBtMXROaHZWVl8wSmtHd2xEcHVLSlY1b2M4VlVBdll0T2k0VDJ0dDFWb1FNeFNRTWprdGpRNjlyTTJIeFY0Qno4V1I3R01JWGxQZXVJQVF3Vjh3cGFVRVYxeWZzUkYtUlRDWEMwYXdxdmxsbkN3LWVfa252RVFEVmhYV2lpVHpNZzI?oc=5",
       "time": "2026-11-21T02:52:14+08:00"
-    },
-    {
-      "title": "Is This Cryptocurrency a Potential Millionaire Maker? - The Motley Fool",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQb3Vad0xDSnJ0MnlKNldzTEtSVnFCMGJnTExiblVVTUJpYTRWRW5laWFQNzVMcFY5UVZXcURlWlZDNmZUMHZidDZyeUxxR2JDMy05aWtDZV94RlZENTRfQ254a2gtR1hOY29UV2JuZE1uZXhNU1BQMjA4QmxiXzlDT1VSZ1cwT1pKRTh6cVg0US1mQ1Fxb2JDd2dSNA?oc=5",
-      "time": "2026-11-22T17:00:02+08:00"
     },
     {
       "title": "Cryptocurrency industry stares down new Congress: 5 takeaways from Capitol Crypto Forum - The Hill",
@@ -424,13 +424,13 @@
       "time": "2026-11-22T06:22:00+08:00"
     },
     {
-      "title": "Stock Market Under the Trump Administration: What is Driving Markets in 2026? - U.S. Bank",
+      "title": "U.S. Stocks Extend Plunge as AI Boom Turns to Bust - WSJ",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcUowVHR1VXAzd0Zfamw1MkVSejFsRGo1bkdGdHhjNVBZVFdwU3VpcE5neGJOeWl6RmdQVkFsYlcxNEVTRGg3WHNYSGR1d1BpTjV4T2NqdWdER3ZtQ0RVbU40WTcyRXRaTEM5bFZteVlYNE5EYkM1M1BaR0lYTGlUeFlTeDhVMzRaWFFqZEZhcGc3RFJoZy1qZy1mTGViQQ?oc=5",
-      "time": "2026-11-19T16:00:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOY1h6VEhXUGRDcE9hX25QQllJOF9uSmhUNERBSVdBNjRkU0gyaGRySGN0MXVXZERzUmhmdXJIUms2cFJJU2ZvdkVjUlB0RjRxSTQ4RFBiYTV0T0MyUFB5cWw0RWtuZzZrQXFwLUJqb3VsZGhacHR0NF9wTVMwc0tYUW1obFhUNHNVX0JEQnFKX2pRc1RWRGsxVw?oc=5",
+      "time": "2026-11-21T06:24:00+08:00"
     }
   ],
-  "news_at": "2026-11-22T17:32:02.182873+08:00",
+  "news_at": "2026-11-22T17:47:32.301387+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
