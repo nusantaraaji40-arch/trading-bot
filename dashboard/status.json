@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T16:14:02.126413+08:00",
+  "generated_at": "2026-11-22T16:15:01.913547+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -101,7 +101,7 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 183327.0,
+      "_total_idr_from_log": 183531.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-22T16:14:02.125467+08:00"
@@ -148,7 +148,7 @@
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-22T15:13:40+07:00",
+      "updated": "2026-11-22T15:14:41+07:00",
       "unrealized_idr": -14850.13,
       "unrealized_at": "2026-11-22T16:14:02.125467+08:00",
       "usd_idr_used": 18287.96465199529
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-22T15:13:48+07:00",
+      "updated": "2026-11-22T15:14:49+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-22T15:13:39+07:00",
+      "updated": "2026-11-22T15:14:43+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-22T15:13:35+07:00",
+      "updated": "2026-11-22T15:14:39+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -418,19 +418,19 @@
       "time": "2026-11-20T04:42:21+08:00"
     },
     {
-      "title": "A 10% drop for the stock market is unnerving, but it's not that unusual - Spectrum News",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZzVfVEcyU2RHcGYwbWJpdGYyR0hSWjd1WWpFUEUwenJCeTBTcWN6ZGo0VXp1M3lCRkUyX0phN2YzaWdOMUFha1dyOHlNSHVUaHQ1UXFIdE81MjNnMWI2MU0tUTJXaEM0eWxpQ3J4WHp5RU1YMnZqalVwZGExLTlFRzJlNnlyUC1FMTkyX1BwVDZsUQ?oc=5",
-      "time": "2026-11-22T06:22:00+08:00"
-    },
-    {
       "title": "U.S. Stocks Extend Plunge as AI Boom Turns to Bust - WSJ",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOY1h6VEhXUGRDcE9hX25QQllJOF9uSmhUNERBSVdBNjRkU0gyaGRySGN0MXVXZERzUmhmdXJIUms2cFJJU2ZvdkVjUlB0RjRxSTQ4RFBiYTV0T0MyUFB5cWw0RWtuZzZrQXFwLUJqb3VsZGhacHR0NF9wTVMwc0tYUW1obFhUNHNVX0JEQnFKX2pRc1RWRGsxVw?oc=5",
       "time": "2026-11-21T06:24:00+08:00"
+    },
+    {
+      "title": "A 10% drop for the stock market is unnerving, but it's not that unusual - Spectrum News",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZzVfVEcyU2RHcGYwbWJpdGYyR0hSWjd1WWpFUEUwenJCeTBTcWN6ZGo0VXp1M3lCRkUyX0phN2YzaWdOMUFha1dyOHlNSHVUaHQ1UXFIdE81MjNnMWI2MU0tUTJXaEM0eWxpQ3J4WHp5RU1YMnZqalVwZGExLTlFRzJlNnlyUC1FMTkyX1BwVDZsUQ?oc=5",
+      "time": "2026-11-22T06:22:00+08:00"
     }
   ],
-  "news_at": "2026-11-22T15:59:02.588134+08:00",
+  "news_at": "2026-11-22T16:14:32.741099+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
