@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T12:21:32.050401+08:00",
+  "generated_at": "2026-11-22T12:22:31.975348+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -101,7 +101,7 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 183459.0,
+      "_total_idr_from_log": 183370.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-22T12:21:32.049714+08:00"
@@ -148,7 +148,7 @@
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-22T11:20:47+07:00",
+      "updated": "2026-11-22T11:21:48+07:00",
       "unrealized_idr": -14760.06,
       "unrealized_at": "2026-11-22T12:21:32.049714+08:00",
       "usd_idr_used": 18287.96465199529
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-22T11:21:29+07:00",
+      "updated": "2026-11-22T11:22:30+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-22T11:21:03+07:00",
+      "updated": "2026-11-22T11:22:07+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-22T11:20:59+07:00",
+      "updated": "2026-11-22T11:22:04+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -406,7 +406,7 @@
       "time": "2026-11-21T00:27:00+08:00"
     },
     {
-      "title": "Goldman Says Stock Selloff Has Legs as Panic Index Nears Maximum - Bloomberg.com",
+      "title": "Goldman Says Stock Selloff Has Legs as Panic Index Nears Maximum - Bloomberg",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaU1jaG5wWHRDVVE3anRoZWtQUlpsTDhnbHVfRDNMSWVidGlNS0RNY2o4QmV4NnNSVThSRnc0VkVfcmx3SVhUMVF2RWtKalBYWERvUDdLd29yT0VXMEx3enNzeGNUTk1uVkhoaDVMZ25URDd4ZVkyVVhnZjhJMlI4UlBGOFV0UGc4NGN0Ulp0UnlXT0dUMk5XV01DYTEzMlBNaHRPX0Z5bnIyeGk0cktoYmxObE1WUQ?oc=5",
       "time": "2026-11-21T05:20:55+08:00"
@@ -430,7 +430,7 @@
       "time": "2026-11-19T16:00:00+08:00"
     }
   ],
-  "news_at": "2026-11-22T12:07:02.031809+08:00",
+  "news_at": "2026-11-22T12:22:02.953106+08:00",
   "notes": [
     "Indodax = TIMBUNAN, loop hanya jual TP/SL/KS. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
