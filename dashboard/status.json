@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T06:57:01.918523+08:00",
+  "generated_at": "2026-11-23T06:58:01.936698+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -101,10 +101,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 185976.0,
+      "_total_idr_from_log": 185970.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-23T06:56:32.122919+08:00"
+      "unrealized_at": "2026-11-23T06:58:01.935702+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -122,11 +122,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003905,
-          "value_usd": 0.474653,
-          "value_idr": 8680.43,
-          "unrealized_idr": -11299.59,
-          "unrealized_pct": -56.95
+          "price": 0.003815,
+          "value_usd": 0.463713,
+          "value_idr": 8480.37,
+          "unrealized_idr": -11499.65,
+          "unrealized_pct": -57.94
         },
         {
           "entry_idr": 19980.01998001998,
@@ -137,20 +137,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61001.77,
-          "value_usd": 1.03703,
-          "value_idr": 18965.17,
-          "unrealized_idr": -1014.85,
-          "unrealized_pct": -2.12
+          "price": 61061.52,
+          "value_usd": 1.038046,
+          "value_idr": 18983.75,
+          "unrealized_idr": -996.27,
+          "unrealized_pct": -2.03
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-23T05:56:56+07:00",
-      "unrealized_idr": -12314.44,
-      "unrealized_at": "2026-11-23T06:56:32.122919+08:00",
+      "updated": "2026-11-23T05:57:57+07:00",
+      "unrealized_idr": -12495.92,
+      "unrealized_at": "2026-11-23T06:58:01.935702+08:00",
       "usd_idr_used": 18287.96465199529
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-23T05:56:32+07:00",
+      "updated": "2026-11-23T05:57:33+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-23T05:56:51+07:00",
+      "updated": "2026-11-23T05:57:55+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-23T05:56:42+07:00",
+      "updated": "2026-11-23T05:57:47+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -340,6 +340,12 @@
   },
   "news": [
     {
+      "title": "Will Bitcoin’s big rebound hold? More tampered Ledgers found: Hodler’s Digest",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/magazine/will-bitcoins-big-rebound-hold-more-tampered-ledgers-found-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-23T06:47:09+08:00"
+    },
+    {
       "title": "The future of onchain FX could start with users, not institutional liquidity",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/opinion/future-onchain-fx-could-start-with-users-not-institutional-liquidity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -362,12 +368,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-22T15:24:05+08:00"
-    },
-    {
-      "title": "Chainflip confirms $12M hack, offers attacker 10% bounty",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/chainflip-12m-crypto-hack-10-percent-bounty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-22T13:28:43+08:00"
     },
     {
       "title": "Bitcoin rises after falling to two-year low - Reuters",
@@ -394,28 +394,10 @@
       "time": "2026-11-22T23:18:00+08:00"
     },
     {
-      "title": "Rise of scams using bitcoin kiosks prompts Michigan bills to outlaw them - The Detroit News",
+      "title": "‘Every American with a retirement account is in the blast radius’: DOJ targets Chinese crypto scam networ - The Times of India",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV1dDNldfQjYxemo3MGZtVTBBN3FjRGlLdUZOQ2dFei1qTkU0RjRsT3BUNG5nQUdTZFdxOUdDdDFtUEV3VUZ1bnYzZVB5TFBta0JObktoLTU4XzY2eWhGMzVMcnVOTkFCS1VNUXFQX2xQU01yTG9ZejZodnhoeDNSWndjSG1wbU1fSFFVbW5KNnZjcUxsQkVaN3dDQnFON2djZ0hYY3hpcDJhem5lRnZfbElEdEl2LW9hbDdnU1hVQzA?oc=5",
-      "time": "2026-11-23T02:36:00+08:00"
-    },
-    {
-      "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks - Bloomberg.com",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZldNMFlSOWFqTTdmTDNmdFowSHd4aF9EN0g3eWtBYTk3MEp1RXZTN09TQThzaFlNTTVQc0pENUlhNng2VXpFd1M5cnpZdF80WmJvblRrVUQ1bW9QbkkwWm1TMzZZbk9YWXdMT0VKNUZ6YWRHNks4QWRjS3RHYm9sZk81OVpvMmsxWGFJQU4tWnUta0JMclRKOElZMS14cEpEQ2FMYkJkTlF6OTIta09RR3BFQQ?oc=5",
-      "time": "2026-11-23T03:05:02+08:00"
-    },
-    {
-      "title": "Goldman Says Stock Selloff Has Legs as Panic Index Nears Maximum - Bloomberg.com",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaU1jaG5wWHRDVVE3anRoZWtQUlpsTDhnbHVfRDNMSWVidGlNS0RNY2o4QmV4NnNSVThSRnc0VkVfcmx3SVhUMVF2RWtKalBYWERvUDdLd29yT0VXMEx3enNzeGNUTk1uVkhoaDVMZ25URDd4ZVkyVVhnZjhJMlI4UlBGOFV0UGc4NGN0Ulp0UnlXT0dUMk5XV01DYTEzMlBNaHRPX0Z5bnIyeGk0cktoYmxObE1WUQ?oc=5",
-      "time": "2026-11-21T05:20:55+08:00"
-    },
-    {
-      "title": "3 U.S. Stocks Riding AI Data Center Demand for Natural Gas Power - Yahoo Finance",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVG5EWldENWVXVDJzSk1zYTdGZXE5ZDdvVl9ORTlJVHR1UWZUWUZuLXlERjhhYW9lTUNEVXU3d3d1ZDlDYkVHbWJKckVPR0FJUXdBd0dROTVfNUlXbGcySnROOEd3elFTcjg4RGFvVndZWld4ak5PTEdUM0JUSnkzTzNxd0RtQlJCVlQzWlRn?oc=5",
-      "time": "2026-11-23T06:09:02+08:00"
+      "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxOcUhXYXEwak4tWVE0djdtUWNKQW5ObmZhTE9QX29rUE42WlJtZTVHRVV5X0psQVQxRm9fSVlLXzBPOFRHR053UWNya1NBRXd0UXc0MG5Fc3RkUnlza05qNHZPc1BqZEFlSzZJWTQ5Rl9VZm00cVhKd0NraXNITTVJUFllVVdGSWlDakl2RWhrQkJRRFd6QXgzNHVSS0t1NmtyakhWOF9tTWF3a2Q2MjhqaGpMbjdEdmZrZjdCUDRERkpiMXlUOVZMYTBxci1rd3EzVVY5djJYM1FKRXUzUVNnenlrV2ZfLWZRY0NFNnh3bUdpRExCQUNNZ0tXSkJGc0FnaHgxbWRONExBRkk5UGhVdzFTRi1mNi1pTE9sS0piSFI1T21fYkJVcW1nVW1STnZ1NlQ2ZzBjRGROQzFaTHRJQkw3emM5U0xNZWhuX2ZiY9IB1AJBVV95cUxPNll6U25ERldqS09OYnJscmxYWE13UzZvQjVHMjBfUFRrb0dkRUVwaldhUmVCWjlvOVZBNkZDZjhQMDFJZ0J3ek1NbnBsek1wR1NtS2pqdndsWkpuM251R1ZKOHBnZ19sVUpQRy1YbmkxNTB6ZEpOVUFBX2RSQnZtdUpYUlJ3blRUd3dZOVdnMWppVDZ1Tm9hVHowSHhEdUEtNVNMMXRSaEQwcHkwcG9XaUJWUktSU2lJLVZ6cFhnUDBfclBkZExPa3AyLVVUMGlGcXNOTldBcXE3NWhCeE5tdTNFY3Q5VWNqNzFpX2p3Ty1scHJ5a0ZVc245eVdrLUtad21NY19tdWQ5QVpZNXh1QjBVWWNKZEVNU0NRSGNia3U0Z1d2ZVk1VGZCUTZPUG9TMVVoeHBjdE5LSFM2b3hzTDFHR0JGSHhEM2ZTT1FFNGxRX2M3?oc=5",
+      "time": "2026-11-23T04:16:00+08:00"
     },
     {
       "title": "S&P 500 correction: Five forces behind the market sell-off - CNBC",
@@ -424,13 +406,31 @@
       "time": "2026-11-21T07:53:21+08:00"
     },
     {
+      "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks - Bloomberg.com",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZldNMFlSOWFqTTdmTDNmdFowSHd4aF9EN0g3eWtBYTk3MEp1RXZTN09TQThzaFlNTTVQc0pENUlhNng2VXpFd1M5cnpZdF80WmJvblRrVUQ1bW9QbkkwWm1TMzZZbk9YWXdMT0VKNUZ6YWRHNks4QWRjS3RHYm9sZk81OVpvMmsxWGFJQU4tWnUta0JMclRKOElZMS14cEpEQ2FMYkJkTlF6OTIta09RR3BFQQ?oc=5",
+      "time": "2026-11-23T03:05:02+08:00"
+    },
+    {
+      "title": "Correction or deeper reckoning? Investors seek signs US stock selling will abate - Reuters",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSFRxak5ZYUFPNWxVbzlJdy1Mcm9xMTRVZ0ctY205NFVGVEFtcDdFNG1Iem05TjVBcnYzWUVUeXcyWndZNlpnR25GMW5GdkJ2blJjeUdXdlhvZ1VqNWpVSGdYX1RsQ1F3eUhkRUFaX0lxQTNnVFNySmphdG1KM2Y0NTZrdGRoTWxEaE0ybmVSUnBtdDB2VW9tWGtrYkZfUmZUaUdxWDUyUEZGZ2tSajBqSTJydzNhb2xwaTctX21xQmxmXzFyZ1BIWE80ZF8?oc=5",
+      "time": "2026-11-22T20:22:12+08:00"
+    },
+    {
       "title": "US Stocks Are Predicted to Extend Their Historic Rally as Gains Moderate - Goldman Sachs",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOXJSam1KZ1d3Z2dsQlhYa19WRE9PWURGWEg4TDhsUXc4dmRmYzRPUTd1ZXZ6ZFA4dWVpMWxqSnBIOGZuRjVmOGY0VVk5a0xjVkgyVkRwWUtxbkdLRWhMTksxNW40VUp5aHdmNVlDN0hUWEFrQnJrRXZNSHVLazAzQTlmT0JqTmIzTndlNXhUYXJSSzFKZHZKQUFtU1FsNDBqYWZqMzQzVHEwUTNuOWc?oc=5",
       "time": "2026-11-20T04:42:21+08:00"
+    },
+    {
+      "title": "3 U.S. Stocks Riding AI Data Center Demand for Natural Gas Power - Yahoo Finance",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVG5EWldENWVXVDJzSk1zYTdGZXE5ZDdvVl9ORTlJVHR1UWZUWUZuLXlERjhhYW9lTUNEVXU3d3d1ZDlDYkVHbWJKckVPR0FJUXdBd0dROTVfNUlXbGcySnROOEd3elFTcjg4RGFvVndZWld4ak5PTEdUM0JUSnkzTzNxd0RtQlJCVlQzWlRn?oc=5",
+      "time": "2026-11-23T06:09:02+08:00"
     }
   ],
-  "news_at": "2026-11-23T06:42:02.572429+08:00",
+  "news_at": "2026-11-23T06:57:32.695048+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
