@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T18:03:01.397285+08:00",
+  "generated_at": "2026-11-23T18:03:32.869621+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": 187416.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-23T18:02:31.418666+08:00"
+      "unrealized_at": "2026-11-23T18:03:31.898636+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -122,11 +122,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003777,
-          "value_usd": 0.459094,
-          "value_idr": 8359.17,
-          "unrealized_idr": -11620.85,
-          "unrealized_pct": -58.36
+          "price": 0.003773,
+          "value_usd": 0.458608,
+          "value_idr": 8350.32,
+          "unrealized_idr": -11629.7,
+          "unrealized_pct": -58.41
         },
         {
           "entry_idr": 19980.01998001998,
@@ -137,11 +137,11 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61416.63,
-          "value_usd": 1.044083,
-          "value_idr": 19010.61,
-          "unrealized_idr": -969.41,
-          "unrealized_pct": -1.46
+          "price": 61384.8,
+          "value_usd": 1.043542,
+          "value_idr": 19000.76,
+          "unrealized_idr": -979.26,
+          "unrealized_pct": -1.51
         }
       ],
       "realized_idr": -6087.530147940009,
@@ -149,8 +149,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-23T17:02:52+07:00",
-      "unrealized_idr": -12590.26,
-      "unrealized_at": "2026-11-23T18:02:31.418666+08:00",
+      "unrealized_idr": -12608.96,
+      "unrealized_at": "2026-11-23T18:03:31.898636+08:00",
       "usd_idr_used": 18207.953376567326
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-23T17:02:53+07:00",
+      "updated": "2026-11-23T17:03:23+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-23T17:02:59+07:00",
+      "updated": "2026-11-23T17:03:30+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -412,12 +412,6 @@
       "time": "2026-11-23T03:05:02+08:00"
     },
     {
-      "title": "Watch US Stocks Set to Rebound After AI Selloff - Bloomberg.com",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTmRmeWhiN0hjZmR5c0d5aTg0UHpmTHJuMmdhNEhBZWxHTjliV0NxTFRzcUkyTHBSV3ZDMXRGRVJWd0hKZTMtQklVdE55aXZqeFNOMVBLeUVWUENaR05sT0hYZFhVUVZXaXVLTUlYRHRYenpQWTlyUUwxTzJvOHg1RVpTdElTSFZ1?oc=5",
-      "time": "2026-11-23T16:25:05+08:00"
-    },
-    {
       "title": "US futures bounce while Asia markets brace for AI wipeout - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUV8xQS1Xa09sWUwzZlR6YzZyQTBlRk1jRWJNNWFROHY1ZDdicFNhLXkwRWIyV3YtM2NJSXRJY05mTHhyU3JHTFRndEdmQlZEYXJlMVJzMmhmTGdXOFAzZERRdmduRjZXSmpBLWVWQjBxUWNIVDdHZ0M0VXdja3EyZ2xzWGhSVXc0d0VIczl5Y2UyMDlzTzdBbw?oc=5",
@@ -428,9 +422,15 @@
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9mdllsNUVFYnVqeDVsNWpGX1U5ckw2RURWWUc0ZDdaWksyYzF0c3JJUjAxaHRCbFR2a3F6R1RsLVhSRjBoTngtZWNSRHVybWd4cUN0STB2VWhQSDVtZTBIVG9jMFp0WHBrSGpydlhNTWI?oc=5",
       "time": "2026-11-21T01:32:52+08:00"
+    },
+    {
+      "title": "6 reasons stocks are falling, and what you should do about it - CBS News",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vQ0QxcUZmN2EzM2oyLTlDX2lUeUVoazlHb2dDa3FlRlJueDJhMm5UV0pENHhuTXlBY29PU3d0RGFGcTVIaDB0TTI2eTk5Nkd4dDB4d0JDUDhNWXQzREtMcmloaHpURDlVdWZsM0FB?oc=5",
+      "time": "2026-11-21T00:27:00+08:00"
     }
   ],
-  "news_at": "2026-11-23T17:48:03.091503+08:00",
+  "news_at": "2026-11-23T18:03:32.869498+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
