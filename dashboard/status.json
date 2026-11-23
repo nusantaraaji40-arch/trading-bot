@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T19:35:31.758154+08:00",
+  "generated_at": "2026-11-23T19:36:03.245127+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": 188894.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-23T19:35:01.821057+08:00"
+      "unrealized_at": "2026-11-23T19:36:02.005480+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -122,11 +122,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.00351,
-          "value_usd": 0.42664,
-          "value_idr": 7768.68,
-          "unrealized_idr": -12211.34,
-          "unrealized_pct": -61.31
+          "price": 0.003503,
+          "value_usd": 0.42579,
+          "value_idr": 7753.19,
+          "unrealized_idr": -12226.83,
+          "unrealized_pct": -61.38
         },
         {
           "entry_idr": 19980.01998001998,
@@ -137,11 +137,11 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61478.98,
-          "value_usd": 1.045143,
-          "value_idr": 19030.96,
-          "unrealized_idr": -949.06,
-          "unrealized_pct": -1.36
+          "price": 61453.34,
+          "value_usd": 1.044707,
+          "value_idr": 19023.02,
+          "unrealized_idr": -957.0,
+          "unrealized_pct": -1.4
         }
       ],
       "realized_idr": -6087.530147940009,
@@ -149,8 +149,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-23T18:35:04+07:00",
-      "unrealized_idr": -13160.4,
-      "unrealized_at": "2026-11-23T19:35:01.821057+08:00",
+      "unrealized_idr": -13183.83,
+      "unrealized_at": "2026-11-23T19:36:02.005480+08:00",
       "usd_idr_used": 18208.95661914726
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-23T18:35:21+07:00",
+      "updated": "2026-11-23T18:35:51+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-23T18:35:11+07:00",
+      "updated": "2026-11-23T18:35:43+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,7 +199,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-23T18:35:13+07:00",
+      "updated": "2026-11-23T18:35:46+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -340,6 +340,12 @@
   },
   "news": [
     {
+      "title": "BTC price gains 12% from $55K: Three things to know in Bitcoin this week",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/markets/btc-price-stock-futures-rebound-three-things-know-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-23T19:20:57+08:00"
+    },
+    {
       "title": "‘MoldyRoost’ ads can steal crypto wallet recovery phrases from iPhones",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/moldyroost-malware-drain-iphone-wallets-one-tap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -364,12 +370,6 @@
       "time": "2026-11-23T11:37:20+08:00"
     },
     {
-      "title": "Billionaire Bill Ackman warns Fed will make a rate ‘mistake’ in December",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/markets/billionaire-bill-ackman-warns-fed-rate-hikes-could-trigger-recession?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-23T10:47:39+08:00"
-    },
-    {
       "title": "Bitcoin rises after falling to two-year low - Reuters",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NUk9lTzRodUF5M1QyMkpkS3ViSDhVQ2hHZlV1ZUowRnBQeF9Za3l0WkRFb1BUNzVoS1NxcFFERDAydTVnLVpIMG9hcmRUV3hyb1F1RURKeGF3WV9iNlJScVlrYk95VmRJWWxjcE5GLUR4NUgtYWVj?oc=5",
@@ -388,16 +388,16 @@
       "time": "2026-11-23T18:53:19+08:00"
     },
     {
-      "title": "The iconic 1990s child star who quit acting to quietly build a staggering $1 billion cryptocurrency empire - Yahoo",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMmZaRXFfX0MzX1RRcUoyYWg0R0ZpTDZzLVJZd1JtVldQRV9kTkd2aHVlQVQ0T3FFQVlpNTk5NkpaMlR0RWpHM0Q4ZlRCOUpjZHJ3S09pX29vTU5UbmZXcml5bDlhdHJTS0xBX1JfaFJMQnFDRW1JNXZveVEwM3hlTll2aDZmMG9HT3p2RmFfU2FVMHpmeFdpRDBIbVBiVWc?oc=5",
-      "time": "2026-11-20T22:00:00+08:00"
-    },
-    {
       "title": "‘Every American with a retirement account is in the blast radius’: DOJ targets Chinese crypto scam networ - The Times of India",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxOcUhXYXEwak4tWVE0djdtUWNKQW5ObmZhTE9QX29rUE42WlJtZTVHRVV5X0psQVQxRm9fSVlLXzBPOFRHR053UWNya1NBRXd0UXc0MG5Fc3RkUnlza05qNHZPc1BqZEFlSzZJWTQ5Rl9VZm00cVhKd0NraXNITTVJUFllVVdGSWlDakl2RWhrQkJRRFd6QXgzNHVSS0t1NmtyakhWOF9tTWF3a2Q2MjhqaGpMbjdEdmZrZjdCUDRERkpiMXlUOVZMYTBxci1rd3EzVVY5djJYM1FKRXUzUVNnenlrV2ZfLWZRY0NFNnh3bUdpRExCQUNNZ0tXSkJGc0FnaHgxbWRONExBRkk5UGhVdzFTRi1mNi1pTE9sS0piSFI1T21fYkJVcW1nVW1STnZ1NlQ2ZzBjRGROQzFaTHRJQkw3emM5U0xNZWhuX2ZiY9IB1AJBVV95cUxPNll6U25ERldqS09OYnJscmxYWE13UzZvQjVHMjBfUFRrb0dkRUVwaldhUmVCWjlvOVZBNkZDZjhQMDFJZ0J3ek1NbnBsek1wR1NtS2pqdndsWkpuM251R1ZKOHBnZ19sVUpQRy1YbmkxNTB6ZEpOVUFBX2RSQnZtdUpYUlJ3blRUd3dZOVdnMWppVDZ1Tm9hVHowSHhEdUEtNVNMMXRSaEQwcHkwcG9XaUJWUktSU2lJLVZ6cFhnUDBfclBkZExPa3AyLVVUMGlGcXNOTldBcXE3NWhCeE5tdTNFY3Q5VWNqNzFpX2p3Ty1scHJ5a0ZVc245eVdrLUtad21NY19tdWQ5QVpZNXh1QjBVWWNKZEVNU0NRSGNia3U0Z1d2ZVk1VGZCUTZPUG9TMVVoeHBjdE5LSFM2b3hzTDFHR0JGSHhEM2ZTT1FFNGxRX2M3?oc=5",
       "time": "2026-11-23T04:16:00+08:00"
+    },
+    {
+      "title": "Is This Cryptocurrency a Potential Millionaire Maker? - The Motley Fool",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQb3Vad0xDSnJ0MnlKNldzTEtSVnFCMGJnTExiblVVTUJpYTRWRW5laWFQNzVMcFY5UVZXcURlWlZDNmZUMHZidDZyeUxxR2JDMy05aWtDZV94RlZENTRfQ254a2gtR1hOY29UV2JuZE1uZXhNU1BQMjA4QmxiXzlDT1VSZ1cwT1pKRTh6cVg0US1mQ1Fxb2JDd2dSNA?oc=5",
+      "time": "2026-11-22T17:00:02+08:00"
     },
     {
       "title": "Nasdaq 100 futures rebound sharply to rise 3%, kick-starting shortened week after tech rout: Live updates - CNBC",
@@ -406,31 +406,31 @@
       "time": "2026-11-23T18:45:50+08:00"
     },
     {
+      "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks - Bloomberg.com",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZldNMFlSOWFqTTdmTDNmdFowSHd4aF9EN0g3eWtBYTk3MEp1RXZTN09TQThzaFlNTTVQc0pENUlhNng2VXpFd1M5cnpZdF80WmJvblRrVUQ1bW9QbkkwWm1TMzZZbk9YWXdMT0VKNUZ6YWRHNks4QWRjS3RHYm9sZk81OVpvMmsxWGFJQU4tWnUta0JMclRKOElZMS14cEpEQ2FMYkJkTlF6OTIta09RR3BFQQ?oc=5",
+      "time": "2026-11-23T03:05:02+08:00"
+    },
+    {
+      "title": "US stocks set to rebound after bruising sell-off - CNN",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55SjFMdklaSk1tSmJJeFlFQ21MX1k0SFVfVXhCVk5hOEl0MzBFSW5JOV84RnVaMkxGNDBLYTBuV0tKRU05S3d0ckhCdE9nZ2M2NTgzMDVEUHpRN3lyUFBUajFCQVdIbXhXcUtEb1FB?oc=5",
+      "time": "2026-11-23T19:26:06+08:00"
+    },
+    {
       "title": "Stock market today: Dow, S&P 500, Nasdaq futures surge amid relief rally - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZUF4ZHJTbG4xaUNuOFQtMG1BYmFBbVAxNnBFLXBCRXhxc1gwN2VDLVI3NjhmSlRmWmRGeWFlSzE5LTNSS080QWJRZWo5N3p4d05yZXB5X1JmZkxWMUxjUU9MTFA0Y0w0cnlrOERaVDNFQmYtTjZzTjNLS2tLb253enBNdUU2RVRuMHk2WnpiWGVtNGxQaUlTT21MUk0xSUc1OU0xWFZpdFc3cjJELUE?oc=5",
       "time": "2026-11-23T19:00:34+08:00"
     },
     {
-      "title": "US Stock Futures Bounce After AI-Driven Correction: Markets Wrap - Bloomberg.com",
+      "title": "U.S. Treasury Secretary Scott Bessent Just Delivered Great News to Former Nvidia CEO Jensen Huang. Should You Buy Nvidia Stock Before Nov. 25? - The Motley Fool",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFVRM2J2cTZ6eU02Qzk1TF83UmhsSEN3SlpHYjJuc2lDeXBVM0h6WkN2bEJCUlk5RnZNOFMta05FOXFqeTZQQWZnbFl2RG1WTWVNSXYwVWhZRFZxRkx6SDlhTWtUWk92UVBJa2FGWVk3ak9rOUVJYjZ6RDBqcUZCOEpiWmFVWGxvVmM1Y2prdDk2N19EZG0xWjU3aFV5QkJ6MjF4eExGSkd3TWxaWGRBVzhB?oc=5",
-      "time": "2026-11-23T18:24:04+08:00"
-    },
-    {
-      "title": "Wall Street futures rebound as battered AI stocks gain ground - Reuters",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNEVIVnBMbFk4UVlXOGlieWlkeWhldU5HWnFSdWNVU3BIU2YycVJnV3NWZGxGNXFMTjlKU3VuUTBnWGxZUjBtV3JCVlZjNU11MXZOT0s4V3QyRTNPNDlBRzAzX095cHphSWNSYnBTZmprLTVmdUVKd0RHc1FCbHdITU9Mb3BZMWlZM3pLQkF5MElMakFJME1WVWZOY0xJVWJnbTQ4dnpsQlNEZw?oc=5",
-      "time": "2026-11-23T15:55:00+08:00"
-    },
-    {
-      "title": "Watch US Stocks Set to Rebound After AI Selloff - Bloomberg.com",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTmRmeWhiN0hjZmR5c0d5aTg0UHpmTHJuMmdhNEhBZWxHTjliV0NxTFRzcUkyTHBSV3ZDMXRGRVJWd0hKZTMtQklVdE55aXZqeFNOMVBLeUVWUENaR05sT0hYZFhVUVZXaXVLTUlYRHRYenpQWTlyUUwxTzJvOHg1RVpTdElTSFZ1?oc=5",
-      "time": "2026-11-23T16:25:05+08:00"
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPUEVKRkVqR0szTXRkd3d2TUdIc09Iczc0VFZQdkRFU2xIWGVNSWJRMXRKVlVyM1hBb3E3amtoaWo4Y0c2VFozQ2VpQ3V3VWJiR29ySUVSU1hnYTBDMTZSVDNUNkh4QVlwdG12ZU5ZOFBSRlB6Y0NHbDVDRDVTeWJhdUlHY3djRUVvejlESnhZV0IxTGgwMU5vM00zWkdRMmc1NzVkTGI2cExaMFpSZnNmeVFpakNIaDF6bmJMcXFIWEUzckRkTVZJc3pKdWVLazNzdWdXcEhDYXZBQmxTZEZKVTRlNG1tSDBCSkg4Sm5qRHBQcWJvSFVfY0syV1R6cHhsVEFTTkNpYzVtdFR2SGc?oc=5",
+      "time": "2026-11-23T04:48:04+08:00"
     }
   ],
-  "news_at": "2026-11-23T19:21:02.004461+08:00",
+  "news_at": "2026-11-23T19:36:03.244988+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
