@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T10:50:31.731811+08:00",
+  "generated_at": "2026-11-23T10:51:01.763351+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -104,7 +104,7 @@
       "_total_idr_from_log": 184071.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-23T10:49:32.030223+08:00"
+      "unrealized_at": "2026-11-23T10:51:01.762635+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -122,11 +122,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.0037,
-          "value_usd": 0.449735,
-          "value_idr": 8228.8,
-          "unrealized_idr": -11751.22,
-          "unrealized_pct": -59.21
+          "price": 0.003696,
+          "value_usd": 0.449249,
+          "value_idr": 8219.9,
+          "unrealized_idr": -11760.12,
+          "unrealized_pct": -59.25
         },
         {
           "entry_idr": 19980.01998001998,
@@ -137,20 +137,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60537.3,
-          "value_usd": 1.029134,
-          "value_idr": 18830.05,
-          "unrealized_idr": -1149.97,
-          "unrealized_pct": -2.87
+          "price": 60485.5,
+          "value_usd": 1.028253,
+          "value_idr": 18813.94,
+          "unrealized_idr": -1166.08,
+          "unrealized_pct": -2.95
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-23T09:49:56+07:00",
-      "unrealized_idr": -12901.19,
-      "unrealized_at": "2026-11-23T10:49:32.030223+08:00",
+      "updated": "2026-11-23T09:50:57+07:00",
+      "unrealized_idr": -12926.2,
+      "unrealized_at": "2026-11-23T10:51:01.762635+08:00",
       "usd_idr_used": 18296.986676428827
     },
     "pumpfun": {
@@ -166,7 +166,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 4,
-      "updated": "2026-11-23T09:50:25+07:00",
+      "updated": "2026-11-23T09:50:56+07:00",
       "unrealized_idr": 0.0
     },
     "fourmeme": {
@@ -183,7 +183,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-23T09:50:27+07:00",
+      "updated": "2026-11-23T09:50:59+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -199,12 +199,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-23T09:50:26+07:00",
+      "updated": "2026-11-23T09:50:58+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
       "_error": "stale_pluang_json",
-      "_age_seconds": 1528.990657,
+      "_age_seconds": 1558.978996,
       "_path": "/home/ubuntu/live-status/pluang.json"
     }
   },
