@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T04:53:31.655026+08:00",
+  "generated_at": "2026-11-24T04:54:31.817969+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -105,10 +105,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 188461.0,
+      "_total_idr_from_log": 188362.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-24T04:53:31.654449+08:00"
+      "unrealized_at": "2026-11-24T04:54:31.817138+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002709,
-          "value_usd": 0.329279,
-          "value_idr": 5998.46,
-          "unrealized_idr": -13981.56,
-          "unrealized_pct": -70.14
+          "price": 0.002721,
+          "value_usd": 0.330738,
+          "value_idr": 6025.03,
+          "unrealized_idr": -13954.99,
+          "unrealized_pct": -70.0
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,20 +141,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61085.19,
-          "value_usd": 1.038448,
-          "value_idr": 18917.37,
-          "unrealized_idr": -1062.65,
-          "unrealized_pct": -1.99
+          "price": 61090.52,
+          "value_usd": 1.038539,
+          "value_idr": 18919.02,
+          "unrealized_idr": -1061.0,
+          "unrealized_pct": -1.98
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-24T03:53:21+07:00",
-      "unrealized_idr": -15044.21,
-      "unrealized_at": "2026-11-24T04:53:31.654449+08:00",
+      "updated": "2026-11-24T03:54:22+07:00",
+      "unrealized_idr": -15015.99,
+      "unrealized_at": "2026-11-24T04:54:31.817138+08:00",
       "usd_idr_used": 18216.96059796053
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-24T03:53:06+07:00"
+      "updated": "2026-11-24T03:54:11+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-24T03:53:26+07:00",
+      "updated": "2026-11-24T03:54:30+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,7 +216,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-24T03:53:04+07:00",
+      "updated": "2026-11-24T03:54:09+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -357,6 +357,12 @@
   },
   "news": [
     {
+      "title": "Kalshi secures temporary win in New York gambling law dispute",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/kalshi-temporary-win-new-york-gambling-law-dispute?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-24T04:38:43+08:00"
+    },
+    {
       "title": "BTCS offloads $44M in ETH to reduce DeFi debt amid market downturn",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/btcs-offloads-44m-eth-reduce-defi-debt-market-downturn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -381,16 +387,16 @@
       "time": "2026-11-24T00:51:17+08:00"
     },
     {
-      "title": "Cross River Bank enters Bitcoin-backed lending with $250K loans",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/cross-river-bank-bitcoin-backed-lending-250k-loans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-24T00:23:37+08:00"
+      "title": "Bitcoin rises after falling to two-year low - Reuters",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NUk9lTzRodUF5M1QyMkpkS3ViSDhVQ2hHZlV1ZUowRnBQeF9Za3l0WkRFb1BUNzVoS1NxcFFERDAydTVnLVpIMG9hcmRUV3hyb1F1RURKeGF3WV9iNlJScVlrYk95VmRJWWxjcE5GLUR4NUgtYWVj?oc=5",
+      "time": "2026-11-21T12:12:34+08:00"
     },
     {
-      "title": "US files action to recover over $1 billion in cryptocurrency stolen in Binance hack - Reuters",
+      "title": "Trump hosts third crypto gala for meme coin amid conflict of interest outcry - The Guardian",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVNMXVSLXVnN2RqNTM3Q09KcFk4MnhKNG9pN2FPd1ZJd2JURFNMRWRCMllWYm9Ia1dZYXh6bmhrWFdkM2k2WFNzNndJQXI5aDdoTXJXdzNwUGxUQzJhQWxwQ1JIcnRwaFVyVXJmbmV2STNnWGJPUldNelNRZmZyV1gweDFVeW1BVVhJMTV5WEtreVJnQ2xrQ0V2VzRfZUtHVWlsQzJja01fYUN1ZEw1ZUJwQU5zWExINXZqSGJGdEpYNjRR?oc=5",
-      "time": "2026-11-24T02:35:45+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV1RnSFBRaGNTTWk4WUdpekprQ2pUSEViLXEyaUtneWxOSjZFZmxIWVJQZVUyd3hSMV9zdmtERk81UHZkUXZ5VDhFWFdQUi1obEhCbmdMQzg2WWR3Nld2Ni1WNGhHSjRtRWRhV2ZjOXRfMnpfVmVIYno4a3pFOUxHaXZVc2xrUEpZNTVj?oc=5",
+      "time": "2026-11-23T08:31:00+08:00"
     },
     {
       "title": "Inside Trump's cryptocurrency gala for $TRUMP meme coin's largest buyers - CBS News",
@@ -399,22 +405,16 @@
       "time": "2026-11-24T01:51:00+08:00"
     },
     {
-      "title": "South Korea seeks broader account freezes and tighter rules on offshore crypto transfers - CoinDesk",
+      "title": "Trump hosts private dinner for largest owners of his meme coin - Al Jazeera",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUnpOUDMzc29tMzU3TGdTSThQOFI0cW9TcFhBWHJlRXhQbHVxeGdabXdkd3BoT05mTWxMNUZ4X1FZbjVMbjBOaUpCb2dxTEFtNmtlT0NoQW52Z0JqNnJKajJEajEyRzA1anpoMGRkLTIwcTN2bTNxemdzU21ZeldDd1hjTXNyd3kyUGZ3RWxTR1ZES0Rlcl96WjRmN3dnckk4WURxZEZuSFlQVHJCTVVSdVMyZ2dQQ01FY2tqT3c3T0JfWjZhYkZzLQ?oc=5",
-      "time": "2026-11-23T18:53:19+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUXVidE4wWjBSODFQSG5weXZmek5Nb3c2YnNHZEUzb21yMjhNZkhKeFJqeDBHVzNJd2VFTDJnNHJZZndYeFhnRXo1dGYwRHBlZlBCUmg5a1Buc0kzQnVlVEQwVk1rS3hIOHZKZ0dFTG84VXBIV29qQ0hBSFpOWTl5MWRxQ0pKdk9qbnFDbzdLaXkyMV9FTi1SYmJzZnkwcndpZ2dFeGJ3WXA2d9IBrwFBVV95cUxOY0NnVnZEaGVETUk3NEJPT0NSU0w2bUpseXF0ZVpwR1NDYW5BZ2NYN19YLWxPdkt3U190VTBMR3VOSWJNSXFVQkhjRjBpMm1iUEc2ZkxwWWJrb0puMzhxVV9OZlpHZUR0bjlyNGJmRVI3bFI5U2tGTkdpNk9oSnBlSC1sZ19LY2Y4d0h6WDJueTVBVzh5VFZrWHZYcTlzNWlFN0hVZFJldkI4NmVlSjFF?oc=5",
+      "time": "2026-11-23T16:04:59+08:00"
     },
     {
-      "title": "Flood Warns Farm Bill, Ratepayer Protections and Cryptocurrency Legislation Face Year-End Obstacles - KLIN",
+      "title": "US files action to recover over $1 billion in cryptocurrency stolen in Binance hack - Reuters",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDBhcVRDWjA1TVFGcmU3bXFCZHgwWUVqWFluZFQ0YzFUZ25hYWpQRUdZdmhBMERXWkIyU1dmcWhVTS1rTHdJYzcxUU9HWVNmczdSRTRKS2RhUVZpZS1nb1hJaHBtcEZhOFRqLUEwaVdBZ2QtVGZQekxEcXkyTk9SOVk4c3dSbVd1Q1lfbXY5eW92UTRYNF8tTkJBRENrTDZNNHhzMWQwalJjOFVid3Y4ejQ3ZEpobUJnMDdwV0NWTk9IeE9tTGc?oc=5",
-      "time": "2026-11-24T01:30:27+08:00"
-    },
-    {
-      "title": "FaceStealer Cryptocurrency Theft Scheme | Federal Bureau of Investigation - FBI (.gov)",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb25Cbm9nTXo4TDlXNXo4bzd6NXZvOTVDSVhMSWNqZ2c0b25xZ3hob2o4Y2RxbXNVcjZWS2k0dHY3el9kekxBYThxdDBKWm1VT3NYRVdzRG44MFdhNS04UU0yMm0tdWhUbEZUcWFuTWM1Um5qQmlZcVJZSmpmOWxoWXd1VQ?oc=5",
-      "time": "2026-11-13T07:46:56+08:00"
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVNMXVSLXVnN2RqNTM3Q09KcFk4MnhKNG9pN2FPd1ZJd2JURFNMRWRCMllWYm9Ia1dZYXh6bmhrWFdkM2k2WFNzNndJQXI5aDdoTXJXdzNwUGxUQzJhQWxwQ1JIcnRwaFVyVXJmbmV2STNnWGJPUldNelNRZmZyV1gweDFVeW1BVVhJMTV5WEtreVJnQ2xrQ0V2VzRfZUtHVWlsQzJja01fYUN1ZEw1ZUJwQU5zWExINXZqSGJGdEpYNjRR?oc=5",
+      "time": "2026-11-24T02:35:45+08:00"
     },
     {
       "title": "Nvidia shares soar more than 30% after Huang reinstated as CEO - CNN",
@@ -429,6 +429,12 @@
       "time": "2026-11-23T03:05:02+08:00"
     },
     {
+      "title": "U.S. stocks soar and recover more than half of last week’s plunge after Jensen Huang returns to Nvidia - Spectrum News",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWVV5ZzFSOFRja2hKWC1yQ1dNanlxaTMzaEtYRXp3OWFwbVNqWm8tNUxPbThaZnZwLWxqb0ZrVF9YR2U5dnVyUmliLWg1WTZqOE83TS02RE1HdXd5VFF3RjNpRVRZSlpZcXJlcTV4c0JmZkg4RFc2RHBNdm1BU21OUmtLNzlmb3Q5N1pDcGN0WVhuU0VPemdqX0F2VUNRR09ucDc4eEFxb29fYXgtQ3lGYXZ6SQ?oc=5",
+      "time": "2026-11-23T23:44:00+08:00"
+    },
+    {
       "title": "U.S. stocks shot up after computer chip giant Nvidia reinstated Jensen Huang as CEO in a turnaround that much of Silicon Valley had pined for but few had thought possible. Nvidia was up about 30 percent. - Facebook",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNa0NoSTg5dnAzVVBqYUtzeWZWdTduZmxWUDNpZV8wUEs1Z01feDVFd196VmJQRHR1SjRJMlhnME82Uy1VQ3pPRFRkZzNnaVJzbWRTT0U1cUNpZjlmMzJyNG9jZ1ZBTjNxWmJ4NV91MUd2MlF1OFBjVmw4UnlNZjhqOERHZ3B1LXY1Y3RhaHBJS1BYMjkzUDBDMHQzT0pud19FMW9OcmFyVlVBWVRKazIySml2V0lZZlc1ZnlJc2xGeWJJdzFQbHdXeU1tV2xkdW5Ec1RZNk1lTTFnT1ZU?oc=5",
@@ -439,15 +445,9 @@
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeURSVWpyQXZjLW5UcndZVDJPQnE0NDU2UllUMUI5S29qcFJlWDg1empEbThycVphd2p3dmxJTUJJckZVQXBhaGlmT0JaNkh3SFZHRG5HNHl5ckpheVAzU3JHQldJVGQ2cl9RVWw4Wk96RXNiN0d1dW5iQ1RETTMxRnJVS2tnNFRwOVJkdjhxRHd5ZmJRNkoxaEtUcGNiSmdXRWxtYjRrM2RVcVREUXJneFZMcw?oc=5",
       "time": "2026-11-24T03:16:32+08:00"
-    },
-    {
-      "title": "Gold, Silver Prices Rebound with US Stocks from Markets-Wide 'Washout' - BullionVault",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNjVzcGgyNmt6VFJvWjk3Vk1ZWGJ4YjdOVnRpeEdYQV9vUFQzaDhFWl9LemZzcEhUSGF5bFpueG1uLVNfclpEbDBzX3o2YVlkbzJRbjk4Smg2OHpaQjZYM0ZETFFibFlQSFEzWnhrN3MwSVR6TEtLelc3ODBQMzVITHhLQzVIYmlUSnh4ekdQRzR2UQ?oc=5",
-      "time": "2026-11-23T22:54:05+08:00"
     }
   ],
-  "news_at": "2026-11-24T04:38:32.152838+08:00",
+  "news_at": "2026-11-24T04:54:02.883656+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
