@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T04:06:31.896561+08:00",
+  "generated_at": "2026-11-25T04:07:33.062063+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -105,10 +105,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 183975.0,
+      "_total_idr_from_log": 183967.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-25T04:06:31.895922+08:00"
+      "unrealized_at": "2026-11-25T04:07:32.093056+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003123,
-          "value_usd": 0.379601,
-          "value_idr": 6930.36,
-          "unrealized_idr": -13049.66,
-          "unrealized_pct": -65.57
+          "price": 0.003181,
+          "value_usd": 0.386651,
+          "value_idr": 7059.07,
+          "unrealized_idr": -12920.95,
+          "unrealized_pct": -64.93
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,20 +141,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 59667.51,
-          "value_usd": 1.014348,
-          "value_idr": 18518.91,
-          "unrealized_idr": -1461.11,
-          "unrealized_pct": -4.27
+          "price": 59686.36,
+          "value_usd": 1.014668,
+          "value_idr": 18524.76,
+          "unrealized_idr": -1455.26,
+          "unrealized_pct": -4.24
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-25T03:05:50+07:00",
-      "unrealized_idr": -14510.77,
-      "unrealized_at": "2026-11-25T04:06:31.895922+08:00",
+      "updated": "2026-11-25T03:06:50+07:00",
+      "unrealized_idr": -14376.21,
+      "unrealized_at": "2026-11-25T04:07:32.093056+08:00",
       "usd_idr_used": 18256.969457120827
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-25T03:06:27+07:00"
+      "updated": "2026-11-25T03:07:00+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-25T03:06:26+07:00",
+      "updated": "2026-11-25T03:07:30+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,7 +216,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-25T03:06:21+07:00",
+      "updated": "2026-11-25T03:07:25+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -363,7 +363,7 @@
       "time": "2026-11-25T03:44:23+08:00"
     },
     {
-      "title": "Coldcard reveals how security reviews missed Bitcoin wallet flaw for over 5 years",
+      "title": "Coldcard reveals how Bitcoin wallet flaw went undetected for over 5 years",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/coldcard-how-security-reviews-missed-bitcoin-wallet-flaw-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-25T03:04:26+08:00"
@@ -420,7 +420,13 @@
       "title": "Stock market today: Dow gains, S&P 500 and Nasdaq decline as chip stocks tumble, investors test AI appetite - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRElscjEtckxzUEhMMWRhYk92WEhnM0E5aFFzYl9PVzIxbGotWTh3bjhrNE9ncTMxdFFyTDFJOTdNLXBuMWgyMEg3TGpKVTZqaXBiQS1JeklvM2xiTXpPTXh5VkNOTkdqNzM3WHhHLWtEOVNQZHZHRWk1RWRWSk1sS1hnZDVkN0dVeEN6ektwTVdfY2xpQWQ1elREX0NiVW13N1VHRzRnaG4zUHNiOFZnMnMtamZhV09NQjMzaTRfUVNiWWNtQUlMOQ?oc=5",
-      "time": "2026-11-25T03:19:41+08:00"
+      "time": "2026-11-25T04:00:16+08:00"
+    },
+    {
+      "title": "Nasdaq drops 2% as Nvidia’s comeback fades, Anthropic breaks IPO price: Live updates - CNBC",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE11bVhzTUlmU0hLLW0wRklRekw2eURvelhVMlZ3YThhUm5kNkctUE81eHlyNkRVQkRqTkc1enU3TWZZT0RKY2I1YWNTTmVpaDZkdlJYRGtqYkhFSGViT2NQN1A2MEVxNXEwbkNRMXlaejlRbzhtY2g40gF8QVVfeXFMTzg5Wkp0R2RYWWl3cUFWVjR1MzhPYlcwbzBsTGFFZVN0Z1QybjdvcThKTzBSd2NoOG51TU1JbkpKbUoyaWYtMGVGN2JKMWFkOWc2X3ZFODBBT3VBYkhzTmN3ZXNNTnlfUE5hRlZlM3pEaUgycEtwbWdNNlhuVw?oc=5",
+      "time": "2026-11-24T22:50:39+08:00"
     },
     {
       "title": "US stocks surge and recover half of last week’s plunge after Jensen Huang returns as Nvidia’s CEO - AP News",
@@ -435,19 +441,13 @@
       "time": "2026-11-24T09:29:00+08:00"
     },
     {
-      "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks - Bloomberg",
+      "title": "MPF members hitting ‘panic switch’ to ditch US stocks amid volatility: Manulife - South China Morning Post",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZldNMFlSOWFqTTdmTDNmdFowSHd4aF9EN0g3eWtBYTk3MEp1RXZTN09TQThzaFlNTTVQc0pENUlhNng2VXpFd1M5cnpZdF80WmJvblRrVUQ1bW9QbkkwWm1TMzZZbk9YWXdMT0VKNUZ6YWRHNks4QWRjS3RHYm9sZk81OVpvMmsxWGFJQU4tWnUta0JMclRKOElZMS14cEpEQ2FMYkJkTlF6OTIta09RR3BFQQ?oc=5",
-      "time": "2026-11-23T03:05:02+08:00"
-    },
-    {
-      "title": "Gold, Silver Prices Rebound with US Stocks from Markets-Wide 'Washout' - BullionVault",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNjVzcGgyNmt6VFJvWjk3Vk1ZWGJ4YjdOVnRpeEdYQV9vUFQzaDhFWl9LemZzcEhUSGF5bFpueG1uLVNfclpEbDBzX3o2YVlkbzJRbjk4Smg2OHpaQjZYM0ZETFFibFlQSFEzWnhrN3MwSVR6TEtLelc3ODBQMzVITHhLQzVIYmlUSnh4ekdQRzR2UQ?oc=5",
-      "time": "2026-11-23T22:54:05+08:00"
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTUN5LTV5MkxSZGEtMDdsY0loNVphYktjaHdNc2F0ZGVwNVFTVGhXdmpPQVc5ckdVaHpRTjVXV1Z3NzlYYm5UTk5jdzFkZjhaZlVaOHd2b0JfVVRHVUh6ckhvNDZZekgzcXZhZTVGQ20wS0Jsc1VqN0xVNXhPUlFSSXFZM0pGSHo2SjloanoxelhwR1R2Q3BXWTNhWFhGZFZ3VUxPWFdJYV9PaWt3ckJwWUlVS1lEYUxsZEs5dTVPWTVnc0p6cHlYeERORmFVM092?oc=5",
+      "time": "2026-11-24T16:52:16+08:00"
     }
   ],
-  "news_at": "2026-11-25T03:52:02.663489+08:00",
+  "news_at": "2026-11-25T04:07:33.061959+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
