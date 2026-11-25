@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T16:44:01.715648+08:00",
+  "generated_at": "2026-11-25T16:45:02.495946+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -105,10 +105,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 184330.0,
+      "_total_idr_from_log": 184268.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-25T16:44:01.714708+08:00"
+      "unrealized_at": "2026-11-25T16:45:01.814075+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.00266,
-          "value_usd": 0.323323,
-          "value_idr": 5933.61,
-          "unrealized_idr": -14046.41,
-          "unrealized_pct": -70.68
+          "price": 0.002665,
+          "value_usd": 0.323931,
+          "value_idr": 5944.76,
+          "unrealized_idr": -14035.26,
+          "unrealized_pct": -70.62
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,10 +141,10 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 59278.2,
-          "value_usd": 1.007729,
-          "value_idr": 18493.8,
-          "unrealized_idr": -1486.22,
+          "price": 59280.81,
+          "value_usd": 1.007774,
+          "value_idr": 18494.62,
+          "unrealized_idr": -1485.4,
           "unrealized_pct": -4.89
         }
       ],
@@ -152,9 +152,9 @@
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-25T15:43:29+07:00",
-      "unrealized_idr": -15532.63,
-      "unrealized_at": "2026-11-25T16:44:01.714708+08:00",
+      "updated": "2026-11-25T15:44:30+07:00",
+      "unrealized_idr": -15520.66,
+      "unrealized_at": "2026-11-25T16:45:01.814075+08:00",
       "usd_idr_used": 18351.953912530735
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-25T15:43:47+07:00"
+      "updated": "2026-11-25T15:44:52+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-25T15:43:33+07:00",
+      "updated": "2026-11-25T15:44:37+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,7 +216,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-25T15:43:36+07:00",
+      "updated": "2026-11-25T15:44:40+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -357,6 +357,12 @@
   },
   "news": [
     {
+      "title": "EU seeks up to $55B for AI and quantum computing fund: Report",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/eu-55-billion-ai-quantum-computing-investment-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-25T16:40:28+08:00"
+    },
+    {
       "title": "South Korea’s crypto bill could move stablecoin race beyond token issuance",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/south-korea-crypto-bill-stablecoin-race-beyond-issuance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -381,18 +387,6 @@
       "time": "2026-11-25T12:14:42+08:00"
     },
     {
-      "title": "CleanSpark weighs selling more Bitcoin than it mines to de-risk books",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/cleanspark-weighs-selling-more-bitcoin-than-it-mines-to-de-risk-books?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-25T09:40:59+08:00"
-    },
-    {
-      "title": "They attended Trump’s controversial meme coin dinner. It didn’t go well - NPR",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ2FndXdIc2JxclZZMU12YWhhZWhNaURLMUROUlRIbjU5WVkxNDZCdEIzbjQ2bjBUeklDRzJnYnBQMDlhZk1iX0J0dElpanQyakNjNUpVUTJUNXF4RExKS0hZUnVLNUpLNFJZMXVkZUd6VTA3UnZWa0lXdlJ6ekFZLXJUZXlNNlFISnlVM1dYVWlEb08wZmZvWGdqQzVVeUlmazQyZlR5M2R4NjhkckxzTzhLUQ?oc=5",
-      "time": "2026-11-24T06:17:59+08:00"
-    },
-    {
       "title": "Inside Trump's cryptocurrency gala for $TRUMP meme coin's largest buyers - CBS News",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZNFEwZ2swdDJyejJMdDlFN0ppelhxR1BfZ3FoRXQ1N2lYSTFyNFFVbXBjYTNJeHE1dk1OV2lEbDZkaEtZaWtlT0ZnZlBIUm1Pd3dhOFdpNTBTUG02M0w4TVBzc0h0UE1raFJHM2lSUDgxZw?oc=5",
@@ -403,6 +397,12 @@
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVNMXVSLXVnN2RqNTM3Q09KcFk4MnhKNG9pN2FPd1ZJd2JURFNMRWRCMllWYm9Ia1dZYXh6bmhrWFdkM2k2WFNzNndJQXI5aDdoTXJXdzNwUGxUQzJhQWxwQ1JIcnRwaFVyVXJmbmV2STNnWGJPUldNelNRZmZyV1gweDFVeW1BVVhJMTV5WEtreVJnQ2xrQ0V2VzRfZUtHVWlsQzJja01fYUN1ZEw1ZUJwQU5zWExINXZqSGJGdEpYNjRR?oc=5",
       "time": "2026-11-24T03:31:05+08:00"
+    },
+    {
+      "title": "They attended Trump’s controversial meme coin dinner. It didn’t go well - NPR",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ2FndXdIc2JxclZZMU12YWhhZWhNaURLMUROUlRIbjU5WVkxNDZCdEIzbjQ2bjBUeklDRzJnYnBQMDlhZk1iX0J0dElpanQyakNjNUpVUTJUNXF4RExKS0hZUnVLNUpLNFJZMXVkZUd6VTA3UnZWa0lXdlJ6ekFZLXJUZXlNNlFISnlVM1dYVWlEb08wZmZvWGdqQzVVeUlmazQyZlR5M2R4NjhkckxzTzhLUQ?oc=5",
+      "time": "2026-11-24T06:17:59+08:00"
     },
     {
       "title": "Seoul to cap crypto exchange ownership, pave way for won stablecoins - KED Global",
@@ -441,13 +441,13 @@
       "time": "2026-11-23T19:26:06+08:00"
     },
     {
-      "title": "US stocks slide as Nvidia rally fizzles out, dollar falls - Reuters",
+      "title": "US stocks surge and recover half of last week’s plunge after Jensen Huang returns as Nvidia’s CEO - AP News",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVGQ3cVhHXzJBLXEybDVWX21xeWcxbUVEOHA1ZV9IU0lacEM2a3dKbmFLSGk2Y1MwLXk0OVFzWV8yT1JNQ3FnX3hWNGxidEZvbDZwTl8tdjNoUDV6MU45ZnJSa3lSMnZJNXdwWk5VRUFOYzJlTk11TmZaS1hocXhPVUE4bw?oc=5",
-      "time": "2026-11-24T09:29:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNF9ZLU84V2VPZHBHcGx0V3p5TVVoV21zbUYyQWFOWU96ZjBmcExvQ1lpVmtFRzl5RVpXdFg3TGhUM3ZHM282MkdnMVgxZ2lwUTRkcm9KaWlHMEcyZ3R6amZIM25vMFRRM0l1OXNxMFFSQVVnR3hzY3BNb1NyUWwxa2hLMndRMkpVZ2l2X0N2Z3JFcmRVMzRMZldCbzlEZkpGZjNmTVJZdw?oc=5",
+      "time": "2026-11-24T06:20:00+08:00"
     }
   ],
-  "news_at": "2026-11-25T16:29:32.626065+08:00",
+  "news_at": "2026-11-25T16:45:02.495769+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
