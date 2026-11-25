@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T19:34:32.125269+08:00",
+  "generated_at": "2026-11-25T19:35:02.298449+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -105,7 +105,7 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 181542.0,
+      "_total_idr_from_log": 181665.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-25T19:34:32.124475+08:00"
@@ -152,7 +152,7 @@
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-25T18:33:44+07:00",
+      "updated": "2026-11-25T18:34:45+07:00",
       "unrealized_idr": -15975.13,
       "unrealized_at": "2026-11-25T19:34:32.124475+08:00",
       "usd_idr_used": 18353.99234820116
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-25T18:33:58+07:00"
+      "updated": "2026-11-25T18:34:33+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-25T18:34:25+07:00",
+      "updated": "2026-11-25T18:34:57+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,7 +216,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-25T18:34:13+07:00",
+      "updated": "2026-11-25T18:34:45+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -357,6 +357,12 @@
   },
   "news": [
     {
+      "title": "Hong Kong launches tokenized debt platform with 24-hour settlement",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/hong-kong-central-bank-platform-tokenized-debt-securities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-25T19:31:10+08:00"
+    },
+    {
       "title": "Bitcoin ETFs near $5B in record monthly outflows amid AI stock rout",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/markets/bitcoin-etfs-near-record-5-billion-monthly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -381,28 +387,10 @@
       "time": "2026-11-25T17:58:12+08:00"
     },
     {
-      "title": "Stablecoin redemptions hit $12B in 30 days, echoing 2022 bear market",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/markets/stablecoin-cash-out-2022-bear-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-25T17:52:22+08:00"
-    },
-    {
       "title": "Inside Trump's cryptocurrency gala for $TRUMP meme coin's largest buyers - CBS News",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZNFEwZ2swdDJyejJMdDlFN0ppelhxR1BfZ3FoRXQ1N2lYSTFyNFFVbXBjYTNJeHE1dk1OV2lEbDZkaEtZaWtlT0ZnZlBIUm1Pd3dhOFdpNTBTUG02M0w4TVBzc0h0UE1raFJHM2lSUDgxZw?oc=5",
       "time": "2026-11-24T01:51:00+08:00"
-    },
-    {
-      "title": "They attended Trump’s controversial meme coin dinner. It didn’t go well - NPR",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ2FndXdIc2JxclZZMU12YWhhZWhNaURLMUROUlRIbjU5WVkxNDZCdEIzbjQ2bjBUeklDRzJnYnBQMDlhZk1iX0J0dElpanQyakNjNUpVUTJUNXF4RExKS0hZUnVLNUpLNFJZMXVkZUd6VTA3UnZWa0lXdlJ6ekFZLXJUZXlNNlFISnlVM1dYVWlEb08wZmZvWGdqQzVVeUlmazQyZlR5M2R4NjhkckxzTzhLUQ?oc=5",
-      "time": "2026-11-24T06:17:59+08:00"
-    },
-    {
-      "title": "Trump hosts third crypto gala for meme coin amid conflict of interest outcry - The Guardian",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV1RnSFBRaGNTTWk4WUdpekprQ2pUSEViLXEyaUtneWxOSjZFZmxIWVJQZVUyd3hSMV9zdmtERk81UHZkUXZ5VDhFWFdQUi1obEhCbmdMQzg2WWR3Nld2Ni1WNGhHSjRtRWRhV2ZjOXRfMnpfVmVIYno4a3pFOUxHaXZVc2xrUEpZNTVj?oc=5",
-      "time": "2026-11-23T08:31:00+08:00"
     },
     {
       "title": "US files action to recover over $1 billion in cryptocurrency stolen in Binance hack - Reuters",
@@ -411,22 +399,34 @@
       "time": "2026-11-24T03:31:05+08:00"
     },
     {
+      "title": "Seoul to cap crypto exchange ownership, pave way for won stablecoins - KED Global",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMaVFycEhqYVBYOHFvNXRPc1hQbzVEYkFISnVFSHpMaVMxVC0ycnZVdlZRRGMtcy0tdEhvYTNHakZtZVZZY3J0OFBYOXd1TGItQ3NXQWc3X1drVmh5N1U0dkU3RHRaQ1dnZmg0Y3pwQUloVGRPSGc?oc=5",
+      "time": "2026-11-24T19:26:00+08:00"
+    },
+    {
       "title": "Law enforcement follow crypto money trail behind billion-euro illegal streaming industry - Europol",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTkYtLXViTUlOWWtKZVY3Z1Q3T2xrVFNGMGhjZXpRNURydlpmV28xMGxCdmhGOVZxa1M1eGtiVXp2TXFkZnBRTzNSTm1sdDkzNTI1RjFFdnduYWppLUpRblNBLTR3WXBsSWlFbjl4N2xiN2J5NzZKeVFvczVBZjRKX0tVUjNpVDZtSmt0S0VhVjdmVTZzN3FKelhYZDE4Wld4VEdySDk4V0NCSUgzSWR2dWpLY2pxTEwzTGFIUDM2c3hPbThFYy1HV1dFSUMxbG0wZkE4MEZDQzJwQVNT?oc=5",
       "time": "2026-11-24T21:00:48+08:00"
     },
     {
+      "title": "Inside Operation Niagara, a week-long blitz to halt cryptocurrency scams - The Globe and Mail",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMVRnN1lQdU9rYkE4SW84ZFVvOHVIVjhrMFotQ1RuMkpBLVhTUGlTSkR6RnhkaklaWXZuQUptRUlmT1BxbFVnUEpBX09PWGxRZG14TlppTklfV0VyQklQanl6ODN5aDVpd1k3YzhQb3p2LTNjVmdpcG1mTDZZbnpqZVBNU2JxcmQ4Znp0eHNmeVlJYkxVM3ZfVjZCeHJ1cGdhcmVFcms1cFpLajVEMGZENldOdG1EdGRJZTZUNkFR?oc=5",
+      "time": "2026-11-24T19:00:00+08:00"
+    },
+    {
       "title": "Nasdaq futures slide amid reports of fresh U.S. tariffs as tech sell-off intensifies: Live updates - CNBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Jd2QwOVppNGtIY3I5ZXgyVmZKQzJ3SzZvVnVydTJHQnliRXBCR2RiQTBMeXExQU16TnpPQzkwWVl2Q0FKV055NzJBNE4tMGQ0UmlFMFdnQ3o1OG9tR2JNd1Z6Ymk5cGtDVFBxZjJPT19jblIxZ2lwRdIBfkFVX3lxTE5qZGNISDFwMjNGQUoxc3ZlT1JFR1A5Zk1oTmJSX1kxWVFOWUZscTZGTWh2cHdfMW92SzVCbXdBR2o3YWJUVzN2TXhfOUdhSUZpdFNyNXBaUjdseWpuQklwaVgzaUlGdkJqNm54TWEyVTluWVFYVTZVMVptNV9xQQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Jd2QwOVppNGtIY3I5ZXgyVmZKQzJ3SzZvVnVydTJHQnliRXBCR2RiQTBMeXExQU16TnpPQzkwWVl2Q0FKV055NzJBNE4tMGQ0UmlFMFdnQ3o1OG9tR2JNd1Z6Ymk5cGtDVFBxZjJPT19jblIxZ2lwRQ?oc=5",
       "time": "2026-11-25T17:58:19+08:00"
     },
     {
-      "title": "Nvidia shares soar more than 30% after Huang reinstated as CEO - CNN",
+      "title": "Nvidia live updates: Nvidia stock falls after massive rally, Jensen Huang apologizes to employees - Yahoo Finance",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55SjFMdklaSk1tSmJJeFlFQ21MX1k0SFVfVXhCVk5hOEl0MzBFSW5JOV84RnVaMkxGNDBLYTBuV0tKRU05S3d0ckhCdE9nZ2M2NTgzMDVEUHpRN3lyUFBUajFCQVdIbXhXcUtEb1FB?oc=5",
-      "time": "2026-11-23T19:26:06+08:00"
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYnBZTkhUUGlCUVBvdW9Mam9JbGJueElLNmRUenk3eTZ2YmhXSEJhb3VCTTlrQ0xDZzF1N3pURFZFNDROVkZhOW1Mc0JxQUhGQ25rSjdWZXdxMnZNLWFaNzJfdXdFeEpUMzFQMUl3alZfWVotcFRHRGxSRzNiWHJuSlpyaXVHTld1MDFLSy1rdDJCU1F6ME9vZDB1bzB2bS1PeHpZbTg5czJrQ1lzdFRHbUlmS3JzYlFvQnRjZ2xRT3hoR1FVMUQ2a0hNMXZwNEtYckw1Q0ZYOThJMTlobXZTY3JzdDFESjBN?oc=5",
+      "time": "2026-11-25T17:39:21+08:00"
     },
     {
       "title": "U.S. Stocks Mixed as Huang Relief Rally Fades - WSJ",
@@ -435,19 +435,19 @@
       "time": "2026-11-25T07:01:32+08:00"
     },
     {
+      "title": "Nvidia shares soar more than 30% after Huang reinstated as CEO - CNN",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55SjFMdklaSk1tSmJJeFlFQ21MX1k0SFVfVXhCVk5hOEl0MzBFSW5JOV84RnVaMkxGNDBLYTBuV0tKRU05S3d0ckhCdE9nZ2M2NTgzMDVEUHpRN3lyUFBUajFCQVdIbXhXcUtEb1FB?oc=5",
+      "time": "2026-11-23T19:26:06+08:00"
+    },
+    {
       "title": "US stocks slide as Nvidia rally fizzles out, dollar falls - Reuters",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVGQ3cVhHXzJBLXEybDVWX21xeWcxbUVEOHA1ZV9IU0lacEM2a3dKbmFLSGk2Y1MwLXk0OVFzWV8yT1JNQ3FnX3hWNGxidEZvbDZwTl8tdjNoUDV6MU45ZnJSa3lSMnZJNXdwWk5VRUFOYzJlTk11TmZaS1hocXhPVUE4bw?oc=5",
       "time": "2026-11-24T09:29:00+08:00"
-    },
-    {
-      "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks - Bloomberg.com",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZldNMFlSOWFqTTdmTDNmdFowSHd4aF9EN0g3eWtBYTk3MEp1RXZTN09TQThzaFlNTTVQc0pENUlhNng2VXpFd1M5cnpZdF80WmJvblRrVUQ1bW9QbkkwWm1TMzZZbk9YWXdMT0VKNUZ6YWRHNks4QWRjS3RHYm9sZk81OVpvMmsxWGFJQU4tWnUta0JMclRKOElZMS14cEpEQ2FMYkJkTlF6OTIta09RR3BFQQ?oc=5",
-      "time": "2026-11-23T03:05:02+08:00"
     }
   ],
-  "news_at": "2026-11-25T19:19:32.970897+08:00",
+  "news_at": "2026-11-25T19:35:02.298239+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
