@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T21:38:31.479882+08:00",
+  "generated_at": "2026-11-25T21:39:02.979301+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -108,7 +108,7 @@
       "_total_idr_from_log": 179949.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-25T21:38:01.596792+08:00"
+      "unrealized_at": "2026-11-25T21:39:01.706909+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002605,
-          "value_usd": 0.316638,
-          "value_idr": 5811.87,
-          "unrealized_idr": -14168.15,
-          "unrealized_pct": -71.28
+          "price": 0.002584,
+          "value_usd": 0.314085,
+          "value_idr": 5765.02,
+          "unrealized_idr": -14215.0,
+          "unrealized_pct": -71.51
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,11 +141,11 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 58329.2,
-          "value_usd": 0.991596,
-          "value_idr": 18200.7,
-          "unrealized_idr": -1779.32,
-          "unrealized_pct": -6.41
+          "price": 58381.49,
+          "value_usd": 0.992485,
+          "value_idr": 18217.01,
+          "unrealized_idr": -1763.01,
+          "unrealized_pct": -6.33
         }
       ],
       "realized_idr": -6087.530147940009,
@@ -153,8 +153,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-25T20:38:28+07:00",
-      "unrealized_idr": -15947.47,
-      "unrealized_at": "2026-11-25T21:38:01.596792+08:00",
+      "unrealized_idr": -15978.01,
+      "unrealized_at": "2026-11-25T21:39:01.706909+08:00",
       "usd_idr_used": 18354.94360610689
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-25T20:38:12+07:00"
+      "updated": "2026-11-25T20:38:45+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-25T20:38:16+07:00",
+      "updated": "2026-11-25T20:38:49+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -357,6 +357,12 @@
   },
   "news": [
     {
+      "title": "Here’s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-25T21:26:05+08:00"
+    },
+    {
       "title": "Ukraine passes bill to legalize crypto and tax profits at 23%",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/ukraine-passes-bill-crypto-regulation-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -381,12 +387,6 @@
       "time": "2026-11-25T19:12:26+08:00"
     },
     {
-      "title": "Bitcoin price may fall below $53K if bear-market history repeats",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/markets/bitcoin-price-bear-market-history-repeats?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-25T19:09:38+08:00"
-    },
-    {
       "title": "Inside Trump's cryptocurrency gala for $TRUMP meme coin's largest buyers - CBS News",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZNFEwZ2swdDJyejJMdDlFN0ppelhxR1BfZ3FoRXQ1N2lYSTFyNFFVbXBjYTNJeHE1dk1OV2lEbDZkaEtZaWtlT0ZnZlBIUm1Pd3dhOFdpNTBTUG02M0w4TVBzc0h0UE1raFJHM2lSUDgxZw?oc=5",
@@ -399,10 +399,10 @@
       "time": "2026-11-24T03:31:05+08:00"
     },
     {
-      "title": "Current price of Bitcoin for Nov. 25, 2026 - Fortune",
+      "title": "Trump hosts third crypto gala for meme coin amid conflict of interest outcry - The Guardian",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Na2pvV2xpZm03U3B4MlM5LUhQNDM2cGlsRXNmUDF5UTdtUzBkSHlTZVI3MVp0RGg2MHpWYVhiSFVRR0xFaWxZamsxLXdheUlwaTV6R2RXWW9yVzZMVHctOHRydktiXzg?oc=5",
-      "time": "2026-11-25T20:24:50+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV1RnSFBRaGNTTWk4WUdpekprQ2pUSEViLXEyaUtneWxOSjZFZmxIWVJQZVUyd3hSMV9zdmtERk81UHZkUXZ5VDhFWFdQUi1obEhCbmdMQzg2WWR3Nld2Ni1WNGhHSjRtRWRhV2ZjOXRfMnpfVmVIYno4a3pFOUxHaXZVc2xrUEpZNTVj?oc=5",
+      "time": "2026-11-23T08:31:00+08:00"
     },
     {
       "title": "Law enforcement follow crypto money trail behind billion-euro illegal streaming industry - Europol",
@@ -411,10 +411,10 @@
       "time": "2026-11-24T21:00:48+08:00"
     },
     {
-      "title": "Ukrainian parliament legalises cryptocurrency and establishes taxation rules - Українська правда",
+      "title": "Inside Operation Niagara, a week-long blitz to halt cryptocurrency scams - The Globe and Mail",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBiQnVDZlhCckFTbGxOMTV4MmxlZ2VfWVlBaXdQQnZxTzJ3VEJ3NGdxWnF6Ym1LNmNHZ1hFQzZoRGk5ZW1jb2Q5Y0k0VHBhc2dUQjVfQUJydXVZTnc4NS1kLWZXRHLSAXBBVV95cUxPY0dMWVNVMUdDdGRaaldxbmpCcEZxalRLUmhLT3hWejFMQ0c1VjloREQwUlhISU5VYy1iZGdNQ0RHUzFwQ2ZlOVJGam1wa1oyck1LcGQtdEJOa3hlMk5RcUJfOHFKQndnY1hyWTcxd2d3?oc=5",
-      "time": "2026-11-25T17:37:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMVRnN1lQdU9rYkE4SW84ZFVvOHVIVjhrMFotQ1RuMkpBLVhTUGlTSkR6RnhkaklaWXZuQUptRUlmT1BxbFVnUEpBX09PWGxRZG14TlppTklfV0VyQklQanl6ODN5aDVpd1k3YzhQb3p2LTNjVmdpcG1mTDZZbnpqZVBNU2JxcmQ4Znp0eHNmeVlJYkxVM3ZfVjZCeHJ1cGdhcmVFcms1cFpLajVEMGZENldOdG1EdGRJZTZUNkFR?oc=5",
+      "time": "2026-11-24T19:00:00+08:00"
     },
     {
       "title": "Stock futures tumble as AI sell-off returns with Nvidia, Anthropic leading the way: Live updates - CNBC",
@@ -423,16 +423,10 @@
       "time": "2026-11-23T16:00:00+08:00"
     },
     {
-      "title": "Nvidia live updates: Nvidia stock falls after massive rally, Jensen Huang apologizes to employees - Yahoo Finance",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures fall ahead of inflation data - Yahoo Finance",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYnBZTkhUUGlCUVBvdW9Mam9JbGJueElLNmRUenk3eTZ2YmhXSEJhb3VCTTlrQ0xDZzF1N3pURFZFNDROVkZhOW1Mc0JxQUhGQ25rSjdWZXdxMnZNLWFaNzJfdXdFeEpUMzFQMUl3alZfWVotcFRHRGxSRzNiWHJuSlpyaXVHTld1MDFLSy1rdDJCU1F6ME9vZDB1bzB2bS1PeHpZbTg5czJrQ1lzdFRHbUlmS3JzYlFvQnRjZ2xRT3hoR1FVMUQ2a0hNMXZwNEtYckw1Q0ZYOThJMTlobXZTY3JzdDFESjBN?oc=5",
-      "time": "2026-11-25T17:39:21+08:00"
-    },
-    {
-      "title": "Stock Market Today: Dow, S&P 500 and Nasdaq set to slump as investors await PCE inflation data; Nvidia stock drops: live updates - MarketWatch",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWUoxN04xLTNpMnpwa1d3YkJLT1l0RElYblJUckRXTktsMXpfakMxdXkyd2JfcXdKUTZXWVE0Y1dmWHBDbGlSVTBqWVkxS2ViWUdtX01rU21rYnpBdDFsSWg2UG16UkNCWTJSNWdjbndGcm5LcExsZVNENkptV0tvblRQMTlKTjREaDR6Q3lNeGR3Tm42enlyX0s3ZENmX2ZLMzNrMlprVXotbjdfZXBYRDlVZV8?oc=5",
-      "time": "2026-11-25T20:15:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUEhyLTdac1NBTVdPT1QyLUJKck4wUUJkNjlXQWFHTG1peDJyeDRqNklFSkVpek9JbmEyQ0gya1R6dGZicmpfbkFIS1BjR3lDeGhFMmpIYU90ajhxZ2lwYW5sLW93TmdZcXR3Q2p3akUxc1JBRVRmbEpVQW5LM3pDaXhNZWx6a0txT19rUTQ3R2xVejJWQkh0TzdSRmlOY0lDa05oNklJOE1fVV9CY1FuRXJMNHJrVG8zQzdTX0pjYmNwanNhd0VJcTVkRQ?oc=5",
+      "time": "2026-11-25T21:19:44+08:00"
     },
     {
       "title": "U.S. Stocks Mixed as Huang Relief Rally Fades - WSJ",
@@ -445,9 +439,15 @@
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55SjFMdklaSk1tSmJJeFlFQ21MX1k0SFVfVXhCVk5hOEl0MzBFSW5JOV84RnVaMkxGNDBLYTBuV0tKRU05S3d0ckhCdE9nZ2M2NTgzMDVEUHpRN3lyUFBUajFCQVdIbXhXcUtEb1FB?oc=5",
       "time": "2026-11-23T19:26:06+08:00"
+    },
+    {
+      "title": "US stocks slide as Nvidia rally fizzles out, dollar falls - Reuters",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVGQ3cVhHXzJBLXEybDVWX21xeWcxbUVEOHA1ZV9IU0lacEM2a3dKbmFLSGk2Y1MwLXk0OVFzWV8yT1JNQ3FnX3hWNGxidEZvbDZwTl8tdjNoUDV6MU45ZnJSa3lSMnZJNXdwWk5VRUFOYzJlTk11TmZaS1hocXhPVUE4bw?oc=5",
+      "time": "2026-11-24T09:29:00+08:00"
     }
   ],
-  "news_at": "2026-11-25T21:23:33.096184+08:00",
+  "news_at": "2026-11-25T21:39:02.979199+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
