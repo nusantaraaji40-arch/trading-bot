@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T19:50:01.953285+08:00",
+  "generated_at": "2026-11-25T19:50:32.428946+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -128,8 +128,8 @@
           "symbol": "FLOATUSDT",
           "price": 0.00252,
           "value_usd": 0.306306,
-          "value_idr": 5621.93,
-          "unrealized_idr": -14358.09,
+          "value_idr": 5621.94,
+          "unrealized_idr": -14358.08,
           "unrealized_pct": -72.22
         },
         {
@@ -143,8 +143,8 @@
           "symbol": "BTCUSDT",
           "price": 58748.62,
           "value_usd": 0.998727,
-          "value_idr": 18330.59,
-          "unrealized_idr": -1649.43,
+          "value_idr": 18330.61,
+          "unrealized_idr": -1649.41,
           "unrealized_pct": -5.74
         }
       ],
@@ -153,9 +153,9 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-25T18:49:55+07:00",
-      "unrealized_idr": -16007.52,
+      "unrealized_idr": -16007.49,
       "unrealized_at": "2026-11-25T19:50:01.952293+08:00",
-      "usd_idr_used": 18353.966626791767
+      "usd_idr_used": 18353.983291260043
     },
     "pumpfun": {
       "baseline_sol": 0.02690429,
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-25T18:49:41+07:00"
+      "updated": "2026-11-25T18:50:15+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-25T18:49:55+07:00",
+      "updated": "2026-11-25T18:50:27+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,12 +216,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-25T18:49:52+07:00",
+      "updated": "2026-11-25T18:50:25+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-25T19:45:02.684665+08:00",
-      "fetched_at": "2026-11-25T19:45:02.684665+08:00",
+      "updated": "2026-11-25T19:50:07.430642+08:00",
+      "fetched_at": "2026-11-25T19:50:07.430642+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 113157.0,
       "cash_usd": 0.01,
@@ -229,22 +229,22 @@
       "realized_idr": 0,
       "total_deposited_idr": 500000,
       "trades_count": 7,
-      "usd_idr": 18353.966626791767,
+      "usd_idr": 18353.983291260043,
       "positions": [
         {
           "symbol": null,
           "name": null,
           "qty": 0.02765,
           "entry": 99.11,
-          "price": 98.52,
-          "value_usd": 2.724078,
-          "pnl_usd": -0.0163135,
-          "pnl_pct": -0.6,
+          "price": 98.35499999999999,
+          "value_usd": 2.71951575,
+          "pnl_usd": -0.02087575,
+          "pnl_pct": -0.76,
           "currency": "USD",
-          "entry_idr": 50297.05,
-          "value_idr": 49997.64,
-          "unrealized_idr": -299.42,
-          "unrealized_pct": -0.6
+          "entry_idr": 50297.1,
+          "value_idr": 49913.95,
+          "unrealized_idr": -383.15,
+          "unrealized_pct": -0.76
         },
         {
           "symbol": null,
@@ -256,8 +256,8 @@
           "pnl_usd": -0.0044112,
           "pnl_pct": -0.16,
           "currency": "USD",
-          "entry_idr": 49873.22,
-          "value_idr": 49792.26,
+          "entry_idr": 49873.26,
+          "value_idr": 49792.3,
           "unrealized_idr": -80.96,
           "unrealized_pct": -0.16
         },
@@ -271,8 +271,8 @@
           "pnl_usd": 0.010532668944,
           "pnl_pct": 0.39,
           "currency": "USD",
-          "entry_idr": 49188.63,
-          "value_idr": 49381.95,
+          "entry_idr": 49188.68,
+          "value_idr": 49381.99,
           "unrealized_idr": 193.32,
           "unrealized_pct": 0.39
         },
@@ -286,9 +286,9 @@
           "pnl_usd": -0.0908558,
           "pnl_pct": -3.32,
           "currency": "USD",
-          "entry_idr": 50270.28,
-          "value_idr": 48602.72,
-          "unrealized_idr": -1667.56,
+          "entry_idr": 50270.33,
+          "value_idr": 48602.76,
+          "unrealized_idr": -1667.57,
           "unrealized_pct": -3.32
         },
         {
@@ -301,8 +301,8 @@
           "pnl_usd": -0.1694414,
           "pnl_pct": -6.23,
           "currency": "USD",
-          "entry_idr": 49880.31,
-          "value_idr": 46770.39,
+          "entry_idr": 49880.35,
+          "value_idr": 46770.43,
           "unrealized_idr": -3109.92,
           "unrealized_pct": -6.23
         },
@@ -311,15 +311,15 @@
           "name": null,
           "qty": 0.030159281,
           "entry": 97.814,
-          "price": 77.97999999999999,
-          "value_usd": 2.35182073238,
-          "pnl_usd": -0.598179179354,
-          "pnl_pct": -20.28,
+          "price": 78.25,
+          "value_usd": 2.35996373825,
+          "pnl_usd": -0.590036173484,
+          "pnl_pct": -20.0,
           "currency": "USD",
-          "entry_idr": 54144.2,
-          "value_idr": 43165.24,
-          "unrealized_idr": -10978.96,
-          "unrealized_pct": -20.28
+          "entry_idr": 54144.25,
+          "value_idr": 43314.74,
+          "unrealized_idr": -10829.51,
+          "unrealized_pct": -20.0
         },
         {
           "symbol": "AZN",
@@ -331,14 +331,14 @@
           "pnl_usd": -0.001437561,
           "pnl_pct": -0.14,
           "currency": "USD",
-          "entry_idr": 19455.2,
-          "value_idr": 19428.82,
+          "entry_idr": 19455.22,
+          "value_idr": 19428.84,
           "unrealized_idr": -26.38,
           "unrealized_pct": -0.14
         }
       ],
-      "positions_value_idr": 307139.02,
-      "total_idr": 420296.02,
+      "positions_value_idr": 307205.01,
+      "total_idr": 420362.01,
       "wallets": {
         "IDR_CRYPTO_FUNDING": 113157,
         "IDR_CASH": 0,
@@ -347,12 +347,12 @@
         "USD_MARGIN": 0
       },
       "reported": {
-        "netAssetValueIdr": 307139.0,
-        "unrealisedPnLIdr": -14426.0
+        "netAssetValueIdr": 307205.0,
+        "unrealisedPnLIdr": -14360.0
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
-      "unrealized_idr": -14426.0,
-      "unrealized_at": "2026-11-25T19:45:02.684665+08:00"
+      "unrealized_idr": -14360.0,
+      "unrealized_at": "2026-11-25T19:50:07.430642+08:00"
     }
   },
   "news": [
@@ -393,6 +393,18 @@
       "time": "2026-11-24T01:51:00+08:00"
     },
     {
+      "title": "Trump hosts third crypto gala for meme coin amid conflict of interest outcry - The Guardian",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV1RnSFBRaGNTTWk4WUdpekprQ2pUSEViLXEyaUtneWxOSjZFZmxIWVJQZVUyd3hSMV9zdmtERk81UHZkUXZ5VDhFWFdQUi1obEhCbmdMQzg2WWR3Nld2Ni1WNGhHSjRtRWRhV2ZjOXRfMnpfVmVIYno4a3pFOUxHaXZVc2xrUEpZNTVj?oc=5",
+      "time": "2026-11-23T08:31:00+08:00"
+    },
+    {
+      "title": "Trump headlines “exclusive” dinner to promote his meme coin - Yahoo News Singapore",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbDFmZnN5d1pHX1puNVpnZG8weGxZMUxQZ2pxZEdVYmh2R1RVR2U1dV9taTFqa21UbEdHQ0lwY2VtQnNpanNZUUJubjJlaGtpRnJTNk5Ub0Y5c2FJZVR6b2lOV2NqNmdHZGljTVkxSHAzVy15TktHU0xaT2toMFUyZEtoclJUc0Mwdnc?oc=5",
+      "time": "2026-11-23T22:25:47+08:00"
+    },
+    {
       "title": "US files action to recover over $1 billion in cryptocurrency stolen in Binance hack - Reuters",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVNMXVSLXVnN2RqNTM3Q09KcFk4MnhKNG9pN2FPd1ZJd2JURFNMRWRCMllWYm9Ia1dZYXh6bmhrWFdkM2k2WFNzNndJQXI5aDdoTXJXdzNwUGxUQzJhQWxwQ1JIcnRwaFVyVXJmbmV2STNnWGJPUldNelNRZmZyV1gweDFVeW1BVVhJMTV5WEtreVJnQ2xrQ0V2VzRfZUtHVWlsQzJja01fYUN1ZEw1ZUJwQU5zWExINXZqSGJGdEpYNjRR?oc=5",
@@ -405,22 +417,10 @@
       "time": "2026-11-24T19:26:00+08:00"
     },
     {
-      "title": "Law enforcement follow crypto money trail behind billion-euro illegal streaming industry - Europol",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTkYtLXViTUlOWWtKZVY3Z1Q3T2xrVFNGMGhjZXpRNURydlpmV28xMGxCdmhGOVZxa1M1eGtiVXp2TXFkZnBRTzNSTm1sdDkzNTI1RjFFdnduYWppLUpRblNBLTR3WXBsSWlFbjl4N2xiN2J5NzZKeVFvczVBZjRKX0tVUjNpVDZtSmt0S0VhVjdmVTZzN3FKelhYZDE4Wld4VEdySDk4V0NCSUgzSWR2dWpLY2pxTEwzTGFIUDM2c3hPbThFYy1HV1dFSUMxbG0wZkE4MEZDQzJwQVNT?oc=5",
-      "time": "2026-11-24T21:00:48+08:00"
-    },
-    {
-      "title": "Inside Operation Niagara, a week-long blitz to halt cryptocurrency scams - The Globe and Mail",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMVRnN1lQdU9rYkE4SW84ZFVvOHVIVjhrMFotQ1RuMkpBLVhTUGlTSkR6RnhkaklaWXZuQUptRUlmT1BxbFVnUEpBX09PWGxRZG14TlppTklfV0VyQklQanl6ODN5aDVpd1k3YzhQb3p2LTNjVmdpcG1mTDZZbnpqZVBNU2JxcmQ4Znp0eHNmeVlJYkxVM3ZfVjZCeHJ1cGdhcmVFcms1cFpLajVEMGZENldOdG1EdGRJZTZUNkFR?oc=5",
-      "time": "2026-11-24T19:00:00+08:00"
-    },
-    {
-      "title": "Nasdaq futures slide amid reports of fresh U.S. tariffs as tech sell-off intensifies: Live updates - CNBC",
+      "title": "Nasdaq futures tumble as AI sell-off returns with Nvidia, Anthropic leading the way: Live updates - CNBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Jd2QwOVppNGtIY3I5ZXgyVmZKQzJ3SzZvVnVydTJHQnliRXBCR2RiQTBMeXExQU16TnpPQzkwWVl2Q0FKV055NzJBNE4tMGQ0UmlFMFdnQ3o1OG9tR2JNd1Z6Ymk5cGtDVFBxZjJPT19jblIxZ2lwRQ?oc=5",
-      "time": "2026-11-25T17:58:19+08:00"
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Jd2QwOVppNGtIY3I5ZXgyVmZKQzJ3SzZvVnVydTJHQnliRXBCR2RiQTBMeXExQU16TnpPQzkwWVl2Q0FKV055NzJBNE4tMGQ0UmlFMFdnQ3o1OG9tR2JNd1Z6Ymk5cGtDVFBxZjJPT19jblIxZ2lwRdIBfkFVX3lxTE5qZGNISDFwMjNGQUoxc3ZlT1JFR1A5Zk1oTmJSX1kxWVFOWUZscTZGTWh2cHdfMW92SzVCbXdBR2o3YWJUVzN2TXhfOUdhSUZpdFNyNXBaUjdseWpuQklwaVgzaUlGdkJqNm54TWEyVTluWVFYVTZVMVptNV9xQQ?oc=5",
+      "time": "2026-11-25T18:45:51+08:00"
     },
     {
       "title": "Nvidia live updates: Nvidia stock falls after massive rally, Jensen Huang apologizes to employees - Yahoo Finance",
@@ -429,25 +429,25 @@
       "time": "2026-11-25T17:39:21+08:00"
     },
     {
+      "title": "Stock Market Today: Dow, S&P 500 and Nasdaq set to slump as investors await PCE inflation data; Nvidia stock drops: live updates - MarketWatch",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWUoxN04xLTNpMnpwa1d3YkJLT1l0RElYblJUckRXTktsMXpfakMxdXkyd2JfcXdKUTZXWVE0Y1dmWHBDbGlSVTBqWVkxS2ViWUdtX01rU21rYnpBdDFsSWg2UG16UkNCWTJSNWdjbndGcm5LcExsZVNENkptV0tvblRQMTlKTjREaDR6Q3lNeGR3Tm42enlyX0s3ZENmX2ZLMzNrMlprVXotbjdfZXBYRDlVZV8?oc=5",
+      "time": "2026-11-25T19:26:00+08:00"
+    },
+    {
       "title": "U.S. Stocks Mixed as Huang Relief Rally Fades - WSJ",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOczFSSUlCQTZ4cWcwa0VkZnN3eU14VXFmRzhFeGVZd192cFd6NjZQR2FWVVlvU01OTUpiRUQ5Y1poSjFYaTFBNzRtME8zWktrXzgyY3NmSGJfcG83aEVQdDMtcXo1T2VUM2xWSHowajRMeDJLMnZnczVwOUZLR3hEYTk5OUZsZU1feW54T1dsS01GUQ?oc=5",
-      "time": "2026-11-25T07:01:32+08:00"
+      "time": "2026-11-25T06:03:00+08:00"
     },
     {
       "title": "Nvidia shares soar more than 30% after Huang reinstated as CEO - CNN",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55SjFMdklaSk1tSmJJeFlFQ21MX1k0SFVfVXhCVk5hOEl0MzBFSW5JOV84RnVaMkxGNDBLYTBuV0tKRU05S3d0ckhCdE9nZ2M2NTgzMDVEUHpRN3lyUFBUajFCQVdIbXhXcUtEb1FB?oc=5",
       "time": "2026-11-23T19:26:06+08:00"
-    },
-    {
-      "title": "US stocks slide as Nvidia rally fizzles out, dollar falls - Reuters",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVGQ3cVhHXzJBLXEybDVWX21xeWcxbUVEOHA1ZV9IU0lacEM2a3dKbmFLSGk2Y1MwLXk0OVFzWV8yT1JNQ3FnX3hWNGxidEZvbDZwTl8tdjNoUDV6MU45ZnJSa3lSMnZJNXdwWk5VRUFOYzJlTk11TmZaS1hocXhPVUE4bw?oc=5",
-      "time": "2026-11-24T09:29:00+08:00"
     }
   ],
-  "news_at": "2026-11-25T19:35:02.297788+08:00",
+  "news_at": "2026-11-25T19:50:32.428829+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
