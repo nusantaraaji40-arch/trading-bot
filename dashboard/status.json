@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T06:09:01.240472+08:00",
+  "generated_at": "2026-11-26T06:09:32.139082+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -108,7 +108,7 @@
       "_total_idr_from_log": 187758.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-26T06:08:02.163147+08:00"
+      "unrealized_at": "2026-11-26T06:09:31.274740+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002508,
-          "value_usd": 0.304847,
-          "value_idr": 5596.69,
-          "unrealized_idr": -14383.33,
-          "unrealized_pct": -72.35
+          "price": 0.002517,
+          "value_usd": 0.305941,
+          "value_idr": 5616.77,
+          "unrealized_idr": -14363.25,
+          "unrealized_pct": -72.25
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,10 +141,10 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60236.97,
-          "value_usd": 1.024028,
-          "value_idr": 18800.13,
-          "unrealized_idr": -1179.89,
+          "price": 60237.57,
+          "value_usd": 1.024039,
+          "value_idr": 18800.32,
+          "unrealized_idr": -1179.7,
           "unrealized_pct": -3.35
         }
       ],
@@ -153,8 +153,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-26T05:08:41+07:00",
-      "unrealized_idr": -15563.22,
-      "unrealized_at": "2026-11-26T06:08:02.163147+08:00",
+      "unrealized_idr": -15542.95,
+      "unrealized_at": "2026-11-26T06:09:31.274740+08:00",
       "usd_idr_used": 18358.991198580134
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-26T05:08:51+07:00"
+      "updated": "2026-11-26T05:09:25+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-26T05:08:43+07:00",
+      "updated": "2026-11-26T05:09:15+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,7 +216,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-26T05:08:52+07:00",
+      "updated": "2026-11-26T05:09:26+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -357,6 +357,12 @@
   },
   "news": [
     {
+      "title": "Switzerland clears 57 jurisdictions for crypto tax data sharing",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/switzerland-clears-57-jurisdictions-crypto-tax-data-sharing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-26T05:53:38+08:00"
+    },
+    {
       "title": "Braiins warns of Bitcoin mining attacks affecting over 1,000 sites",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -379,12 +385,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/us-inflation-rises-december-fed-meeting-clouding-crypto-outlook?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-26T01:53:10+08:00"
-    },
-    {
-      "title": "Bitcoin falls toward $57K amid US tariff fears, hot PCE data as Nasdaq drops 4%",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/markets/bitcoin-falls-57k-us-tariff-pce-data-nasdaq-drops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-26T01:33:22+08:00"
     },
     {
       "title": "Inside Trump's cryptocurrency gala for $TRUMP meme coin's largest buyers - CBS News",
@@ -417,16 +417,22 @@
       "time": "2026-11-25T19:36:44+08:00"
     },
     {
+      "title": "Stock market today: Dow erases losses to end positive, S&P 500 and Nasdaq recover ground amid AI sell-off - Yahoo Finance",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUEhyLTdac1NBTVdPT1QyLUJKck4wUUJkNjlXQWFHTG1peDJyeDRqNklFSkVpek9JbmEyQ0gya1R6dGZicmpfbkFIS1BjR3lDeGhFMmpIYU90ajhxZ2lwYW5sLW93TmdZcXR3Q2p3akUxc1JBRVRmbEpVQW5LM3pDaXhNZWx6a0txT19rUTQ3R2xVejJWQkh0TzdSRmlOY0lDa05oNklJOE1fVV9CY1FuRXJMNHJrVG8zQzdTX0pjYmNwanNhd0VJcTVkRQ?oc=5",
+      "time": "2026-11-26T05:19:41+08:00"
+    },
+    {
+      "title": "US stocks fall further as fears over AI intensify - BBC",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ENVVNamVYdzF3V0tzVDBVWlVHWEV3WE9Wem5kMVgxRkNOQjI3Y0Nla0YzOFczWk5QbmhnSjk0LU5xTXUzeGdOY05IOVQ2ZE9YY3ExdG9WdE1NME0?oc=5",
+      "time": "2026-11-26T01:48:09+08:00"
+    },
+    {
       "title": "Dow closes higher Wednesday, wiping out 1,100-point loss in stunning rebound: Live updates - CNBC",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Jd2QwOVppNGtIY3I5ZXgyVmZKQzJ3SzZvVnVydTJHQnliRXBCR2RiQTBMeXExQU16TnpPQzkwWVl2Q0FKV055NzJBNE4tMGQ0UmlFMFdnQ3o1OG9tR2JNd1Z6Ymk5cGtDVFBxZjJPT19jblIxZ2lwRdIBfkFVX3lxTE5qZGNISDFwMjNGQUoxc3ZlT1JFR1A5Zk1oTmJSX1kxWVFOWUZscTZGTWh2cHdfMW92SzVCbXdBR2o3YWJUVzN2TXhfOUdhSUZpdFNyNXBaUjdseWpuQklwaVgzaUlGdkJqNm54TWEyVTluWVFYVTZVMVptNV9xQQ?oc=5",
       "time": "2026-11-26T05:17:00+08:00"
-    },
-    {
-      "title": "US announces new tariffs of up to 20% on China, the EU, and 12 other nations - Yahoo Finance",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUU1FZDY5UnlETEhNeFdMUGJEOUpJWUh2TTRVU2pYa1NIaWJPZmIxZTVOZ3MyOU1kUmk4RXluQThXd0lnbWJJcGNPbzlLYnFrZHI4R094VnB2UHVCdjFDRmNleVNZT1pxTUJxdzFWdWkzS29senQ0WGRRZmxKcjZ3NThMemZSQzJEX2JxcVRrczF4ZlpHOUt0TGlMSGVPSE1seWo2bXluSjhJME1oa2Ytd0l6N0UxWXB5S3E4X2RaZDV3V2RpbVNicUR3?oc=5",
-      "time": "2026-11-25T23:33:01+08:00"
     },
     {
       "title": "Trump targets China, EU in new round of tariffs - CNN",
@@ -439,15 +445,9 @@
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdUdBTGhVT2V5cDcydUZMX2NTdTkxVDBJSHdCMUgwNXBibGhQc28zdktpLXA2dGVUYzRzV3hpMld1U29KempSNUswd2dNYVdITlFxV2NycEkwbnlpZkdPSDNicVRKM3NCU2l0M0hoWU13UTZkbTAtX2JFempxaUtFbjdTZGMxT2lXM2g3dkR4cy1UYnVfZ09kOWpTNGxtUEZZOTRPaXhENlZ6OGt2ZF94d0RCVjdOSldfc0E?oc=5",
       "time": "2026-11-26T04:04:52+08:00"
-    },
-    {
-      "title": "US stocks endure volatile session as AI trade remains under pressure - Financial Times",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSU4xMm9XeS02RlVfRHptOVoyRXNfa2cxRmxISXhnOFBrVnYtSk94bnVDWklKQzVhODdtbEViRThXVkdIYWw4aUpLME9fc3cxQ01WZ0ZTejdGTXJZdnNESmxlRl9Tb2ZEaElSRExXTWs3Ymg5QmxjZVdZNDdnT3ZNSWV3bDE?oc=5",
-      "time": "2026-11-25T09:42:32+08:00"
     }
   ],
-  "news_at": "2026-11-26T05:54:02.799324+08:00",
+  "news_at": "2026-11-26T06:09:32.138957+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
