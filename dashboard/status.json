@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T21:37:31.592920+08:00",
+  "generated_at": "2026-11-26T21:38:33.115828+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -108,7 +108,7 @@
       "_total_idr_from_log": 191583.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-26T21:37:31.592262+08:00"
+      "unrealized_at": "2026-11-26T21:38:31.729652+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002648,
-          "value_usd": 0.321864,
-          "value_idr": 5926.48,
-          "unrealized_idr": -14053.54,
-          "unrealized_pct": -70.81
+          "price": 0.002624,
+          "value_usd": 0.318947,
+          "value_idr": 5872.76,
+          "unrealized_idr": -14107.26,
+          "unrealized_pct": -71.07
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,20 +141,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60888.02,
-          "value_usd": 1.035096,
-          "value_idr": 19059.19,
-          "unrealized_idr": -920.83,
-          "unrealized_pct": -2.31
+          "price": 60879.66,
+          "value_usd": 1.034954,
+          "value_idr": 19056.57,
+          "unrealized_idr": -923.45,
+          "unrealized_pct": -2.32
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-26T20:37:28+07:00",
-      "unrealized_idr": -14974.37,
-      "unrealized_at": "2026-11-26T21:37:31.592262+08:00",
+      "updated": "2026-11-26T20:38:29+07:00",
+      "unrealized_idr": -15030.71,
+      "unrealized_at": "2026-11-26T21:38:31.729652+08:00",
       "usd_idr_used": 18412.960356011754
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-26T20:37:16+07:00"
+      "updated": "2026-11-26T20:38:22+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-26T20:37:13+07:00",
+      "updated": "2026-11-26T20:38:17+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,7 +216,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-26T20:37:26+07:00",
+      "updated": "2026-11-26T20:38:31+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -357,6 +357,12 @@
   },
   "news": [
     {
+      "title": "7 bizarre things crypto whales spent a fortune on",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/magazine/7-bizarre-things-crypto-whales-spent-a-fortune-on?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-26T21:30:00+08:00"
+    },
+    {
       "title": "Vitalik Buterin calls for verifiable chips as hardware wallet threats evolve",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/vitalik-buterin-verifiable-chips-hardware-wallet-threats-evolve?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -381,16 +387,16 @@
       "time": "2026-11-26T18:15:28+08:00"
     },
     {
-      "title": "Bitcoin ETF November outflows top $5B, Morgan Stanley bucks trend",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/markets/morgan-stanley-bitcoin-etf-trend-outflows-november?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-26T17:42:34+08:00"
-    },
-    {
       "title": "EXCLUSIVE: StanChart's crypto unit Zodia Custody hit by security breach, some client data exposed - Reuters",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNGJWWkQ2MFZyZFRTMl9HcGFjU1V0WmZsNGt3MWpJZmNJdUlUNmRtNGpKR3pjRE1YeUx3ZkFKa1NPbFJlUWtOR19yV3FWOG1sY3RrdTFINnhwcnVnZUtrZy1VWmJWa0lQZ1Fla1NSY3dINllTT2FUOGs1MnAzSU03WWtQT2RtUkhrS1M1TFE3bHNKcXBXMXp5OWtxWWFiSGF5dlBOeHJHWGw5Z1ZwclNlSExxUUlNR0FHeTZ0VzhVSmoxQ1p5VUlkdXNydzFTUQ?oc=5",
       "time": "2026-11-26T20:25:29+08:00"
+    },
+    {
+      "title": "Douglas County investigator recovers $671K for alleged cryptocurrency scam victim - WOWT",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQT2ItOEF3YzcyeTJSRUNPUUxBUGI2ZlM4dDBPeV80ZmtVR2ZnaUtURlMwektDdzVZWkJOS2NrUFJ4b182YlcxZlYxeTd0NDB6b0k5ZzhtX3RKSTk5Z1NKNkpmSmVxNkRIQzctV0ttM1hzMkxfVTVQSzRvV0hvbzVHVUFCRHBRZVBmNWVuOVViWnFtQVh4QXNHdGpUVW1kTmVMUmxtYTc1NUFtblZTVHfSAcIBQVVfeXFMTUUyQ1VLa1Z4UDk5UUtYQ1lIemtyNFAyMkIzTVFtWXluQ1RETXo5S0I5YXA2bGd1TFZnbll4VkplQ2daSmxUVGxpYjdlZzdMNVJLS2lvZ0VKT01pSEZxd0JTcjhraERIcUtoTFJBNm1pN1NjeU9NMVhyN2pvQmR6azBXWjdHRG9qeF9ad1BCbGh2dEJJWXJEaGVYdzNqZDNhWG13endaSG1EcF9PZElBbGFFLTRmeXRaRTlUems2b1YzaWc?oc=5",
+      "time": "2026-11-26T12:29:00+08:00"
     },
     {
       "title": "Founders of 'cryptocurrency Ponzi scheme' ordered to pay $1.3 billion after defrauding immigrant communities - Newsday",
@@ -405,16 +411,10 @@
       "time": "2026-11-24T01:51:00+08:00"
     },
     {
-      "title": "Greene County Board of Adjustment Approves Permits for Cryptocurrency Data Center and Repowering Wind Turbines - Raccoon Valley Radio",
+      "title": "Law enforcement follow crypto money trail behind billion-euro illegal streaming industry - Europol",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxObjhremQ4dUtadmk2cGZqVTlIbUtBb1lRR3Q3T3p2SEVabG95Q3JDX3B5dl9OUzVkeG1GZ2sya1ZMTkRPOEU3N2wtWmc5d1BBM0VVWGFPSWtTOHVsemI2NlRZSFRmNFgwblVieE5JTEt4QzJjbkNXWk1KaWJTR1k4aVFMUjZlUmkzTV9jUDFUX0ZVMFlVTzY1UUNBUHBOWWZBdjdDcXhxVFQ5S05zT1ZVRDM3bjNOeEhxSk5Wa2JUb3hyUF81U1Z3Q183amF5dEJhRmFwd1pnTUdsd2FOYUdvVTAzRng2TFBhSzF6VlNn?oc=5",
-      "time": "2026-11-26T07:04:24+08:00"
-    },
-    {
-      "title": "Bitcoin, Ethereum, XRP, Dogecoin Climb Even as Core Inflation Stays Hot: Analyst Warns Investors to 'Prep - Benzinga",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWV9EX1FFWC15LUxRcy03VEJHVU8zMGFmc2J6d0VSR2tubzBDMVF1cm1qUGc5TmZzLUFRWTdwc2pqRG8wVEJob1EwYzZNejc2ejlOS2VNeFM5Q2g3Q3Q4c1FCTnRaZTQ4TEp5cy16bFROU2twcHRTNG5YTW5RTWJTU1RJVzNkUmdpTWVWSnFKNWU5bTBxU2g0OVRablI0RU1HNVc4cEd3LXhndTAzR3VmNTZB?oc=5",
-      "time": "2026-11-26T09:43:28+08:00"
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTkYtLXViTUlOWWtKZVY3Z1Q3T2xrVFNGMGhjZXpRNURydlpmV28xMGxCdmhGOVZxa1M1eGtiVXp2TXFkZnBRTzNSTm1sdDkzNTI1RjFFdnduYWppLUpRblNBLTR3WXBsSWlFbjl4N2xiN2J5NzZKeVFvczVBZjRKX0tVUjNpVDZtSmt0S0VhVjdmVTZzN3FKelhYZDE4Wld4VEdySDk4V0NCSUgzSWR2dWpLY2pxTEwzTGFIUDM2c3hPbThFYy1HV1dFSUMxbG0wZkE4MEZDQzJwQVNT?oc=5",
+      "time": "2026-11-24T21:00:48+08:00"
     },
     {
       "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains' - CNBC",
@@ -447,7 +447,7 @@
       "time": "2026-11-26T19:10:28+08:00"
     }
   ],
-  "news_at": "2026-11-26T21:23:02.723760+08:00",
+  "news_at": "2026-11-26T21:38:33.115702+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
