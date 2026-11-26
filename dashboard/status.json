@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T05:44:31.248271+08:00",
+  "generated_at": "2026-11-27T05:45:31.282722+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -105,10 +105,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 192287.0,
+      "_total_idr_from_log": 192371.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-27T05:44:31.246871+08:00"
+      "unrealized_at": "2026-11-27T05:45:31.281309+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003361,
-          "value_usd": 0.40853,
-          "value_idr": 7522.24,
-          "unrealized_idr": -12457.78,
-          "unrealized_pct": -62.95
+          "price": 0.003356,
+          "value_usd": 0.407922,
+          "value_idr": 7511.05,
+          "unrealized_idr": -12468.97,
+          "unrealized_pct": -63.0
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,11 +141,11 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60893.78,
-          "value_usd": 1.035194,
-          "value_idr": 19060.99,
-          "unrealized_idr": -919.03,
-          "unrealized_pct": -2.3
+          "price": 60897.57,
+          "value_usd": 1.035259,
+          "value_idr": 19062.18,
+          "unrealized_idr": -917.84,
+          "unrealized_pct": -2.29
         }
       ],
       "realized_idr": -6087.530147940009,
@@ -153,8 +153,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-27T04:44:30+07:00",
-      "unrealized_idr": -13376.81,
-      "unrealized_at": "2026-11-27T05:44:31.246871+08:00",
+      "unrealized_idr": -13386.81,
+      "unrealized_at": "2026-11-27T05:45:31.281309+08:00",
       "usd_idr_used": 18412.960356011754
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-27T04:44:11+07:00"
+      "updated": "2026-11-27T04:45:18+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-27T04:44:18+07:00",
+      "updated": "2026-11-27T04:45:22+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,12 +216,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-27T04:44:20+07:00",
+      "updated": "2026-11-27T04:45:24+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-27T05:40:02.557465+08:00",
-      "fetched_at": "2026-11-27T05:40:02.557465+08:00",
+      "updated": "2026-11-27T05:45:01.653885+08:00",
+      "fetched_at": "2026-11-27T05:45:01.653885+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 113157.0,
       "cash_usd": 0.01,
@@ -352,7 +352,7 @@
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
       "unrealized_idr": -9272.0,
-      "unrealized_at": "2026-11-27T05:40:02.557465+08:00"
+      "unrealized_at": "2026-11-27T05:45:01.653885+08:00"
     }
   },
   "news": [
