@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:24:31.250665+08:00",
+  "generated_at": "2026-11-26T22:25:02.274148+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -108,7 +108,7 @@
       "_total_idr_from_log": 191664.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-26T22:24:01.323693+08:00"
+      "unrealized_at": "2026-11-26T22:25:01.400801+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002733,
-          "value_usd": 0.332196,
-          "value_idr": 6116.71,
-          "unrealized_idr": -13863.31,
-          "unrealized_pct": -69.87
+          "price": 0.002753,
+          "value_usd": 0.334627,
+          "value_idr": 6161.48,
+          "unrealized_idr": -13818.54,
+          "unrealized_pct": -69.65
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,20 +141,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60807.14,
-          "value_usd": 1.033721,
-          "value_idr": 19033.87,
-          "unrealized_idr": -946.15,
-          "unrealized_pct": -2.44
+          "price": 60815.98,
+          "value_usd": 1.033872,
+          "value_idr": 19036.64,
+          "unrealized_idr": -943.38,
+          "unrealized_pct": -2.42
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-26T21:24:00+07:00",
-      "unrealized_idr": -14809.46,
-      "unrealized_at": "2026-11-26T22:24:01.323693+08:00",
+      "updated": "2026-11-26T21:25:01+07:00",
+      "unrealized_idr": -14761.92,
+      "unrealized_at": "2026-11-26T22:25:01.400801+08:00",
       "usd_idr_used": 18412.960356011754
     },
     "pumpfun": {
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-26T21:24:09+07:00",
+      "updated": "2026-11-26T21:24:41+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,7 +216,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-26T21:24:23+07:00",
+      "updated": "2026-11-26T21:24:56+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -441,13 +441,13 @@
       "time": "2026-11-25T23:33:01+08:00"
     },
     {
-      "title": "U.S. Stocks Mixed as Huang Relief Rally Fades - WSJ",
+      "title": "World stocks tumble as Trump tariffs rattle markets, AI rally fades - Reuters",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOczFSSUlCQTZ4cWcwa0VkZnN3eU14VXFmRzhFeGVZd192cFd6NjZQR2FWVVlvU01OTUpiRUQ5Y1poSjFYaTFBNzRtME8zWktrXzgyY3NmSGJfcG83aEVQdDMtcXo1T2VUM2xWSHowajRMeDJLMnZnczVwOUZLR3hEYTk5OUZsZU1feW54T1dsS01GUQ?oc=5",
-      "time": "2026-11-25T07:01:32+08:00"
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRFVsTjFROGtER0loSkZOcnF2NDRLUWFmcjBHZ01ybE51N19idjFFMXI1dnFqZ21JYS1HVVpicTJ1V1RfVU4zd3pkVEZMWHdqMUJWRENOQWJ2VjFqT1Y3WS0xYTV3bzd2RnRraFhtOVpzVE9yYThzdV9tdWxJbUpjNzFraw?oc=5",
+      "time": "2026-11-25T09:50:00+08:00"
     }
   ],
-  "news_at": "2026-11-26T22:09:32.625015+08:00",
+  "news_at": "2026-11-26T22:25:02.273744+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
