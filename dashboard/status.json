@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:30:02.228836+08:00",
+  "generated_at": "2026-11-26T17:30:32.987065+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -108,7 +108,7 @@
       "_total_idr_from_log": 191043.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-26T17:29:31.995520+08:00"
+      "unrealized_at": "2026-11-26T17:30:32.201804+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002792,
-          "value_usd": 0.339368,
-          "value_idr": 6248.42,
-          "unrealized_idr": -13731.6,
-          "unrealized_pct": -69.22
+          "price": 0.002802,
+          "value_usd": 0.340583,
+          "value_idr": 6270.8,
+          "unrealized_idr": -13709.22,
+          "unrealized_pct": -69.11
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,20 +141,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60747.94,
-          "value_usd": 1.032715,
-          "value_idr": 19014.3,
-          "unrealized_idr": -965.72,
-          "unrealized_pct": -2.53
+          "price": 60775.0,
+          "value_usd": 1.033175,
+          "value_idr": 19022.77,
+          "unrealized_idr": -957.25,
+          "unrealized_pct": -2.49
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-26T16:29:08+07:00",
-      "unrealized_idr": -14697.32,
-      "unrealized_at": "2026-11-26T17:29:31.995520+08:00",
+      "updated": "2026-11-26T16:30:08+07:00",
+      "unrealized_idr": -14666.47,
+      "unrealized_at": "2026-11-26T17:30:32.201804+08:00",
       "usd_idr_used": 18411.958027025667
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-26T16:29:34+07:00"
+      "updated": "2026-11-26T16:30:13+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-26T16:29:55+07:00",
+      "updated": "2026-11-26T16:30:27+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,12 +216,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-26T16:29:52+07:00",
+      "updated": "2026-11-26T16:30:24+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-26T17:25:02.180723+08:00",
-      "fetched_at": "2026-11-26T17:25:02.180723+08:00",
+      "updated": "2026-11-26T17:30:03.456048+08:00",
+      "fetched_at": "2026-11-26T17:30:03.456048+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 113157.0,
       "cash_usd": 0.01,
@@ -352,10 +352,16 @@
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
       "unrealized_idr": -9289.0,
-      "unrealized_at": "2026-11-26T17:25:02.180723+08:00"
+      "unrealized_at": "2026-11-26T17:30:03.456048+08:00"
     }
   },
   "news": [
+    {
+      "title": "Switzerland’s first spot Bitcoin ETF ticks up 0.6% in opening hour",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/markets/bit-debuts-switzerlands-first-spot-bitcoin-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-26T17:18:15+08:00"
+    },
     {
       "title": "Here’s what happened in crypto today",
       "source": "CoinTelegraph",
@@ -379,12 +385,6 @@
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/news/1password-hacker-stole-customer-names-and-emails-but-vaults-safe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "time": "2026-11-26T12:55:16+08:00"
-    },
-    {
-      "title": "Senate Democrats urge SEC to scrap crypto, tokenized stock exemptions",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/senate-democrats-urge-sec-to-scrap-crypto-tokenized-stock-exemptions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-26T12:24:45+08:00"
     },
     {
       "title": "Law enforcement follow crypto money trail behind billion-euro illegal streaming industry - Europol",
@@ -417,7 +417,7 @@
       "time": "2026-11-26T07:04:24+08:00"
     },
     {
-      "title": "South Korea's Kospi leads gains as tech rebound lifts Asia markets - CNBC",
+      "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters - CNBC",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9GdFlPeWc1LW1ZQjR0SE5YTU9DSXZ6Qlkxa1RkUGJkX3lkbGl2aDd4MmlUc2k1Z1QtNFBjWDlyMUNGRS16MzVoeGFLYmRXQW5vNFM0aURPbHdtcUxETm5zNUllcnFfY29W0gFuQVVfeXFMTXhrRXByTEZhMDA5REEzbmF2X1RBTTZhNU13bzhRaEV4d2E1MUFGaWw0MHhtem9YbVVDTVZyRHhDRlNXSDhBRmk1eURWdjBlVDJjTnpNSkJzbGJ0N29jXzNZc1RBbC1tTktqc1JxZHc?oc=5",
       "time": "2026-11-26T07:48:51+08:00"
@@ -447,7 +447,7 @@
       "time": "2026-11-26T02:41:51+08:00"
     }
   ],
-  "news_at": "2026-11-26T17:15:32.097438+08:00",
+  "news_at": "2026-11-26T17:30:32.986961+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
