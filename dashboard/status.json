@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T06:08:02.010259+08:00",
+  "generated_at": "2026-11-27T06:08:32.000803+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -108,7 +108,7 @@
       "_total_idr_from_log": 191640.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-27T06:07:31.922237+08:00"
+      "unrealized_at": "2026-11-27T06:08:31.999213+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003374,
-          "value_usd": 0.41011,
-          "value_idr": 7551.33,
-          "unrealized_idr": -12428.69,
-          "unrealized_pct": -62.8
+          "price": 0.003359,
+          "value_usd": 0.408286,
+          "value_idr": 7517.76,
+          "unrealized_idr": -12462.26,
+          "unrealized_pct": -62.97
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,11 +141,11 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60650.83,
-          "value_usd": 1.031064,
-          "value_idr": 18984.94,
-          "unrealized_idr": -995.08,
-          "unrealized_pct": -2.69
+          "price": 60644.14,
+          "value_usd": 1.03095,
+          "value_idr": 18982.85,
+          "unrealized_idr": -997.17,
+          "unrealized_pct": -2.7
         }
       ],
       "realized_idr": -6087.530147940009,
@@ -153,8 +153,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-27T05:07:43+07:00",
-      "unrealized_idr": -13423.77,
-      "unrealized_at": "2026-11-27T06:07:31.922237+08:00",
+      "unrealized_idr": -13459.43,
+      "unrealized_at": "2026-11-27T06:08:31.999213+08:00",
       "usd_idr_used": 18412.960356011754
     },
     "pumpfun": {
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-27T05:07:44+07:00",
+      "updated": "2026-11-27T05:08:16+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
