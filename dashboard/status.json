@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T06:55:02.181563+08:00",
+  "generated_at": "2026-11-27T06:55:32.805697+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -105,7 +105,7 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 191543.0,
+      "_total_idr_from_log": 191443.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-27T06:55:02.179578+08:00"
@@ -152,7 +152,7 @@
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-27T05:54:08+07:00",
+      "updated": "2026-11-27T05:55:09+07:00",
       "unrealized_idr": -13927.91,
       "unrealized_at": "2026-11-27T06:55:02.179578+08:00",
       "usd_idr_used": 18412.960356011754
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-27T05:54:42+07:00"
+      "updated": "2026-11-27T05:55:14+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-27T05:54:35+07:00",
+      "updated": "2026-11-27T05:55:07+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,12 +216,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-27T05:54:47+07:00",
+      "updated": "2026-11-27T05:55:19+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-27T06:50:02.137124+08:00",
-      "fetched_at": "2026-11-27T06:50:02.137124+08:00",
+      "updated": "2026-11-27T06:55:03.095510+08:00",
+      "fetched_at": "2026-11-27T06:55:03.095510+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 113157.0,
       "cash_usd": 0.01,
@@ -352,10 +352,16 @@
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
       "unrealized_idr": -9272.0,
-      "unrealized_at": "2026-11-27T06:50:02.137124+08:00"
+      "unrealized_at": "2026-11-27T06:55:03.095510+08:00"
     }
   },
   "news": [
+    {
+      "title": "‘Very racist’ Netflix SBF series, BitMart’s $319M shortfall: Asia Express",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/magazine/very-racist-netflix-sbf-series-bitmarts-319m-shortfall-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-27T06:39:46+08:00"
+    },
     {
       "title": "Here’s what happened in crypto today",
       "source": "CoinTelegraph",
@@ -381,12 +387,6 @@
       "time": "2026-11-27T05:13:53+08:00"
     },
     {
-      "title": "Japan weighs tighter oversight of DeFi, self-custodial wallets",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/japan-tighter-oversight-defi-self-custodial-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-27T04:05:18+08:00"
-    },
-    {
       "title": "EXCLUSIVE: StanChart's crypto unit Zodia Custody hit by security breach, some client data exposed - Reuters",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNGJWWkQ2MFZyZFRTMl9HcGFjU1V0WmZsNGt3MWpJZmNJdUlUNmRtNGpKR3pjRE1YeUx3ZkFKa1NPbFJlUWtOR19yV3FWOG1sY3RrdTFINnhwcnVnZUtrZy1VWmJWa0lQZ1Fla1NSY3dINllTT2FUOGs1MnAzSU03WWtQT2RtUkhrS1M1TFE3bHNKcXBXMXp5OWtxWWFiSGF5dlBOeHJHWGw5Z1ZwclNlSExxUUlNR0FHeTZ0VzhVSmoxQ1p5VUlkdXNydzFTUQ?oc=5",
@@ -399,7 +399,7 @@
       "time": "2026-11-26T12:29:00+08:00"
     },
     {
-      "title": "Onondaga County victim lost money to $670,000 cryptocurrency scam - WSYR",
+      "title": "Onondaga County victim part of $670,000 Cryptocurrency scam - WSYR",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNXpPYU1aVFZSTS1QVnlxMUR0VURHQWw4bWhUN2tGMTFVVzFONkJfd0ViSHpPOHNYWHdkUFB5OEI3NTR2cGZYdkFwNmx5NDlVZDkzejJCVkpPM053VVFRbGRRQ2xBU0ZjWlJiWlp3eHJfSkxGZlY3UnREOU9fZHY5RzhyN0NXY0tQLUY4bVBvczY5TEsxU2o2T002V3BvTFZB0gGmAUFVX3lxTFA2MVBmWUdseDZCRjQ4WEdESE12SExzSzVjTFZWMDBQLVRXOGljMUx1LWxaMFpSUVFsZUV1MkZEQ2FnWV9STlBqd0tJMm9UQzV0LWlMdzhfbDYxVDJMT0ZRRWpwUHg2MFZpZGh2X3dKWUpyNUtBX0lKSml4OGd5Qmozb21NZTgzSURWYkVDdU96Ul9ZMkNkT2xXQnB1RkpXZTVpdnVhV0E?oc=5",
       "time": "2026-11-26T19:15:00+08:00"
@@ -423,18 +423,6 @@
       "time": "2026-11-26T07:48:51+08:00"
     },
     {
-      "title": "World reacts to Trump’s new tariffs as US stocks tumble - Al Jazeera",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2xwNlNFeVhicVplSG9FSUZVd2xjOUxCcHd6QjFfeV9PV0VNTkNmOEVQWkN1S2JRbGd6WXBlZ2czdlRWT3hDcWlWclMzeVA0c09QZzVzRTY0VWhxZEJOMU1BNVhpRTNVLThIczAwODJjSzBka1lXVkFRc1pBWGZjRHRhakwxUTdhdllTYVJXUGg1cE9tbWg2clBQZXFBcWl00gGmAUFVX3lxTE1ManFzV2ItczJsaU1wc2t3Tkc3OXdMTlhsdF9tZVh2c29Ld2lLakRybW1sZEhzOXMwNUh5ZUVLd2prWTFSUFZpbm40alhZcEcxVFBIM1NTUzljU1dzdS1oZ2RxTlp6cGNSUzRTOGlxbE5GNGZORy1Da3diOS1NWExyM1RNQVZrZkJEMkhZREdZY1BickkyNE1pbWIzOHdhRFk3Zng2TWc?oc=5",
-      "time": "2026-11-26T03:31:28+08:00"
-    },
-    {
-      "title": "US stocks fall further as fears over AI intensify - BBC",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ENVVNamVYdzF3V0tzVDBVWlVHWEV3WE9Wem5kMVgxRkNOQjI3Y0Nla0YzOFczWk5QbmhnSjk0LU5xTXUzeGdOY05IOVQ2ZE9YY3ExdG9WdE1NME0?oc=5",
-      "time": "2026-11-26T05:43:18+08:00"
-    },
-    {
       "title": "Dow closes higher Wednesday, wiping out 1,100-point loss in stunning rebound: Live updates - CNBC",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Jd2QwOVppNGtIY3I5ZXgyVmZKQzJ3SzZvVnVydTJHQnliRXBCR2RiQTBMeXExQU16TnpPQzkwWVl2Q0FKV055NzJBNE4tMGQ0UmlFMFdnQ3o1OG9tR2JNd1Z6Ymk5cGtDVFBxZjJPT19jblIxZ2lwRdIBfkFVX3lxTE5qZGNISDFwMjNGQUoxc3ZlT1JFR1A5Zk1oTmJSX1kxWVFOWUZscTZGTWh2cHdfMW92SzVCbXdBR2o3YWJUVzN2TXhfOUdhSUZpdFNyNXBaUjdseWpuQklwaVgzaUlGdkJqNm54TWEyVTluWVFYVTZVMVptNV9xQQ?oc=5",
@@ -445,9 +433,21 @@
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUEhyLTdac1NBTVdPT1QyLUJKck4wUUJkNjlXQWFHTG1peDJyeDRqNklFSkVpek9JbmEyQ0gya1R6dGZicmpfbkFIS1BjR3lDeGhFMmpIYU90ajhxZ2lwYW5sLW93TmdZcXR3Q2p3akUxc1JBRVRmbEpVQW5LM3pDaXhNZWx6a0txT19rUTQ3R2xVejJWQkh0TzdSRmlOY0lDa05oNklJOE1fVV9CY1FuRXJMNHJrVG8zQzdTX0pjYmNwanNhd0VJcTVkRQ?oc=5",
       "time": "2026-11-26T06:52:19+08:00"
+    },
+    {
+      "title": "US stocks tumble as AI rout and Trump tariffs rattle markets - ABC News & Headlines – Australian Broadcasting Corporation",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPc1I0OVRsTUdvRUFJbnVucmthbXpiRWZHSHRuNmNFVDVMR1pjdGNqc09MTHBlMW42UFpzc0NDdTNjcFVMcjhkdWlTLThmaDloZGFVenFhdG1iVWItQmhfS282MzN0b3BjdTB1SnJSRW1VZ29iTmUyX3lQVDJ4WUdNam1UOVplMXBz?oc=5",
+      "time": "2026-11-26T03:44:30+08:00"
+    },
+    {
+      "title": "European stocks end higher on easing tariff fears, ECB leadership continuity - Yahoo Finance",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUWZNeGVPclBTbW1iX3VIU0lvZzFRazNjdl9VWHgxaHlDQnYyaFkyODNVNmVXMHZwYlplYVVBSFlhdWM4N3lFTzZVbW9OblBJaDdzbHhYOFhFY1JZb2RoYnhnVHNfRFBWcTZ3U1k4ZFFXclJFWmQwa2wwSWFQSVYxbDQtX0xabWZYa2Jwd1lKWmhzd3V2U093QkkyZ3AwUW5CVUs5NVNkdWg?oc=5",
+      "time": "2026-11-27T01:42:44+08:00"
     }
   ],
-  "news_at": "2026-11-27T06:40:02.720604+08:00",
+  "news_at": "2026-11-27T06:55:32.805568+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
