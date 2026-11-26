@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T10:30:01.882969+08:00",
+  "generated_at": "2026-11-26T10:30:31.667678+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -105,7 +105,7 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 190758.0,
+      "_total_idr_from_log": 190819.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-26T10:30:01.881765+08:00"
@@ -128,8 +128,8 @@
           "symbol": "FLOATUSDT",
           "price": 0.00235,
           "value_usd": 0.285643,
-          "value_idr": 5259.81,
-          "unrealized_idr": -14720.21,
+          "value_idr": 5258.95,
+          "unrealized_idr": -14721.07,
           "unrealized_pct": -74.09
         },
         {
@@ -143,8 +143,8 @@
           "symbol": "BTCUSDT",
           "price": 60961.81,
           "value_usd": 1.036351,
-          "value_idr": 19083.32,
-          "unrealized_idr": -896.7,
+          "value_idr": 19080.21,
+          "unrealized_idr": -899.81,
           "unrealized_pct": -2.19
         }
       ],
@@ -152,10 +152,10 @@
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-26T09:29:24+07:00",
-      "unrealized_idr": -15616.91,
+      "updated": "2026-11-26T09:30:25+07:00",
+      "unrealized_idr": -15620.88,
       "unrealized_at": "2026-11-26T10:30:01.881765+08:00",
-      "usd_idr_used": 18413.96268499784
+      "usd_idr_used": 18410.95569803958
     },
     "pumpfun": {
       "baseline_sol": 0.02690429,
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-26T09:29:49+07:00",
+      "updated": "2026-11-26T09:30:20+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,12 +216,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-26T09:29:44+07:00",
+      "updated": "2026-11-26T09:30:16+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-26T10:25:02.007716+08:00",
-      "fetched_at": "2026-11-26T10:25:02.007716+08:00",
+      "updated": "2026-11-26T10:30:02.229149+08:00",
+      "fetched_at": "2026-11-26T10:30:02.229149+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 113157.0,
       "cash_usd": 0.01,
@@ -229,7 +229,7 @@
       "realized_idr": 0,
       "total_deposited_idr": 500000,
       "trades_count": 7,
-      "usd_idr": 18413.96268499784,
+      "usd_idr": 18410.95569803958,
       "positions": [
         {
           "symbol": null,
@@ -241,9 +241,9 @@
           "pnl_usd": 0.0249968,
           "pnl_pct": 0.92,
           "currency": "USD",
-          "entry_idr": 50036.25,
-          "value_idr": 50496.54,
-          "unrealized_idr": 460.29,
+          "entry_idr": 50028.08,
+          "value_idr": 50488.29,
+          "unrealized_idr": 460.21,
           "unrealized_pct": 0.92
         },
         {
@@ -256,9 +256,9 @@
           "pnl_usd": -0.042028,
           "pnl_pct": -1.53,
           "currency": "USD",
-          "entry_idr": 50461.47,
-          "value_idr": 49687.56,
-          "unrealized_idr": -773.9,
+          "entry_idr": 50453.23,
+          "value_idr": 49679.45,
+          "unrealized_idr": -773.78,
           "unrealized_pct": -1.53
         },
         {
@@ -271,9 +271,9 @@
           "pnl_usd": -0.0598678,
           "pnl_pct": -2.19,
           "currency": "USD",
-          "entry_idr": 50434.61,
-          "value_idr": 49332.2,
-          "unrealized_idr": -1102.4,
+          "entry_idr": 50426.37,
+          "value_idr": 49324.15,
+          "unrealized_idr": -1102.22,
           "unrealized_pct": -2.19
         },
         {
@@ -286,9 +286,9 @@
           "pnl_usd": -0.003573584106,
           "pnl_pct": -0.13,
           "currency": "USD",
-          "entry_idr": 49349.42,
-          "value_idr": 49283.62,
-          "unrealized_idr": -65.8,
+          "entry_idr": 49341.36,
+          "value_idr": 49275.57,
+          "unrealized_idr": -65.79,
           "unrealized_pct": -0.13
         },
         {
@@ -301,9 +301,9 @@
           "pnl_usd": -0.1094764,
           "pnl_pct": -4.03,
           "currency": "USD",
-          "entry_idr": 50043.36,
-          "value_idr": 48027.46,
-          "unrealized_idr": -2015.89,
+          "entry_idr": 50035.19,
+          "value_idr": 48019.62,
+          "unrealized_idr": -2015.57,
           "unrealized_pct": -4.03
         },
         {
@@ -316,9 +316,9 @@
           "pnl_usd": -0.453113037744,
           "pnl_pct": -15.36,
           "currency": "USD",
-          "entry_idr": 54321.19,
-          "value_idr": 45977.58,
-          "unrealized_idr": -8343.61,
+          "entry_idr": 54312.32,
+          "value_idr": 45970.07,
+          "unrealized_idr": -8342.24,
           "unrealized_pct": -15.36
         },
         {
@@ -331,14 +331,14 @@
           "pnl_usd": -0.00074753172,
           "pnl_pct": -0.07,
           "currency": "USD",
-          "entry_idr": 19518.8,
-          "value_idr": 19505.04,
-          "unrealized_idr": -13.77,
+          "entry_idr": 19515.61,
+          "value_idr": 19501.85,
+          "unrealized_idr": -13.76,
           "unrealized_pct": -0.07
         }
       ],
-      "positions_value_idr": 312310.0,
-      "total_idr": 425467.0,
+      "positions_value_idr": 312259.0,
+      "total_idr": 425416.0,
       "wallets": {
         "IDR_CRYPTO_FUNDING": 113157,
         "IDR_CASH": 0,
@@ -347,12 +347,12 @@
         "USD_MARGIN": 0
       },
       "reported": {
-        "netAssetValueIdr": 312310.0,
-        "unrealisedPnLIdr": -9255.0
+        "netAssetValueIdr": 312259.0,
+        "unrealisedPnLIdr": -9306.0
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
-      "unrealized_idr": -9255.0,
-      "unrealized_at": "2026-11-26T10:25:02.007716+08:00"
+      "unrealized_idr": -9306.0,
+      "unrealized_at": "2026-11-26T10:30:02.229149+08:00"
     }
   },
   "news": [
