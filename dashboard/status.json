@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:38:01.873746+08:00",
+  "generated_at": "2026-11-27T21:38:32.812408+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -106,10 +106,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 194669.0,
+      "_total_idr_from_log": 194674.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-27T21:37:31.629454+08:00"
+      "unrealized_at": "2026-11-27T21:38:31.896611+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -127,11 +127,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003004,
-          "value_usd": 0.365136,
-          "value_idr": 6707.9,
-          "unrealized_idr": -13272.12,
-          "unrealized_pct": -66.88
+          "price": 0.002996,
+          "value_usd": 0.364164,
+          "value_idr": 6690.04,
+          "unrealized_idr": -13289.98,
+          "unrealized_pct": -66.97
         },
         {
           "entry_idr": 19980.01998001998,
@@ -142,20 +142,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61469.81,
-          "value_usd": 1.044987,
-          "value_idr": 19197.4,
-          "unrealized_idr": -782.62,
-          "unrealized_pct": -1.37
+          "price": 61465.13,
+          "value_usd": 1.044907,
+          "value_idr": 19195.94,
+          "unrealized_idr": -784.08,
+          "unrealized_pct": -1.38
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-27T20:37:21+07:00",
-      "unrealized_idr": -14054.74,
-      "unrealized_at": "2026-11-27T21:37:31.629454+08:00",
+      "updated": "2026-11-27T20:38:21+07:00",
+      "unrealized_idr": -14074.06,
+      "unrealized_at": "2026-11-27T21:38:31.896611+08:00",
       "usd_idr_used": 18370.95092350771
     },
     "pumpfun": {
@@ -185,7 +185,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-27T20:37:46+07:00"
+      "updated": "2026-11-27T20:38:19+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -201,7 +201,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-27T20:37:40+07:00",
+      "updated": "2026-11-27T20:38:12+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -217,16 +217,22 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-27T20:37:55+07:00",
+      "updated": "2026-11-27T20:38:28+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
       "_error": "stale_pluang_json",
-      "_age_seconds": 3779.333862,
+      "_age_seconds": 3809.318448,
       "_path": "/home/ubuntu/live-status/pluang.json"
     }
   },
   "news": [
+    {
+      "title": "Here’s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-27T21:28:26+08:00"
+    },
     {
       "title": "Brazil’s stock exchange pushes stablecoin launch back to 2027",
       "source": "CoinTelegraph",
@@ -252,12 +258,6 @@
       "time": "2026-11-27T18:26:06+08:00"
     },
     {
-      "title": "ESMA to overhaul EU’s MiCA crypto register in 2027",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/esma-overhaul-eu-mica-crypto-register-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-27T16:04:39+08:00"
-    },
-    {
       "title": "Douglas County investigator recovers $671K for alleged cryptocurrency scam victim - WOWT",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQT2ItOEF3YzcyeTJSRUNPUUxBUGI2ZlM4dDBPeV80ZmtVR2ZnaUtURlMwektDdzVZWkJOS2NrUFJ4b182YlcxZlYxeTd0NDB6b0k5ZzhtX3RKSTk5Z1NKNkpmSmVxNkRIQzctV0ttM1hzMkxfVTVQSzRvV0hvbzVHVUFCRHBRZVBmNWVuOVViWnFtQVh4QXNHdGpUVW1kTmVMUmxtYTc1NUFtblZTVHfSAcIBQVVfeXFMTUUyQ1VLa1Z4UDk5UUtYQ1lIemtyNFAyMkIzTVFtWXluQ1RETXo5S0I5YXA2bGd1TFZnbll4VkplQ2daSmxUVGxpYjdlZzdMNVJLS2lvZ0VKT01pSEZxd0JTcjhraERIcUtoTFJBNm1pN1NjeU9NMVhyN2pvQmR6azBXWjdHRG9qeF9ad1BCbGh2dEJJWXJEaGVYdzNqZDNhWG13endaSG1EcF9PZElBbGFFLTRmeXRaRTlUems2b1YzaWc?oc=5",
@@ -276,22 +276,22 @@
       "time": "2026-11-27T10:16:00+08:00"
     },
     {
-      "title": "Zcash Developers Race to Secure Crypto. Can Quantum Computing Break Bitcoin? - TradingView",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaXkzeUNCdGRUa01sbEpOZFpHVlpCdzFSQVBzVS1tZ1J3bjF2b05aX2lpbDZkdzIzS0RxaGZvNGszdFNhaHItX0plS3YyTnpsZ09pWXNlRGVsYnNRaDJFS1RMZkVHUFh1ZUl0c2U2UGtIc1g4RDFVblFzU2o2cjFqck5aNHROM3BjWXlOUjhONE9EbmtlWGY4QkFIb0M2MXpEcEpycFZLUWlUeUJ4UzBKUjRHUkpDSUdXeG93Ym56QjMycUIwVWNIVC1fU3E?oc=5",
-      "time": "2026-11-27T16:21:53+08:00"
-    },
-    {
       "title": "Bitrue Research Institute publishes review of five AI trading bot platforms in 2026 - Crypto Briefing",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbklmYVZVME5KRlg4U0FXVTFVcXdCMmVZbXhTa3psU0x1LW11Um8wR0pmMURvLXNmTFktR0c0cmZ5N3pfRGlteHQ5Wkgxa1MtSTBvSjRwQ3hfOExNRjdEUEtHSC1tYTlobEZxa19yX3MyQkFCQnhBcGtqMEI3aWpzR2I1eUdyVjRVVDZYc0FtRTFrdXJ3WU1sNHB1VmxWS3JMcmtjTFdHYjgwSG0xUkZTdQ?oc=5",
       "time": "2026-11-26T20:00:13+08:00"
     },
     {
+      "title": "XRP, Cardano or Stellar: Which Could Double First in 2027? - 24/7 Wall St.",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOS1ZyN3JzOENfdHZTYUc3anNFYWZGZVZnVjlBRHZ3MmpKZkRrTV9ra21IbVVaS0V1V2VQN3pBYV9acDFVU0t3VUsyeWZpOVY5anQySDFrQy1zRXEzZF84dzJVcGJ4b1VNRk9waUZuSmpoamlmUnFtUmJUMXlDa2UtVkRkZDZjUFNTdkxkZTB6YmxOY3F4Q0t6ZjM2ekVBbHNvT3U1WnFQeVoybTBtTVQ2OUd1dkg?oc=5",
+      "time": "2026-11-27T05:23:00+08:00"
+    },
+    {
       "title": "Dow futures rally 600 points as benchmark heads for best week since April 2025: Live updates - CNBC",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jcmRfRzk2ZGwtRmpwS3RZYlhaTHdzQUFsOUFMeWlmdUJoQjlSb2FDUFJyaWtFUGw3VmdQVVJRZTFzbHBybHV0T0xyQlFNUVB4SDlmbWk1V0pEQXcyVmwtenNJWE82dV9VUkVKVGJ3QVRCOXNpSEpr0gF8QVVfeXFMTjFBd1l1a2dUcEE1SjBNRGpXVkJBcVBLdjM3M04zVGJxUnNmVk1qejMxZm1WV0xYdi0tNW4tQ2xHSkpzNjhxZkZ0amRPeldHT2RRai11VlNxUXhWTHhQa3pianhxX0hoWnNMRzVKYXBrR2wwMW16UGc0dlpVbQ?oc=5",
-      "time": "2026-11-27T21:11:00+08:00"
+      "time": "2026-11-27T21:32:00+08:00"
     },
     {
       "title": "US Futures Rally as Tech Rebound Gains Momentum: Markets Wrap - Bloomberg.com",
@@ -306,19 +306,19 @@
       "time": "2026-11-27T17:11:52+08:00"
     },
     {
-      "title": "U.S. Stocks Mixed as Huang Relief Rally Fades - WSJ",
+      "title": "World reacts to Trump’s new tariffs as US stocks tumble - Al Jazeera",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOczFSSUlCQTZ4cWcwa0VkZnN3eU14VXFmRzhFeGVZd192cFd6NjZQR2FWVVlvU01OTUpiRUQ5Y1poSjFYaTFBNzRtME8zWktrXzgyY3NmSGJfcG83aEVQdDMtcXo1T2VUM2xWSHowajRMeDJLMnZnczVwOUZLR3hEYTk5OUZsZU1feW54T1dsS01GUQ?oc=5",
-      "time": "2026-11-25T06:03:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2xwNlNFeVhicVplSG9FSUZVd2xjOUxCcHd6QjFfeV9PV0VNTkNmOEVQWkN1S2JRbGd6WXBlZ2czdlRWT3hDcWlWclMzeVA0c09QZzVzRTY0VWhxZEJOMU1BNVhpRTNVLThIczAwODJjSzBka1lXVkFRc1pBWGZjRHRhakwxUTdhdllTYVJXUGg1cE9tbWg2clBQZXFBcWl00gGmAUFVX3lxTE1ManFzV2ItczJsaU1wc2t3Tkc3OXdMTlhsdF9tZVh2c29Ld2lLakRybW1sZEhzOXMwNUh5ZUVLd2prWTFSUFZpbm40alhZcEcxVFBIM1NTUzljU1dzdS1oZ2RxTlp6cGNSUzRTOGlxbE5GNGZORy1Da3diOS1NWExyM1RNQVZrZkJEMkhZREdZY1BickkyNE1pbWIzOHdhRFk3Zng2TWc?oc=5",
+      "time": "2026-11-26T03:31:28+08:00"
     },
     {
-      "title": "US Stocks Set to Bounce as Risk Appetite Returns After Holiday - Bloomberg.com",
+      "title": "US stocks fall further as fears over AI intensify - BBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWkJ0R2dQX1BpbGtNRlNncDF1aTdiMW9zNlJpQ2VXQXhvQV9aYkt5bE1HdXQ5cF9fYlNlNGFha1BDZkNOeDJrS2RkVk5UbmZaeW16N3RWZ19jUmhVYk5TLVY2ZUI3dkVVbUNhRkJMZXRMSVpuZks2SzAybFJPTGVhOXk0dFhWYTBadDlBamstd2FYaWlNUjd1VkpRRGpUdVEtaWJ2Z3d2SGNQTFpocjNLRTNoZw?oc=5",
-      "time": "2026-11-27T16:29:15+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ENVVNamVYdzF3V0tzVDBVWlVHWEV3WE9Wem5kMVgxRkNOQjI3Y0Nla0YzOFczWk5QbmhnSjk0LU5xTXUzeGdOY05IOVQ2ZE9YY3ExdG9WdE1NME0?oc=5",
+      "time": "2026-11-26T05:43:18+08:00"
     }
   ],
-  "news_at": "2026-11-27T21:23:02.682837+08:00",
+  "news_at": "2026-11-27T21:38:32.812292+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
