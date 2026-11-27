@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:10:31.633133+08:00",
+  "generated_at": "2026-11-27T15:11:32.443065+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -106,10 +106,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 195224.0,
+      "_total_idr_from_log": 195222.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-27T15:10:01.807955+08:00"
+      "unrealized_at": "2026-11-27T15:11:31.618678+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -127,11 +127,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.0033,
-          "value_usd": 0.401115,
-          "value_idr": 7384.51,
-          "unrealized_idr": -12595.51,
-          "unrealized_pct": -63.62
+          "price": 0.003325,
+          "value_usd": 0.404154,
+          "value_idr": 7440.46,
+          "unrealized_idr": -12539.56,
+          "unrealized_pct": -63.34
         },
         {
           "entry_idr": 19980.01998001998,
@@ -142,20 +142,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61705.26,
-          "value_usd": 1.048989,
-          "value_idr": 19311.86,
-          "unrealized_idr": -668.16,
-          "unrealized_pct": -1.0
+          "price": 61743.56,
+          "value_usd": 1.049641,
+          "value_idr": 19323.85,
+          "unrealized_idr": -656.17,
+          "unrealized_pct": -0.93
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-27T14:10:24+07:00",
-      "unrealized_idr": -13263.67,
-      "unrealized_at": "2026-11-27T15:10:01.807955+08:00",
+      "updated": "2026-11-27T14:11:25+07:00",
+      "unrealized_idr": -13195.73,
+      "unrealized_at": "2026-11-27T15:11:31.618678+08:00",
       "usd_idr_used": 18409.967970075086
     },
     "pumpfun": {
@@ -185,7 +185,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-27T14:10:15+07:00"
+      "updated": "2026-11-27T14:11:24+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -201,7 +201,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-27T14:10:26+07:00",
+      "updated": "2026-11-27T14:11:30+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -217,7 +217,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-27T14:10:15+07:00",
+      "updated": "2026-11-27T14:11:20+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -388,6 +388,12 @@
       "time": "2026-11-27T08:35:39+08:00"
     },
     {
+      "title": "EXCLUSIVE: StanChart's crypto unit Zodia Custody hit by security breach, some client data exposed - Reuters",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNGJWWkQ2MFZyZFRTMl9HcGFjU1V0WmZsNGt3MWpJZmNJdUlUNmRtNGpKR3pjRE1YeUx3ZkFKa1NPbFJlUWtOR19yV3FWOG1sY3RrdTFINnhwcnVnZUtrZy1VWmJWa0lQZ1Fla1NSY3dINllTT2FUOGs1MnAzSU03WWtQT2RtUkhrS1M1TFE3bHNKcXBXMXp5OWtxWWFiSGF5dlBOeHJHWGw5Z1ZwclNlSExxUUlNR0FHeTZ0VzhVSmoxQ1p5VUlkdXNydzFTUQ?oc=5",
+      "time": "2026-11-26T20:25:29+08:00"
+    },
+    {
       "title": "Douglas County investigator recovers $671K for alleged cryptocurrency scam victim - WOWT",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQT2ItOEF3YzcyeTJSRUNPUUxBUGI2ZlM4dDBPeV80ZmtVR2ZnaUtURlMwektDdzVZWkJOS2NrUFJ4b182YlcxZlYxeTd0NDB6b0k5ZzhtX3RKSTk5Z1NKNkpmSmVxNkRIQzctV0ttM1hzMkxfVTVQSzRvV0hvbzVHVUFCRHBRZVBmNWVuOVViWnFtQVh4QXNHdGpUVW1kTmVMUmxtYTc1NUFtblZTVHfSAcIBQVVfeXFMTUUyQ1VLa1Z4UDk5UUtYQ1lIemtyNFAyMkIzTVFtWXluQ1RETXo5S0I5YXA2bGd1TFZnbll4VkplQ2daSmxUVGxpYjdlZzdMNVJLS2lvZ0VKT01pSEZxd0JTcjhraERIcUtoTFJBNm1pN1NjeU9NMVhyN2pvQmR6azBXWjdHRG9qeF9ad1BCbGh2dEJJWXJEaGVYdzNqZDNhWG13endaSG1EcF9PZElBbGFFLTRmeXRaRTlUems2b1YzaWc?oc=5",
@@ -400,22 +406,16 @@
       "time": "2026-11-26T19:15:00+08:00"
     },
     {
-      "title": "If History Is Any Guide, This Cryptocurrency Could Go Parabolic in 2027 - The Motley Fool",
+      "title": "Bitcoin, Ethereum, XRP, Dogecoin Steady on Thanksgiving: Top Analyst Says BTC Rebound to $100,000 Will Re - Benzinga",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcHdtc1RGYWdYc2hwVUtWSzRZN2FhSWsxNzNRWXRVTDhjdXFjdWxaSTlhVEJvOXlCbF9qQVpFTlVqSW1KTHlUNk1hLUVZVzVhaDJId0NaTzhoeVpFemZXcE9KQnBHOFRNV3Q3UGxWZDN0WWhlMGcySldXV0VFMVJxMFZ0Si1oQnQ1WFVxbF9lTlhDRnB2TGc?oc=5",
-      "time": "2026-11-24T21:17:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTlZmMjVWdkZOS2gzcmw1NFc5OEJUbTY2cXNZakhndkpLTnRLcUM0Y2JuVTRfUXFQdGU0WGNfV1o4U0hTVDBrakRjaXJQdVBOVVR0TDZCUUo3clNEQzk3X2dOd3VmRWhvbW1hV0c2dDNKWlBpSWVxMU9XU0E1ZDVvbVE5OGlFbXVwVnNXU2FRVENhRTdtOUFMVEpTWGF2c1ZvQ21WYWp2THBVUmw0aDhOdw?oc=5",
+      "time": "2026-11-27T10:16:00+08:00"
     },
     {
-      "title": "What Democrats' midterm victory means for your crypto investments, according to experts - CNBC",
+      "title": "NovaTech founders hit with $1.37 billion judgment over $650 million crypto fraud scheme - CoinDesk",
       "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNGV5cWJNWTZhR25sblhkZlBwTklKc3hYMHNtaGtFSG9ndHZCYjFEbXNTQzI4OWVIRHFzWEhqN3Z4MXNpUlN4ekgtT3lEVXc0X2JFeFJFUUZsbzJsbHppaVB0T1JyX0hPaG1SVUZsbmZ4UzJYNXNLOXZPeEpKTUs4VEV0VkUxakJFVEJWVWlGelN3RlJLRkNhUtIBngFBVV95cUxOMHB6ZnhSd1hCdHA4Tk1GZWUxV1FocVdRUVZLak1jWm82Q200dnlsaGpVVk95QWJFM293ejlIYW5EemtzQWYzbUZEcThJZUQwYWRib1VkZUptUHA4US1wd0pBOWxuYmcxY1pTM0NGVDVkNWhReG5zeTI2eGtUd3l4VUlTVFBJRUtuY0FCcmx6MHV0b1ZMTnU1amVNT3E1QQ?oc=5",
-      "time": "2026-11-04T16:00:00+08:00"
-    },
-    {
-      "title": "Greek parliament approves 10% tax on cryptocurrency gains - Reuters",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM29ma19jRVBhTjlKc3ZESlVFUi1QTFBlWDIzTk1sZUxpd25pX3NNM0pXbThlUXZwa3VrN2dpMmF1Ym1zMklMcnZVazJ0Z082NEhFa19ZSVRhSHUwbTBTbEdNSWl5YzlxU2dPNFc0cVdUSVQ5TGxoN1ZzYVIxZ0FXYlFybEIxREl2ajF4RFBVRW9JdzlVMFNabThtOTVKX2hxR1J5R1VONkVUQQ?oc=5",
-      "time": "2026-11-05T16:00:00+08:00"
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbTlBY3I3SnQzc3hidzJyTWthOFhzZ3hqU0UzN1gtb29sNXA2dzF4VXMxUk1XYU5NSGpMRDB3QVJqeTZ5Qk5uVG1pejBPOVhIYW1xX0Vfbnh1ZDZmamo1TlB2MTRDR0h0MlY1bFJUTEstaEExZjZhRldEQjhPd0ZwLUFIaXhBSjVhR3NTWGZUZTA3cHhKY2NweWticzNyYUhFUzJVbVRTcm1EbjNBVldqS1M4bmotTkU2M0hOWUN6OGNJTjRLbklDbmlxN21xc1U4d0NuZXI5elpyLWRO?oc=5",
+      "time": "2026-11-26T18:40:33+08:00"
     },
     {
       "title": "Stock futures rise as Wall Street gets set to wrap up a volatile holiday week: Live updates - CNBC",
@@ -442,13 +442,13 @@
       "time": "2026-11-27T01:42:44+08:00"
     },
     {
-      "title": "Stock market today: Dow erases losses to end positive, S&P 500 and Nasdaq recover ground amid AI sell-off - Yahoo Finance",
+      "title": "US stocks fall further as fears over AI intensify - BBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUEhyLTdac1NBTVdPT1QyLUJKck4wUUJkNjlXQWFHTG1peDJyeDRqNklFSkVpek9JbmEyQ0gya1R6dGZicmpfbkFIS1BjR3lDeGhFMmpIYU90ajhxZ2lwYW5sLW93TmdZcXR3Q2p3akUxc1JBRVRmbEpVQW5LM3pDaXhNZWx6a0txT19rUTQ3R2xVejJWQkh0TzdSRmlOY0lDa05oNklJOE1fVV9CY1FuRXJMNHJrVG8zQzdTX0pjYmNwanNhd0VJcTVkRQ?oc=5",
-      "time": "2026-11-26T06:52:19+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ENVVNamVYdzF3V0tzVDBVWlVHWEV3WE9Wem5kMVgxRkNOQjI3Y0Nla0YzOFczWk5QbmhnSjk0LU5xTXUzeGdOY05IOVQ2ZE9YY3ExdG9WdE1NME0?oc=5",
+      "time": "2026-11-26T05:43:18+08:00"
     }
   ],
-  "news_at": "2026-11-27T14:56:03.197256+08:00",
+  "news_at": "2026-11-27T15:11:32.442955+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
