@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:45:31.930107+08:00",
+  "generated_at": "2026-11-28T01:46:32.511363+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -109,7 +109,7 @@
       "_total_idr_from_log": 189886.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-28T01:45:31.928511+08:00"
+      "unrealized_at": "2026-11-28T01:46:32.087980+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -127,11 +127,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.002971,
-          "value_usd": 0.361125,
-          "value_idr": 6634.22,
-          "unrealized_idr": -13345.8,
-          "unrealized_pct": -67.25
+          "price": 0.002986,
+          "value_usd": 0.362948,
+          "value_idr": 6667.72,
+          "unrealized_idr": -13312.3,
+          "unrealized_pct": -67.08
         },
         {
           "entry_idr": 19980.01998001998,
@@ -142,20 +142,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 59560.3,
-          "value_usd": 1.012525,
-          "value_idr": 18601.08,
-          "unrealized_idr": -1378.94,
-          "unrealized_pct": -4.44
+          "price": 59575.1,
+          "value_usd": 1.012777,
+          "value_idr": 18605.7,
+          "unrealized_idr": -1374.32,
+          "unrealized_pct": -4.41
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-28T00:45:16+07:00",
-      "unrealized_idr": -14724.74,
-      "unrealized_at": "2026-11-28T01:45:31.928511+08:00",
+      "updated": "2026-11-28T00:46:17+07:00",
+      "unrealized_idr": -14686.62,
+      "unrealized_at": "2026-11-28T01:46:32.087980+08:00",
       "usd_idr_used": 18370.981685831503
     },
     "pumpfun": {
@@ -185,7 +185,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-28T00:45:08+07:00"
+      "updated": "2026-11-28T00:46:16+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -201,7 +201,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-28T00:45:06+07:00",
+      "updated": "2026-11-28T00:46:10+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -217,7 +217,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-28T00:45:01+07:00",
+      "updated": "2026-11-28T00:46:06+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -358,6 +358,12 @@
   },
   "news": [
     {
+      "title": "China sets March 2027 rollout for blockchain identity regulations",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/china-march-2027-rollout-blockchain-identity-regulations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-28T01:37:23+08:00"
+    },
+    {
       "title": "Bitcoin price drops below $59K as Anthropic joins tech stock rebound",
       "source": "CoinTelegraph",
       "url": "https://cointelegraph.com/markets/bitcoin-price-below-59k-anthropic-tech-stock-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -382,12 +388,6 @@
       "time": "2026-11-27T21:28:26+08:00"
     },
     {
-      "title": "Brazil’s stock exchange pushes stablecoin launch back to 2027",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/brazil-b3-stablecoin-tokenization-launch-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-27T20:39:54+08:00"
-    },
-    {
       "title": "Douglas County investigator recovers $671K for alleged cryptocurrency scam victim - WOWT",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQT2ItOEF3YzcyeTJSRUNPUUxBUGI2ZlM4dDBPeV80ZmtVR2ZnaUtURlMwektDdzVZWkJOS2NrUFJ4b182YlcxZlYxeTd0NDB6b0k5ZzhtX3RKSTk5Z1NKNkpmSmVxNkRIQzctV0ttM1hzMkxfVTVQSzRvV0hvbzVHVUFCRHBRZVBmNWVuOVViWnFtQVh4QXNHdGpUVW1kTmVMUmxtYTc1NUFtblZTVHfSAcIBQVVfeXFMTUUyQ1VLa1Z4UDk5UUtYQ1lIemtyNFAyMkIzTVFtWXluQ1RETXo5S0I5YXA2bGd1TFZnbll4VkplQ2daSmxUVGxpYjdlZzdMNVJLS2lvZ0VKT01pSEZxd0JTcjhraERIcUtoTFJBNm1pN1NjeU9NMVhyN2pvQmR6azBXWjdHRG9qeF9ad1BCbGh2dEJJWXJEaGVYdzNqZDNhWG13endaSG1EcF9PZElBbGFFLTRmeXRaRTlUems2b1YzaWc?oc=5",
@@ -398,6 +398,12 @@
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNXpPYU1aVFZSTS1QVnlxMUR0VURHQWw4bWhUN2tGMTFVVzFONkJfd0ViSHpPOHNYWHdkUFB5OEI3NTR2cGZYdkFwNmx5NDlVZDkzejJCVkpPM053VVFRbGRRQ2xBU0ZjWlJiWlp3eHJfSkxGZlY3UnREOU9fZHY5RzhyN0NXY0tQLUY4bVBvczY5TEsxU2o2T002V3BvTFZB0gGmAUFVX3lxTFA2MVBmWUdseDZCRjQ4WEdESE12SExzSzVjTFZWMDBQLVRXOGljMUx1LWxaMFpSUVFsZUV1MkZEQ2FnWV9STlBqd0tJMm9UQzV0LWlMdzhfbDYxVDJMT0ZRRWpwUHg2MFZpZGh2X3dKWUpyNUtBX0lKSml4OGd5Qmozb21NZTgzSURWYkVDdU96Ul9ZMkNkT2xXQnB1RkpXZTVpdnVhV0E?oc=5",
       "time": "2026-11-26T19:15:00+08:00"
+    },
+    {
+      "title": "First12trust Launches Review of Crypto Transaction Clearing Process - USA Today",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUk5halMtLTJvX0U3b29zckhNVXlveTFNZTk3T3prTTZWNzU4WkdqbEl2bTFVaU0tcEdTR1lZbFdKblZtUmZsbmJlc0s0VWlKQ2dBVjZRRFdZSDRIQUZzM1VERzh1VjlldEhQQUEwY0ZidEZoYVU3WWsta201OHlJa0NjUzRuVHN3VVRITGNXMWV0c0pCZUZ3Vi16OTAyb1NvOTVRT0xCa3Q4VjlrbGtTWGlUNUpxYTlGV0ww?oc=5",
+      "time": "2026-11-28T01:24:03+08:00"
     },
     {
       "title": "Bitcoin: Another Chance To Buy At Low Prices (Cryptocurrency:BTC-USD) - Seeking Alpha",
@@ -412,10 +418,10 @@
       "time": "2026-11-27T10:16:00+08:00"
     },
     {
-      "title": "Bitrue Research Institute publishes review of five AI trading bot platforms in 2026 - Crypto Briefing",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbklmYVZVME5KRlg4U0FXVTFVcXdCMmVZbXhTa3psU0x1LW11Um8wR0pmMURvLXNmTFktR0c0cmZ5N3pfRGlteHQ5Wkgxa1MtSTBvSjRwQ3hfOExNRjdEUEtHSC1tYTlobEZxa19yX3MyQkFCQnhBcGtqMEI3aWpzR2I1eUdyVjRVVDZYc0FtRTFrdXJ3WU1sNHB1VmxWS3JMcmtjTFdHYjgwSG0xUkZTdQ?oc=5",
-      "time": "2026-11-26T20:00:13+08:00"
+      "title": "SpaceX shares jump 4% amid tech rally and after Musk says he will expand on Trump Account share donations - CNBC",
+      "source": "Google News · Saham AS",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iX2dPZU9nMG94cXpkbmdGX1U0UERabDlfcGxmd2t1TlZZM0JTNmdpNnhJLTFFYU5UQkJ4Xy1wakExQ1owb3I4VkVkTFRlUHhJZllZaDQxTzMxY0hwN2tzczc1cFdpNjdGQjI0cVRWMlh1c2vSAXhBVV95cUxPdU9oSTZCWkhiWEZEVUowaXJkSDlvalBJQ3Q4dGlydDFCYWhxYmpnejFJTXhkN1g4SzNEYjVoeVloWTQwODdNVnhGZW9yMUJmLWh1cDRCTThYd2NIcmItSTdLV3JrQmR2Z1lfZ2MtaVdSMjVHc0pubEU?oc=5",
+      "time": "2026-11-27T12:20:00+08:00"
     },
     {
       "title": "US stocks set for weekly advance as battered AI shares hold their ground - Reuters",
@@ -424,31 +430,25 @@
       "time": "2026-11-27T15:34:00+08:00"
     },
     {
-      "title": "Dow rallies 500 points as benchmark heads for best week since April 2025: Live updates - CNBC",
+      "title": "Dow rallies 500 points as benchmark heads for best week since October 2022: Live updates - CNBC",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jcmRfRzk2ZGwtRmpwS3RZYlhaTHdzQUFsOUFMeWlmdUJoQjlSb2FDUFJyaWtFUGw3VmdQVVJRZTFzbHBybHV0T0xyQlFNUVB4SDlmbWk1V0pEQXcyVmwtenNJWE82dV9VUkVKVGJ3QVRCOXNpSEpr0gF8QVVfeXFMTjFBd1l1a2dUcEE1SjBNRGpXVkJBcVBLdjM3M04zVGJxUnNmVk1qejMxZm1WV0xYdi0tNW4tQ2xHSkpzNjhxZkZ0amRPeldHT2RRai11VlNxUXhWTHhQa3pianhxX0hoWnNMRzVKYXBrR2wwMW16UGc0dlpVbQ?oc=5",
-      "time": "2026-11-28T01:24:00+08:00"
+      "time": "2026-11-28T01:42:00+08:00"
     },
     {
       "title": "Stock market today: Dow, S&P 500, Nasdaq gain on Black Friday as AI jitters steady - Yahoo Finance",
       "source": "Google News · Saham AS",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUjdiRzk3dDlWMEFzNF9vYkRKWDZCZjhSU0FsRFZKZVNBT09SbnBBVFhxUGZCM180elZHMVFhbW80eVdqZi1WRG5XbzJXZTUySzVGOXNlVUJfZ2c3NmEydmFhZUJXZUM1NFMzWjIxbDF4OHhPLXVKMkRza0VMLVpoUWF1WDNkdFdwTmw4eU15M01laEJrQy1ra1FtU2piZ096dmpmSGlhdGs3WTRveTZ5aklMUkh1eW5PeHBZUlF0ODU1WE1xN3JnSVJB?oc=5",
-      "time": "2026-11-28T00:46:05+08:00"
+      "time": "2026-11-28T01:34:39+08:00"
     },
     {
-      "title": "US tech stocks rise in latest market swing - Financial Times",
+      "title": "US stocks fall further as fears over AI intensify - BBC",
       "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTTdCU2RLbHJwc2xuSTdlZ0QxelFBTGZyQ2VQdXpGRW4wcV9iTWJoQmdFbXhocEhRTmF6b1FVMmtnTktYSGJnY0tJaWlYT3BVVDBlZ3lDYW9hblp0ck03eUJoWWRlRFJuWFhEV3lqM24tQnhEeDdSLWQ3Q2ZvcTRUZW84Vlk?oc=5",
-      "time": "2026-11-27T13:01:49+08:00"
-    },
-    {
-      "title": "US Stocks Set to Bounce as Risk Appetite Returns After Holiday - Bloomberg.com",
-      "source": "Google News · Saham AS",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWkJ0R2dQX1BpbGtNRlNncDF1aTdiMW9zNlJpQ2VXQXhvQV9aYkt5bE1HdXQ5cF9fYlNlNGFha1BDZkNOeDJrS2RkVk5UbmZaeW16N3RWZ19jUmhVYk5TLVY2ZUI3dkVVbUNhRkJMZXRMSVpuZks2SzAybFJPTGVhOXk0dFhWYTBadDlBamstd2FYaWlNUjd1VkpRRGpUdVEtaWJ2Z3d2SGNQTFpocjNLRTNoZw?oc=5",
-      "time": "2026-11-27T15:56:20+08:00"
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ENVVNamVYdzF3V0tzVDBVWlVHWEV3WE9Wem5kMVgxRkNOQjI3Y0Nla0YzOFczWk5QbmhnSjk0LU5xTXUzeGdOY05IOVQ2ZE9YY3ExdG9WdE1NME0?oc=5",
+      "time": "2026-11-26T05:43:18+08:00"
     }
   ],
-  "news_at": "2026-11-28T01:31:02.455291+08:00",
+  "news_at": "2026-11-28T01:46:32.511254+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
