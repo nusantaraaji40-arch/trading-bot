@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T06:24:31.243407+08:00",
+  "generated_at": "2026-11-28T06:25:32.217324+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -106,7 +106,7 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 190602.0,
+      "_total_idr_from_log": 190590.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
       "unrealized_at": "2026-11-28T06:24:31.241966+08:00"
@@ -153,7 +153,7 @@
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-28T05:23:58+07:00",
+      "updated": "2026-11-28T05:24:58+07:00",
       "unrealized_idr": -15571.91,
       "unrealized_at": "2026-11-28T06:24:31.241966+08:00",
       "usd_idr_used": 18370.999381291727
@@ -185,7 +185,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-28T05:24:18+07:00"
+      "updated": "2026-11-28T05:25:24+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -201,7 +201,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-28T05:24:28+07:00",
+      "updated": "2026-11-28T05:25:00+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -217,12 +217,12 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-28T05:24:04+07:00",
+      "updated": "2026-11-28T05:25:09+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
-      "updated": "2026-11-28T06:20:02.718013+08:00",
-      "fetched_at": "2026-11-28T06:20:02.718013+08:00",
+      "updated": "2026-11-28T06:25:01.966061+08:00",
+      "fetched_at": "2026-11-28T06:25:01.966061+08:00",
       "source": "Pluang MCP (portfolio_get_holdings + portfolio_get_wallet_balance)",
       "cash_idr": 113157.0,
       "cash_usd": 0.01,
@@ -353,10 +353,16 @@
       },
       "note": "AZN HOLD (TP +12% / SL -5%). Cash = IDR Crypto Funding (spendable IDR); USD cash separate.",
       "unrealized_idr": -2983.0,
-      "unrealized_at": "2026-11-28T06:20:02.718013+08:00"
+      "unrealized_at": "2026-11-28T06:25:01.966061+08:00"
     }
   },
   "news": [
+    {
+      "title": "Here’s what happened in crypto today",
+      "source": "CoinTelegraph",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "time": "2026-11-28T06:12:51+08:00"
+    },
     {
       "title": "Franklin Templeton makes room for HYPE in crypto index ETF",
       "source": "CoinTelegraph",
@@ -382,12 +388,6 @@
       "time": "2026-11-28T00:48:51+08:00"
     },
     {
-      "title": "What was Coinbase worth while Nasdaq was closed?",
-      "source": "CoinTelegraph",
-      "url": "https://cointelegraph.com/news/what-was-coinbase-worth-while-nasdaq-was-closed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "time": "2026-11-27T22:40:54+08:00"
-    },
-    {
       "title": "Douglas County investigator recovers $671K for alleged cryptocurrency scam victim - WOWT",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQT2ItOEF3YzcyeTJSRUNPUUxBUGI2ZlM4dDBPeV80ZmtVR2ZnaUtURlMwektDdzVZWkJOS2NrUFJ4b182YlcxZlYxeTd0NDB6b0k5ZzhtX3RKSTk5Z1NKNkpmSmVxNkRIQzctV0ttM1hzMkxfVTVQSzRvV0hvbzVHVUFCRHBRZVBmNWVuOVViWnFtQVh4QXNHdGpUVW1kTmVMUmxtYTc1NUFtblZTVHfSAcIBQVVfeXFMTUUyQ1VLa1Z4UDk5UUtYQ1lIemtyNFAyMkIzTVFtWXluQ1RETXo5S0I5YXA2bGd1TFZnbll4VkplQ2daSmxUVGxpYjdlZzdMNVJLS2lvZ0VKT01pSEZxd0JTcjhraERIcUtoTFJBNm1pN1NjeU9NMVhyN2pvQmR6azBXWjdHRG9qeF9ad1BCbGh2dEJJWXJEaGVYdzNqZDNhWG13endaSG1EcF9PZElBbGFFLTRmeXRaRTlUems2b1YzaWc?oc=5",
@@ -406,16 +406,16 @@
       "time": "2026-11-26T06:02:08+08:00"
     },
     {
+      "title": "First12trust Launches Review of Crypto Transaction Clearing Process - USA Today",
+      "source": "Google News · Kripto",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUk5halMtLTJvX0U3b29zckhNVXlveTFNZTk3T3prTTZWNzU4WkdqbEl2bTFVaU0tcEdTR1lZbFdKblZtUmZsbmJlc0s0VWlKQ2dBVjZRRFdZSDRIQUZzM1VERzh1VjlldEhQQUEwY0ZidEZoYVU3WWsta201OHlJa0NjUzRuVHN3VVRITGNXMWV0c0pCZUZ3Vi16OTAyb1NvOTVRT0xCa3Q4VjlrbGtTWGlUNUpxYTlGV0ww?oc=5",
+      "time": "2026-11-28T01:24:03+08:00"
+    },
+    {
       "title": "Bitcoin: Another Chance To Buy At Low Prices (Cryptocurrency:BTC-USD) - Seeking Alpha",
       "source": "Google News · Kripto",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPX2xvZERxb19LVXF4cEtmX0swU2k1UVNBOHYwcGVzVHJxaXpreXdPY2Q2QUM2NjkyNGdBRmVsNmxUaER2ZUc4WkdiZkhLa3M3T1BOYm9VTDdVMmJ5MFEwQk1hcEVlMnU2VUFUSmV2Q3c5N2FvcHNaSWRSNC1ETjBCdElua3VZT0pJLThkWg?oc=5",
       "time": "2026-11-28T00:42:34+08:00"
-    },
-    {
-      "title": "Ukrainian parliament legalises cryptocurrency and establishes taxation rules - Українська правда",
-      "source": "Google News · Kripto",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBiQnVDZlhCckFTbGxOMTV4MmxlZ2VfWVlBaXdQQnZxTzJ3VEJ3NGdxWnF6Ym1LNmNHZ1hFQzZoRGk5ZW1jb2Q5Y0k0VHBhc2dUQjVfQUJydXVZTnc4NS1kLWZXRHLSAXBBVV95cUxPY0dMWVNVMUdDdGRaaldxbmpCcEZxalRLUmhLT3hWejFMQ0c1VjloREQwUlhISU5VYy1iZGdNQ0RHUzFwQ2ZlOVJGam1wa1oyck1LcGQtdEJOa3hlMk5RcUJfOHFKQndnY1hyWTcxd2d3?oc=5",
-      "time": "2026-11-25T17:37:00+08:00"
     },
     {
       "title": "SpaceX shares jump over 4% amid tech rally and after Musk says he will expand on Trump Account share donations - CNBC",
@@ -448,7 +448,7 @@
       "time": "2026-11-26T05:43:18+08:00"
     }
   ],
-  "news_at": "2026-11-28T06:10:02.017776+08:00",
+  "news_at": "2026-11-28T06:25:32.217177+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
