@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:59:01.274833+08:00",
+  "generated_at": "2026-11-27T18:00:01.682248+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -106,10 +106,10 @@
         }
       ],
       "buy_floor_idr": 93658,
-      "_total_idr_from_log": 195383.0,
+      "_total_idr_from_log": 195353.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-27T17:58:32.141640+08:00"
+      "unrealized_at": "2026-11-27T18:00:01.679925+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -127,11 +127,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003104,
-          "value_usd": 0.377291,
-          "value_idr": 6943.29,
-          "unrealized_idr": -13036.73,
-          "unrealized_pct": -65.78
+          "price": 0.003106,
+          "value_usd": 0.377534,
+          "value_idr": 6947.76,
+          "unrealized_idr": -13032.26,
+          "unrealized_pct": -65.76
         },
         {
           "entry_idr": 19980.01998001998,
@@ -142,20 +142,20 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 61619.42,
-          "value_usd": 1.04753,
-          "value_idr": 19277.69,
-          "unrealized_idr": -702.33,
-          "unrealized_pct": -1.13
+          "price": 61633.0,
+          "value_usd": 1.047761,
+          "value_idr": 19281.94,
+          "unrealized_idr": -698.08,
+          "unrealized_pct": -1.11
         }
       ],
       "realized_idr": -6087.530147940009,
       "reserve_idr": 28339.75,
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
-      "updated": "2026-11-27T16:58:23+07:00",
-      "unrealized_idr": -13739.06,
-      "unrealized_at": "2026-11-27T17:58:32.141640+08:00",
+      "updated": "2026-11-27T16:59:23+07:00",
+      "unrealized_idr": -13730.34,
+      "unrealized_at": "2026-11-27T18:00:01.679925+08:00",
       "usd_idr_used": 18402.996901535415
     },
     "pumpfun": {
@@ -185,7 +185,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-27T16:58:53+07:00"
+      "updated": "2026-11-27T17:00:00+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -201,7 +201,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-27T16:59:00+07:00",
+      "updated": "2026-11-27T16:59:32+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -217,7 +217,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-27T16:58:45+07:00",
+      "updated": "2026-11-27T16:59:50+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
