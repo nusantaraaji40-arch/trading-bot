@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T09:46:02.855496+08:00",
+  "generated_at": "2026-11-27T09:46:31.933343+08:00",
   "generated_at_tz": "Asia/Jakarta (WIB) bila dijalankan dengan TZ itu; lihat offset di atas",
   "source": "VPS Tencent Ubuntu-mwpZ 43.128.112.85 (read-only build)",
   "venues": {
@@ -108,7 +108,7 @@
       "_total_idr_from_log": 191699.0,
       "_cash_note": "Tidak ada field kas di positions_v2.json; kas IDR bebas diambil live dari API saldo Indodax oleh loop, bukan dari file ini.",
       "unrealized_idr": -3354.52,
-      "unrealized_at": "2026-11-27T09:45:02.087148+08:00"
+      "unrealized_at": "2026-11-27T09:46:31.931756+08:00"
     },
     "mexc": {
       "baseline_usdt": 2.396778491135,
@@ -126,11 +126,11 @@
           "opened": "2026-11-11T10:10:16+07:00",
           "qty": 121.55,
           "symbol": "FLOATUSDT",
-          "price": 0.003152,
-          "value_usd": 0.383126,
-          "value_idr": 7054.87,
-          "unrealized_idr": -12925.15,
-          "unrealized_pct": -65.25
+          "price": 0.003164,
+          "value_usd": 0.384584,
+          "value_idr": 7081.73,
+          "unrealized_idr": -12898.29,
+          "unrealized_pct": -65.12
         },
         {
           "entry_idr": 19980.01998001998,
@@ -141,11 +141,11 @@
           "opened": "2026-11-20T03:53:54+07:00",
           "qty": 1.7e-05,
           "symbol": "BTCUSDT",
-          "price": 60679.82,
-          "value_usd": 1.031557,
-          "value_idr": 18995.08,
-          "unrealized_idr": -984.94,
-          "unrealized_pct": -2.64
+          "price": 60736.71,
+          "value_usd": 1.032524,
+          "value_idr": 19012.89,
+          "unrealized_idr": -967.13,
+          "unrealized_pct": -2.55
         }
       ],
       "realized_idr": -6087.530147940009,
@@ -153,8 +153,8 @@
       "total_deposited_idr": 87212.53,
       "trades_count": 2,
       "updated": "2026-11-27T08:45:45+07:00",
-      "unrealized_idr": -13910.09,
-      "unrealized_at": "2026-11-27T09:45:02.087148+08:00",
+      "unrealized_idr": -13865.42,
+      "unrealized_at": "2026-11-27T09:46:31.931756+08:00",
       "usd_idr_used": 18413.989317889023
     },
     "pumpfun": {
@@ -184,7 +184,7 @@
       "reserve_idr": 36414.6,
       "total_deposited_idr": 96414.6,
       "trades_count": 6,
-      "updated": "2026-11-27T08:45:54+07:00"
+      "updated": "2026-11-27T08:46:28+07:00"
     },
     "fourmeme": {
       "_recon_20261113_stranded_token": "Token tersisa di dompet: 安全驾驶 (mint 0xB9B13aD28f451B6B3a6Cb82B9D7C9154a245ffff) saldo on-chain 1456.1310834735762 token (diterima 1501.1660654366767, pajak transfer 3 persen), nilai sekitar Rp630. Jual KS 12 Nov 16:58 dibatalkan sebelum broadcast (SALDO_TOKEN_KURANG), saldo di bawah minimum jual sehingga tidak bisa dijual. Realized dibetulkan ke -10000.00 (entry 9900.99 + fee 99.01, tx beli 0x7ac407438646b64f56bc774d12c7e5691d7e2e80d290b19da922fe763383ca10). Perbaikan ini hanya membetulkan catatan, tidak mengembalikan kerugian Rp10000 yang sudah terjadi.",
@@ -200,7 +200,7 @@
       "reserve_idr": 17303.59,
       "total_deposited_idr": 37303.59,
       "trades_count": 2,
-      "updated": "2026-11-27T08:45:41+07:00",
+      "updated": "2026-11-27T08:46:13+07:00",
       "unrealized_idr": 0.0
     },
     "clanker": {
@@ -216,7 +216,7 @@
       "reserve_idr": 26685.55,
       "total_deposited_idr": 36685.55,
       "trades_count": 1,
-      "updated": "2026-11-27T08:45:33+07:00",
+      "updated": "2026-11-27T08:46:06+07:00",
       "unrealized_idr": 0.0
     },
     "pluang": {
@@ -447,7 +447,7 @@
       "time": "2026-11-25T09:50:00+08:00"
     }
   ],
-  "news_at": "2026-11-27T09:46:02.855312+08:00",
+  "news_at": "2026-11-27T09:46:02.854949+08:00",
   "notes": [
     "Indodax = TIMBUNAN (posisi rugi DITAHAN). Exit hanya TP + TRAIL hanya-untung; SL/KS auto-sell NONAKTIF. indodax-loop.service INACTIVE; loop yang jalan indodax-loop-v3-1.service ACTIVE (PID 820 saat cek 19:10 WIB). PID 1036041 tidak ada.",
     "Rp40.000 backup Indodax TERKUNCI (baseline Rp45.309), jangan dibelanjakan.",
